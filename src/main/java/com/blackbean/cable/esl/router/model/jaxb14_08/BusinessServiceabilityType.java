@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.*;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ServiceabilityFlag" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="Transport" type="{http://xml.comcast.com/location/types}TransportType" minOccurs="0"/>
- *         &lt;element name="SupportedProducts" type="{http://xml.comcast.com/location/types}ArrayOfString" minOccurs="0"/>
- *         &lt;element name="Attributes" type="{http://xml.comcast.com/location/types}BusinessServiceabilityAttributesType" minOccurs="0"/>
+ *         &lt;element name="Transport" type="{http://xml.blackbean.com/location/types}TransportType" minOccurs="0"/>
+ *         &lt;element name="SupportedProducts" type="{http://xml.blackbean.com/location/types}ArrayOfString" minOccurs="0"/>
+ *         &lt;element name="Attributes" type="{http://xml.blackbean.com/location/types}BusinessServiceabilityAttributesType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,11 +36,11 @@ public class BusinessServiceabilityType {
 
     @XmlElement(name = "ServiceabilityFlag")
     protected boolean serviceabilityFlag;
-    @XmlElementRef(name = "Transport", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "Transport", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<TransportType> transport;
-    @XmlElementRef(name = "SupportedProducts", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "SupportedProducts", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfString> supportedProducts;
-    @XmlElementRef(name = "Attributes", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "Attributes", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<BusinessServiceabilityAttributesType> attributes;
 
     /**

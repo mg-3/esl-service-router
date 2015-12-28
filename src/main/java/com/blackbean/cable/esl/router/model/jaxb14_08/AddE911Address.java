@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="AddE911Address" type="{http://xml.comcast.com/location/types}AddE911AddressRequestType" minOccurs="0"/>
+ *         &lt;element name="AddE911Address" type="{http://xml.blackbean.com/location/types}AddE911AddressRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "addE911Address"
 })
-@XmlRootElement(name = "addE911Address", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "addE911Address", namespace = "http://xml.blackbean.com/location/services")
 public class AddE911Address {
 
-    @XmlElementRef(name = "AddE911Address", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "AddE911Address", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<AddE911AddressRequestType> addE911Address;
 
     /**

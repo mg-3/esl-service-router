@@ -67,7 +67,7 @@ import javax.xml.bind.annotation.*;
 })
 public class QueryMarketByBoundaryRequestType {
 
-    @XmlElementRef(name = "stateCode", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "stateCode", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> stateCode;
     @XmlElement(name = "CountyName")
     protected String countyName;

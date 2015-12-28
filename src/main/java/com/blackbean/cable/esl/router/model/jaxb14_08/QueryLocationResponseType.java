@@ -18,10 +18,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="locationReference" type="{http://xml.comcast.com/location/types}ArrayOfLocationReferenceType" minOccurs="0"/>
- *         &lt;element name="marketReference" type="{http://xml.comcast.com/location/types}ArrayOfMarketReferenceType" minOccurs="0"/>
- *         &lt;element name="location" type="{http://xml.comcast.com/location/types}LocationType" minOccurs="0"/>
- *         &lt;element name="standardizedAddress" type="{http://xml.comcast.com/location/types}PostalAddressType" minOccurs="0"/>
+ *         &lt;element name="locationReference" type="{http://xml.blackbean.com/location/types}ArrayOfLocationReferenceType" minOccurs="0"/>
+ *         &lt;element name="marketReference" type="{http://xml.blackbean.com/location/types}ArrayOfMarketReferenceType" minOccurs="0"/>
+ *         &lt;element name="location" type="{http://xml.blackbean.com/location/types}LocationType" minOccurs="0"/>
+ *         &lt;element name="standardizedAddress" type="{http://xml.blackbean.com/location/types}PostalAddressType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,11 +37,11 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class QueryLocationResponseType {
 
-    @XmlElementRef(name = "locationReference", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "locationReference", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfLocationReferenceType> locationReference;
-    @XmlElementRef(name = "marketReference", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "marketReference", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfMarketReferenceType> marketReference;
-    @XmlElementRef(name = "location", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "location", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<LocationType> location;
     protected PostalAddressType standardizedAddress;
 

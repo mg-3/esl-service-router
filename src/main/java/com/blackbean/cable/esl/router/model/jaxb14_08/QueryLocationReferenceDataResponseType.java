@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="referenceDataType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="item" type="{http://xml.comcast.com/location/types}ArrayOfReferenceDataItemType" minOccurs="0"/>
- *         &lt;element name="ResponseStatus" type="{http://xml.comcast.com/location/types}ResponseStatusType"/>
+ *         &lt;element name="item" type="{http://xml.blackbean.com/location/types}ArrayOfReferenceDataItemType" minOccurs="0"/>
+ *         &lt;element name="ResponseStatus" type="{http://xml.blackbean.com/location/types}ResponseStatusType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

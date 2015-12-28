@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="AlternateAddressNumber" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="AlternateAddressType" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="PostalAddress" type="{http://xml.comcast.com/location/types}PostalAddressType"/>
+ *         &lt;element name="PostalAddress" type="{http://xml.blackbean.com/location/types}PostalAddressType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

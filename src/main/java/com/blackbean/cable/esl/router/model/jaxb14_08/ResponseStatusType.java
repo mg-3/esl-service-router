@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="ReturnCode" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="ResponseMessage" type="{http://xml.comcast.com/location/types}ArrayOfResponseMessageType" minOccurs="0"/>
+ *         &lt;element name="ResponseMessage" type="{http://xml.blackbean.com/location/types}ArrayOfResponseMessageType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

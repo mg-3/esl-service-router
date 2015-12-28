@@ -16,16 +16,16 @@ import java.math.BigDecimal;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="locationID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="locationStatus" type="{http://xml.comcast.com/location/types}LocationStatusType"/>
+ *         &lt;element name="locationStatus" type="{http://xml.blackbean.com/location/types}LocationStatusType"/>
  *         &lt;element name="latitude" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
  *         &lt;element name="longitude" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
- *         &lt;element name="locationPostalAddress" type="{http://xml.comcast.com/location/types}PostalAddressType"/>
- *         &lt;element name="locationAlternateAddress" type="{http://xml.comcast.com/location/types}ArrayOfAlternatePostalAddressType"/>
- *         &lt;element name="locationMarketReference" type="{http://xml.comcast.com/location/types}MarketReferenceType" minOccurs="0"/>
- *         &lt;element name="locationDetails" type="{http://xml.comcast.com/location/types}LocationDetailsType" minOccurs="0"/>
- *         &lt;element name="locationCapabilities" type="{http://xml.comcast.com/location/types}CapabilitiesType" minOccurs="0"/>
- *         &lt;element name="locationCapabilityExceptions" type="{http://xml.comcast.com/location/types}CapabilitiesType" minOccurs="0"/>
- *         &lt;element name="HomeSecurity" type="{http://xml.comcast.com/location/types}HomeSecurityType" minOccurs="0"/>
+ *         &lt;element name="locationPostalAddress" type="{http://xml.blackbean.com/location/types}PostalAddressType"/>
+ *         &lt;element name="locationAlternateAddress" type="{http://xml.blackbean.com/location/types}ArrayOfAlternatePostalAddressType"/>
+ *         &lt;element name="locationMarketReference" type="{http://xml.blackbean.com/location/types}MarketReferenceType" minOccurs="0"/>
+ *         &lt;element name="locationDetails" type="{http://xml.blackbean.com/location/types}LocationDetailsType" minOccurs="0"/>
+ *         &lt;element name="locationCapabilities" type="{http://xml.blackbean.com/location/types}CapabilitiesType" minOccurs="0"/>
+ *         &lt;element name="locationCapabilityExceptions" type="{http://xml.blackbean.com/location/types}CapabilitiesType" minOccurs="0"/>
+ *         &lt;element name="HomeSecurity" type="{http://xml.blackbean.com/location/types}HomeSecurityType" minOccurs="0"/>
  *         &lt;element name="fraudIndicator" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

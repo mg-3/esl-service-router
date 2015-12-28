@@ -12,19 +12,19 @@ import java.net.URL;
  * JAX-WS RI 2.2.9-b130926.1035
  * Generated source version: 2.2
  */
-@WebServiceClient(name = "LocationServiceSoapBindingQSService", targetNamespace = "http://xml.comcast.com/location/services", wsdlLocation = "https://cet-esp.cable.comcast.com/LocationService/14.08?wsdl")
+@WebServiceClient(name = "LocationServiceSoapBindingQSService", targetNamespace = "http://xml.blackbean.com/location/services", wsdlLocation = "https://cet-esp.cable.blackbean.com/LocationService/14.08?wsdl")
 public class LocationServiceSoapBindingQSService
         extends Service {
 
     private final static URL LOCATIONSERVICESOAPBINDINGQSSERVICE_WSDL_LOCATION;
     private final static WebServiceException LOCATIONSERVICESOAPBINDINGQSSERVICE_EXCEPTION;
-    private final static QName LOCATIONSERVICESOAPBINDINGQSSERVICE_QNAME = new QName("http://xml.comcast.com/location/services", "LocationServiceSoapBindingQSService");
+    private final static QName LOCATIONSERVICESOAPBINDINGQSSERVICE_QNAME = new QName("http://xml.blackbean.com/location/services", "LocationServiceSoapBindingQSService");
 
     static {
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("https://cet-esp.cable.comcast.com/LocationService/14.08?wsdl");
+            url = new URL("https://cet-esp.cable.blackbean.com/LocationService/14.08?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
@@ -61,7 +61,7 @@ public class LocationServiceSoapBindingQSService
      */
     @WebEndpoint(name = "LocationServiceSoapBindingQSPort")
     public LocationServicePort getLocationServiceSoapBindingQSPort() {
-        return super.getPort(new QName("http://xml.comcast.com/location/services", "LocationServiceSoapBindingQSPort"), LocationServicePort.class);
+        return super.getPort(new QName("http://xml.blackbean.com/location/services", "LocationServiceSoapBindingQSPort"), LocationServicePort.class);
     }
 
     /**
@@ -70,7 +70,7 @@ public class LocationServiceSoapBindingQSService
      */
     @WebEndpoint(name = "LocationServiceSoapBindingQSPort")
     public LocationServicePort getLocationServiceSoapBindingQSPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://xml.comcast.com/location/services", "LocationServiceSoapBindingQSPort"), LocationServicePort.class, features);
+        return super.getPort(new QName("http://xml.blackbean.com/location/services", "LocationServiceSoapBindingQSPort"), LocationServicePort.class, features);
     }
 
     private static URL __getWsdlLocation() {

@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="serviceableFlag" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="updateAction" type="{http://xml.comcast.com/location/types}ServiceabilityUpdateType" minOccurs="0"/>
+ *         &lt;element name="updateAction" type="{http://xml.blackbean.com/location/types}ServiceabilityUpdateType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,9 +33,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class LocationServiceabilityUpdateType {
 
-    @XmlElementRef(name = "serviceableFlag", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "serviceableFlag", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> serviceableFlag;
-    @XmlElementRef(name = "updateAction", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "updateAction", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ServiceabilityUpdateType> updateAction;
 
     /**

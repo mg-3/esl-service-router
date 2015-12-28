@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="DeleteNode" type="{http://xml.comcast.com/location/types}DeleteNodeRequestType" minOccurs="0"/>
+ *         &lt;element name="DeleteNode" type="{http://xml.blackbean.com/location/types}DeleteNodeRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "deleteNode"
 })
-@XmlRootElement(name = "deleteNode", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "deleteNode", namespace = "http://xml.blackbean.com/location/services")
 public class DeleteNode {
 
-    @XmlElementRef(name = "DeleteNode", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "DeleteNode", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<DeleteNodeRequestType> deleteNode;
 
     /**

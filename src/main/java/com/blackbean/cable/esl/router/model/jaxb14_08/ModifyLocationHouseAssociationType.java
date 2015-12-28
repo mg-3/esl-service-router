@@ -14,8 +14,8 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="AssociationAction" type="{http://xml.comcast.com/location/types}HouseAssociationActionType"/>
- *         &lt;element name="LegacyLocationId" type="{http://xml.comcast.com/location/types}LegacyLocationIDType"/>
+ *         &lt;element name="AssociationAction" type="{http://xml.blackbean.com/location/types}HouseAssociationActionType"/>
+ *         &lt;element name="LegacyLocationId" type="{http://xml.blackbean.com/location/types}LegacyLocationIDType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

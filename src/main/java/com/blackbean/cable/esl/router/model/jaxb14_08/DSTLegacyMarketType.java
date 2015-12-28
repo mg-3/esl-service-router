@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.*;
  *         &lt;element name="AccountCorp" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="FranchiseTaxArea" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="ManagementArea" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PricingLevelSwitch" type="{http://xml.comcast.com/location/types}PricingLevelSwitchType"/>
+ *         &lt;element name="PricingLevelSwitch" type="{http://xml.blackbean.com/location/types}PricingLevelSwitchType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,9 +36,9 @@ public class DSTLegacyMarketType {
 
     @XmlElement(name = "AccountCorp", required = true)
     protected String accountCorp;
-    @XmlElementRef(name = "FranchiseTaxArea", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "FranchiseTaxArea", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> franchiseTaxArea;
-    @XmlElementRef(name = "ManagementArea", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "ManagementArea", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> managementArea;
     @XmlElement(name = "PricingLevelSwitch", required = true)
     @XmlSchemaType(name = "string")

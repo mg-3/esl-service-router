@@ -9,7 +9,7 @@ import javax.xml.ws.WebFault;
  * JAX-WS RI 2.2.9-b130926.1035
  * Generated source version: 2.2
  */
-@WebFault(name = "serviceFault", targetNamespace = "http://xml.comcast.com/types")
+@WebFault(name = "serviceFault", targetNamespace = "http://xml.blackbean.com/types")
 public class LocationServiceFault
         extends Exception {
 

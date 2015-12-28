@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="AddressId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="MsagData" type="{http://xml.comcast.com/location/types}MsagDataType"/>
+ *         &lt;element name="MsagData" type="{http://xml.blackbean.com/location/types}MsagDataType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

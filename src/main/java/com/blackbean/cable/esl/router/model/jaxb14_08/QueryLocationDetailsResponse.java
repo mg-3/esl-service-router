@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="queryLocationDetailsReturn" type="{http://xml.comcast.com/location/types}QueryLocationDetailsResponseType" minOccurs="0"/>
+ *         &lt;element name="queryLocationDetailsReturn" type="{http://xml.blackbean.com/location/types}QueryLocationDetailsResponseType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "queryLocationDetailsReturn"
 })
-@XmlRootElement(name = "queryLocationDetailsResponse", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "queryLocationDetailsResponse", namespace = "http://xml.blackbean.com/location/services")
 public class QueryLocationDetailsResponse {
 
-    @XmlElementRef(name = "queryLocationDetailsReturn", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "queryLocationDetailsReturn", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<QueryLocationDetailsResponseType> queryLocationDetailsReturn;
 
     /**

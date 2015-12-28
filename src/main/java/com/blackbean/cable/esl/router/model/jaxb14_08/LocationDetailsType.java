@@ -17,18 +17,18 @@ import javax.xml.bind.annotation.*;
  *       &lt;sequence>
  *         &lt;element name="StructureUse" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="StructureType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="LocationGeography" type="{http://xml.comcast.com/location/types}LocationGeographyType" minOccurs="0"/>
- *         &lt;element name="LocationTelephony" type="{http://xml.comcast.com/location/types}LocationTelephonyType" minOccurs="0"/>
- *         &lt;element name="LocationNetworkConnectivity" type="{http://xml.comcast.com/location/types}LocationNetworkConnectivityType" minOccurs="0"/>
+ *         &lt;element name="LocationGeography" type="{http://xml.blackbean.com/location/types}LocationGeographyType" minOccurs="0"/>
+ *         &lt;element name="LocationTelephony" type="{http://xml.blackbean.com/location/types}LocationTelephonyType" minOccurs="0"/>
+ *         &lt;element name="LocationNetworkConnectivity" type="{http://xml.blackbean.com/location/types}LocationNetworkConnectivityType" minOccurs="0"/>
  *         &lt;element name="AddressGroupID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="E911Availability" type="{http://xml.comcast.com/location/types}E911AvailabilityType" minOccurs="0"/>
+ *         &lt;element name="E911Availability" type="{http://xml.blackbean.com/location/types}E911AvailabilityType" minOccurs="0"/>
  *         &lt;element name="AddressStandardizationMatchStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="GeocodingPrecision" type="{http://xml.comcast.com/location/types}GeocodingPrecisionType" minOccurs="0"/>
- *         &lt;element name="LegacyLocationIDs" type="{http://xml.comcast.com/location/types}ArrayOfLegacyLocationIDType" minOccurs="0"/>
- *         &lt;element name="LocationLegacyDetails" type="{http://xml.comcast.com/location/types}LocationLegacyDetailsType" minOccurs="0"/>
- *         &lt;element name="LocationCustomFields" type="{http://xml.comcast.com/location/types}ArrayOfLocationCustomFieldsType" minOccurs="0"/>
- *         &lt;element name="LocationComments" type="{http://xml.comcast.com/location/types}ArrayOfLocationCommentsType" minOccurs="0"/>
- *         &lt;element name="LocationTimezone" type="{http://xml.comcast.com/location/types}TimeZoneType" minOccurs="0"/>
+ *         &lt;element name="GeocodingPrecision" type="{http://xml.blackbean.com/location/types}GeocodingPrecisionType" minOccurs="0"/>
+ *         &lt;element name="LegacyLocationIDs" type="{http://xml.blackbean.com/location/types}ArrayOfLegacyLocationIDType" minOccurs="0"/>
+ *         &lt;element name="LocationLegacyDetails" type="{http://xml.blackbean.com/location/types}LocationLegacyDetailsType" minOccurs="0"/>
+ *         &lt;element name="LocationCustomFields" type="{http://xml.blackbean.com/location/types}ArrayOfLocationCustomFieldsType" minOccurs="0"/>
+ *         &lt;element name="LocationComments" type="{http://xml.blackbean.com/location/types}ArrayOfLocationCommentsType" minOccurs="0"/>
+ *         &lt;element name="LocationTimezone" type="{http://xml.blackbean.com/location/types}TimeZoneType" minOccurs="0"/>
  *         &lt;element name="standardDwellingCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -56,9 +56,9 @@ import javax.xml.bind.annotation.*;
 })
 public class LocationDetailsType {
 
-    @XmlElementRef(name = "StructureUse", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "StructureUse", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> structureUse;
-    @XmlElementRef(name = "StructureType", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "StructureType", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> structureType;
     @XmlElement(name = "LocationGeography")
     protected LocationGeographyType locationGeography;
@@ -66,7 +66,7 @@ public class LocationDetailsType {
     protected LocationTelephonyType locationTelephony;
     @XmlElement(name = "LocationNetworkConnectivity")
     protected LocationNetworkConnectivityType locationNetworkConnectivity;
-    @XmlElementRef(name = "AddressGroupID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "AddressGroupID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> addressGroupID;
     @XmlElement(name = "E911Availability")
     protected E911AvailabilityType e911Availability;

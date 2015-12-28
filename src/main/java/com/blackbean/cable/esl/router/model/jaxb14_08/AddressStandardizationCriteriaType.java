@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;/simpleType>
  *         &lt;/element>
  *         &lt;element name="zip" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="country" type="{http://xml.comcast.com/location/types}CountryCodeType" minOccurs="0"/>
+ *         &lt;element name="country" type="{http://xml.blackbean.com/location/types}CountryCodeType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

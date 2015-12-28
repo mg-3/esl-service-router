@@ -14,8 +14,8 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="MatchMethod" type="{http://xml.comcast.com/location/types}GeocodingResultMatchCategoryType"/>
- *         &lt;element name="GeocodingPointLocation" type="{http://xml.comcast.com/location/types}GeocodingResultPointLocationType"/>
+ *         &lt;element name="MatchMethod" type="{http://xml.blackbean.com/location/types}GeocodingResultMatchCategoryType"/>
+ *         &lt;element name="GeocodingPointLocation" type="{http://xml.blackbean.com/location/types}GeocodingResultPointLocationType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

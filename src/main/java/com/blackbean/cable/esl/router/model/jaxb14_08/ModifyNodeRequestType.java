@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="ModifyNodeRequests" type="{http://xml.comcast.com/location/types}ArrayOfModifyNodeRequestItemType"/>
+ *         &lt;element name="ModifyNodeRequests" type="{http://xml.blackbean.com/location/types}ArrayOfModifyNodeRequestItemType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

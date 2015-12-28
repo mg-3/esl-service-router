@@ -18,7 +18,7 @@ import java.util.List;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="queryMsagDataType" type="{http://xml.comcast.com/location/types}QueryMsagDataType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="queryMsagDataType" type="{http://xml.blackbean.com/location/types}QueryMsagDataType" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

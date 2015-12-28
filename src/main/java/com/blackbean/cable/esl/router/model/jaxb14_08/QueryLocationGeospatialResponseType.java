@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="locationReference" type="{http://xml.comcast.com/location/types}ArrayOfLocationReferenceType"/>
+ *         &lt;element name="locationReference" type="{http://xml.blackbean.com/location/types}ArrayOfLocationReferenceType"/>
  *         &lt;element name="numOfLocations" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

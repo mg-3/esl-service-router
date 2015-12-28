@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="locationID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="legacyIDSearch" type="{http://xml.comcast.com/location/types}LegacyLocationIDCriteriaType" minOccurs="0"/>
- *         &lt;element name="requestedResults" type="{http://xml.comcast.com/location/types}GetLocationXfinityRequestedResultsType" minOccurs="0"/>
+ *         &lt;element name="legacyIDSearch" type="{http://xml.blackbean.com/location/types}LegacyLocationIDCriteriaType" minOccurs="0"/>
+ *         &lt;element name="requestedResults" type="{http://xml.blackbean.com/location/types}GetLocationXfinityRequestedResultsType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

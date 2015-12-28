@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="legacyMarketIDSource" type="{http://xml.comcast.com/location/types}BillingSystemType"/>
- *         &lt;element name="CSGMarketID" type="{http://xml.comcast.com/location/types}CSGLegacyMarketType" minOccurs="0"/>
- *         &lt;element name="DSTMarketID" type="{http://xml.comcast.com/location/types}DSTLegacyMarketType" minOccurs="0"/>
+ *         &lt;element name="legacyMarketIDSource" type="{http://xml.blackbean.com/location/types}BillingSystemType"/>
+ *         &lt;element name="CSGMarketID" type="{http://xml.blackbean.com/location/types}CSGLegacyMarketType" minOccurs="0"/>
+ *         &lt;element name="DSTMarketID" type="{http://xml.blackbean.com/location/types}DSTLegacyMarketType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,9 +35,9 @@ public class LegacyMarketIDType {
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
     protected BillingSystemType legacyMarketIDSource;
-    @XmlElementRef(name = "CSGMarketID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "CSGMarketID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<CSGLegacyMarketType> csgMarketID;
-    @XmlElementRef(name = "DSTMarketID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "DSTMarketID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<DSTLegacyMarketType> dstMarketID;
 
     /**

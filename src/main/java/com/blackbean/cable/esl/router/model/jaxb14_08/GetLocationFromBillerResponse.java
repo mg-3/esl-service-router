@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="getLocationFromBillerReturn" type="{http://xml.comcast.com/location/types}GetLocationFromBillerResponseType" minOccurs="0"/>
+ *         &lt;element name="getLocationFromBillerReturn" type="{http://xml.blackbean.com/location/types}GetLocationFromBillerResponseType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "getLocationFromBillerReturn"
 })
-@XmlRootElement(name = "getLocationFromBillerResponse", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "getLocationFromBillerResponse", namespace = "http://xml.blackbean.com/location/services")
 public class GetLocationFromBillerResponse {
 
-    @XmlElementRef(name = "getLocationFromBillerReturn", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "getLocationFromBillerReturn", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<GetLocationFromBillerResponseType> getLocationFromBillerReturn;
 
     /**

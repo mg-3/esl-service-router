@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="BuildingAttribute" type="{http://xml.comcast.com/location/types}BuildingAttributesType" minOccurs="0"/>
+ *         &lt;element name="BuildingAttribute" type="{http://xml.blackbean.com/location/types}BuildingAttributesType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class BusinessServiceabilityAttributesType {
 
-    @XmlElementRef(name = "BuildingAttribute", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "BuildingAttribute", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<BuildingAttributesType> buildingAttribute;
 
     /**

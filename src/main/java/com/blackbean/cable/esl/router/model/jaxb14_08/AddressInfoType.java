@@ -15,14 +15,14 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="postalAddress" type="{http://xml.comcast.com/location/types}PostalAddressType"/>
- *         &lt;element name="alternateAddress" type="{http://xml.comcast.com/location/types}ArrayOfAlternatePostalAddressType"/>
- *         &lt;element name="locationStatus" type="{http://xml.comcast.com/location/types}LocationStatusType"/>
+ *         &lt;element name="postalAddress" type="{http://xml.blackbean.com/location/types}PostalAddressType"/>
+ *         &lt;element name="alternateAddress" type="{http://xml.blackbean.com/location/types}ArrayOfAlternatePostalAddressType"/>
+ *         &lt;element name="locationStatus" type="{http://xml.blackbean.com/location/types}LocationStatusType"/>
  *         &lt;element name="locationID" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="fraudIndicator" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="StructureUse" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="StructureType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="timezone" type="{http://xml.comcast.com/location/types}TimeZoneType" minOccurs="0"/>
+ *         &lt;element name="timezone" type="{http://xml.blackbean.com/location/types}TimeZoneType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -52,9 +52,9 @@ public class AddressInfoType {
     protected long locationID;
     @XmlElement(required = true)
     protected String fraudIndicator;
-    @XmlElementRef(name = "StructureUse", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "StructureUse", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> structureUse;
-    @XmlElementRef(name = "StructureType", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "StructureType", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> structureType;
     protected TimeZoneType timezone;
 

@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="GeographicCoordinates" type="{http://xml.comcast.com/location/types}GetGeoTagRequestCoordinateType" minOccurs="0"/>
+ *         &lt;element name="GeographicCoordinates" type="{http://xml.blackbean.com/location/types}GetGeoTagRequestCoordinateType" minOccurs="0"/>
  *         &lt;element name="locationID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

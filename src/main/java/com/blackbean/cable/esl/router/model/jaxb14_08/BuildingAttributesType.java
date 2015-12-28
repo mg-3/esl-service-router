@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class BuildingAttributesType {
 
-    @XmlElementRef(name = "BuildingCategory", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "BuildingCategory", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> buildingCategory;
 
     /**

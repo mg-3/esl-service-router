@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.*;
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="LocationID" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="TemplateHouseNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="LocationLegacyDetails" type="{http://xml.comcast.com/location/types}LocationLegacyDetailsType"/>
- *         &lt;element name="DuplicateHousePurpose" type="{http://xml.comcast.com/location/types}DuplicateHouseUsageSimpleType" minOccurs="0"/>
+ *         &lt;element name="LocationLegacyDetails" type="{http://xml.blackbean.com/location/types}LocationLegacyDetailsType"/>
+ *         &lt;element name="DuplicateHousePurpose" type="{http://xml.blackbean.com/location/types}DuplicateHouseUsageSimpleType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -40,7 +40,7 @@ public class CopyDuplicateHouseToBillingRequestItemType {
     protected int requestRefNum;
     @XmlElement(name = "LocationID")
     protected long locationID;
-    @XmlElementRef(name = "TemplateHouseNumber", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "TemplateHouseNumber", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> templateHouseNumber;
     @XmlElement(name = "LocationLegacyDetails", required = true)
     protected LocationLegacyDetailsType locationLegacyDetails;

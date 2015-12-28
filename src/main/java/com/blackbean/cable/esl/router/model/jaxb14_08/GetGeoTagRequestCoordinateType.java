@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="marketID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="geographicCoordinates" type="{http://xml.comcast.com/location/types}GeographicCoordinatePointType"/>
+ *         &lt;element name="geographicCoordinates" type="{http://xml.blackbean.com/location/types}GeographicCoordinatePointType"/>
  *         &lt;element name="zip" minOccurs="0">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">

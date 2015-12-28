@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="QueryNode" type="{http://xml.comcast.com/location/types}QueryNodeRequestType" minOccurs="0"/>
+ *         &lt;element name="QueryNode" type="{http://xml.blackbean.com/location/types}QueryNodeRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "queryNode"
 })
-@XmlRootElement(name = "queryNode", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "queryNode", namespace = "http://xml.blackbean.com/location/services")
 public class QueryNode {
 
-    @XmlElementRef(name = "QueryNode", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "QueryNode", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<QueryNodeRequestType> queryNode;
 
     /**

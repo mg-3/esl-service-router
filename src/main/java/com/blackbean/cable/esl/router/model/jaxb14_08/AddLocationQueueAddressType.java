@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.*;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="streetAddress" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="unitTypes" type="{http://xml.comcast.com/location/types}ArrayOfUnitTypesType" minOccurs="0"/>
+ *         &lt;element name="unitTypes" type="{http://xml.blackbean.com/location/types}ArrayOfUnitTypesType" minOccurs="0"/>
  *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="state">
  *           &lt;simpleType>
@@ -33,7 +33,7 @@ import javax.xml.bind.annotation.*;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="country" type="{http://xml.comcast.com/location/types}CountryCodeType" minOccurs="0"/>
+ *         &lt;element name="country" type="{http://xml.blackbean.com/location/types}CountryCodeType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -53,7 +53,7 @@ public class AddLocationQueueAddressType {
 
     @XmlElement(required = true)
     protected String streetAddress;
-    @XmlElementRef(name = "unitTypes", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "unitTypes", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfUnitTypesType> unitTypes;
     @XmlElement(required = true)
     protected String city;
@@ -61,7 +61,7 @@ public class AddLocationQueueAddressType {
     protected String state;
     @XmlElement(required = true)
     protected String zip;
-    @XmlElementRef(name = "country", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "country", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<CountryCodeType> country;
 
     /**

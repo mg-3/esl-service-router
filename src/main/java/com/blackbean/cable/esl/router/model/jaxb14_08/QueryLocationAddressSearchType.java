@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="addressCriteria" type="{http://xml.comcast.com/location/types}AddressCriteriaType"/>
- *         &lt;element name="marketCriteria" type="{http://xml.comcast.com/location/types}MarketCriteriaType" minOccurs="0"/>
+ *         &lt;element name="addressCriteria" type="{http://xml.blackbean.com/location/types}AddressCriteriaType"/>
+ *         &lt;element name="marketCriteria" type="{http://xml.blackbean.com/location/types}MarketCriteriaType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

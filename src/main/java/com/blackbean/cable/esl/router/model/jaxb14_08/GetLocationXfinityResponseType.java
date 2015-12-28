@@ -16,18 +16,18 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="addressInfo" type="{http://xml.comcast.com/location/types}AddressInfoType" minOccurs="0"/>
- *         &lt;element name="marketInfo" type="{http://xml.comcast.com/location/types}MarketReferenceType" minOccurs="0"/>
- *         &lt;element name="marketHierarchyInfo" type="{http://xml.comcast.com/location/types}MarketHierarchyLevelInfo" minOccurs="0"/>
- *         &lt;element name="capabilityInfo" type="{http://xml.comcast.com/location/types}LocationCapabilitiesInfoType" minOccurs="0"/>
- *         &lt;element name="homeSecurityInfo" type="{http://xml.comcast.com/location/types}HomeSecurityType" minOccurs="0"/>
- *         &lt;element name="networkConnectivityInfo" type="{http://xml.comcast.com/location/types}LocationNetworkConnectivityType" minOccurs="0"/>
- *         &lt;element name="geographyInfo" type="{http://xml.comcast.com/location/types}GeographyInfoType" minOccurs="0"/>
- *         &lt;element name="telephonyInfo" type="{http://xml.comcast.com/location/types}TelephonyInfoType" minOccurs="0"/>
- *         &lt;element name="msagInfo" type="{http://xml.comcast.com/location/types}ArrayOfMsagDataType" minOccurs="0"/>
- *         &lt;element name="customFieldsInfo" type="{http://xml.comcast.com/location/types}ArrayOfLocationCustomFieldsType" minOccurs="0"/>
- *         &lt;element name="billingDetailsInfo" type="{http://xml.comcast.com/location/types}BillingDetailsInfoType" minOccurs="0"/>
- *         &lt;element name="e911AddressInfo" type="{http://xml.comcast.com/location/types}E911AddressType" minOccurs="0"/>
+ *         &lt;element name="addressInfo" type="{http://xml.blackbean.com/location/types}AddressInfoType" minOccurs="0"/>
+ *         &lt;element name="marketInfo" type="{http://xml.blackbean.com/location/types}MarketReferenceType" minOccurs="0"/>
+ *         &lt;element name="marketHierarchyInfo" type="{http://xml.blackbean.com/location/types}MarketHierarchyLevelInfo" minOccurs="0"/>
+ *         &lt;element name="capabilityInfo" type="{http://xml.blackbean.com/location/types}LocationCapabilitiesInfoType" minOccurs="0"/>
+ *         &lt;element name="homeSecurityInfo" type="{http://xml.blackbean.com/location/types}HomeSecurityType" minOccurs="0"/>
+ *         &lt;element name="networkConnectivityInfo" type="{http://xml.blackbean.com/location/types}LocationNetworkConnectivityType" minOccurs="0"/>
+ *         &lt;element name="geographyInfo" type="{http://xml.blackbean.com/location/types}GeographyInfoType" minOccurs="0"/>
+ *         &lt;element name="telephonyInfo" type="{http://xml.blackbean.com/location/types}TelephonyInfoType" minOccurs="0"/>
+ *         &lt;element name="msagInfo" type="{http://xml.blackbean.com/location/types}ArrayOfMsagDataType" minOccurs="0"/>
+ *         &lt;element name="customFieldsInfo" type="{http://xml.blackbean.com/location/types}ArrayOfLocationCustomFieldsType" minOccurs="0"/>
+ *         &lt;element name="billingDetailsInfo" type="{http://xml.blackbean.com/location/types}BillingDetailsInfoType" minOccurs="0"/>
+ *         &lt;element name="e911AddressInfo" type="{http://xml.blackbean.com/location/types}E911AddressType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

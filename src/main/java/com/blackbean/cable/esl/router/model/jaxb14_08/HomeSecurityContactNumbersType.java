@@ -35,11 +35,11 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class HomeSecurityContactNumbersType {
 
-    @XmlElementRef(name = "policeNumber", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "policeNumber", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> policeNumber;
-    @XmlElementRef(name = "fireNumber", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "fireNumber", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> fireNumber;
-    @XmlElementRef(name = "medicalNumber", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "medicalNumber", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> medicalNumber;
 
     /**

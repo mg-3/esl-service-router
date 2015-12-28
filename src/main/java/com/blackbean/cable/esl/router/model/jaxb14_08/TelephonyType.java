@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="rateCenterCertification" type="{http://xml.comcast.com/location/types}E911RateCenterCertificationType" minOccurs="0"/>
- *         &lt;element name="rateCenterServiceable" type="{http://xml.comcast.com/location/types}E911RateCenterServiceableType" minOccurs="0"/>
+ *         &lt;element name="rateCenterCertification" type="{http://xml.blackbean.com/location/types}E911RateCenterCertificationType" minOccurs="0"/>
+ *         &lt;element name="rateCenterServiceable" type="{http://xml.blackbean.com/location/types}E911RateCenterServiceableType" minOccurs="0"/>
  *         &lt;element name="LATA" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="LATAName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="ILECName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -49,25 +49,25 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class TelephonyType {
 
-    @XmlElementRef(name = "rateCenterCertification", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "rateCenterCertification", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<E911RateCenterCertificationType> rateCenterCertification;
-    @XmlElementRef(name = "rateCenterServiceable", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "rateCenterServiceable", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<E911RateCenterServiceableType> rateCenterServiceable;
-    @XmlElementRef(name = "LATA", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "LATA", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> lata;
-    @XmlElementRef(name = "LATAName", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "LATAName", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> lataName;
-    @XmlElementRef(name = "ILECName", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "ILECName", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> ilecName;
-    @XmlElementRef(name = "PSAPAgency", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "PSAPAgency", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> psapAgency;
-    @XmlElementRef(name = "PSAPId", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "PSAPId", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> psapId;
-    @XmlElementRef(name = "rateCenterName", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "rateCenterName", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> rateCenterName;
-    @XmlElementRef(name = "TNOrderPool", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "TNOrderPool", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> tnOrderPool;
-    @XmlElementRef(name = "wireCenter", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "wireCenter", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> wireCenter;
 
     /**

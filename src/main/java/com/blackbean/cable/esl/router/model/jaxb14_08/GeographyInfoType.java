@@ -26,7 +26,7 @@ import java.math.BigDecimal;
  *         &lt;element name="fipsCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="countyName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="minorCivilDivision" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="geocodingPrecision" type="{http://xml.comcast.com/location/types}GeocodingPrecisionType" minOccurs="0"/>
+ *         &lt;element name="geocodingPrecision" type="{http://xml.blackbean.com/location/types}GeocodingPrecisionType" minOccurs="0"/>
  *         &lt;element name="urbanization" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="latitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
  *         &lt;element name="longitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
@@ -61,9 +61,9 @@ public class GeographyInfoType {
     protected String minorCivilDivision;
     protected GeocodingPrecisionType geocodingPrecision;
     protected String urbanization;
-    @XmlElementRef(name = "latitude", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "latitude", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<BigDecimal> latitude;
-    @XmlElementRef(name = "longitude", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "longitude", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<BigDecimal> longitude;
 
     /**

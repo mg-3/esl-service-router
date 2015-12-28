@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="locationID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="e911Address" type="{http://xml.comcast.com/location/types}E911AddressType"/>
+ *         &lt;element name="e911Address" type="{http://xml.blackbean.com/location/types}E911AddressType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

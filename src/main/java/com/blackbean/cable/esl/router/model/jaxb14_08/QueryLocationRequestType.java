@@ -16,10 +16,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="addressSearch" type="{http://xml.comcast.com/location/types}QueryLocationAddressSearchType" minOccurs="0"/>
- *         &lt;element name="legacyIDSearch" type="{http://xml.comcast.com/location/types}LegacyLocationIDCriteriaType" minOccurs="0"/>
- *         &lt;element name="geospatialSearch" type="{http://xml.comcast.com/location/types}GeospatialSearchCriteriaType" minOccurs="0"/>
- *         &lt;element name="resultSpec" type="{http://xml.comcast.com/location/types}QueryResultSpecType" minOccurs="0"/>
+ *         &lt;element name="addressSearch" type="{http://xml.blackbean.com/location/types}QueryLocationAddressSearchType" minOccurs="0"/>
+ *         &lt;element name="legacyIDSearch" type="{http://xml.blackbean.com/location/types}LegacyLocationIDCriteriaType" minOccurs="0"/>
+ *         &lt;element name="geospatialSearch" type="{http://xml.blackbean.com/location/types}GeospatialSearchCriteriaType" minOccurs="0"/>
+ *         &lt;element name="resultSpec" type="{http://xml.blackbean.com/location/types}QueryResultSpecType" minOccurs="0"/>
  *         &lt;element name="showDuplicateAddresses" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

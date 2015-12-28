@@ -15,11 +15,11 @@ import javax.xml.bind.annotation.*;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="LocationStatus" type="{http://xml.comcast.com/location/types}LocationStatusType" minOccurs="0"/>
+ *         &lt;element name="LocationStatus" type="{http://xml.blackbean.com/location/types}LocationStatusType" minOccurs="0"/>
  *         &lt;element name="AddressStandardizationMatchStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CopyLocationToBillingResponse" type="{http://xml.comcast.com/location/types}CopyLocationToBillingResponseItemType" minOccurs="0"/>
- *         &lt;element name="responseStatus" type="{http://xml.comcast.com/location/types}ResponseStatusType"/>
- *         &lt;element name="Location" type="{http://xml.comcast.com/location/types}LocationType" minOccurs="0"/>
+ *         &lt;element name="CopyLocationToBillingResponse" type="{http://xml.blackbean.com/location/types}CopyLocationToBillingResponseItemType" minOccurs="0"/>
+ *         &lt;element name="responseStatus" type="{http://xml.blackbean.com/location/types}ResponseStatusType"/>
+ *         &lt;element name="Location" type="{http://xml.blackbean.com/location/types}LocationType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

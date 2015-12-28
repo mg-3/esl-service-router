@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="deleteMarketReturn" type="{http://xml.comcast.com/location/types}DeleteMarketResponseType" minOccurs="0"/>
+ *         &lt;element name="deleteMarketReturn" type="{http://xml.blackbean.com/location/types}DeleteMarketResponseType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "deleteMarketReturn"
 })
-@XmlRootElement(name = "deleteMarketResponse", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "deleteMarketResponse", namespace = "http://xml.blackbean.com/location/services")
 public class DeleteMarketResponse {
 
-    @XmlElementRef(name = "deleteMarketReturn", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "deleteMarketReturn", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<DeleteMarketResponseType> deleteMarketReturn;
 
     /**

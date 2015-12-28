@@ -15,8 +15,8 @@ import javax.xml.bind.annotation.*;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="legacyID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="legacyIDSource" type="{http://xml.comcast.com/location/types}LegacyLocationIDSourceType"/>
- *         &lt;element name="HomeSecurity" type="{http://xml.comcast.com/location/types}HomeSecurityType"/>
+ *         &lt;element name="legacyIDSource" type="{http://xml.blackbean.com/location/types}LegacyLocationIDSourceType"/>
+ *         &lt;element name="HomeSecurity" type="{http://xml.blackbean.com/location/types}HomeSecurityType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

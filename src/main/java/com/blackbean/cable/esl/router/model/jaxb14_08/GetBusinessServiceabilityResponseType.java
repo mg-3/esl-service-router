@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="BusinessServiceabilityResponses" type="{http://xml.comcast.com/location/types}ArrayOfBusinessServiceabilityResponseItemType" minOccurs="0"/>
+ *         &lt;element name="BusinessServiceabilityResponses" type="{http://xml.blackbean.com/location/types}ArrayOfBusinessServiceabilityResponseItemType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class GetBusinessServiceabilityResponseType {
 
-    @XmlElementRef(name = "BusinessServiceabilityResponses", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "BusinessServiceabilityResponses", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfBusinessServiceabilityResponseItemType> businessServiceabilityResponses;
 
     /**

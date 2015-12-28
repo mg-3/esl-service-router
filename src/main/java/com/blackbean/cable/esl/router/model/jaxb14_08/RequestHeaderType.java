@@ -31,7 +31,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RequestHeaderType", namespace = "http://xml.comcast.com/types", propOrder = {
+@XmlType(name = "RequestHeaderType", namespace = "http://xml.blackbean.com/types", propOrder = {
         "timestamp",
         "sourceSystemId",
         "sourceSystemUserId",

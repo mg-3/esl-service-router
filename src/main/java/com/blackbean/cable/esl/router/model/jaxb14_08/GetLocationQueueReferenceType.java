@@ -24,9 +24,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="QueueStatus" type="{http://xml.comcast.com/location/types}LocationQueueStatusType"/>
- *         &lt;element name="SubmitterInfo" type="{http://xml.comcast.com/location/types}LocationQueueContactInfoType"/>
- *         &lt;element name="LocationQueueAddress" type="{http://xml.comcast.com/location/types}LocationQueueAddressType"/>
+ *         &lt;element name="QueueStatus" type="{http://xml.blackbean.com/location/types}LocationQueueStatusType"/>
+ *         &lt;element name="SubmitterInfo" type="{http://xml.blackbean.com/location/types}LocationQueueContactInfoType"/>
+ *         &lt;element name="LocationQueueAddress" type="{http://xml.blackbean.com/location/types}LocationQueueAddressType"/>
  *         &lt;element name="marketID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *         &lt;element name="LeadID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="NeedByDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
@@ -38,8 +38,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="MarketContact" type="{http://xml.comcast.com/location/types}LocationQueueContactInfoType" minOccurs="0"/>
- *         &lt;element name="standardizeAddress" type="{http://xml.comcast.com/location/types}PostalAddressType" minOccurs="0"/>
+ *         &lt;element name="MarketContact" type="{http://xml.blackbean.com/location/types}LocationQueueContactInfoType" minOccurs="0"/>
+ *         &lt;element name="standardizeAddress" type="{http://xml.blackbean.com/location/types}PostalAddressType" minOccurs="0"/>
  *         &lt;element name="locationID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

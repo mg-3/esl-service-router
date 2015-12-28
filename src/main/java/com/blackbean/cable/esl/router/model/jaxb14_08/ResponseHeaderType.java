@@ -26,7 +26,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ResponseHeaderType", namespace = "http://xml.comcast.com/types", propOrder = {
+@XmlType(name = "ResponseHeaderType", namespace = "http://xml.blackbean.com/types", propOrder = {
         "timestamp",
         "trackingId"
 })

@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="MsagDataId" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="AddressId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="ResponseStatus" type="{http://xml.comcast.com/location/types}ResponseStatusType"/>
+ *         &lt;element name="ResponseStatus" type="{http://xml.blackbean.com/location/types}ResponseStatusType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

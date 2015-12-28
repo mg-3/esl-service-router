@@ -25,313 +25,313 @@ import java.math.BigDecimal;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _RequestHeader_QNAME = new QName("http://xml.comcast.com/types", "requestHeader");
-    private final static QName _ResponseHeader_QNAME = new QName("http://xml.comcast.com/types", "responseHeader");
-    private final static QName _ServiceFault_QNAME = new QName("http://xml.comcast.com/types", "serviceFault");
-    private final static QName _UpdateMsagPriorityResponseUpdateMsagPriorityReturn_QNAME = new QName("http://xml.comcast.com/location/services", "updateMsagPriorityReturn");
-    private final static QName _UpdateLocationFromBillingResponseUpdateLocationFromBillingReturn_QNAME = new QName("http://xml.comcast.com/location/services", "updateLocationFromBillingReturn");
-    private final static QName _CopyLocationToBillingResponseCopyLocationToBillingReturn_QNAME = new QName("http://xml.comcast.com/location/services", "copyLocationToBillingReturn");
-    private final static QName _VerifyLocationVerifyLocation_QNAME = new QName("http://xml.comcast.com/location/services", "VerifyLocation");
-    private final static QName _LocationQueueAddressTypeUnitTypes_QNAME = new QName("http://xml.comcast.com/location/types", "unitTypes");
-    private final static QName _LocationQueueAddressTypeCountry_QNAME = new QName("http://xml.comcast.com/location/types", "country");
-    private final static QName _CopyDuplicateHouseToBillingRequestItemTypeTemplateHouseNumber_QNAME = new QName("http://xml.comcast.com/location/types", "TemplateHouseNumber");
-    private final static QName _GetLocationGetLocation_QNAME = new QName("http://xml.comcast.com/location/services", "GetLocation");
-    private final static QName _PostalAddressTypeDwellingCode_QNAME = new QName("http://xml.comcast.com/location/types", "dwellingCode");
-    private final static QName _PostalAddressTypeStreetPreDirection_QNAME = new QName("http://xml.comcast.com/location/types", "streetPreDirection");
-    private final static QName _PostalAddressTypeHouseNumberSuffix_QNAME = new QName("http://xml.comcast.com/location/types", "houseNumberSuffix");
-    private final static QName _PostalAddressTypeHouseNumber_QNAME = new QName("http://xml.comcast.com/location/types", "houseNumber");
-    private final static QName _PostalAddressTypeStreetPostDirection_QNAME = new QName("http://xml.comcast.com/location/types", "streetPostDirection");
-    private final static QName _PostalAddressTypeStreetSuffix_QNAME = new QName("http://xml.comcast.com/location/types", "streetSuffix");
-    private final static QName _PostalAddressTypeHouseNumberPrefix_QNAME = new QName("http://xml.comcast.com/location/types", "houseNumberPrefix");
-    private final static QName _StandardizedAddressXfinityTypeGeocodedAddress_QNAME = new QName("http://xml.comcast.com/location/types", "geocodedAddress");
-    private final static QName _StandardizedAddressXfinityTypeGeography_QNAME = new QName("http://xml.comcast.com/location/types", "geography");
-    private final static QName _StandardizedAddressXfinityTypeTelephony_QNAME = new QName("http://xml.comcast.com/location/types", "telephony");
-    private final static QName _StandardizedAddressXfinityTypeMsag_QNAME = new QName("http://xml.comcast.com/location/types", "msag");
-    private final static QName _QueryLocationXfinityQueryLocationXfinity_QNAME = new QName("http://xml.comcast.com/location/services", "QueryLocationXfinity");
-    private final static QName _GetGeoTagGetGeoTag_QNAME = new QName("http://xml.comcast.com/location/services", "GetGeoTag");
-    private final static QName _DeleteSingleViewAddressAssociationTypeSingleViewID_QNAME = new QName("http://xml.comcast.com/location/types", "singleViewID");
-    private final static QName _DeleteSingleViewAddressAssociationTypeAddressID_QNAME = new QName("http://xml.comcast.com/location/types", "addressID");
-    private final static QName _GetBillingSystemFormattedAddressGetBillingSystemFormattedAddress_QNAME = new QName("http://xml.comcast.com/location/services", "GetBillingSystemFormattedAddress");
-    private final static QName _TelephonyTypeRateCenterName_QNAME = new QName("http://xml.comcast.com/location/types", "rateCenterName");
-    private final static QName _TelephonyTypeTNOrderPool_QNAME = new QName("http://xml.comcast.com/location/types", "TNOrderPool");
-    private final static QName _TelephonyTypeLATA_QNAME = new QName("http://xml.comcast.com/location/types", "LATA");
-    private final static QName _TelephonyTypeWireCenter_QNAME = new QName("http://xml.comcast.com/location/types", "wireCenter");
-    private final static QName _TelephonyTypeLATAName_QNAME = new QName("http://xml.comcast.com/location/types", "LATAName");
-    private final static QName _TelephonyTypeRateCenterServiceable_QNAME = new QName("http://xml.comcast.com/location/types", "rateCenterServiceable");
-    private final static QName _TelephonyTypeILECName_QNAME = new QName("http://xml.comcast.com/location/types", "ILECName");
-    private final static QName _TelephonyTypePSAPAgency_QNAME = new QName("http://xml.comcast.com/location/types", "PSAPAgency");
-    private final static QName _TelephonyTypePSAPId_QNAME = new QName("http://xml.comcast.com/location/types", "PSAPId");
-    private final static QName _TelephonyTypeRateCenterCertification_QNAME = new QName("http://xml.comcast.com/location/types", "rateCenterCertification");
-    private final static QName _GetMsagDataGetMsagData_QNAME = new QName("http://xml.comcast.com/location/services", "GetMsagData");
-    private final static QName _GetBusinessServiceabilityResponseTypeBusinessServiceabilityResponses_QNAME = new QName("http://xml.comcast.com/location/types", "BusinessServiceabilityResponses");
-    private final static QName _QueryLocationXfinityResponseQueryLocationXfinityReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryLocationXfinityReturn");
-    private final static QName _BusinessServiceabilityTypeTransport_QNAME = new QName("http://xml.comcast.com/location/types", "Transport");
-    private final static QName _BusinessServiceabilityTypeAttributes_QNAME = new QName("http://xml.comcast.com/location/types", "Attributes");
-    private final static QName _BusinessServiceabilityTypeSupportedProducts_QNAME = new QName("http://xml.comcast.com/location/types", "SupportedProducts");
-    private final static QName _QueryLocationResponseQueryLocationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryLocationReturn");
-    private final static QName _ModifySingleViewAddressAssociationResponseModifySingleViewAddressAssociationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "modifySingleViewAddressAssociationReturn");
-    private final static QName _GeocodingResultsTypeLatitude_QNAME = new QName("http://xml.comcast.com/location/types", "latitude");
-    private final static QName _GeocodingResultsTypeGeocodingPrecision_QNAME = new QName("http://xml.comcast.com/location/types", "geocodingPrecision");
-    private final static QName _GeocodingResultsTypeCensusBlock_QNAME = new QName("http://xml.comcast.com/location/types", "censusBlock");
-    private final static QName _GeocodingResultsTypeUrbanization_QNAME = new QName("http://xml.comcast.com/location/types", "urbanization");
-    private final static QName _GeocodingResultsTypeLongitude_QNAME = new QName("http://xml.comcast.com/location/types", "longitude");
-    private final static QName _AddE911AddressResponseAddE911AddressReturn_QNAME = new QName("http://xml.comcast.com/location/services", "addE911AddressReturn");
-    private final static QName _AddE911AddressAddE911Address_QNAME = new QName("http://xml.comcast.com/location/services", "AddE911Address");
-    private final static QName _BusinessServiceabilityResponseItemTypeStandardizeAddress_QNAME = new QName("http://xml.comcast.com/location/types", "StandardizeAddress");
-    private final static QName _PostalAddressUpdateTypeCity_QNAME = new QName("http://xml.comcast.com/location/types", "city");
-    private final static QName _PostalAddressUpdateTypeStreetName_QNAME = new QName("http://xml.comcast.com/location/types", "streetName");
-    private final static QName _PostalAddressUpdateTypeState_QNAME = new QName("http://xml.comcast.com/location/types", "state");
-    private final static QName _LegacyMarketIDTypeCSGMarketID_QNAME = new QName("http://xml.comcast.com/location/types", "CSGMarketID");
-    private final static QName _LegacyMarketIDTypeDSTMarketID_QNAME = new QName("http://xml.comcast.com/location/types", "DSTMarketID");
-    private final static QName _NodeTypeElocNodeID_QNAME = new QName("http://xml.comcast.com/location/types", "elocNodeID");
-    private final static QName _NodeTypeNodeCapabilities_QNAME = new QName("http://xml.comcast.com/location/types", "nodeCapabilities");
-    private final static QName _NodeTypeAlternateNodeNames_QNAME = new QName("http://xml.comcast.com/location/types", "alternateNodeNames");
-    private final static QName _NodeTypeNodeHubLocation_QNAME = new QName("http://xml.comcast.com/location/types", "nodeHubLocation");
-    private final static QName _NodeTypeNodeBoundary_QNAME = new QName("http://xml.comcast.com/location/types", "nodeBoundary");
-    private final static QName _NodeTypeNodeBoundaryType_QNAME = new QName("http://xml.comcast.com/location/types", "nodeBoundaryType");
-    private final static QName _NodeTypeNodeName_QNAME = new QName("http://xml.comcast.com/location/types", "nodeName");
-    private final static QName _NodeTypeHubID_QNAME = new QName("http://xml.comcast.com/location/types", "hubID");
-    private final static QName _NodeTypeElocMarketID_QNAME = new QName("http://xml.comcast.com/location/types", "elocMarketID");
-    private final static QName _NodeTypeNodeStatus_QNAME = new QName("http://xml.comcast.com/location/types", "nodeStatus");
-    private final static QName _NodeTypeNodeDescription_QNAME = new QName("http://xml.comcast.com/location/types", "nodeDescription");
-    private final static QName _NodeTypePlannedAvailabilityDate_QNAME = new QName("http://xml.comcast.com/location/types", "plannedAvailabilityDate");
-    private final static QName _NodeTypeNodePaths_QNAME = new QName("http://xml.comcast.com/location/types", "nodePaths");
-    private final static QName _GetBillingSystemFormattedAddressResponseGetBillingSystemFormattedAddressReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getBillingSystemFormattedAddressReturn");
-    private final static QName _GetBusinessServiceabilityGetBusinessServiceabilityRequest_QNAME = new QName("http://xml.comcast.com/location/services", "GetBusinessServiceabilityRequest");
-    private final static QName _DeleteLocationFromBillingResponseDeleteLocationFromBillingReturn_QNAME = new QName("http://xml.comcast.com/location/services", "deleteLocationFromBillingReturn");
-    private final static QName _MarketHierarchyResponseTypeHierarchyID_QNAME = new QName("http://xml.comcast.com/location/types", "hierarchyID");
-    private final static QName _ModifyLocationQueueAddressTypeStreetAddress_QNAME = new QName("http://xml.comcast.com/location/types", "streetAddress");
-    private final static QName _MarketReferenceTypeLegacyMarketID_QNAME = new QName("http://xml.comcast.com/location/types", "legacyMarketID");
-    private final static QName _QueryLocationByRuleResponseQueryLocationByRuleReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryLocationByRuleReturn");
-    private final static QName _DeleteNodeResponseDeleteNodeReturn_QNAME = new QName("http://xml.comcast.com/location/services", "deleteNodeReturn");
-    private final static QName _GeospatialSearchCriteriaTypeNearestNeighborCriteria_QNAME = new QName("http://xml.comcast.com/location/types", "NearestNeighborCriteria");
-    private final static QName _GeospatialSearchCriteriaTypeBoundaryCriteria_QNAME = new QName("http://xml.comcast.com/location/types", "BoundaryCriteria");
-    private final static QName _GetLocationResponseGetLocationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getLocationReturn");
-    private final static QName _QueryMarketByBoundaryRequestTypeStateCode_QNAME = new QName("http://xml.comcast.com/location/types", "stateCode");
-    private final static QName _AddLocationResponseAddLocationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "addLocationReturn");
-    private final static QName _QueryMarketByBoundaryResponseQueryMarketByBoundaryReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryMarketByBoundaryReturn");
-    private final static QName _RefreshCacheRefreshCache_QNAME = new QName("http://xml.comcast.com/location/services", "RefreshCache");
-    private final static QName _QueryLocationDetailsResponseQueryLocationDetailsReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryLocationDetailsReturn");
-    private final static QName _GetGeoTagResponseGetGeoTagReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getGeoTagReturn");
-    private final static QName _LocationDetailsUpdateTypeLocationComments_QNAME = new QName("http://xml.comcast.com/location/types", "LocationComments");
-    private final static QName _LocationDetailsUpdateTypeAddressGroupID_QNAME = new QName("http://xml.comcast.com/location/types", "AddressGroupID");
-    private final static QName _QueryLocationResponseTypeMarketReference_QNAME = new QName("http://xml.comcast.com/location/types", "marketReference");
-    private final static QName _QueryLocationResponseTypeLocation_QNAME = new QName("http://xml.comcast.com/location/types", "location");
-    private final static QName _QueryLocationResponseTypeLocationReference_QNAME = new QName("http://xml.comcast.com/location/types", "locationReference");
-    private final static QName _AddNodeAddNode_QNAME = new QName("http://xml.comcast.com/location/services", "AddNode");
-    private final static QName _GetNodeResponseGetNodeReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getNodeReturn");
-    private final static QName _ModifyMarketResponseModifyMarketReturn_QNAME = new QName("http://xml.comcast.com/location/services", "modifyMarketReturn");
-    private final static QName _GeocodedAddressTypeCloseMatch_QNAME = new QName("http://xml.comcast.com/location/types", "closeMatch");
-    private final static QName _GeocodedAddressTypeStreetSide_QNAME = new QName("http://xml.comcast.com/location/types", "streetSide");
-    private final static QName _GeocodedAddressTypeCensusBlock_QNAME = new QName("http://xml.comcast.com/location/types", "CensusBlock");
-    private final static QName _GeocodedAddressTypeZipCode_QNAME = new QName("http://xml.comcast.com/location/types", "zipCode");
-    private final static QName _GeocodedAddressTypeCensusTract_QNAME = new QName("http://xml.comcast.com/location/types", "CensusTract");
-    private final static QName _AssociateSingleViewAddressAssociateSingleViewAddress_QNAME = new QName("http://xml.comcast.com/location/services", "AssociateSingleViewAddress");
-    private final static QName _CopyDuplicateHouseToBillingCopyDuplicateHouseToBilling_QNAME = new QName("http://xml.comcast.com/location/services", "CopyDuplicateHouseToBilling");
-    private final static QName _QueryMsagDataResponseQueryMsagDataReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryMsagDataReturn");
-    private final static QName _GetNodeGetNode_QNAME = new QName("http://xml.comcast.com/location/services", "GetNode");
-    private final static QName _NodeReferenceTypeMarketID_QNAME = new QName("http://xml.comcast.com/location/types", "marketID");
-    private final static QName _QueryLocationGeospatialQueryLocationGeospatial_QNAME = new QName("http://xml.comcast.com/location/services", "QueryLocationGeospatial");
-    private final static QName _GetLocationInformationResponseTypeFiberNodeName_QNAME = new QName("http://xml.comcast.com/location/types", "fiberNodeName");
-    private final static QName _AddLocationQueueAddLocationQueue_QNAME = new QName("http://xml.comcast.com/location/services", "AddLocationQueue");
-    private final static QName _ModifyHomeSecurityResponseModifyHomeSecurityReturn_QNAME = new QName("http://xml.comcast.com/location/services", "modifyHomeSecurityReturn");
-    private final static QName _QueryLocationQueryLocation_QNAME = new QName("http://xml.comcast.com/location/services", "QueryLocation");
-    private final static QName _LocationLegacyDetailsTypeDSTLegacyDetails_QNAME = new QName("http://xml.comcast.com/location/types", "DSTLegacyDetails");
-    private final static QName _LocationLegacyDetailsTypeCSGLegacyDetails_QNAME = new QName("http://xml.comcast.com/location/types", "CSGLegacyDetails");
-    private final static QName _StandardizeAddressByRuleStandardizeAddressByRule_QNAME = new QName("http://xml.comcast.com/location/services", "StandardizeAddressByRule");
-    private final static QName _QueryMarketQueryMarket_QNAME = new QName("http://xml.comcast.com/location/services", "QueryMarket");
-    private final static QName _GetLocationXfinityRequestedResultsTypeMarketHierarchyInfo_QNAME = new QName("http://xml.comcast.com/location/types", "marketHierarchyInfo");
-    private final static QName _QueryLocationByRuleRequestTypeAddressSearch_QNAME = new QName("http://xml.comcast.com/location/types", "addressSearch");
-    private final static QName _GetMarketResponseGetMarketReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getMarketReturn");
-    private final static QName _ModifyMarketModifyMarket_QNAME = new QName("http://xml.comcast.com/location/services", "ModifyMarket");
-    private final static QName _StandardizeAddressByRuleRequestTypeApplyConsumerRule_QNAME = new QName("http://xml.comcast.com/location/types", "applyConsumerRule");
-    private final static QName _ModifyHomeSecurityModifyHomeSecurity_QNAME = new QName("http://xml.comcast.com/location/services", "ModifyHomeSecurity");
-    private final static QName _BuildingAttributesTypeBuildingCategory_QNAME = new QName("http://xml.comcast.com/location/types", "BuildingCategory");
-    private final static QName _GetLocationXfinityResponseGetLocationXfinityReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getLocationXfinityReturn");
-    private final static QName _GetMarketGetMarket_QNAME = new QName("http://xml.comcast.com/location/services", "GetMarket");
-    private final static QName _QueryNodeResponseQueryNodeReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryNodeReturn");
-    private final static QName _DeleteLocationDeleteLocation_QNAME = new QName("http://xml.comcast.com/location/services", "DeleteLocation");
-    private final static QName _ModifyLocationQueueResponseModifyLocationQueueReturn_QNAME = new QName("http://xml.comcast.com/location/services", "modifyLocationQueueReturn");
-    private final static QName _QueryLocationReferenceDataResponseQueryLocationReferenceDataReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryLocationReferenceDataReturn");
-    private final static QName _StandardizeAddressStandardizeAddress_QNAME = new QName("http://xml.comcast.com/location/services", "StandardizeAddress");
-    private final static QName _LocationDetailsTypeStructureType_QNAME = new QName("http://xml.comcast.com/location/types", "StructureType");
-    private final static QName _LocationDetailsTypeStructureUse_QNAME = new QName("http://xml.comcast.com/location/types", "StructureUse");
-    private final static QName _AddLocationAddLocation_QNAME = new QName("http://xml.comcast.com/location/services", "AddLocation");
-    private final static QName _GetLocationFromBillerResponseGetLocationFromBillerReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getLocationFromBillerReturn");
-    private final static QName _UpdateLocationInBillingResponseUpdateLocationInBillingReturn_QNAME = new QName("http://xml.comcast.com/location/services", "updateLocationInBillingReturn");
-    private final static QName _GetLocationFromBillerGetLocationFromBiller_QNAME = new QName("http://xml.comcast.com/location/services", "GetLocationFromBiller");
-    private final static QName _QueryLocationByRuleQueryLocationByRule_QNAME = new QName("http://xml.comcast.com/location/services", "QueryLocationByRule");
-    private final static QName _LocationServiceabilityUpdateTypeUpdateAction_QNAME = new QName("http://xml.comcast.com/location/types", "updateAction");
-    private final static QName _LocationServiceabilityUpdateTypeServiceableFlag_QNAME = new QName("http://xml.comcast.com/location/types", "serviceableFlag");
-    private final static QName _VerifyLocationResponseVerifyLocationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "verifyLocationReturn");
-    private final static QName _GetLocationQueueResponseGetLocationQueueReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getLocationQueueReturn");
-    private final static QName _DeleteMarketResponseDeleteMarketReturn_QNAME = new QName("http://xml.comcast.com/location/services", "deleteMarketReturn");
-    private final static QName _GeographicCoordinateMeasurementTypeElevation_QNAME = new QName("http://xml.comcast.com/location/types", "Elevation");
-    private final static QName _StandardizeAddressXfinityResponseTypeAddresses_QNAME = new QName("http://xml.comcast.com/location/types", "addresses");
-    private final static QName _ModifyLocationRequestDetailsTypeMarketID_QNAME = new QName("http://xml.comcast.com/location/types", "MarketID");
-    private final static QName _ModifyLocationRequestDetailsTypeLocationPostalAddress_QNAME = new QName("http://xml.comcast.com/location/types", "LocationPostalAddress");
-    private final static QName _QueryMsagDataQueryMsagData_QNAME = new QName("http://xml.comcast.com/location/services", "QueryMsagData");
-    private final static QName _ModifyLocationModifyLocation_QNAME = new QName("http://xml.comcast.com/location/services", "ModifyLocation");
-    private final static QName _LocationTelephonyTypeRateCenterName_QNAME = new QName("http://xml.comcast.com/location/types", "RateCenterName");
-    private final static QName _LocationLegacyDetailsCSGTypeLocationStatus_QNAME = new QName("http://xml.comcast.com/location/types", "locationStatus");
-    private final static QName _LocationLegacyDetailsCSGTypeCustomerType_QNAME = new QName("http://xml.comcast.com/location/types", "customerType");
-    private final static QName _LocationLegacyDetailsCSGTypeUnincorporatedFlag_QNAME = new QName("http://xml.comcast.com/location/types", "unincorporatedFlag");
-    private final static QName _LocationLegacyDetailsCSGTypeDwellingCodeDescr_QNAME = new QName("http://xml.comcast.com/location/types", "dwellingCodeDescr");
-    private final static QName _LocationLegacyDetailsCSGTypePoleOwner_QNAME = new QName("http://xml.comcast.com/location/types", "poleOwner");
-    private final static QName _LocationLegacyDetailsCSGTypeAddressLine2Override_QNAME = new QName("http://xml.comcast.com/location/types", "addressLine2Override");
-    private final static QName _LocationLegacyDetailsCSGTypeSalesArea_QNAME = new QName("http://xml.comcast.com/location/types", "salesArea");
-    private final static QName _LocationLegacyDetailsCSGTypeHookupType_QNAME = new QName("http://xml.comcast.com/location/types", "hookupType");
-    private final static QName _LocationLegacyDetailsCSGTypePedestal_QNAME = new QName("http://xml.comcast.com/location/types", "pedestal");
-    private final static QName _LocationLegacyDetailsCSGTypeLastCallDate_QNAME = new QName("http://xml.comcast.com/location/types", "lastCallDate");
-    private final static QName _LocationLegacyDetailsCSGTypeHouseComments_QNAME = new QName("http://xml.comcast.com/location/types", "houseComments");
-    private final static QName _LocationLegacyDetailsCSGTypeCell_QNAME = new QName("http://xml.comcast.com/location/types", "cell");
-    private final static QName _LocationLegacyDetailsCSGTypeDropLength_QNAME = new QName("http://xml.comcast.com/location/types", "dropLength");
-    private final static QName _LocationLegacyDetailsCSGTypeLineTag_QNAME = new QName("http://xml.comcast.com/location/types", "lineTag");
-    private final static QName _LocationLegacyDetailsCSGTypePowerSupply_QNAME = new QName("http://xml.comcast.com/location/types", "powerSupply");
-    private final static QName _LocationLegacyDetailsCSGTypeLocationType_QNAME = new QName("http://xml.comcast.com/location/types", "locationType");
-    private final static QName _LocationLegacyDetailsCSGTypeDemographicCode_QNAME = new QName("http://xml.comcast.com/location/types", "demographicCode");
-    private final static QName _LocationLegacyDetailsCSGTypeHub_QNAME = new QName("http://xml.comcast.com/location/types", "hub");
-    private final static QName _LocationLegacyDetailsCSGTypeHouseMisc_QNAME = new QName("http://xml.comcast.com/location/types", "houseMisc");
-    private final static QName _LocationLegacyDetailsCSGTypeRightOfEntryPermission_QNAME = new QName("http://xml.comcast.com/location/types", "rightOfEntryPermission");
-    private final static QName _LocationLegacyDetailsCSGTypeDropType_QNAME = new QName("http://xml.comcast.com/location/types", "dropType");
-    private final static QName _LocationLegacyDetailsCSGTypeHouseUsageCode_QNAME = new QName("http://xml.comcast.com/location/types", "houseUsageCode");
-    private final static QName _LocationLegacyDetailsCSGTypeTechnicianArea_QNAME = new QName("http://xml.comcast.com/location/types", "technicianArea");
-    private final static QName _LocationLegacyDetailsCSGTypeMapCode_QNAME = new QName("http://xml.comcast.com/location/types", "mapCode");
-    private final static QName _LocationLegacyDetailsCSGTypePoleNumber_QNAME = new QName("http://xml.comcast.com/location/types", "poleNumber");
-    private final static QName _LocationLegacyDetailsCSGTypeBridgerAddress_QNAME = new QName("http://xml.comcast.com/location/types", "bridgerAddress");
-    private final static QName _LocationLegacyDetailsCSGTypeLastCallStatus_QNAME = new QName("http://xml.comcast.com/location/types", "lastCallStatus");
-    private final static QName _LocationLegacyDetailsCSGTypeAmplifier_QNAME = new QName("http://xml.comcast.com/location/types", "amplifier");
-    private final static QName _LocationLegacyDetailsCSGTypeGround_QNAME = new QName("http://xml.comcast.com/location/types", "ground");
-    private final static QName _LocationLegacyDetailsCSGTypeServiceArea_QNAME = new QName("http://xml.comcast.com/location/types", "serviceArea");
-    private final static QName _LocationLegacyDetailsCSGTypeDropSite_QNAME = new QName("http://xml.comcast.com/location/types", "dropSite");
-    private final static QName _LocationLegacyDetailsCSGTypeTimeZone_QNAME = new QName("http://xml.comcast.com/location/types", "timeZone");
-    private final static QName _LocationLegacyDetailsCSGTypeLocationCountyID_QNAME = new QName("http://xml.comcast.com/location/types", "locationCountyID");
-    private final static QName _QueryLocationReferenceDataQueryLocationReferenceData_QNAME = new QName("http://xml.comcast.com/location/services", "QueryLocationReferenceData");
-    private final static QName _DeleteNodeDeleteNode_QNAME = new QName("http://xml.comcast.com/location/services", "DeleteNode");
-    private final static QName _HomeSecurityContactNumbersTypeMedicalNumber_QNAME = new QName("http://xml.comcast.com/location/types", "medicalNumber");
-    private final static QName _HomeSecurityContactNumbersTypePoliceNumber_QNAME = new QName("http://xml.comcast.com/location/types", "policeNumber");
-    private final static QName _HomeSecurityContactNumbersTypeFireNumber_QNAME = new QName("http://xml.comcast.com/location/types", "fireNumber");
-    private final static QName _QueryMarketResponseTypeVendorMarketReference_QNAME = new QName("http://xml.comcast.com/location/types", "vendorMarketReference");
-    private final static QName _GetLocationXfinityGetLocationXfinity_QNAME = new QName("http://xml.comcast.com/location/services", "GetLocationXfinity");
-    private final static QName _RefreshCacheResponseRefreshCacheReturn_QNAME = new QName("http://xml.comcast.com/location/services", "refreshCacheReturn");
-    private final static QName _GetLocationInformationGetLocationInformation_QNAME = new QName("http://xml.comcast.com/location/services", "GetLocationInformation");
-    private final static QName _AddMarketAddMarket_QNAME = new QName("http://xml.comcast.com/location/services", "AddMarket");
-    private final static QName _LocationGeographyTypePlaceName_QNAME = new QName("http://xml.comcast.com/location/types", "PlaceName");
-    private final static QName _LocationGeographyTypeMinorCivilDivision_QNAME = new QName("http://xml.comcast.com/location/types", "MinorCivilDivision");
-    private final static QName _LocationGeographyTypeFIPSCode_QNAME = new QName("http://xml.comcast.com/location/types", "FIPSCode");
-    private final static QName _LocationGeographyTypeCountyName_QNAME = new QName("http://xml.comcast.com/location/types", "CountyName");
-    private final static QName _LocationGeographyTypeVertexCode_QNAME = new QName("http://xml.comcast.com/location/types", "VertexCode");
-    private final static QName _ModifyNodeResponseModifyNodeReturn_QNAME = new QName("http://xml.comcast.com/location/services", "modifyNodeReturn");
-    private final static QName _UpdateLocationFromBillingUpdateLocationFromBilling_QNAME = new QName("http://xml.comcast.com/location/services", "UpdateLocationFromBilling");
-    private final static QName _StandardizeAddressXfinityResponseItemTypeStandardizedAddresses_QNAME = new QName("http://xml.comcast.com/location/types", "standardizedAddresses");
-    private final static QName _ModifyLocationQueueRequestTypeModifyLocationQueueRequests_QNAME = new QName("http://xml.comcast.com/location/types", "ModifyLocationQueueRequests");
-    private final static QName _BusinessServiceabilityAttributesTypeBuildingAttribute_QNAME = new QName("http://xml.comcast.com/location/types", "BuildingAttribute");
-    private final static QName _QueryLocationQueueQueryLocationQueue_QNAME = new QName("http://xml.comcast.com/location/services", "QueryLocationQueue");
-    private final static QName _CopyDuplicateHouseToBillingResponseCopyDuplicateHouseToBillingReturn_QNAME = new QName("http://xml.comcast.com/location/services", "copyDuplicateHouseToBillingReturn");
-    private final static QName _LocationLegacyDetailsDSTTypeComplex_QNAME = new QName("http://xml.comcast.com/location/types", "complex");
-    private final static QName _LocationLegacyDetailsDSTTypeMkt_QNAME = new QName("http://xml.comcast.com/location/types", "mkt");
-    private final static QName _LocationLegacyDetailsDSTTypeAuxX1_QNAME = new QName("http://xml.comcast.com/location/types", "auxX1");
-    private final static QName _LocationLegacyDetailsDSTTypeAuxX3_QNAME = new QName("http://xml.comcast.com/location/types", "auxX3");
-    private final static QName _LocationLegacyDetailsDSTTypeDual_QNAME = new QName("http://xml.comcast.com/location/types", "dual");
-    private final static QName _LocationLegacyDetailsDSTTypeDualHouse_QNAME = new QName("http://xml.comcast.com/location/types", "dualHouse");
-    private final static QName _LocationLegacyDetailsDSTTypeAuxX2_QNAME = new QName("http://xml.comcast.com/location/types", "auxX2");
-    private final static QName _LocationLegacyDetailsDSTTypeMap_QNAME = new QName("http://xml.comcast.com/location/types", "map");
-    private final static QName _LocationLegacyDetailsDSTTypeConstructionArea_QNAME = new QName("http://xml.comcast.com/location/types", "constructionArea");
-    private final static QName _LocationLegacyDetailsDSTTypeInfo_QNAME = new QName("http://xml.comcast.com/location/types", "info");
-    private final static QName _LocationLegacyDetailsDSTTypeDupHouse_QNAME = new QName("http://xml.comcast.com/location/types", "dupHouse");
-    private final static QName _LocationLegacyDetailsDSTTypeHouseComment_QNAME = new QName("http://xml.comcast.com/location/types", "houseComment");
-    private final static QName _LocationLegacyDetailsDSTTypeDrop_QNAME = new QName("http://xml.comcast.com/location/types", "drop");
-    private final static QName _LocationLegacyDetailsDSTTypeAuxY6_QNAME = new QName("http://xml.comcast.com/location/types", "auxY6");
-    private final static QName _LocationLegacyDetailsDSTTypeDwellingTypeCode_QNAME = new QName("http://xml.comcast.com/location/types", "dwellingTypeCode");
-    private final static QName _LocationLegacyDetailsDSTTypeAuxY7_QNAME = new QName("http://xml.comcast.com/location/types", "auxY7");
-    private final static QName _LocationLegacyDetailsDSTTypeControlArea_QNAME = new QName("http://xml.comcast.com/location/types", "controlArea");
-    private final static QName _LocationLegacyDetailsDSTTypeAuxY2_QNAME = new QName("http://xml.comcast.com/location/types", "auxY2");
-    private final static QName _LocationLegacyDetailsDSTTypeAuxY1_QNAME = new QName("http://xml.comcast.com/location/types", "auxY1");
-    private final static QName _LocationLegacyDetailsDSTTypeNetworkInfo_QNAME = new QName("http://xml.comcast.com/location/types", "networkInfo");
-    private final static QName _LocationLegacyDetailsDSTTypeAuxY3_QNAME = new QName("http://xml.comcast.com/location/types", "auxY3");
-    private final static QName _LocationLegacyDetailsDSTTypeNetworkID_QNAME = new QName("http://xml.comcast.com/location/types", "networkID");
-    private final static QName _LocationLegacyDetailsDSTTypeCustomerNumber_QNAME = new QName("http://xml.comcast.com/location/types", "customerNumber");
-    private final static QName _LocationLegacyDetailsDSTTypeSalesRoute_QNAME = new QName("http://xml.comcast.com/location/types", "salesRoute");
-    private final static QName _AddMsagDataResponseAddMsagDataReturn_QNAME = new QName("http://xml.comcast.com/location/services", "addMsagDataReturn");
-    private final static QName _GeocodingConstraintsTypeCustomMatchModeSettings_QNAME = new QName("http://xml.comcast.com/location/types", "customMatchModeSettings");
-    private final static QName _ModifyLocationQueueModifyLocationQueue_QNAME = new QName("http://xml.comcast.com/location/services", "ModifyLocationQueue");
-    private final static QName _ModifyLocationResponseModifyLocationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "modifyLocationReturn");
-    private final static QName _DeleteSingleViewAddressAssociationResponseDeleteSingleViewAddressAssociationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "deleteSingleViewAddressAssociationReturn");
-    private final static QName _GetLocationQueueGetLocationQueue_QNAME = new QName("http://xml.comcast.com/location/services", "GetLocationQueue");
-    private final static QName _DeleteLocationResponseDeleteLocationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "deleteLocationReturn");
-    private final static QName _AssociateSingleViewAddressResponseAssociateSingleViewAddressReturn_QNAME = new QName("http://xml.comcast.com/location/services", "associateSingleViewAddressReturn");
-    private final static QName _LocationQueueModifyContactInfoTypeNTID_QNAME = new QName("http://xml.comcast.com/location/types", "NTID");
-    private final static QName _LocationQueueModifyContactInfoTypePhone_QNAME = new QName("http://xml.comcast.com/location/types", "phone");
-    private final static QName _LocationQueueModifyContactInfoTypeOrganization_QNAME = new QName("http://xml.comcast.com/location/types", "organization");
-    private final static QName _LocationQueueModifyContactInfoTypeEmail_QNAME = new QName("http://xml.comcast.com/location/types", "email");
-    private final static QName _LocationQueueModifyContactInfoTypeName_QNAME = new QName("http://xml.comcast.com/location/types", "name");
-    private final static QName _QueryLocationDetailsQueryLocationDetails_QNAME = new QName("http://xml.comcast.com/location/services", "QueryLocationDetails");
-    private final static QName _QueryLocationQueueResponseQueryLocationQueueReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryLocationQueueReturn");
-    private final static QName _MarketHierarchyLevelInfoMarketHierarchy_QNAME = new QName("http://xml.comcast.com/location/types", "marketHierarchy");
-    private final static QName _BillingSystemFormattedAddressesTypeDdpFormattedAddress_QNAME = new QName("http://xml.comcast.com/location/types", "ddpFormattedAddress");
-    private final static QName _BillingSystemFormattedAddressesTypeCsgFormattedAddress_QNAME = new QName("http://xml.comcast.com/location/types", "csgFormattedAddress");
-    private final static QName _LocationLegacyDetailsCSGBridgerTypeBridgerPrivate_QNAME = new QName("http://xml.comcast.com/location/types", "bridgerPrivate");
-    private final static QName _LocationLegacyDetailsCSGBridgerTypeBridgerBidirectional_QNAME = new QName("http://xml.comcast.com/location/types", "bridgerBidirectional");
-    private final static QName _LocationLegacyDetailsCSGBridgerTypeBridgerGateControl_QNAME = new QName("http://xml.comcast.com/location/types", "bridgerGateControl");
-    private final static QName _AddMarketResponseAddMarketReturn_QNAME = new QName("http://xml.comcast.com/location/services", "addMarketReturn");
-    private final static QName _QueryMarketByBoundaryQueryMarketByBoundary_QNAME = new QName("http://xml.comcast.com/location/services", "QueryMarketByBoundary");
-    private final static QName _LocationQueueReferenceTypeRequestedPriority_QNAME = new QName("http://xml.comcast.com/location/types", "RequestedPriority");
-    private final static QName _DSTLegacyMarketTypeManagementArea_QNAME = new QName("http://xml.comcast.com/location/types", "ManagementArea");
-    private final static QName _DSTLegacyMarketTypeFranchiseTaxArea_QNAME = new QName("http://xml.comcast.com/location/types", "FranchiseTaxArea");
-    private final static QName _CopyLocationToBillingCopyLocationToBilling_QNAME = new QName("http://xml.comcast.com/location/services", "CopyLocationToBilling");
-    private final static QName _StandardizeAddressXfinityStandardizeAddressXfinity_QNAME = new QName("http://xml.comcast.com/location/services", "StandardizeAddressXfinity");
-    private final static QName _StandardizeAddressXfinityResponseStandardizeAddressXfinityReturn_QNAME = new QName("http://xml.comcast.com/location/services", "standardizeAddressXfinityReturn");
-    private final static QName _SeasonalSuspendTypeEnabled_QNAME = new QName("http://xml.comcast.com/location/types", "enabled");
-    private final static QName _SeasonalSuspendTypePreDateTotalDaysAllowed_QNAME = new QName("http://xml.comcast.com/location/types", "preDateTotalDaysAllowed");
-    private final static QName _DeleteMsagAddressAssociationDeleteMsagAddressAssociation_QNAME = new QName("http://xml.comcast.com/location/services", "DeleteMsagAddressAssociation");
-    private final static QName _QueryLocationGeospatialResponseQueryLocationGeospatialReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryLocationGeospatialReturn");
-    private final static QName _GetMsagDataResponseGetMsagDataReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getMsagDataReturn");
-    private final static QName _DeleteE911AddressResponseDeleteE911AddressReturn_QNAME = new QName("http://xml.comcast.com/location/services", "deleteE911AddressReturn");
-    private final static QName _UpdateLocationInBillingUpdateLocationInBilling_QNAME = new QName("http://xml.comcast.com/location/services", "UpdateLocationInBilling");
-    private final static QName _QueryMarketResponseQueryMarketReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryMarketReturn");
-    private final static QName _DeleteMarketDeleteMarket_QNAME = new QName("http://xml.comcast.com/location/services", "DeleteMarket");
-    private final static QName _DeleteLocationFromBillingDeleteLocationFromBilling_QNAME = new QName("http://xml.comcast.com/location/services", "DeleteLocationFromBilling");
-    private final static QName _ModifyLocationQueueRequestItemTypeNeedByDate_QNAME = new QName("http://xml.comcast.com/location/types", "NeedByDate");
-    private final static QName _ModifyLocationQueueRequestItemTypeComments_QNAME = new QName("http://xml.comcast.com/location/types", "Comments");
-    private final static QName _ModifyLocationQueueRequestItemTypeLocationQueueAddress_QNAME = new QName("http://xml.comcast.com/location/types", "LocationQueueAddress");
-    private final static QName _ModifyLocationQueueRequestItemTypeLeadID_QNAME = new QName("http://xml.comcast.com/location/types", "LeadID");
-    private final static QName _GetBusinessServiceabilityResponseGetBusinessServiceabilityReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getBusinessServiceabilityReturn");
-    private final static QName _ModifyNodeModifyNode_QNAME = new QName("http://xml.comcast.com/location/services", "ModifyNode");
-    private final static QName _DeleteSingleViewAddressAssociationDeleteSingleViewAddressAssociation_QNAME = new QName("http://xml.comcast.com/location/services", "DeleteSingleViewAddressAssociation");
-    private final static QName _UpdateMsagPriorityUpdateMsagPriority_QNAME = new QName("http://xml.comcast.com/location/services", "UpdateMsagPriority");
-    private final static QName _QueryMarketHierarchyQueryMarketHierarchy_QNAME = new QName("http://xml.comcast.com/location/services", "QueryMarketHierarchy");
-    private final static QName _GetLocationInformationResponseGetLocationInformationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "getLocationInformationReturn");
-    private final static QName _AddLocationQueueResponseAddLocationQueueReturn_QNAME = new QName("http://xml.comcast.com/location/services", "addLocationQueueReturn");
-    private final static QName _DeleteMsagAddressAssociationResponseDeleteMsagAddressAssociationReturn_QNAME = new QName("http://xml.comcast.com/location/services", "deleteMsagAddressAssociationReturn");
-    private final static QName _UnitTypesTypeUnitType_QNAME = new QName("http://xml.comcast.com/location/types", "unitType");
-    private final static QName _UnitTypesTypeUnitValue_QNAME = new QName("http://xml.comcast.com/location/types", "unitValue");
-    private final static QName _AlternateNodeNameAlternateNodeNameValue_QNAME = new QName("http://xml.comcast.com/location/types", "alternateNodeNameValue");
-    private final static QName _AlternateNodeNameAlternateNodeNameSequence_QNAME = new QName("http://xml.comcast.com/location/types", "alternateNodeNameSequence");
-    private final static QName _AddNodeResponseAddNodeReturn_QNAME = new QName("http://xml.comcast.com/location/services", "addNodeReturn");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeTapStatus_QNAME = new QName("http://xml.comcast.com/location/types", "tapStatus");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeProjectServiceDate_QNAME = new QName("http://xml.comcast.com/location/types", "projectServiceDate");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeLobSwitch_QNAME = new QName("http://xml.comcast.com/location/types", "lobSwitch");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeNode_QNAME = new QName("http://xml.comcast.com/location/types", "node");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeRouter_QNAME = new QName("http://xml.comcast.com/location/types", "router");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeNetworkInterfaceUnit_QNAME = new QName("http://xml.comcast.com/location/types", "networkInterfaceUnit");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeLobServiceStatus_QNAME = new QName("http://xml.comcast.com/location/types", "lobServiceStatus");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeInstalledOutlets_QNAME = new QName("http://xml.comcast.com/location/types", "installedOutlets");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeHeadend_QNAME = new QName("http://xml.comcast.com/location/types", "headend");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeDisableLOBServiceability_QNAME = new QName("http://xml.comcast.com/location/types", "disableLOBServiceability");
-    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeLobType_QNAME = new QName("http://xml.comcast.com/location/types", "lobType");
-    private final static QName _StandardizeAddressResponseStandardizeAddressReturn_QNAME = new QName("http://xml.comcast.com/location/services", "standardizeAddressReturn");
-    private final static QName _StandardizeAddressByRuleResponseStandardizeAddressByRuleReturn_QNAME = new QName("http://xml.comcast.com/location/services", "standardizeAddressByRuleReturn");
-    private final static QName _QueryNodeQueryNode_QNAME = new QName("http://xml.comcast.com/location/services", "QueryNode");
-    private final static QName _QueryMarketHierarchyResponseQueryMarketHierarchyReturn_QNAME = new QName("http://xml.comcast.com/location/services", "queryMarketHierarchyReturn");
-    private final static QName _AddMsagDataAddMsagData_QNAME = new QName("http://xml.comcast.com/location/services", "AddMsagData");
-    private final static QName _ModifySingleViewAddressAssociationModifySingleViewAddressAssociation_QNAME = new QName("http://xml.comcast.com/location/services", "ModifySingleViewAddressAssociation");
-    private final static QName _LocationNetworkConnectivityTypeHeadendID_QNAME = new QName("http://xml.comcast.com/location/types", "headendID");
-    private final static QName _LocationNetworkConnectivityTypeHeadendNetworkAddress_QNAME = new QName("http://xml.comcast.com/location/types", "headendNetworkAddress");
-    private final static QName _LocationNetworkConnectivityTypeDropLocation_QNAME = new QName("http://xml.comcast.com/location/types", "dropLocation");
-    private final static QName _DeleteE911AddressDeleteE911Address_QNAME = new QName("http://xml.comcast.com/location/services", "DeleteE911Address");
-    private final static QName _ZipCodeTypeZip4_QNAME = new QName("http://xml.comcast.com/location/types", "zip4");
-    private final static QName _BillerInformationTypeCSGLocationInformation_QNAME = new QName("http://xml.comcast.com/location/types", "CSGLocationInformation");
-    private final static QName _BillerInformationTypeDDPLocationInformation_QNAME = new QName("http://xml.comcast.com/location/types", "DDPLocationInformation");
+    private final static QName _RequestHeader_QNAME = new QName("http://xml.blackbean.com/types", "requestHeader");
+    private final static QName _ResponseHeader_QNAME = new QName("http://xml.blackbean.com/types", "responseHeader");
+    private final static QName _ServiceFault_QNAME = new QName("http://xml.blackbean.com/types", "serviceFault");
+    private final static QName _UpdateMsagPriorityResponseUpdateMsagPriorityReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "updateMsagPriorityReturn");
+    private final static QName _UpdateLocationFromBillingResponseUpdateLocationFromBillingReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "updateLocationFromBillingReturn");
+    private final static QName _CopyLocationToBillingResponseCopyLocationToBillingReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "copyLocationToBillingReturn");
+    private final static QName _VerifyLocationVerifyLocation_QNAME = new QName("http://xml.blackbean.com/location/services", "VerifyLocation");
+    private final static QName _LocationQueueAddressTypeUnitTypes_QNAME = new QName("http://xml.blackbean.com/location/types", "unitTypes");
+    private final static QName _LocationQueueAddressTypeCountry_QNAME = new QName("http://xml.blackbean.com/location/types", "country");
+    private final static QName _CopyDuplicateHouseToBillingRequestItemTypeTemplateHouseNumber_QNAME = new QName("http://xml.blackbean.com/location/types", "TemplateHouseNumber");
+    private final static QName _GetLocationGetLocation_QNAME = new QName("http://xml.blackbean.com/location/services", "GetLocation");
+    private final static QName _PostalAddressTypeDwellingCode_QNAME = new QName("http://xml.blackbean.com/location/types", "dwellingCode");
+    private final static QName _PostalAddressTypeStreetPreDirection_QNAME = new QName("http://xml.blackbean.com/location/types", "streetPreDirection");
+    private final static QName _PostalAddressTypeHouseNumberSuffix_QNAME = new QName("http://xml.blackbean.com/location/types", "houseNumberSuffix");
+    private final static QName _PostalAddressTypeHouseNumber_QNAME = new QName("http://xml.blackbean.com/location/types", "houseNumber");
+    private final static QName _PostalAddressTypeStreetPostDirection_QNAME = new QName("http://xml.blackbean.com/location/types", "streetPostDirection");
+    private final static QName _PostalAddressTypeStreetSuffix_QNAME = new QName("http://xml.blackbean.com/location/types", "streetSuffix");
+    private final static QName _PostalAddressTypeHouseNumberPrefix_QNAME = new QName("http://xml.blackbean.com/location/types", "houseNumberPrefix");
+    private final static QName _StandardizedAddressXfinityTypeGeocodedAddress_QNAME = new QName("http://xml.blackbean.com/location/types", "geocodedAddress");
+    private final static QName _StandardizedAddressXfinityTypeGeography_QNAME = new QName("http://xml.blackbean.com/location/types", "geography");
+    private final static QName _StandardizedAddressXfinityTypeTelephony_QNAME = new QName("http://xml.blackbean.com/location/types", "telephony");
+    private final static QName _StandardizedAddressXfinityTypeMsag_QNAME = new QName("http://xml.blackbean.com/location/types", "msag");
+    private final static QName _QueryLocationXfinityQueryLocationXfinity_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryLocationXfinity");
+    private final static QName _GetGeoTagGetGeoTag_QNAME = new QName("http://xml.blackbean.com/location/services", "GetGeoTag");
+    private final static QName _DeleteSingleViewAddressAssociationTypeSingleViewID_QNAME = new QName("http://xml.blackbean.com/location/types", "singleViewID");
+    private final static QName _DeleteSingleViewAddressAssociationTypeAddressID_QNAME = new QName("http://xml.blackbean.com/location/types", "addressID");
+    private final static QName _GetBillingSystemFormattedAddressGetBillingSystemFormattedAddress_QNAME = new QName("http://xml.blackbean.com/location/services", "GetBillingSystemFormattedAddress");
+    private final static QName _TelephonyTypeRateCenterName_QNAME = new QName("http://xml.blackbean.com/location/types", "rateCenterName");
+    private final static QName _TelephonyTypeTNOrderPool_QNAME = new QName("http://xml.blackbean.com/location/types", "TNOrderPool");
+    private final static QName _TelephonyTypeLATA_QNAME = new QName("http://xml.blackbean.com/location/types", "LATA");
+    private final static QName _TelephonyTypeWireCenter_QNAME = new QName("http://xml.blackbean.com/location/types", "wireCenter");
+    private final static QName _TelephonyTypeLATAName_QNAME = new QName("http://xml.blackbean.com/location/types", "LATAName");
+    private final static QName _TelephonyTypeRateCenterServiceable_QNAME = new QName("http://xml.blackbean.com/location/types", "rateCenterServiceable");
+    private final static QName _TelephonyTypeILECName_QNAME = new QName("http://xml.blackbean.com/location/types", "ILECName");
+    private final static QName _TelephonyTypePSAPAgency_QNAME = new QName("http://xml.blackbean.com/location/types", "PSAPAgency");
+    private final static QName _TelephonyTypePSAPId_QNAME = new QName("http://xml.blackbean.com/location/types", "PSAPId");
+    private final static QName _TelephonyTypeRateCenterCertification_QNAME = new QName("http://xml.blackbean.com/location/types", "rateCenterCertification");
+    private final static QName _GetMsagDataGetMsagData_QNAME = new QName("http://xml.blackbean.com/location/services", "GetMsagData");
+    private final static QName _GetBusinessServiceabilityResponseTypeBusinessServiceabilityResponses_QNAME = new QName("http://xml.blackbean.com/location/types", "BusinessServiceabilityResponses");
+    private final static QName _QueryLocationXfinityResponseQueryLocationXfinityReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryLocationXfinityReturn");
+    private final static QName _BusinessServiceabilityTypeTransport_QNAME = new QName("http://xml.blackbean.com/location/types", "Transport");
+    private final static QName _BusinessServiceabilityTypeAttributes_QNAME = new QName("http://xml.blackbean.com/location/types", "Attributes");
+    private final static QName _BusinessServiceabilityTypeSupportedProducts_QNAME = new QName("http://xml.blackbean.com/location/types", "SupportedProducts");
+    private final static QName _QueryLocationResponseQueryLocationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryLocationReturn");
+    private final static QName _ModifySingleViewAddressAssociationResponseModifySingleViewAddressAssociationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "modifySingleViewAddressAssociationReturn");
+    private final static QName _GeocodingResultsTypeLatitude_QNAME = new QName("http://xml.blackbean.com/location/types", "latitude");
+    private final static QName _GeocodingResultsTypeGeocodingPrecision_QNAME = new QName("http://xml.blackbean.com/location/types", "geocodingPrecision");
+    private final static QName _GeocodingResultsTypeCensusBlock_QNAME = new QName("http://xml.blackbean.com/location/types", "censusBlock");
+    private final static QName _GeocodingResultsTypeUrbanization_QNAME = new QName("http://xml.blackbean.com/location/types", "urbanization");
+    private final static QName _GeocodingResultsTypeLongitude_QNAME = new QName("http://xml.blackbean.com/location/types", "longitude");
+    private final static QName _AddE911AddressResponseAddE911AddressReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "addE911AddressReturn");
+    private final static QName _AddE911AddressAddE911Address_QNAME = new QName("http://xml.blackbean.com/location/services", "AddE911Address");
+    private final static QName _BusinessServiceabilityResponseItemTypeStandardizeAddress_QNAME = new QName("http://xml.blackbean.com/location/types", "StandardizeAddress");
+    private final static QName _PostalAddressUpdateTypeCity_QNAME = new QName("http://xml.blackbean.com/location/types", "city");
+    private final static QName _PostalAddressUpdateTypeStreetName_QNAME = new QName("http://xml.blackbean.com/location/types", "streetName");
+    private final static QName _PostalAddressUpdateTypeState_QNAME = new QName("http://xml.blackbean.com/location/types", "state");
+    private final static QName _LegacyMarketIDTypeCSGMarketID_QNAME = new QName("http://xml.blackbean.com/location/types", "CSGMarketID");
+    private final static QName _LegacyMarketIDTypeDSTMarketID_QNAME = new QName("http://xml.blackbean.com/location/types", "DSTMarketID");
+    private final static QName _NodeTypeElocNodeID_QNAME = new QName("http://xml.blackbean.com/location/types", "elocNodeID");
+    private final static QName _NodeTypeNodeCapabilities_QNAME = new QName("http://xml.blackbean.com/location/types", "nodeCapabilities");
+    private final static QName _NodeTypeAlternateNodeNames_QNAME = new QName("http://xml.blackbean.com/location/types", "alternateNodeNames");
+    private final static QName _NodeTypeNodeHubLocation_QNAME = new QName("http://xml.blackbean.com/location/types", "nodeHubLocation");
+    private final static QName _NodeTypeNodeBoundary_QNAME = new QName("http://xml.blackbean.com/location/types", "nodeBoundary");
+    private final static QName _NodeTypeNodeBoundaryType_QNAME = new QName("http://xml.blackbean.com/location/types", "nodeBoundaryType");
+    private final static QName _NodeTypeNodeName_QNAME = new QName("http://xml.blackbean.com/location/types", "nodeName");
+    private final static QName _NodeTypeHubID_QNAME = new QName("http://xml.blackbean.com/location/types", "hubID");
+    private final static QName _NodeTypeElocMarketID_QNAME = new QName("http://xml.blackbean.com/location/types", "elocMarketID");
+    private final static QName _NodeTypeNodeStatus_QNAME = new QName("http://xml.blackbean.com/location/types", "nodeStatus");
+    private final static QName _NodeTypeNodeDescription_QNAME = new QName("http://xml.blackbean.com/location/types", "nodeDescription");
+    private final static QName _NodeTypePlannedAvailabilityDate_QNAME = new QName("http://xml.blackbean.com/location/types", "plannedAvailabilityDate");
+    private final static QName _NodeTypeNodePaths_QNAME = new QName("http://xml.blackbean.com/location/types", "nodePaths");
+    private final static QName _GetBillingSystemFormattedAddressResponseGetBillingSystemFormattedAddressReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getBillingSystemFormattedAddressReturn");
+    private final static QName _GetBusinessServiceabilityGetBusinessServiceabilityRequest_QNAME = new QName("http://xml.blackbean.com/location/services", "GetBusinessServiceabilityRequest");
+    private final static QName _DeleteLocationFromBillingResponseDeleteLocationFromBillingReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "deleteLocationFromBillingReturn");
+    private final static QName _MarketHierarchyResponseTypeHierarchyID_QNAME = new QName("http://xml.blackbean.com/location/types", "hierarchyID");
+    private final static QName _ModifyLocationQueueAddressTypeStreetAddress_QNAME = new QName("http://xml.blackbean.com/location/types", "streetAddress");
+    private final static QName _MarketReferenceTypeLegacyMarketID_QNAME = new QName("http://xml.blackbean.com/location/types", "legacyMarketID");
+    private final static QName _QueryLocationByRuleResponseQueryLocationByRuleReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryLocationByRuleReturn");
+    private final static QName _DeleteNodeResponseDeleteNodeReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "deleteNodeReturn");
+    private final static QName _GeospatialSearchCriteriaTypeNearestNeighborCriteria_QNAME = new QName("http://xml.blackbean.com/location/types", "NearestNeighborCriteria");
+    private final static QName _GeospatialSearchCriteriaTypeBoundaryCriteria_QNAME = new QName("http://xml.blackbean.com/location/types", "BoundaryCriteria");
+    private final static QName _GetLocationResponseGetLocationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getLocationReturn");
+    private final static QName _QueryMarketByBoundaryRequestTypeStateCode_QNAME = new QName("http://xml.blackbean.com/location/types", "stateCode");
+    private final static QName _AddLocationResponseAddLocationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "addLocationReturn");
+    private final static QName _QueryMarketByBoundaryResponseQueryMarketByBoundaryReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryMarketByBoundaryReturn");
+    private final static QName _RefreshCacheRefreshCache_QNAME = new QName("http://xml.blackbean.com/location/services", "RefreshCache");
+    private final static QName _QueryLocationDetailsResponseQueryLocationDetailsReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryLocationDetailsReturn");
+    private final static QName _GetGeoTagResponseGetGeoTagReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getGeoTagReturn");
+    private final static QName _LocationDetailsUpdateTypeLocationComments_QNAME = new QName("http://xml.blackbean.com/location/types", "LocationComments");
+    private final static QName _LocationDetailsUpdateTypeAddressGroupID_QNAME = new QName("http://xml.blackbean.com/location/types", "AddressGroupID");
+    private final static QName _QueryLocationResponseTypeMarketReference_QNAME = new QName("http://xml.blackbean.com/location/types", "marketReference");
+    private final static QName _QueryLocationResponseTypeLocation_QNAME = new QName("http://xml.blackbean.com/location/types", "location");
+    private final static QName _QueryLocationResponseTypeLocationReference_QNAME = new QName("http://xml.blackbean.com/location/types", "locationReference");
+    private final static QName _AddNodeAddNode_QNAME = new QName("http://xml.blackbean.com/location/services", "AddNode");
+    private final static QName _GetNodeResponseGetNodeReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getNodeReturn");
+    private final static QName _ModifyMarketResponseModifyMarketReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "modifyMarketReturn");
+    private final static QName _GeocodedAddressTypeCloseMatch_QNAME = new QName("http://xml.blackbean.com/location/types", "closeMatch");
+    private final static QName _GeocodedAddressTypeStreetSide_QNAME = new QName("http://xml.blackbean.com/location/types", "streetSide");
+    private final static QName _GeocodedAddressTypeCensusBlock_QNAME = new QName("http://xml.blackbean.com/location/types", "CensusBlock");
+    private final static QName _GeocodedAddressTypeZipCode_QNAME = new QName("http://xml.blackbean.com/location/types", "zipCode");
+    private final static QName _GeocodedAddressTypeCensusTract_QNAME = new QName("http://xml.blackbean.com/location/types", "CensusTract");
+    private final static QName _AssociateSingleViewAddressAssociateSingleViewAddress_QNAME = new QName("http://xml.blackbean.com/location/services", "AssociateSingleViewAddress");
+    private final static QName _CopyDuplicateHouseToBillingCopyDuplicateHouseToBilling_QNAME = new QName("http://xml.blackbean.com/location/services", "CopyDuplicateHouseToBilling");
+    private final static QName _QueryMsagDataResponseQueryMsagDataReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryMsagDataReturn");
+    private final static QName _GetNodeGetNode_QNAME = new QName("http://xml.blackbean.com/location/services", "GetNode");
+    private final static QName _NodeReferenceTypeMarketID_QNAME = new QName("http://xml.blackbean.com/location/types", "marketID");
+    private final static QName _QueryLocationGeospatialQueryLocationGeospatial_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryLocationGeospatial");
+    private final static QName _GetLocationInformationResponseTypeFiberNodeName_QNAME = new QName("http://xml.blackbean.com/location/types", "fiberNodeName");
+    private final static QName _AddLocationQueueAddLocationQueue_QNAME = new QName("http://xml.blackbean.com/location/services", "AddLocationQueue");
+    private final static QName _ModifyHomeSecurityResponseModifyHomeSecurityReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "modifyHomeSecurityReturn");
+    private final static QName _QueryLocationQueryLocation_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryLocation");
+    private final static QName _LocationLegacyDetailsTypeDSTLegacyDetails_QNAME = new QName("http://xml.blackbean.com/location/types", "DSTLegacyDetails");
+    private final static QName _LocationLegacyDetailsTypeCSGLegacyDetails_QNAME = new QName("http://xml.blackbean.com/location/types", "CSGLegacyDetails");
+    private final static QName _StandardizeAddressByRuleStandardizeAddressByRule_QNAME = new QName("http://xml.blackbean.com/location/services", "StandardizeAddressByRule");
+    private final static QName _QueryMarketQueryMarket_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryMarket");
+    private final static QName _GetLocationXfinityRequestedResultsTypeMarketHierarchyInfo_QNAME = new QName("http://xml.blackbean.com/location/types", "marketHierarchyInfo");
+    private final static QName _QueryLocationByRuleRequestTypeAddressSearch_QNAME = new QName("http://xml.blackbean.com/location/types", "addressSearch");
+    private final static QName _GetMarketResponseGetMarketReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getMarketReturn");
+    private final static QName _ModifyMarketModifyMarket_QNAME = new QName("http://xml.blackbean.com/location/services", "ModifyMarket");
+    private final static QName _StandardizeAddressByRuleRequestTypeApplyConsumerRule_QNAME = new QName("http://xml.blackbean.com/location/types", "applyConsumerRule");
+    private final static QName _ModifyHomeSecurityModifyHomeSecurity_QNAME = new QName("http://xml.blackbean.com/location/services", "ModifyHomeSecurity");
+    private final static QName _BuildingAttributesTypeBuildingCategory_QNAME = new QName("http://xml.blackbean.com/location/types", "BuildingCategory");
+    private final static QName _GetLocationXfinityResponseGetLocationXfinityReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getLocationXfinityReturn");
+    private final static QName _GetMarketGetMarket_QNAME = new QName("http://xml.blackbean.com/location/services", "GetMarket");
+    private final static QName _QueryNodeResponseQueryNodeReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryNodeReturn");
+    private final static QName _DeleteLocationDeleteLocation_QNAME = new QName("http://xml.blackbean.com/location/services", "DeleteLocation");
+    private final static QName _ModifyLocationQueueResponseModifyLocationQueueReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "modifyLocationQueueReturn");
+    private final static QName _QueryLocationReferenceDataResponseQueryLocationReferenceDataReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryLocationReferenceDataReturn");
+    private final static QName _StandardizeAddressStandardizeAddress_QNAME = new QName("http://xml.blackbean.com/location/services", "StandardizeAddress");
+    private final static QName _LocationDetailsTypeStructureType_QNAME = new QName("http://xml.blackbean.com/location/types", "StructureType");
+    private final static QName _LocationDetailsTypeStructureUse_QNAME = new QName("http://xml.blackbean.com/location/types", "StructureUse");
+    private final static QName _AddLocationAddLocation_QNAME = new QName("http://xml.blackbean.com/location/services", "AddLocation");
+    private final static QName _GetLocationFromBillerResponseGetLocationFromBillerReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getLocationFromBillerReturn");
+    private final static QName _UpdateLocationInBillingResponseUpdateLocationInBillingReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "updateLocationInBillingReturn");
+    private final static QName _GetLocationFromBillerGetLocationFromBiller_QNAME = new QName("http://xml.blackbean.com/location/services", "GetLocationFromBiller");
+    private final static QName _QueryLocationByRuleQueryLocationByRule_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryLocationByRule");
+    private final static QName _LocationServiceabilityUpdateTypeUpdateAction_QNAME = new QName("http://xml.blackbean.com/location/types", "updateAction");
+    private final static QName _LocationServiceabilityUpdateTypeServiceableFlag_QNAME = new QName("http://xml.blackbean.com/location/types", "serviceableFlag");
+    private final static QName _VerifyLocationResponseVerifyLocationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "verifyLocationReturn");
+    private final static QName _GetLocationQueueResponseGetLocationQueueReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getLocationQueueReturn");
+    private final static QName _DeleteMarketResponseDeleteMarketReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "deleteMarketReturn");
+    private final static QName _GeographicCoordinateMeasurementTypeElevation_QNAME = new QName("http://xml.blackbean.com/location/types", "Elevation");
+    private final static QName _StandardizeAddressXfinityResponseTypeAddresses_QNAME = new QName("http://xml.blackbean.com/location/types", "addresses");
+    private final static QName _ModifyLocationRequestDetailsTypeMarketID_QNAME = new QName("http://xml.blackbean.com/location/types", "MarketID");
+    private final static QName _ModifyLocationRequestDetailsTypeLocationPostalAddress_QNAME = new QName("http://xml.blackbean.com/location/types", "LocationPostalAddress");
+    private final static QName _QueryMsagDataQueryMsagData_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryMsagData");
+    private final static QName _ModifyLocationModifyLocation_QNAME = new QName("http://xml.blackbean.com/location/services", "ModifyLocation");
+    private final static QName _LocationTelephonyTypeRateCenterName_QNAME = new QName("http://xml.blackbean.com/location/types", "RateCenterName");
+    private final static QName _LocationLegacyDetailsCSGTypeLocationStatus_QNAME = new QName("http://xml.blackbean.com/location/types", "locationStatus");
+    private final static QName _LocationLegacyDetailsCSGTypeCustomerType_QNAME = new QName("http://xml.blackbean.com/location/types", "customerType");
+    private final static QName _LocationLegacyDetailsCSGTypeUnincorporatedFlag_QNAME = new QName("http://xml.blackbean.com/location/types", "unincorporatedFlag");
+    private final static QName _LocationLegacyDetailsCSGTypeDwellingCodeDescr_QNAME = new QName("http://xml.blackbean.com/location/types", "dwellingCodeDescr");
+    private final static QName _LocationLegacyDetailsCSGTypePoleOwner_QNAME = new QName("http://xml.blackbean.com/location/types", "poleOwner");
+    private final static QName _LocationLegacyDetailsCSGTypeAddressLine2Override_QNAME = new QName("http://xml.blackbean.com/location/types", "addressLine2Override");
+    private final static QName _LocationLegacyDetailsCSGTypeSalesArea_QNAME = new QName("http://xml.blackbean.com/location/types", "salesArea");
+    private final static QName _LocationLegacyDetailsCSGTypeHookupType_QNAME = new QName("http://xml.blackbean.com/location/types", "hookupType");
+    private final static QName _LocationLegacyDetailsCSGTypePedestal_QNAME = new QName("http://xml.blackbean.com/location/types", "pedestal");
+    private final static QName _LocationLegacyDetailsCSGTypeLastCallDate_QNAME = new QName("http://xml.blackbean.com/location/types", "lastCallDate");
+    private final static QName _LocationLegacyDetailsCSGTypeHouseComments_QNAME = new QName("http://xml.blackbean.com/location/types", "houseComments");
+    private final static QName _LocationLegacyDetailsCSGTypeCell_QNAME = new QName("http://xml.blackbean.com/location/types", "cell");
+    private final static QName _LocationLegacyDetailsCSGTypeDropLength_QNAME = new QName("http://xml.blackbean.com/location/types", "dropLength");
+    private final static QName _LocationLegacyDetailsCSGTypeLineTag_QNAME = new QName("http://xml.blackbean.com/location/types", "lineTag");
+    private final static QName _LocationLegacyDetailsCSGTypePowerSupply_QNAME = new QName("http://xml.blackbean.com/location/types", "powerSupply");
+    private final static QName _LocationLegacyDetailsCSGTypeLocationType_QNAME = new QName("http://xml.blackbean.com/location/types", "locationType");
+    private final static QName _LocationLegacyDetailsCSGTypeDemographicCode_QNAME = new QName("http://xml.blackbean.com/location/types", "demographicCode");
+    private final static QName _LocationLegacyDetailsCSGTypeHub_QNAME = new QName("http://xml.blackbean.com/location/types", "hub");
+    private final static QName _LocationLegacyDetailsCSGTypeHouseMisc_QNAME = new QName("http://xml.blackbean.com/location/types", "houseMisc");
+    private final static QName _LocationLegacyDetailsCSGTypeRightOfEntryPermission_QNAME = new QName("http://xml.blackbean.com/location/types", "rightOfEntryPermission");
+    private final static QName _LocationLegacyDetailsCSGTypeDropType_QNAME = new QName("http://xml.blackbean.com/location/types", "dropType");
+    private final static QName _LocationLegacyDetailsCSGTypeHouseUsageCode_QNAME = new QName("http://xml.blackbean.com/location/types", "houseUsageCode");
+    private final static QName _LocationLegacyDetailsCSGTypeTechnicianArea_QNAME = new QName("http://xml.blackbean.com/location/types", "technicianArea");
+    private final static QName _LocationLegacyDetailsCSGTypeMapCode_QNAME = new QName("http://xml.blackbean.com/location/types", "mapCode");
+    private final static QName _LocationLegacyDetailsCSGTypePoleNumber_QNAME = new QName("http://xml.blackbean.com/location/types", "poleNumber");
+    private final static QName _LocationLegacyDetailsCSGTypeBridgerAddress_QNAME = new QName("http://xml.blackbean.com/location/types", "bridgerAddress");
+    private final static QName _LocationLegacyDetailsCSGTypeLastCallStatus_QNAME = new QName("http://xml.blackbean.com/location/types", "lastCallStatus");
+    private final static QName _LocationLegacyDetailsCSGTypeAmplifier_QNAME = new QName("http://xml.blackbean.com/location/types", "amplifier");
+    private final static QName _LocationLegacyDetailsCSGTypeGround_QNAME = new QName("http://xml.blackbean.com/location/types", "ground");
+    private final static QName _LocationLegacyDetailsCSGTypeServiceArea_QNAME = new QName("http://xml.blackbean.com/location/types", "serviceArea");
+    private final static QName _LocationLegacyDetailsCSGTypeDropSite_QNAME = new QName("http://xml.blackbean.com/location/types", "dropSite");
+    private final static QName _LocationLegacyDetailsCSGTypeTimeZone_QNAME = new QName("http://xml.blackbean.com/location/types", "timeZone");
+    private final static QName _LocationLegacyDetailsCSGTypeLocationCountyID_QNAME = new QName("http://xml.blackbean.com/location/types", "locationCountyID");
+    private final static QName _QueryLocationReferenceDataQueryLocationReferenceData_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryLocationReferenceData");
+    private final static QName _DeleteNodeDeleteNode_QNAME = new QName("http://xml.blackbean.com/location/services", "DeleteNode");
+    private final static QName _HomeSecurityContactNumbersTypeMedicalNumber_QNAME = new QName("http://xml.blackbean.com/location/types", "medicalNumber");
+    private final static QName _HomeSecurityContactNumbersTypePoliceNumber_QNAME = new QName("http://xml.blackbean.com/location/types", "policeNumber");
+    private final static QName _HomeSecurityContactNumbersTypeFireNumber_QNAME = new QName("http://xml.blackbean.com/location/types", "fireNumber");
+    private final static QName _QueryMarketResponseTypeVendorMarketReference_QNAME = new QName("http://xml.blackbean.com/location/types", "vendorMarketReference");
+    private final static QName _GetLocationXfinityGetLocationXfinity_QNAME = new QName("http://xml.blackbean.com/location/services", "GetLocationXfinity");
+    private final static QName _RefreshCacheResponseRefreshCacheReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "refreshCacheReturn");
+    private final static QName _GetLocationInformationGetLocationInformation_QNAME = new QName("http://xml.blackbean.com/location/services", "GetLocationInformation");
+    private final static QName _AddMarketAddMarket_QNAME = new QName("http://xml.blackbean.com/location/services", "AddMarket");
+    private final static QName _LocationGeographyTypePlaceName_QNAME = new QName("http://xml.blackbean.com/location/types", "PlaceName");
+    private final static QName _LocationGeographyTypeMinorCivilDivision_QNAME = new QName("http://xml.blackbean.com/location/types", "MinorCivilDivision");
+    private final static QName _LocationGeographyTypeFIPSCode_QNAME = new QName("http://xml.blackbean.com/location/types", "FIPSCode");
+    private final static QName _LocationGeographyTypeCountyName_QNAME = new QName("http://xml.blackbean.com/location/types", "CountyName");
+    private final static QName _LocationGeographyTypeVertexCode_QNAME = new QName("http://xml.blackbean.com/location/types", "VertexCode");
+    private final static QName _ModifyNodeResponseModifyNodeReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "modifyNodeReturn");
+    private final static QName _UpdateLocationFromBillingUpdateLocationFromBilling_QNAME = new QName("http://xml.blackbean.com/location/services", "UpdateLocationFromBilling");
+    private final static QName _StandardizeAddressXfinityResponseItemTypeStandardizedAddresses_QNAME = new QName("http://xml.blackbean.com/location/types", "standardizedAddresses");
+    private final static QName _ModifyLocationQueueRequestTypeModifyLocationQueueRequests_QNAME = new QName("http://xml.blackbean.com/location/types", "ModifyLocationQueueRequests");
+    private final static QName _BusinessServiceabilityAttributesTypeBuildingAttribute_QNAME = new QName("http://xml.blackbean.com/location/types", "BuildingAttribute");
+    private final static QName _QueryLocationQueueQueryLocationQueue_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryLocationQueue");
+    private final static QName _CopyDuplicateHouseToBillingResponseCopyDuplicateHouseToBillingReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "copyDuplicateHouseToBillingReturn");
+    private final static QName _LocationLegacyDetailsDSTTypeComplex_QNAME = new QName("http://xml.blackbean.com/location/types", "complex");
+    private final static QName _LocationLegacyDetailsDSTTypeMkt_QNAME = new QName("http://xml.blackbean.com/location/types", "mkt");
+    private final static QName _LocationLegacyDetailsDSTTypeAuxX1_QNAME = new QName("http://xml.blackbean.com/location/types", "auxX1");
+    private final static QName _LocationLegacyDetailsDSTTypeAuxX3_QNAME = new QName("http://xml.blackbean.com/location/types", "auxX3");
+    private final static QName _LocationLegacyDetailsDSTTypeDual_QNAME = new QName("http://xml.blackbean.com/location/types", "dual");
+    private final static QName _LocationLegacyDetailsDSTTypeDualHouse_QNAME = new QName("http://xml.blackbean.com/location/types", "dualHouse");
+    private final static QName _LocationLegacyDetailsDSTTypeAuxX2_QNAME = new QName("http://xml.blackbean.com/location/types", "auxX2");
+    private final static QName _LocationLegacyDetailsDSTTypeMap_QNAME = new QName("http://xml.blackbean.com/location/types", "map");
+    private final static QName _LocationLegacyDetailsDSTTypeConstructionArea_QNAME = new QName("http://xml.blackbean.com/location/types", "constructionArea");
+    private final static QName _LocationLegacyDetailsDSTTypeInfo_QNAME = new QName("http://xml.blackbean.com/location/types", "info");
+    private final static QName _LocationLegacyDetailsDSTTypeDupHouse_QNAME = new QName("http://xml.blackbean.com/location/types", "dupHouse");
+    private final static QName _LocationLegacyDetailsDSTTypeHouseComment_QNAME = new QName("http://xml.blackbean.com/location/types", "houseComment");
+    private final static QName _LocationLegacyDetailsDSTTypeDrop_QNAME = new QName("http://xml.blackbean.com/location/types", "drop");
+    private final static QName _LocationLegacyDetailsDSTTypeAuxY6_QNAME = new QName("http://xml.blackbean.com/location/types", "auxY6");
+    private final static QName _LocationLegacyDetailsDSTTypeDwellingTypeCode_QNAME = new QName("http://xml.blackbean.com/location/types", "dwellingTypeCode");
+    private final static QName _LocationLegacyDetailsDSTTypeAuxY7_QNAME = new QName("http://xml.blackbean.com/location/types", "auxY7");
+    private final static QName _LocationLegacyDetailsDSTTypeControlArea_QNAME = new QName("http://xml.blackbean.com/location/types", "controlArea");
+    private final static QName _LocationLegacyDetailsDSTTypeAuxY2_QNAME = new QName("http://xml.blackbean.com/location/types", "auxY2");
+    private final static QName _LocationLegacyDetailsDSTTypeAuxY1_QNAME = new QName("http://xml.blackbean.com/location/types", "auxY1");
+    private final static QName _LocationLegacyDetailsDSTTypeNetworkInfo_QNAME = new QName("http://xml.blackbean.com/location/types", "networkInfo");
+    private final static QName _LocationLegacyDetailsDSTTypeAuxY3_QNAME = new QName("http://xml.blackbean.com/location/types", "auxY3");
+    private final static QName _LocationLegacyDetailsDSTTypeNetworkID_QNAME = new QName("http://xml.blackbean.com/location/types", "networkID");
+    private final static QName _LocationLegacyDetailsDSTTypeCustomerNumber_QNAME = new QName("http://xml.blackbean.com/location/types", "customerNumber");
+    private final static QName _LocationLegacyDetailsDSTTypeSalesRoute_QNAME = new QName("http://xml.blackbean.com/location/types", "salesRoute");
+    private final static QName _AddMsagDataResponseAddMsagDataReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "addMsagDataReturn");
+    private final static QName _GeocodingConstraintsTypeCustomMatchModeSettings_QNAME = new QName("http://xml.blackbean.com/location/types", "customMatchModeSettings");
+    private final static QName _ModifyLocationQueueModifyLocationQueue_QNAME = new QName("http://xml.blackbean.com/location/services", "ModifyLocationQueue");
+    private final static QName _ModifyLocationResponseModifyLocationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "modifyLocationReturn");
+    private final static QName _DeleteSingleViewAddressAssociationResponseDeleteSingleViewAddressAssociationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "deleteSingleViewAddressAssociationReturn");
+    private final static QName _GetLocationQueueGetLocationQueue_QNAME = new QName("http://xml.blackbean.com/location/services", "GetLocationQueue");
+    private final static QName _DeleteLocationResponseDeleteLocationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "deleteLocationReturn");
+    private final static QName _AssociateSingleViewAddressResponseAssociateSingleViewAddressReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "associateSingleViewAddressReturn");
+    private final static QName _LocationQueueModifyContactInfoTypeNTID_QNAME = new QName("http://xml.blackbean.com/location/types", "NTID");
+    private final static QName _LocationQueueModifyContactInfoTypePhone_QNAME = new QName("http://xml.blackbean.com/location/types", "phone");
+    private final static QName _LocationQueueModifyContactInfoTypeOrganization_QNAME = new QName("http://xml.blackbean.com/location/types", "organization");
+    private final static QName _LocationQueueModifyContactInfoTypeEmail_QNAME = new QName("http://xml.blackbean.com/location/types", "email");
+    private final static QName _LocationQueueModifyContactInfoTypeName_QNAME = new QName("http://xml.blackbean.com/location/types", "name");
+    private final static QName _QueryLocationDetailsQueryLocationDetails_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryLocationDetails");
+    private final static QName _QueryLocationQueueResponseQueryLocationQueueReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryLocationQueueReturn");
+    private final static QName _MarketHierarchyLevelInfoMarketHierarchy_QNAME = new QName("http://xml.blackbean.com/location/types", "marketHierarchy");
+    private final static QName _BillingSystemFormattedAddressesTypeDdpFormattedAddress_QNAME = new QName("http://xml.blackbean.com/location/types", "ddpFormattedAddress");
+    private final static QName _BillingSystemFormattedAddressesTypeCsgFormattedAddress_QNAME = new QName("http://xml.blackbean.com/location/types", "csgFormattedAddress");
+    private final static QName _LocationLegacyDetailsCSGBridgerTypeBridgerPrivate_QNAME = new QName("http://xml.blackbean.com/location/types", "bridgerPrivate");
+    private final static QName _LocationLegacyDetailsCSGBridgerTypeBridgerBidirectional_QNAME = new QName("http://xml.blackbean.com/location/types", "bridgerBidirectional");
+    private final static QName _LocationLegacyDetailsCSGBridgerTypeBridgerGateControl_QNAME = new QName("http://xml.blackbean.com/location/types", "bridgerGateControl");
+    private final static QName _AddMarketResponseAddMarketReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "addMarketReturn");
+    private final static QName _QueryMarketByBoundaryQueryMarketByBoundary_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryMarketByBoundary");
+    private final static QName _LocationQueueReferenceTypeRequestedPriority_QNAME = new QName("http://xml.blackbean.com/location/types", "RequestedPriority");
+    private final static QName _DSTLegacyMarketTypeManagementArea_QNAME = new QName("http://xml.blackbean.com/location/types", "ManagementArea");
+    private final static QName _DSTLegacyMarketTypeFranchiseTaxArea_QNAME = new QName("http://xml.blackbean.com/location/types", "FranchiseTaxArea");
+    private final static QName _CopyLocationToBillingCopyLocationToBilling_QNAME = new QName("http://xml.blackbean.com/location/services", "CopyLocationToBilling");
+    private final static QName _StandardizeAddressXfinityStandardizeAddressXfinity_QNAME = new QName("http://xml.blackbean.com/location/services", "StandardizeAddressXfinity");
+    private final static QName _StandardizeAddressXfinityResponseStandardizeAddressXfinityReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "standardizeAddressXfinityReturn");
+    private final static QName _SeasonalSuspendTypeEnabled_QNAME = new QName("http://xml.blackbean.com/location/types", "enabled");
+    private final static QName _SeasonalSuspendTypePreDateTotalDaysAllowed_QNAME = new QName("http://xml.blackbean.com/location/types", "preDateTotalDaysAllowed");
+    private final static QName _DeleteMsagAddressAssociationDeleteMsagAddressAssociation_QNAME = new QName("http://xml.blackbean.com/location/services", "DeleteMsagAddressAssociation");
+    private final static QName _QueryLocationGeospatialResponseQueryLocationGeospatialReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryLocationGeospatialReturn");
+    private final static QName _GetMsagDataResponseGetMsagDataReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getMsagDataReturn");
+    private final static QName _DeleteE911AddressResponseDeleteE911AddressReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "deleteE911AddressReturn");
+    private final static QName _UpdateLocationInBillingUpdateLocationInBilling_QNAME = new QName("http://xml.blackbean.com/location/services", "UpdateLocationInBilling");
+    private final static QName _QueryMarketResponseQueryMarketReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryMarketReturn");
+    private final static QName _DeleteMarketDeleteMarket_QNAME = new QName("http://xml.blackbean.com/location/services", "DeleteMarket");
+    private final static QName _DeleteLocationFromBillingDeleteLocationFromBilling_QNAME = new QName("http://xml.blackbean.com/location/services", "DeleteLocationFromBilling");
+    private final static QName _ModifyLocationQueueRequestItemTypeNeedByDate_QNAME = new QName("http://xml.blackbean.com/location/types", "NeedByDate");
+    private final static QName _ModifyLocationQueueRequestItemTypeComments_QNAME = new QName("http://xml.blackbean.com/location/types", "Comments");
+    private final static QName _ModifyLocationQueueRequestItemTypeLocationQueueAddress_QNAME = new QName("http://xml.blackbean.com/location/types", "LocationQueueAddress");
+    private final static QName _ModifyLocationQueueRequestItemTypeLeadID_QNAME = new QName("http://xml.blackbean.com/location/types", "LeadID");
+    private final static QName _GetBusinessServiceabilityResponseGetBusinessServiceabilityReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getBusinessServiceabilityReturn");
+    private final static QName _ModifyNodeModifyNode_QNAME = new QName("http://xml.blackbean.com/location/services", "ModifyNode");
+    private final static QName _DeleteSingleViewAddressAssociationDeleteSingleViewAddressAssociation_QNAME = new QName("http://xml.blackbean.com/location/services", "DeleteSingleViewAddressAssociation");
+    private final static QName _UpdateMsagPriorityUpdateMsagPriority_QNAME = new QName("http://xml.blackbean.com/location/services", "UpdateMsagPriority");
+    private final static QName _QueryMarketHierarchyQueryMarketHierarchy_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryMarketHierarchy");
+    private final static QName _GetLocationInformationResponseGetLocationInformationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "getLocationInformationReturn");
+    private final static QName _AddLocationQueueResponseAddLocationQueueReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "addLocationQueueReturn");
+    private final static QName _DeleteMsagAddressAssociationResponseDeleteMsagAddressAssociationReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "deleteMsagAddressAssociationReturn");
+    private final static QName _UnitTypesTypeUnitType_QNAME = new QName("http://xml.blackbean.com/location/types", "unitType");
+    private final static QName _UnitTypesTypeUnitValue_QNAME = new QName("http://xml.blackbean.com/location/types", "unitValue");
+    private final static QName _AlternateNodeNameAlternateNodeNameValue_QNAME = new QName("http://xml.blackbean.com/location/types", "alternateNodeNameValue");
+    private final static QName _AlternateNodeNameAlternateNodeNameSequence_QNAME = new QName("http://xml.blackbean.com/location/types", "alternateNodeNameSequence");
+    private final static QName _AddNodeResponseAddNodeReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "addNodeReturn");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeTapStatus_QNAME = new QName("http://xml.blackbean.com/location/types", "tapStatus");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeProjectServiceDate_QNAME = new QName("http://xml.blackbean.com/location/types", "projectServiceDate");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeLobSwitch_QNAME = new QName("http://xml.blackbean.com/location/types", "lobSwitch");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeNode_QNAME = new QName("http://xml.blackbean.com/location/types", "node");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeRouter_QNAME = new QName("http://xml.blackbean.com/location/types", "router");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeNetworkInterfaceUnit_QNAME = new QName("http://xml.blackbean.com/location/types", "networkInterfaceUnit");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeLobServiceStatus_QNAME = new QName("http://xml.blackbean.com/location/types", "lobServiceStatus");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeInstalledOutlets_QNAME = new QName("http://xml.blackbean.com/location/types", "installedOutlets");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeHeadend_QNAME = new QName("http://xml.blackbean.com/location/types", "headend");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeDisableLOBServiceability_QNAME = new QName("http://xml.blackbean.com/location/types", "disableLOBServiceability");
+    private final static QName _LocationLegacyDetailsCSGLineOfBusinessTypeLobType_QNAME = new QName("http://xml.blackbean.com/location/types", "lobType");
+    private final static QName _StandardizeAddressResponseStandardizeAddressReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "standardizeAddressReturn");
+    private final static QName _StandardizeAddressByRuleResponseStandardizeAddressByRuleReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "standardizeAddressByRuleReturn");
+    private final static QName _QueryNodeQueryNode_QNAME = new QName("http://xml.blackbean.com/location/services", "QueryNode");
+    private final static QName _QueryMarketHierarchyResponseQueryMarketHierarchyReturn_QNAME = new QName("http://xml.blackbean.com/location/services", "queryMarketHierarchyReturn");
+    private final static QName _AddMsagDataAddMsagData_QNAME = new QName("http://xml.blackbean.com/location/services", "AddMsagData");
+    private final static QName _ModifySingleViewAddressAssociationModifySingleViewAddressAssociation_QNAME = new QName("http://xml.blackbean.com/location/services", "ModifySingleViewAddressAssociation");
+    private final static QName _LocationNetworkConnectivityTypeHeadendID_QNAME = new QName("http://xml.blackbean.com/location/types", "headendID");
+    private final static QName _LocationNetworkConnectivityTypeHeadendNetworkAddress_QNAME = new QName("http://xml.blackbean.com/location/types", "headendNetworkAddress");
+    private final static QName _LocationNetworkConnectivityTypeDropLocation_QNAME = new QName("http://xml.blackbean.com/location/types", "dropLocation");
+    private final static QName _DeleteE911AddressDeleteE911Address_QNAME = new QName("http://xml.blackbean.com/location/services", "DeleteE911Address");
+    private final static QName _ZipCodeTypeZip4_QNAME = new QName("http://xml.blackbean.com/location/types", "zip4");
+    private final static QName _BillerInformationTypeCSGLocationInformation_QNAME = new QName("http://xml.blackbean.com/location/types", "CSGLocationInformation");
+    private final static QName _BillerInformationTypeDDPLocationInformation_QNAME = new QName("http://xml.blackbean.com/location/types", "DDPLocationInformation");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.blackbean.cable.esl.router.model.jaxb14_08
@@ -3576,7 +3576,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RequestHeaderType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/types", name = "requestHeader")
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/types", name = "requestHeader")
     public JAXBElement<RequestHeaderType> createRequestHeader(RequestHeaderType value) {
         return new JAXBElement<RequestHeaderType>(_RequestHeader_QNAME, RequestHeaderType.class, null, value);
     }
@@ -3584,7 +3584,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ResponseHeaderType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/types", name = "responseHeader")
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/types", name = "responseHeader")
     public JAXBElement<ResponseHeaderType> createResponseHeader(ResponseHeaderType value) {
         return new JAXBElement<ResponseHeaderType>(_ResponseHeader_QNAME, ResponseHeaderType.class, null, value);
     }
@@ -3592,7 +3592,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ExceptionType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/types", name = "serviceFault")
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/types", name = "serviceFault")
     public JAXBElement<ExceptionType> createServiceFault(ExceptionType value) {
         return new JAXBElement<ExceptionType>(_ServiceFault_QNAME, ExceptionType.class, null, value);
     }
@@ -3600,7 +3600,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateMsagPriorityResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "updateMsagPriorityReturn", scope = UpdateMsagPriorityResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "updateMsagPriorityReturn", scope = UpdateMsagPriorityResponse.class)
     public JAXBElement<UpdateMsagPriorityResponseType> createUpdateMsagPriorityResponseUpdateMsagPriorityReturn(UpdateMsagPriorityResponseType value) {
         return new JAXBElement<UpdateMsagPriorityResponseType>(_UpdateMsagPriorityResponseUpdateMsagPriorityReturn_QNAME, UpdateMsagPriorityResponseType.class, UpdateMsagPriorityResponse.class, value);
     }
@@ -3608,7 +3608,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateLocationFromBillingResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "updateLocationFromBillingReturn", scope = UpdateLocationFromBillingResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "updateLocationFromBillingReturn", scope = UpdateLocationFromBillingResponse.class)
     public JAXBElement<UpdateLocationFromBillingResponseType> createUpdateLocationFromBillingResponseUpdateLocationFromBillingReturn(UpdateLocationFromBillingResponseType value) {
         return new JAXBElement<UpdateLocationFromBillingResponseType>(_UpdateLocationFromBillingResponseUpdateLocationFromBillingReturn_QNAME, UpdateLocationFromBillingResponseType.class, UpdateLocationFromBillingResponse.class, value);
     }
@@ -3616,7 +3616,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CopyLocationToBillingResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "copyLocationToBillingReturn", scope = CopyLocationToBillingResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "copyLocationToBillingReturn", scope = CopyLocationToBillingResponse.class)
     public JAXBElement<CopyLocationToBillingResponseType> createCopyLocationToBillingResponseCopyLocationToBillingReturn(CopyLocationToBillingResponseType value) {
         return new JAXBElement<CopyLocationToBillingResponseType>(_CopyLocationToBillingResponseCopyLocationToBillingReturn_QNAME, CopyLocationToBillingResponseType.class, CopyLocationToBillingResponse.class, value);
     }
@@ -3624,7 +3624,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link VerifyLocationRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "VerifyLocation", scope = VerifyLocation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "VerifyLocation", scope = VerifyLocation.class)
     public JAXBElement<VerifyLocationRequestType> createVerifyLocationVerifyLocation(VerifyLocationRequestType value) {
         return new JAXBElement<VerifyLocationRequestType>(_VerifyLocationVerifyLocation_QNAME, VerifyLocationRequestType.class, VerifyLocation.class, value);
     }
@@ -3632,7 +3632,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfUnitTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitTypes", scope = LocationQueueAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitTypes", scope = LocationQueueAddressType.class)
     public JAXBElement<ArrayOfUnitTypesType> createLocationQueueAddressTypeUnitTypes(ArrayOfUnitTypesType value) {
         return new JAXBElement<ArrayOfUnitTypesType>(_LocationQueueAddressTypeUnitTypes_QNAME, ArrayOfUnitTypesType.class, LocationQueueAddressType.class, value);
     }
@@ -3640,7 +3640,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryCodeType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "country", scope = LocationQueueAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "country", scope = LocationQueueAddressType.class)
     public JAXBElement<CountryCodeType> createLocationQueueAddressTypeCountry(CountryCodeType value) {
         return new JAXBElement<CountryCodeType>(_LocationQueueAddressTypeCountry_QNAME, CountryCodeType.class, LocationQueueAddressType.class, value);
     }
@@ -3648,7 +3648,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "TemplateHouseNumber", scope = CopyDuplicateHouseToBillingRequestItemType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "TemplateHouseNumber", scope = CopyDuplicateHouseToBillingRequestItemType.class)
     public JAXBElement<String> createCopyDuplicateHouseToBillingRequestItemTypeTemplateHouseNumber(String value) {
         return new JAXBElement<String>(_CopyDuplicateHouseToBillingRequestItemTypeTemplateHouseNumber_QNAME, String.class, CopyDuplicateHouseToBillingRequestItemType.class, value);
     }
@@ -3656,7 +3656,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetLocation", scope = GetLocation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetLocation", scope = GetLocation.class)
     public JAXBElement<GetLocationRequestType> createGetLocationGetLocation(GetLocationRequestType value) {
         return new JAXBElement<GetLocationRequestType>(_GetLocationGetLocation_QNAME, GetLocationRequestType.class, GetLocation.class, value);
     }
@@ -3664,7 +3664,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfUnitTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitTypes", scope = PostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitTypes", scope = PostalAddressType.class)
     public JAXBElement<ArrayOfUnitTypesType> createPostalAddressTypeUnitTypes(ArrayOfUnitTypesType value) {
         return new JAXBElement<ArrayOfUnitTypesType>(_LocationQueueAddressTypeUnitTypes_QNAME, ArrayOfUnitTypesType.class, PostalAddressType.class, value);
     }
@@ -3672,7 +3672,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dwellingCode", scope = PostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dwellingCode", scope = PostalAddressType.class)
     public JAXBElement<String> createPostalAddressTypeDwellingCode(String value) {
         return new JAXBElement<String>(_PostalAddressTypeDwellingCode_QNAME, String.class, PostalAddressType.class, value);
     }
@@ -3680,7 +3680,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryCodeType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "country", scope = PostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "country", scope = PostalAddressType.class)
     public JAXBElement<CountryCodeType> createPostalAddressTypeCountry(CountryCodeType value) {
         return new JAXBElement<CountryCodeType>(_LocationQueueAddressTypeCountry_QNAME, CountryCodeType.class, PostalAddressType.class, value);
     }
@@ -3688,7 +3688,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPreDirection", scope = PostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPreDirection", scope = PostalAddressType.class)
     public JAXBElement<String> createPostalAddressTypeStreetPreDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPreDirection_QNAME, String.class, PostalAddressType.class, value);
     }
@@ -3696,7 +3696,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberSuffix", scope = PostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberSuffix", scope = PostalAddressType.class)
     public JAXBElement<String> createPostalAddressTypeHouseNumberSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberSuffix_QNAME, String.class, PostalAddressType.class, value);
     }
@@ -3704,7 +3704,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumber", scope = PostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumber", scope = PostalAddressType.class)
     public JAXBElement<String> createPostalAddressTypeHouseNumber(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumber_QNAME, String.class, PostalAddressType.class, value);
     }
@@ -3712,7 +3712,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPostDirection", scope = PostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPostDirection", scope = PostalAddressType.class)
     public JAXBElement<String> createPostalAddressTypeStreetPostDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPostDirection_QNAME, String.class, PostalAddressType.class, value);
     }
@@ -3720,7 +3720,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetSuffix", scope = PostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetSuffix", scope = PostalAddressType.class)
     public JAXBElement<String> createPostalAddressTypeStreetSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetSuffix_QNAME, String.class, PostalAddressType.class, value);
     }
@@ -3728,7 +3728,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberPrefix", scope = PostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberPrefix", scope = PostalAddressType.class)
     public JAXBElement<String> createPostalAddressTypeHouseNumberPrefix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberPrefix_QNAME, String.class, PostalAddressType.class, value);
     }
@@ -3736,7 +3736,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GeocodedAddressType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "geocodedAddress", scope = StandardizedAddressXfinityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "geocodedAddress", scope = StandardizedAddressXfinityType.class)
     public JAXBElement<GeocodedAddressType> createStandardizedAddressXfinityTypeGeocodedAddress(GeocodedAddressType value) {
         return new JAXBElement<GeocodedAddressType>(_StandardizedAddressXfinityTypeGeocodedAddress_QNAME, GeocodedAddressType.class, StandardizedAddressXfinityType.class, value);
     }
@@ -3744,7 +3744,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GeographyType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "geography", scope = StandardizedAddressXfinityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "geography", scope = StandardizedAddressXfinityType.class)
     public JAXBElement<GeographyType> createStandardizedAddressXfinityTypeGeography(GeographyType value) {
         return new JAXBElement<GeographyType>(_StandardizedAddressXfinityTypeGeography_QNAME, GeographyType.class, StandardizedAddressXfinityType.class, value);
     }
@@ -3752,7 +3752,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TelephonyType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "telephony", scope = StandardizedAddressXfinityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "telephony", scope = StandardizedAddressXfinityType.class)
     public JAXBElement<TelephonyType> createStandardizedAddressXfinityTypeTelephony(TelephonyType value) {
         return new JAXBElement<TelephonyType>(_StandardizedAddressXfinityTypeTelephony_QNAME, TelephonyType.class, StandardizedAddressXfinityType.class, value);
     }
@@ -3760,7 +3760,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfMsagDataType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "msag", scope = StandardizedAddressXfinityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "msag", scope = StandardizedAddressXfinityType.class)
     public JAXBElement<ArrayOfMsagDataType> createStandardizedAddressXfinityTypeMsag(ArrayOfMsagDataType value) {
         return new JAXBElement<ArrayOfMsagDataType>(_StandardizedAddressXfinityTypeMsag_QNAME, ArrayOfMsagDataType.class, StandardizedAddressXfinityType.class, value);
     }
@@ -3768,7 +3768,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationXfinityRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryLocationXfinity", scope = QueryLocationXfinity.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryLocationXfinity", scope = QueryLocationXfinity.class)
     public JAXBElement<QueryLocationXfinityRequestType> createQueryLocationXfinityQueryLocationXfinity(QueryLocationXfinityRequestType value) {
         return new JAXBElement<QueryLocationXfinityRequestType>(_QueryLocationXfinityQueryLocationXfinity_QNAME, QueryLocationXfinityRequestType.class, QueryLocationXfinity.class, value);
     }
@@ -3776,7 +3776,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetGeoTagRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetGeoTag", scope = GetGeoTag.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetGeoTag", scope = GetGeoTag.class)
     public JAXBElement<GetGeoTagRequestType> createGetGeoTagGetGeoTag(GetGeoTagRequestType value) {
         return new JAXBElement<GetGeoTagRequestType>(_GetGeoTagGetGeoTag_QNAME, GetGeoTagRequestType.class, GetGeoTag.class, value);
     }
@@ -3784,7 +3784,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "singleViewID", scope = DeleteSingleViewAddressAssociationType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "singleViewID", scope = DeleteSingleViewAddressAssociationType.class)
     public JAXBElement<String> createDeleteSingleViewAddressAssociationTypeSingleViewID(String value) {
         return new JAXBElement<String>(_DeleteSingleViewAddressAssociationTypeSingleViewID_QNAME, String.class, DeleteSingleViewAddressAssociationType.class, value);
     }
@@ -3792,7 +3792,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "addressID", scope = DeleteSingleViewAddressAssociationType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "addressID", scope = DeleteSingleViewAddressAssociationType.class)
     public JAXBElement<String> createDeleteSingleViewAddressAssociationTypeAddressID(String value) {
         return new JAXBElement<String>(_DeleteSingleViewAddressAssociationTypeAddressID_QNAME, String.class, DeleteSingleViewAddressAssociationType.class, value);
     }
@@ -3800,7 +3800,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetBillingSystemFormattedAddressRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetBillingSystemFormattedAddress", scope = GetBillingSystemFormattedAddress.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetBillingSystemFormattedAddress", scope = GetBillingSystemFormattedAddress.class)
     public JAXBElement<GetBillingSystemFormattedAddressRequestType> createGetBillingSystemFormattedAddressGetBillingSystemFormattedAddress(GetBillingSystemFormattedAddressRequestType value) {
         return new JAXBElement<GetBillingSystemFormattedAddressRequestType>(_GetBillingSystemFormattedAddressGetBillingSystemFormattedAddress_QNAME, GetBillingSystemFormattedAddressRequestType.class, GetBillingSystemFormattedAddress.class, value);
     }
@@ -3808,7 +3808,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "rateCenterName", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "rateCenterName", scope = TelephonyType.class)
     public JAXBElement<String> createTelephonyTypeRateCenterName(String value) {
         return new JAXBElement<String>(_TelephonyTypeRateCenterName_QNAME, String.class, TelephonyType.class, value);
     }
@@ -3816,7 +3816,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "TNOrderPool", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "TNOrderPool", scope = TelephonyType.class)
     public JAXBElement<String> createTelephonyTypeTNOrderPool(String value) {
         return new JAXBElement<String>(_TelephonyTypeTNOrderPool_QNAME, String.class, TelephonyType.class, value);
     }
@@ -3824,7 +3824,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "LATA", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "LATA", scope = TelephonyType.class)
     public JAXBElement<String> createTelephonyTypeLATA(String value) {
         return new JAXBElement<String>(_TelephonyTypeLATA_QNAME, String.class, TelephonyType.class, value);
     }
@@ -3832,7 +3832,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "wireCenter", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "wireCenter", scope = TelephonyType.class)
     public JAXBElement<String> createTelephonyTypeWireCenter(String value) {
         return new JAXBElement<String>(_TelephonyTypeWireCenter_QNAME, String.class, TelephonyType.class, value);
     }
@@ -3840,7 +3840,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "LATAName", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "LATAName", scope = TelephonyType.class)
     public JAXBElement<String> createTelephonyTypeLATAName(String value) {
         return new JAXBElement<String>(_TelephonyTypeLATAName_QNAME, String.class, TelephonyType.class, value);
     }
@@ -3848,7 +3848,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link E911RateCenterServiceableType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "rateCenterServiceable", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "rateCenterServiceable", scope = TelephonyType.class)
     public JAXBElement<E911RateCenterServiceableType> createTelephonyTypeRateCenterServiceable(E911RateCenterServiceableType value) {
         return new JAXBElement<E911RateCenterServiceableType>(_TelephonyTypeRateCenterServiceable_QNAME, E911RateCenterServiceableType.class, TelephonyType.class, value);
     }
@@ -3856,7 +3856,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "ILECName", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "ILECName", scope = TelephonyType.class)
     public JAXBElement<String> createTelephonyTypeILECName(String value) {
         return new JAXBElement<String>(_TelephonyTypeILECName_QNAME, String.class, TelephonyType.class, value);
     }
@@ -3864,7 +3864,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "PSAPAgency", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "PSAPAgency", scope = TelephonyType.class)
     public JAXBElement<String> createTelephonyTypePSAPAgency(String value) {
         return new JAXBElement<String>(_TelephonyTypePSAPAgency_QNAME, String.class, TelephonyType.class, value);
     }
@@ -3872,7 +3872,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "PSAPId", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "PSAPId", scope = TelephonyType.class)
     public JAXBElement<String> createTelephonyTypePSAPId(String value) {
         return new JAXBElement<String>(_TelephonyTypePSAPId_QNAME, String.class, TelephonyType.class, value);
     }
@@ -3880,7 +3880,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link E911RateCenterCertificationType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "rateCenterCertification", scope = TelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "rateCenterCertification", scope = TelephonyType.class)
     public JAXBElement<E911RateCenterCertificationType> createTelephonyTypeRateCenterCertification(E911RateCenterCertificationType value) {
         return new JAXBElement<E911RateCenterCertificationType>(_TelephonyTypeRateCenterCertification_QNAME, E911RateCenterCertificationType.class, TelephonyType.class, value);
     }
@@ -3888,7 +3888,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetMsagDataRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetMsagData", scope = GetMsagData.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetMsagData", scope = GetMsagData.class)
     public JAXBElement<GetMsagDataRequestType> createGetMsagDataGetMsagData(GetMsagDataRequestType value) {
         return new JAXBElement<GetMsagDataRequestType>(_GetMsagDataGetMsagData_QNAME, GetMsagDataRequestType.class, GetMsagData.class, value);
     }
@@ -3896,7 +3896,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfBusinessServiceabilityResponseItemType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "BusinessServiceabilityResponses", scope = GetBusinessServiceabilityResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "BusinessServiceabilityResponses", scope = GetBusinessServiceabilityResponseType.class)
     public JAXBElement<ArrayOfBusinessServiceabilityResponseItemType> createGetBusinessServiceabilityResponseTypeBusinessServiceabilityResponses(ArrayOfBusinessServiceabilityResponseItemType value) {
         return new JAXBElement<ArrayOfBusinessServiceabilityResponseItemType>(_GetBusinessServiceabilityResponseTypeBusinessServiceabilityResponses_QNAME, ArrayOfBusinessServiceabilityResponseItemType.class, GetBusinessServiceabilityResponseType.class, value);
     }
@@ -3904,7 +3904,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationXfinityResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryLocationXfinityReturn", scope = QueryLocationXfinityResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryLocationXfinityReturn", scope = QueryLocationXfinityResponse.class)
     public JAXBElement<QueryLocationXfinityResponseType> createQueryLocationXfinityResponseQueryLocationXfinityReturn(QueryLocationXfinityResponseType value) {
         return new JAXBElement<QueryLocationXfinityResponseType>(_QueryLocationXfinityResponseQueryLocationXfinityReturn_QNAME, QueryLocationXfinityResponseType.class, QueryLocationXfinityResponse.class, value);
     }
@@ -3912,7 +3912,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link TransportType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "Transport", scope = BusinessServiceabilityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "Transport", scope = BusinessServiceabilityType.class)
     public JAXBElement<TransportType> createBusinessServiceabilityTypeTransport(TransportType value) {
         return new JAXBElement<TransportType>(_BusinessServiceabilityTypeTransport_QNAME, TransportType.class, BusinessServiceabilityType.class, value);
     }
@@ -3920,7 +3920,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BusinessServiceabilityAttributesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "Attributes", scope = BusinessServiceabilityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "Attributes", scope = BusinessServiceabilityType.class)
     public JAXBElement<BusinessServiceabilityAttributesType> createBusinessServiceabilityTypeAttributes(BusinessServiceabilityAttributesType value) {
         return new JAXBElement<BusinessServiceabilityAttributesType>(_BusinessServiceabilityTypeAttributes_QNAME, BusinessServiceabilityAttributesType.class, BusinessServiceabilityType.class, value);
     }
@@ -3928,7 +3928,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfString }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "SupportedProducts", scope = BusinessServiceabilityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "SupportedProducts", scope = BusinessServiceabilityType.class)
     public JAXBElement<ArrayOfString> createBusinessServiceabilityTypeSupportedProducts(ArrayOfString value) {
         return new JAXBElement<ArrayOfString>(_BusinessServiceabilityTypeSupportedProducts_QNAME, ArrayOfString.class, BusinessServiceabilityType.class, value);
     }
@@ -3936,7 +3936,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryLocationReturn", scope = QueryLocationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryLocationReturn", scope = QueryLocationResponse.class)
     public JAXBElement<QueryLocationResponseType> createQueryLocationResponseQueryLocationReturn(QueryLocationResponseType value) {
         return new JAXBElement<QueryLocationResponseType>(_QueryLocationResponseQueryLocationReturn_QNAME, QueryLocationResponseType.class, QueryLocationResponse.class, value);
     }
@@ -3944,7 +3944,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ResponseStatusType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "modifySingleViewAddressAssociationReturn", scope = ModifySingleViewAddressAssociationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "modifySingleViewAddressAssociationReturn", scope = ModifySingleViewAddressAssociationResponse.class)
     public JAXBElement<ResponseStatusType> createModifySingleViewAddressAssociationResponseModifySingleViewAddressAssociationReturn(ResponseStatusType value) {
         return new JAXBElement<ResponseStatusType>(_ModifySingleViewAddressAssociationResponseModifySingleViewAddressAssociationReturn_QNAME, ResponseStatusType.class, ModifySingleViewAddressAssociationResponse.class, value);
     }
@@ -3952,7 +3952,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "rateCenterName", scope = GeocodingResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "rateCenterName", scope = GeocodingResultsType.class)
     public JAXBElement<String> createGeocodingResultsTypeRateCenterName(String value) {
         return new JAXBElement<String>(_TelephonyTypeRateCenterName_QNAME, String.class, GeocodingResultsType.class, value);
     }
@@ -3960,7 +3960,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "latitude", scope = GeocodingResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "latitude", scope = GeocodingResultsType.class)
     public JAXBElement<BigDecimal> createGeocodingResultsTypeLatitude(BigDecimal value) {
         return new JAXBElement<BigDecimal>(_GeocodingResultsTypeLatitude_QNAME, BigDecimal.class, GeocodingResultsType.class, value);
     }
@@ -3968,7 +3968,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GeocodingPrecisionType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "geocodingPrecision", scope = GeocodingResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "geocodingPrecision", scope = GeocodingResultsType.class)
     public JAXBElement<GeocodingPrecisionType> createGeocodingResultsTypeGeocodingPrecision(GeocodingPrecisionType value) {
         return new JAXBElement<GeocodingPrecisionType>(_GeocodingResultsTypeGeocodingPrecision_QNAME, GeocodingPrecisionType.class, GeocodingResultsType.class, value);
     }
@@ -3976,7 +3976,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "censusBlock", scope = GeocodingResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "censusBlock", scope = GeocodingResultsType.class)
     public JAXBElement<String> createGeocodingResultsTypeCensusBlock(String value) {
         return new JAXBElement<String>(_GeocodingResultsTypeCensusBlock_QNAME, String.class, GeocodingResultsType.class, value);
     }
@@ -3984,7 +3984,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "urbanization", scope = GeocodingResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "urbanization", scope = GeocodingResultsType.class)
     public JAXBElement<String> createGeocodingResultsTypeUrbanization(String value) {
         return new JAXBElement<String>(_GeocodingResultsTypeUrbanization_QNAME, String.class, GeocodingResultsType.class, value);
     }
@@ -3992,7 +3992,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "longitude", scope = GeocodingResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "longitude", scope = GeocodingResultsType.class)
     public JAXBElement<BigDecimal> createGeocodingResultsTypeLongitude(BigDecimal value) {
         return new JAXBElement<BigDecimal>(_GeocodingResultsTypeLongitude_QNAME, BigDecimal.class, GeocodingResultsType.class, value);
     }
@@ -4000,7 +4000,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddE911AddressResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "addE911AddressReturn", scope = AddE911AddressResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "addE911AddressReturn", scope = AddE911AddressResponse.class)
     public JAXBElement<AddE911AddressResponseType> createAddE911AddressResponseAddE911AddressReturn(AddE911AddressResponseType value) {
         return new JAXBElement<AddE911AddressResponseType>(_AddE911AddressResponseAddE911AddressReturn_QNAME, AddE911AddressResponseType.class, AddE911AddressResponse.class, value);
     }
@@ -4008,7 +4008,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddE911AddressRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "AddE911Address", scope = AddE911Address.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "AddE911Address", scope = AddE911Address.class)
     public JAXBElement<AddE911AddressRequestType> createAddE911AddressAddE911Address(AddE911AddressRequestType value) {
         return new JAXBElement<AddE911AddressRequestType>(_AddE911AddressAddE911Address_QNAME, AddE911AddressRequestType.class, AddE911Address.class, value);
     }
@@ -4016,7 +4016,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GeocodedAddressType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "StandardizeAddress", scope = BusinessServiceabilityResponseItemType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "StandardizeAddress", scope = BusinessServiceabilityResponseItemType.class)
     public JAXBElement<GeocodedAddressType> createBusinessServiceabilityResponseItemTypeStandardizeAddress(GeocodedAddressType value) {
         return new JAXBElement<GeocodedAddressType>(_BusinessServiceabilityResponseItemTypeStandardizeAddress_QNAME, GeocodedAddressType.class, BusinessServiceabilityResponseItemType.class, value);
     }
@@ -4024,7 +4024,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfUnitTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitTypes", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitTypes", scope = PostalAddressUpdateType.class)
     public JAXBElement<ArrayOfUnitTypesType> createPostalAddressUpdateTypeUnitTypes(ArrayOfUnitTypesType value) {
         return new JAXBElement<ArrayOfUnitTypesType>(_LocationQueueAddressTypeUnitTypes_QNAME, ArrayOfUnitTypesType.class, PostalAddressUpdateType.class, value);
     }
@@ -4032,7 +4032,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "city", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "city", scope = PostalAddressUpdateType.class)
     public JAXBElement<String> createPostalAddressUpdateTypeCity(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeCity_QNAME, String.class, PostalAddressUpdateType.class, value);
     }
@@ -4040,7 +4040,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryCodeType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "country", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "country", scope = PostalAddressUpdateType.class)
     public JAXBElement<CountryCodeType> createPostalAddressUpdateTypeCountry(CountryCodeType value) {
         return new JAXBElement<CountryCodeType>(_LocationQueueAddressTypeCountry_QNAME, CountryCodeType.class, PostalAddressUpdateType.class, value);
     }
@@ -4048,7 +4048,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPreDirection", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPreDirection", scope = PostalAddressUpdateType.class)
     public JAXBElement<String> createPostalAddressUpdateTypeStreetPreDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPreDirection_QNAME, String.class, PostalAddressUpdateType.class, value);
     }
@@ -4056,7 +4056,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetName", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetName", scope = PostalAddressUpdateType.class)
     public JAXBElement<String> createPostalAddressUpdateTypeStreetName(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeStreetName_QNAME, String.class, PostalAddressUpdateType.class, value);
     }
@@ -4064,7 +4064,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberSuffix", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberSuffix", scope = PostalAddressUpdateType.class)
     public JAXBElement<String> createPostalAddressUpdateTypeHouseNumberSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberSuffix_QNAME, String.class, PostalAddressUpdateType.class, value);
     }
@@ -4072,7 +4072,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumber", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumber", scope = PostalAddressUpdateType.class)
     public JAXBElement<String> createPostalAddressUpdateTypeHouseNumber(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumber_QNAME, String.class, PostalAddressUpdateType.class, value);
     }
@@ -4080,7 +4080,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPostDirection", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPostDirection", scope = PostalAddressUpdateType.class)
     public JAXBElement<String> createPostalAddressUpdateTypeStreetPostDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPostDirection_QNAME, String.class, PostalAddressUpdateType.class, value);
     }
@@ -4088,7 +4088,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetSuffix", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetSuffix", scope = PostalAddressUpdateType.class)
     public JAXBElement<String> createPostalAddressUpdateTypeStreetSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetSuffix_QNAME, String.class, PostalAddressUpdateType.class, value);
     }
@@ -4096,7 +4096,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberPrefix", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberPrefix", scope = PostalAddressUpdateType.class)
     public JAXBElement<String> createPostalAddressUpdateTypeHouseNumberPrefix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberPrefix_QNAME, String.class, PostalAddressUpdateType.class, value);
     }
@@ -4104,7 +4104,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "state", scope = PostalAddressUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "state", scope = PostalAddressUpdateType.class)
     public JAXBElement<String> createPostalAddressUpdateTypeState(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeState_QNAME, String.class, PostalAddressUpdateType.class, value);
     }
@@ -4112,7 +4112,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CSGLegacyMarketType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "CSGMarketID", scope = LegacyMarketIDType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "CSGMarketID", scope = LegacyMarketIDType.class)
     public JAXBElement<CSGLegacyMarketType> createLegacyMarketIDTypeCSGMarketID(CSGLegacyMarketType value) {
         return new JAXBElement<CSGLegacyMarketType>(_LegacyMarketIDTypeCSGMarketID_QNAME, CSGLegacyMarketType.class, LegacyMarketIDType.class, value);
     }
@@ -4120,7 +4120,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DSTLegacyMarketType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "DSTMarketID", scope = LegacyMarketIDType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "DSTMarketID", scope = LegacyMarketIDType.class)
     public JAXBElement<DSTLegacyMarketType> createLegacyMarketIDTypeDSTMarketID(DSTLegacyMarketType value) {
         return new JAXBElement<DSTLegacyMarketType>(_LegacyMarketIDTypeDSTMarketID_QNAME, DSTLegacyMarketType.class, LegacyMarketIDType.class, value);
     }
@@ -4128,7 +4128,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Long }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "elocNodeID", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "elocNodeID", scope = NodeType.class)
     public JAXBElement<Long> createNodeTypeElocNodeID(Long value) {
         return new JAXBElement<Long>(_NodeTypeElocNodeID_QNAME, Long.class, NodeType.class, value);
     }
@@ -4136,7 +4136,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CapabilitiesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeCapabilities", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeCapabilities", scope = NodeType.class)
     public JAXBElement<CapabilitiesType> createNodeTypeNodeCapabilities(CapabilitiesType value) {
         return new JAXBElement<CapabilitiesType>(_NodeTypeNodeCapabilities_QNAME, CapabilitiesType.class, NodeType.class, value);
     }
@@ -4144,7 +4144,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfAlternateNodeName }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "alternateNodeNames", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "alternateNodeNames", scope = NodeType.class)
     public JAXBElement<ArrayOfAlternateNodeName> createNodeTypeAlternateNodeNames(ArrayOfAlternateNodeName value) {
         return new JAXBElement<ArrayOfAlternateNodeName>(_NodeTypeAlternateNodeNames_QNAME, ArrayOfAlternateNodeName.class, NodeType.class, value);
     }
@@ -4152,7 +4152,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeHubLocation", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeHubLocation", scope = NodeType.class)
     public JAXBElement<String> createNodeTypeNodeHubLocation(String value) {
         return new JAXBElement<String>(_NodeTypeNodeHubLocation_QNAME, String.class, NodeType.class, value);
     }
@@ -4160,7 +4160,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeBoundary", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeBoundary", scope = NodeType.class)
     public JAXBElement<String> createNodeTypeNodeBoundary(String value) {
         return new JAXBElement<String>(_NodeTypeNodeBoundary_QNAME, String.class, NodeType.class, value);
     }
@@ -4168,7 +4168,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NodeBoundaryTypeSimpleType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeBoundaryType", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeBoundaryType", scope = NodeType.class)
     public JAXBElement<NodeBoundaryTypeSimpleType> createNodeTypeNodeBoundaryType(NodeBoundaryTypeSimpleType value) {
         return new JAXBElement<NodeBoundaryTypeSimpleType>(_NodeTypeNodeBoundaryType_QNAME, NodeBoundaryTypeSimpleType.class, NodeType.class, value);
     }
@@ -4176,7 +4176,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeName", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeName", scope = NodeType.class)
     public JAXBElement<String> createNodeTypeNodeName(String value) {
         return new JAXBElement<String>(_NodeTypeNodeName_QNAME, String.class, NodeType.class, value);
     }
@@ -4184,7 +4184,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "hubID", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "hubID", scope = NodeType.class)
     public JAXBElement<String> createNodeTypeHubID(String value) {
         return new JAXBElement<String>(_NodeTypeHubID_QNAME, String.class, NodeType.class, value);
     }
@@ -4192,7 +4192,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Long }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "elocMarketID", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "elocMarketID", scope = NodeType.class)
     public JAXBElement<Long> createNodeTypeElocMarketID(Long value) {
         return new JAXBElement<Long>(_NodeTypeElocMarketID_QNAME, Long.class, NodeType.class, value);
     }
@@ -4200,7 +4200,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NodeStatusSimpleType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeStatus", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeStatus", scope = NodeType.class)
     public JAXBElement<NodeStatusSimpleType> createNodeTypeNodeStatus(NodeStatusSimpleType value) {
         return new JAXBElement<NodeStatusSimpleType>(_NodeTypeNodeStatus_QNAME, NodeStatusSimpleType.class, NodeType.class, value);
     }
@@ -4208,7 +4208,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeDescription", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeDescription", scope = NodeType.class)
     public JAXBElement<String> createNodeTypeNodeDescription(String value) {
         return new JAXBElement<String>(_NodeTypeNodeDescription_QNAME, String.class, NodeType.class, value);
     }
@@ -4216,7 +4216,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "plannedAvailabilityDate", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "plannedAvailabilityDate", scope = NodeType.class)
     public JAXBElement<XMLGregorianCalendar> createNodeTypePlannedAvailabilityDate(XMLGregorianCalendar value) {
         return new JAXBElement<XMLGregorianCalendar>(_NodeTypePlannedAvailabilityDate_QNAME, XMLGregorianCalendar.class, NodeType.class, value);
     }
@@ -4224,7 +4224,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodePaths", scope = NodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodePaths", scope = NodeType.class)
     public JAXBElement<String> createNodeTypeNodePaths(String value) {
         return new JAXBElement<String>(_NodeTypeNodePaths_QNAME, String.class, NodeType.class, value);
     }
@@ -4232,7 +4232,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "state", scope = LocationReferenceType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "state", scope = LocationReferenceType.class)
     public JAXBElement<String> createLocationReferenceTypeState(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeState_QNAME, String.class, LocationReferenceType.class, value);
     }
@@ -4240,7 +4240,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetBillingSystemFormattedAddressResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getBillingSystemFormattedAddressReturn", scope = GetBillingSystemFormattedAddressResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getBillingSystemFormattedAddressReturn", scope = GetBillingSystemFormattedAddressResponse.class)
     public JAXBElement<GetBillingSystemFormattedAddressResponseType> createGetBillingSystemFormattedAddressResponseGetBillingSystemFormattedAddressReturn(GetBillingSystemFormattedAddressResponseType value) {
         return new JAXBElement<GetBillingSystemFormattedAddressResponseType>(_GetBillingSystemFormattedAddressResponseGetBillingSystemFormattedAddressReturn_QNAME, GetBillingSystemFormattedAddressResponseType.class, GetBillingSystemFormattedAddressResponse.class, value);
     }
@@ -4248,7 +4248,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetBusinessServiceabilityRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetBusinessServiceabilityRequest", scope = GetBusinessServiceability.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetBusinessServiceabilityRequest", scope = GetBusinessServiceability.class)
     public JAXBElement<GetBusinessServiceabilityRequestType> createGetBusinessServiceabilityGetBusinessServiceabilityRequest(GetBusinessServiceabilityRequestType value) {
         return new JAXBElement<GetBusinessServiceabilityRequestType>(_GetBusinessServiceabilityGetBusinessServiceabilityRequest_QNAME, GetBusinessServiceabilityRequestType.class, GetBusinessServiceability.class, value);
     }
@@ -4256,7 +4256,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteLocationFromBillingResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "deleteLocationFromBillingReturn", scope = DeleteLocationFromBillingResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "deleteLocationFromBillingReturn", scope = DeleteLocationFromBillingResponse.class)
     public JAXBElement<DeleteLocationFromBillingResponseType> createDeleteLocationFromBillingResponseDeleteLocationFromBillingReturn(DeleteLocationFromBillingResponseType value) {
         return new JAXBElement<DeleteLocationFromBillingResponseType>(_DeleteLocationFromBillingResponseDeleteLocationFromBillingReturn_QNAME, DeleteLocationFromBillingResponseType.class, DeleteLocationFromBillingResponse.class, value);
     }
@@ -4264,7 +4264,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "hierarchyID", scope = MarketHierarchyResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "hierarchyID", scope = MarketHierarchyResponseType.class)
     public JAXBElement<Integer> createMarketHierarchyResponseTypeHierarchyID(Integer value) {
         return new JAXBElement<Integer>(_MarketHierarchyResponseTypeHierarchyID_QNAME, Integer.class, MarketHierarchyResponseType.class, value);
     }
@@ -4272,7 +4272,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetAddress", scope = ModifyLocationQueueAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetAddress", scope = ModifyLocationQueueAddressType.class)
     public JAXBElement<String> createModifyLocationQueueAddressTypeStreetAddress(String value) {
         return new JAXBElement<String>(_ModifyLocationQueueAddressTypeStreetAddress_QNAME, String.class, ModifyLocationQueueAddressType.class, value);
     }
@@ -4280,7 +4280,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfUnitTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitTypes", scope = ModifyLocationQueueAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitTypes", scope = ModifyLocationQueueAddressType.class)
     public JAXBElement<ArrayOfUnitTypesType> createModifyLocationQueueAddressTypeUnitTypes(ArrayOfUnitTypesType value) {
         return new JAXBElement<ArrayOfUnitTypesType>(_LocationQueueAddressTypeUnitTypes_QNAME, ArrayOfUnitTypesType.class, ModifyLocationQueueAddressType.class, value);
     }
@@ -4288,7 +4288,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LegacyMarketIDType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "legacyMarketID", scope = MarketReferenceType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "legacyMarketID", scope = MarketReferenceType.class)
     public JAXBElement<LegacyMarketIDType> createMarketReferenceTypeLegacyMarketID(LegacyMarketIDType value) {
         return new JAXBElement<LegacyMarketIDType>(_MarketReferenceTypeLegacyMarketID_QNAME, LegacyMarketIDType.class, MarketReferenceType.class, value);
     }
@@ -4296,7 +4296,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryLocationByRuleReturn", scope = QueryLocationByRuleResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryLocationByRuleReturn", scope = QueryLocationByRuleResponse.class)
     public JAXBElement<QueryLocationResponseType> createQueryLocationByRuleResponseQueryLocationByRuleReturn(QueryLocationResponseType value) {
         return new JAXBElement<QueryLocationResponseType>(_QueryLocationByRuleResponseQueryLocationByRuleReturn_QNAME, QueryLocationResponseType.class, QueryLocationByRuleResponse.class, value);
     }
@@ -4304,7 +4304,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteNodeResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "deleteNodeReturn", scope = DeleteNodeResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "deleteNodeReturn", scope = DeleteNodeResponse.class)
     public JAXBElement<DeleteNodeResponseType> createDeleteNodeResponseDeleteNodeReturn(DeleteNodeResponseType value) {
         return new JAXBElement<DeleteNodeResponseType>(_DeleteNodeResponseDeleteNodeReturn_QNAME, DeleteNodeResponseType.class, DeleteNodeResponse.class, value);
     }
@@ -4312,7 +4312,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NearestNeighborCriteriaType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "NearestNeighborCriteria", scope = GeospatialSearchCriteriaType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "NearestNeighborCriteria", scope = GeospatialSearchCriteriaType.class)
     public JAXBElement<NearestNeighborCriteriaType> createGeospatialSearchCriteriaTypeNearestNeighborCriteria(NearestNeighborCriteriaType value) {
         return new JAXBElement<NearestNeighborCriteriaType>(_GeospatialSearchCriteriaTypeNearestNeighborCriteria_QNAME, NearestNeighborCriteriaType.class, GeospatialSearchCriteriaType.class, value);
     }
@@ -4320,7 +4320,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BoundaryCriteriaType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "BoundaryCriteria", scope = GeospatialSearchCriteriaType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "BoundaryCriteria", scope = GeospatialSearchCriteriaType.class)
     public JAXBElement<BoundaryCriteriaType> createGeospatialSearchCriteriaTypeBoundaryCriteria(BoundaryCriteriaType value) {
         return new JAXBElement<BoundaryCriteriaType>(_GeospatialSearchCriteriaTypeBoundaryCriteria_QNAME, BoundaryCriteriaType.class, GeospatialSearchCriteriaType.class, value);
     }
@@ -4328,7 +4328,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getLocationReturn", scope = GetLocationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getLocationReturn", scope = GetLocationResponse.class)
     public JAXBElement<GetLocationResponseType> createGetLocationResponseGetLocationReturn(GetLocationResponseType value) {
         return new JAXBElement<GetLocationResponseType>(_GetLocationResponseGetLocationReturn_QNAME, GetLocationResponseType.class, GetLocationResponse.class, value);
     }
@@ -4336,7 +4336,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "stateCode", scope = QueryMarketByBoundaryRequestType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "stateCode", scope = QueryMarketByBoundaryRequestType.class)
     public JAXBElement<String> createQueryMarketByBoundaryRequestTypeStateCode(String value) {
         return new JAXBElement<String>(_QueryMarketByBoundaryRequestTypeStateCode_QNAME, String.class, QueryMarketByBoundaryRequestType.class, value);
     }
@@ -4344,7 +4344,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddLocationResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "addLocationReturn", scope = AddLocationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "addLocationReturn", scope = AddLocationResponse.class)
     public JAXBElement<AddLocationResponseType> createAddLocationResponseAddLocationReturn(AddLocationResponseType value) {
         return new JAXBElement<AddLocationResponseType>(_AddLocationResponseAddLocationReturn_QNAME, AddLocationResponseType.class, AddLocationResponse.class, value);
     }
@@ -4352,7 +4352,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetName", scope = AddressCriteriaType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetName", scope = AddressCriteriaType.class)
     public JAXBElement<String> createAddressCriteriaTypeStreetName(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeStreetName_QNAME, String.class, AddressCriteriaType.class, value);
     }
@@ -4360,7 +4360,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryMarketByBoundaryResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryMarketByBoundaryReturn", scope = QueryMarketByBoundaryResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryMarketByBoundaryReturn", scope = QueryMarketByBoundaryResponse.class)
     public JAXBElement<QueryMarketByBoundaryResponseType> createQueryMarketByBoundaryResponseQueryMarketByBoundaryReturn(QueryMarketByBoundaryResponseType value) {
         return new JAXBElement<QueryMarketByBoundaryResponseType>(_QueryMarketByBoundaryResponseQueryMarketByBoundaryReturn_QNAME, QueryMarketByBoundaryResponseType.class, QueryMarketByBoundaryResponse.class, value);
     }
@@ -4368,7 +4368,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RefreshCacheRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "RefreshCache", scope = RefreshCache.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "RefreshCache", scope = RefreshCache.class)
     public JAXBElement<RefreshCacheRequestType> createRefreshCacheRefreshCache(RefreshCacheRequestType value) {
         return new JAXBElement<RefreshCacheRequestType>(_RefreshCacheRefreshCache_QNAME, RefreshCacheRequestType.class, RefreshCache.class, value);
     }
@@ -4376,7 +4376,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationDetailsResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryLocationDetailsReturn", scope = QueryLocationDetailsResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryLocationDetailsReturn", scope = QueryLocationDetailsResponse.class)
     public JAXBElement<QueryLocationDetailsResponseType> createQueryLocationDetailsResponseQueryLocationDetailsReturn(QueryLocationDetailsResponseType value) {
         return new JAXBElement<QueryLocationDetailsResponseType>(_QueryLocationDetailsResponseQueryLocationDetailsReturn_QNAME, QueryLocationDetailsResponseType.class, QueryLocationDetailsResponse.class, value);
     }
@@ -4384,7 +4384,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetGeoTagResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getGeoTagReturn", scope = GetGeoTagResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getGeoTagReturn", scope = GetGeoTagResponse.class)
     public JAXBElement<GetGeoTagResponseType> createGetGeoTagResponseGetGeoTagReturn(GetGeoTagResponseType value) {
         return new JAXBElement<GetGeoTagResponseType>(_GetGeoTagResponseGetGeoTagReturn_QNAME, GetGeoTagResponseType.class, GetGeoTagResponse.class, value);
     }
@@ -4392,7 +4392,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfLocationCommentsType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "LocationComments", scope = LocationDetailsUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "LocationComments", scope = LocationDetailsUpdateType.class)
     public JAXBElement<ArrayOfLocationCommentsType> createLocationDetailsUpdateTypeLocationComments(ArrayOfLocationCommentsType value) {
         return new JAXBElement<ArrayOfLocationCommentsType>(_LocationDetailsUpdateTypeLocationComments_QNAME, ArrayOfLocationCommentsType.class, LocationDetailsUpdateType.class, value);
     }
@@ -4400,7 +4400,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "AddressGroupID", scope = LocationDetailsUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "AddressGroupID", scope = LocationDetailsUpdateType.class)
     public JAXBElement<String> createLocationDetailsUpdateTypeAddressGroupID(String value) {
         return new JAXBElement<String>(_LocationDetailsUpdateTypeAddressGroupID_QNAME, String.class, LocationDetailsUpdateType.class, value);
     }
@@ -4408,7 +4408,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetName", scope = AddressSummaryCriteria.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetName", scope = AddressSummaryCriteria.class)
     public JAXBElement<String> createAddressSummaryCriteriaStreetName(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeStreetName_QNAME, String.class, AddressSummaryCriteria.class, value);
     }
@@ -4416,7 +4416,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfMarketReferenceType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "marketReference", scope = QueryLocationResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "marketReference", scope = QueryLocationResponseType.class)
     public JAXBElement<ArrayOfMarketReferenceType> createQueryLocationResponseTypeMarketReference(ArrayOfMarketReferenceType value) {
         return new JAXBElement<ArrayOfMarketReferenceType>(_QueryLocationResponseTypeMarketReference_QNAME, ArrayOfMarketReferenceType.class, QueryLocationResponseType.class, value);
     }
@@ -4424,7 +4424,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "location", scope = QueryLocationResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "location", scope = QueryLocationResponseType.class)
     public JAXBElement<LocationType> createQueryLocationResponseTypeLocation(LocationType value) {
         return new JAXBElement<LocationType>(_QueryLocationResponseTypeLocation_QNAME, LocationType.class, QueryLocationResponseType.class, value);
     }
@@ -4432,7 +4432,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfLocationReferenceType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "locationReference", scope = QueryLocationResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "locationReference", scope = QueryLocationResponseType.class)
     public JAXBElement<ArrayOfLocationReferenceType> createQueryLocationResponseTypeLocationReference(ArrayOfLocationReferenceType value) {
         return new JAXBElement<ArrayOfLocationReferenceType>(_QueryLocationResponseTypeLocationReference_QNAME, ArrayOfLocationReferenceType.class, QueryLocationResponseType.class, value);
     }
@@ -4440,7 +4440,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddNodeRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "AddNode", scope = AddNode.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "AddNode", scope = AddNode.class)
     public JAXBElement<AddNodeRequestType> createAddNodeAddNode(AddNodeRequestType value) {
         return new JAXBElement<AddNodeRequestType>(_AddNodeAddNode_QNAME, AddNodeRequestType.class, AddNode.class, value);
     }
@@ -4448,7 +4448,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "singleViewID", scope = AssociateSingleViewAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "singleViewID", scope = AssociateSingleViewAddressType.class)
     public JAXBElement<String> createAssociateSingleViewAddressTypeSingleViewID(String value) {
         return new JAXBElement<String>(_DeleteSingleViewAddressAssociationTypeSingleViewID_QNAME, String.class, AssociateSingleViewAddressType.class, value);
     }
@@ -4456,7 +4456,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "addressID", scope = AssociateSingleViewAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "addressID", scope = AssociateSingleViewAddressType.class)
     public JAXBElement<String> createAssociateSingleViewAddressTypeAddressID(String value) {
         return new JAXBElement<String>(_DeleteSingleViewAddressAssociationTypeAddressID_QNAME, String.class, AssociateSingleViewAddressType.class, value);
     }
@@ -4464,7 +4464,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetNodeResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getNodeReturn", scope = GetNodeResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getNodeReturn", scope = GetNodeResponse.class)
     public JAXBElement<GetNodeResponseType> createGetNodeResponseGetNodeReturn(GetNodeResponseType value) {
         return new JAXBElement<GetNodeResponseType>(_GetNodeResponseGetNodeReturn_QNAME, GetNodeResponseType.class, GetNodeResponse.class, value);
     }
@@ -4472,7 +4472,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddModifyMarketResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "modifyMarketReturn", scope = ModifyMarketResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "modifyMarketReturn", scope = ModifyMarketResponse.class)
     public JAXBElement<AddModifyMarketResponseType> createModifyMarketResponseModifyMarketReturn(AddModifyMarketResponseType value) {
         return new JAXBElement<AddModifyMarketResponseType>(_ModifyMarketResponseModifyMarketReturn_QNAME, AddModifyMarketResponseType.class, ModifyMarketResponse.class, value);
     }
@@ -4480,7 +4480,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "closeMatch", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "closeMatch", scope = GeocodedAddressType.class)
     public JAXBElement<Boolean> createGeocodedAddressTypeCloseMatch(Boolean value) {
         return new JAXBElement<Boolean>(_GeocodedAddressTypeCloseMatch_QNAME, Boolean.class, GeocodedAddressType.class, value);
     }
@@ -4488,7 +4488,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfUnitTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitTypes", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitTypes", scope = GeocodedAddressType.class)
     public JAXBElement<ArrayOfUnitTypesType> createGeocodedAddressTypeUnitTypes(ArrayOfUnitTypesType value) {
         return new JAXBElement<ArrayOfUnitTypesType>(_LocationQueueAddressTypeUnitTypes_QNAME, ArrayOfUnitTypesType.class, GeocodedAddressType.class, value);
     }
@@ -4496,7 +4496,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPreDirection", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPreDirection", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeStreetPreDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPreDirection_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4504,7 +4504,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetName", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetName", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeStreetName(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeStreetName_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4512,7 +4512,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "longitude", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "longitude", scope = GeocodedAddressType.class)
     public JAXBElement<BigDecimal> createGeocodedAddressTypeLongitude(BigDecimal value) {
         return new JAXBElement<BigDecimal>(_GeocodingResultsTypeLongitude_QNAME, BigDecimal.class, GeocodedAddressType.class, value);
     }
@@ -4520,7 +4520,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetSuffix", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetSuffix", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeStreetSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetSuffix_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4528,7 +4528,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "state", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "state", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeState(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeState_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4536,7 +4536,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetSide", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetSide", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeStreetSide(String value) {
         return new JAXBElement<String>(_GeocodedAddressTypeStreetSide_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4544,7 +4544,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "city", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "city", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeCity(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeCity_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4552,7 +4552,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "CensusBlock", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "CensusBlock", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeCensusBlock(String value) {
         return new JAXBElement<String>(_GeocodedAddressTypeCensusBlock_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4560,7 +4560,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dwellingCode", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dwellingCode", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeDwellingCode(String value) {
         return new JAXBElement<String>(_PostalAddressTypeDwellingCode_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4568,7 +4568,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "latitude", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "latitude", scope = GeocodedAddressType.class)
     public JAXBElement<BigDecimal> createGeocodedAddressTypeLatitude(BigDecimal value) {
         return new JAXBElement<BigDecimal>(_GeocodingResultsTypeLatitude_QNAME, BigDecimal.class, GeocodedAddressType.class, value);
     }
@@ -4576,7 +4576,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ZipCodeType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "zipCode", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "zipCode", scope = GeocodedAddressType.class)
     public JAXBElement<ZipCodeType> createGeocodedAddressTypeZipCode(ZipCodeType value) {
         return new JAXBElement<ZipCodeType>(_GeocodedAddressTypeZipCode_QNAME, ZipCodeType.class, GeocodedAddressType.class, value);
     }
@@ -4584,7 +4584,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GeocodingPrecisionType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "geocodingPrecision", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "geocodingPrecision", scope = GeocodedAddressType.class)
     public JAXBElement<GeocodingPrecisionType> createGeocodedAddressTypeGeocodingPrecision(GeocodingPrecisionType value) {
         return new JAXBElement<GeocodingPrecisionType>(_GeocodingResultsTypeGeocodingPrecision_QNAME, GeocodingPrecisionType.class, GeocodedAddressType.class, value);
     }
@@ -4592,7 +4592,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "CensusTract", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "CensusTract", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeCensusTract(String value) {
         return new JAXBElement<String>(_GeocodedAddressTypeCensusTract_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4600,7 +4600,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberSuffix", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberSuffix", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeHouseNumberSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberSuffix_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4608,7 +4608,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "urbanization", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "urbanization", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeUrbanization(String value) {
         return new JAXBElement<String>(_GeocodingResultsTypeUrbanization_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4616,7 +4616,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumber", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumber", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeHouseNumber(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumber_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4624,7 +4624,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPostDirection", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPostDirection", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeStreetPostDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPostDirection_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4632,7 +4632,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberPrefix", scope = GeocodedAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberPrefix", scope = GeocodedAddressType.class)
     public JAXBElement<String> createGeocodedAddressTypeHouseNumberPrefix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberPrefix_QNAME, String.class, GeocodedAddressType.class, value);
     }
@@ -4640,7 +4640,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AssociateSingleViewAddressType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "AssociateSingleViewAddress", scope = AssociateSingleViewAddress.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "AssociateSingleViewAddress", scope = AssociateSingleViewAddress.class)
     public JAXBElement<AssociateSingleViewAddressType> createAssociateSingleViewAddressAssociateSingleViewAddress(AssociateSingleViewAddressType value) {
         return new JAXBElement<AssociateSingleViewAddressType>(_AssociateSingleViewAddressAssociateSingleViewAddress_QNAME, AssociateSingleViewAddressType.class, AssociateSingleViewAddress.class, value);
     }
@@ -4648,7 +4648,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CopyDuplicateHouseToBillingRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "CopyDuplicateHouseToBilling", scope = CopyDuplicateHouseToBilling.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "CopyDuplicateHouseToBilling", scope = CopyDuplicateHouseToBilling.class)
     public JAXBElement<CopyDuplicateHouseToBillingRequestType> createCopyDuplicateHouseToBillingCopyDuplicateHouseToBilling(CopyDuplicateHouseToBillingRequestType value) {
         return new JAXBElement<CopyDuplicateHouseToBillingRequestType>(_CopyDuplicateHouseToBillingCopyDuplicateHouseToBilling_QNAME, CopyDuplicateHouseToBillingRequestType.class, CopyDuplicateHouseToBilling.class, value);
     }
@@ -4656,7 +4656,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryMsagDataResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryMsagDataReturn", scope = QueryMsagDataResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryMsagDataReturn", scope = QueryMsagDataResponse.class)
     public JAXBElement<QueryMsagDataResponseType> createQueryMsagDataResponseQueryMsagDataReturn(QueryMsagDataResponseType value) {
         return new JAXBElement<QueryMsagDataResponseType>(_QueryMsagDataResponseQueryMsagDataReturn_QNAME, QueryMsagDataResponseType.class, QueryMsagDataResponse.class, value);
     }
@@ -4664,7 +4664,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetNodeRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetNode", scope = GetNode.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetNode", scope = GetNode.class)
     public JAXBElement<GetNodeRequestType> createGetNodeGetNode(GetNodeRequestType value) {
         return new JAXBElement<GetNodeRequestType>(_GetNodeGetNode_QNAME, GetNodeRequestType.class, GetNode.class, value);
     }
@@ -4672,7 +4672,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Long }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "elocNodeID", scope = NodeReferenceType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "elocNodeID", scope = NodeReferenceType.class)
     public JAXBElement<Long> createNodeReferenceTypeElocNodeID(Long value) {
         return new JAXBElement<Long>(_NodeTypeElocNodeID_QNAME, Long.class, NodeReferenceType.class, value);
     }
@@ -4680,7 +4680,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeName", scope = NodeReferenceType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeName", scope = NodeReferenceType.class)
     public JAXBElement<String> createNodeReferenceTypeNodeName(String value) {
         return new JAXBElement<String>(_NodeTypeNodeName_QNAME, String.class, NodeReferenceType.class, value);
     }
@@ -4688,7 +4688,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link NodeStatusSimpleType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeStatus", scope = NodeReferenceType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeStatus", scope = NodeReferenceType.class)
     public JAXBElement<NodeStatusSimpleType> createNodeReferenceTypeNodeStatus(NodeStatusSimpleType value) {
         return new JAXBElement<NodeStatusSimpleType>(_NodeTypeNodeStatus_QNAME, NodeStatusSimpleType.class, NodeReferenceType.class, value);
     }
@@ -4696,7 +4696,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "nodeDescription", scope = NodeReferenceType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "nodeDescription", scope = NodeReferenceType.class)
     public JAXBElement<String> createNodeReferenceTypeNodeDescription(String value) {
         return new JAXBElement<String>(_NodeTypeNodeDescription_QNAME, String.class, NodeReferenceType.class, value);
     }
@@ -4704,7 +4704,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "plannedAvailabilityDate", scope = NodeReferenceType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "plannedAvailabilityDate", scope = NodeReferenceType.class)
     public JAXBElement<XMLGregorianCalendar> createNodeReferenceTypePlannedAvailabilityDate(XMLGregorianCalendar value) {
         return new JAXBElement<XMLGregorianCalendar>(_NodeTypePlannedAvailabilityDate_QNAME, XMLGregorianCalendar.class, NodeReferenceType.class, value);
     }
@@ -4712,7 +4712,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Long }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "marketID", scope = NodeReferenceType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "marketID", scope = NodeReferenceType.class)
     public JAXBElement<Long> createNodeReferenceTypeMarketID(Long value) {
         return new JAXBElement<Long>(_NodeReferenceTypeMarketID_QNAME, Long.class, NodeReferenceType.class, value);
     }
@@ -4720,7 +4720,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationGeospatialRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryLocationGeospatial", scope = QueryLocationGeospatial.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryLocationGeospatial", scope = QueryLocationGeospatial.class)
     public JAXBElement<QueryLocationGeospatialRequestType> createQueryLocationGeospatialQueryLocationGeospatial(QueryLocationGeospatialRequestType value) {
         return new JAXBElement<QueryLocationGeospatialRequestType>(_QueryLocationGeospatialQueryLocationGeospatial_QNAME, QueryLocationGeospatialRequestType.class, QueryLocationGeospatial.class, value);
     }
@@ -4728,7 +4728,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "fiberNodeName", scope = GetLocationInformationResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "fiberNodeName", scope = GetLocationInformationResponseType.class)
     public JAXBElement<String> createGetLocationInformationResponseTypeFiberNodeName(String value) {
         return new JAXBElement<String>(_GetLocationInformationResponseTypeFiberNodeName_QNAME, String.class, GetLocationInformationResponseType.class, value);
     }
@@ -4736,7 +4736,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfLocationReferenceType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "locationReference", scope = GetLocationInformationResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "locationReference", scope = GetLocationInformationResponseType.class)
     public JAXBElement<ArrayOfLocationReferenceType> createGetLocationInformationResponseTypeLocationReference(ArrayOfLocationReferenceType value) {
         return new JAXBElement<ArrayOfLocationReferenceType>(_QueryLocationResponseTypeLocationReference_QNAME, ArrayOfLocationReferenceType.class, GetLocationInformationResponseType.class, value);
     }
@@ -4744,7 +4744,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfUnitTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitTypes", scope = E911AddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitTypes", scope = E911AddressType.class)
     public JAXBElement<ArrayOfUnitTypesType> createE911AddressTypeUnitTypes(ArrayOfUnitTypesType value) {
         return new JAXBElement<ArrayOfUnitTypesType>(_LocationQueueAddressTypeUnitTypes_QNAME, ArrayOfUnitTypesType.class, E911AddressType.class, value);
     }
@@ -4752,7 +4752,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPreDirection", scope = E911AddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPreDirection", scope = E911AddressType.class)
     public JAXBElement<String> createE911AddressTypeStreetPreDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPreDirection_QNAME, String.class, E911AddressType.class, value);
     }
@@ -4760,7 +4760,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberSuffix", scope = E911AddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberSuffix", scope = E911AddressType.class)
     public JAXBElement<String> createE911AddressTypeHouseNumberSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberSuffix_QNAME, String.class, E911AddressType.class, value);
     }
@@ -4768,7 +4768,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumber", scope = E911AddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumber", scope = E911AddressType.class)
     public JAXBElement<String> createE911AddressTypeHouseNumber(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumber_QNAME, String.class, E911AddressType.class, value);
     }
@@ -4776,7 +4776,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPostDirection", scope = E911AddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPostDirection", scope = E911AddressType.class)
     public JAXBElement<String> createE911AddressTypeStreetPostDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPostDirection_QNAME, String.class, E911AddressType.class, value);
     }
@@ -4784,7 +4784,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetSuffix", scope = E911AddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetSuffix", scope = E911AddressType.class)
     public JAXBElement<String> createE911AddressTypeStreetSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetSuffix_QNAME, String.class, E911AddressType.class, value);
     }
@@ -4792,7 +4792,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberPrefix", scope = E911AddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberPrefix", scope = E911AddressType.class)
     public JAXBElement<String> createE911AddressTypeHouseNumberPrefix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberPrefix_QNAME, String.class, E911AddressType.class, value);
     }
@@ -4800,7 +4800,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddLocationQueueRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "AddLocationQueue", scope = AddLocationQueue.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "AddLocationQueue", scope = AddLocationQueue.class)
     public JAXBElement<AddLocationQueueRequestType> createAddLocationQueueAddLocationQueue(AddLocationQueueRequestType value) {
         return new JAXBElement<AddLocationQueueRequestType>(_AddLocationQueueAddLocationQueue_QNAME, AddLocationQueueRequestType.class, AddLocationQueue.class, value);
     }
@@ -4808,7 +4808,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyHomeSecurityResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "modifyHomeSecurityReturn", scope = ModifyHomeSecurityResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "modifyHomeSecurityReturn", scope = ModifyHomeSecurityResponse.class)
     public JAXBElement<ModifyHomeSecurityResponseType> createModifyHomeSecurityResponseModifyHomeSecurityReturn(ModifyHomeSecurityResponseType value) {
         return new JAXBElement<ModifyHomeSecurityResponseType>(_ModifyHomeSecurityResponseModifyHomeSecurityReturn_QNAME, ModifyHomeSecurityResponseType.class, ModifyHomeSecurityResponse.class, value);
     }
@@ -4816,7 +4816,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryLocation", scope = QueryLocation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryLocation", scope = QueryLocation.class)
     public JAXBElement<QueryLocationRequestType> createQueryLocationQueryLocation(QueryLocationRequestType value) {
         return new JAXBElement<QueryLocationRequestType>(_QueryLocationQueryLocation_QNAME, QueryLocationRequestType.class, QueryLocation.class, value);
     }
@@ -4824,7 +4824,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfLocationLegacyDetailsDSTType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "DSTLegacyDetails", scope = LocationLegacyDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "DSTLegacyDetails", scope = LocationLegacyDetailsType.class)
     public JAXBElement<ArrayOfLocationLegacyDetailsDSTType> createLocationLegacyDetailsTypeDSTLegacyDetails(ArrayOfLocationLegacyDetailsDSTType value) {
         return new JAXBElement<ArrayOfLocationLegacyDetailsDSTType>(_LocationLegacyDetailsTypeDSTLegacyDetails_QNAME, ArrayOfLocationLegacyDetailsDSTType.class, LocationLegacyDetailsType.class, value);
     }
@@ -4832,7 +4832,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfLocationLegacyDetailsCSGType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "CSGLegacyDetails", scope = LocationLegacyDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "CSGLegacyDetails", scope = LocationLegacyDetailsType.class)
     public JAXBElement<ArrayOfLocationLegacyDetailsCSGType> createLocationLegacyDetailsTypeCSGLegacyDetails(ArrayOfLocationLegacyDetailsCSGType value) {
         return new JAXBElement<ArrayOfLocationLegacyDetailsCSGType>(_LocationLegacyDetailsTypeCSGLegacyDetails_QNAME, ArrayOfLocationLegacyDetailsCSGType.class, LocationLegacyDetailsType.class, value);
     }
@@ -4840,7 +4840,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StandardizeAddressByRuleRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "StandardizeAddressByRule", scope = StandardizeAddressByRule.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "StandardizeAddressByRule", scope = StandardizeAddressByRule.class)
     public JAXBElement<StandardizeAddressByRuleRequestType> createStandardizeAddressByRuleStandardizeAddressByRule(StandardizeAddressByRuleRequestType value) {
         return new JAXBElement<StandardizeAddressByRuleRequestType>(_StandardizeAddressByRuleStandardizeAddressByRule_QNAME, StandardizeAddressByRuleRequestType.class, StandardizeAddressByRule.class, value);
     }
@@ -4848,7 +4848,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryMarketRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryMarket", scope = QueryMarket.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryMarket", scope = QueryMarket.class)
     public JAXBElement<QueryMarketRequestType> createQueryMarketQueryMarket(QueryMarketRequestType value) {
         return new JAXBElement<QueryMarketRequestType>(_QueryMarketQueryMarket_QNAME, QueryMarketRequestType.class, QueryMarket.class, value);
     }
@@ -4856,7 +4856,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "marketHierarchyInfo", scope = GetLocationXfinityRequestedResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "marketHierarchyInfo", scope = GetLocationXfinityRequestedResultsType.class)
     public JAXBElement<Boolean> createGetLocationXfinityRequestedResultsTypeMarketHierarchyInfo(Boolean value) {
         return new JAXBElement<Boolean>(_GetLocationXfinityRequestedResultsTypeMarketHierarchyInfo_QNAME, Boolean.class, GetLocationXfinityRequestedResultsType.class, value);
     }
@@ -4864,7 +4864,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressCriteriaByRulesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "addressSearch", scope = QueryLocationByRuleRequestType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "addressSearch", scope = QueryLocationByRuleRequestType.class)
     public JAXBElement<AddressCriteriaByRulesType> createQueryLocationByRuleRequestTypeAddressSearch(AddressCriteriaByRulesType value) {
         return new JAXBElement<AddressCriteriaByRulesType>(_QueryLocationByRuleRequestTypeAddressSearch_QNAME, AddressCriteriaByRulesType.class, QueryLocationByRuleRequestType.class, value);
     }
@@ -4872,7 +4872,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetMarketResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getMarketReturn", scope = GetMarketResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getMarketReturn", scope = GetMarketResponse.class)
     public JAXBElement<GetMarketResponseType> createGetMarketResponseGetMarketReturn(GetMarketResponseType value) {
         return new JAXBElement<GetMarketResponseType>(_GetMarketResponseGetMarketReturn_QNAME, GetMarketResponseType.class, GetMarketResponse.class, value);
     }
@@ -4880,7 +4880,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyMarketRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "ModifyMarket", scope = ModifyMarket.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "ModifyMarket", scope = ModifyMarket.class)
     public JAXBElement<ModifyMarketRequestType> createModifyMarketModifyMarket(ModifyMarketRequestType value) {
         return new JAXBElement<ModifyMarketRequestType>(_ModifyMarketModifyMarket_QNAME, ModifyMarketRequestType.class, ModifyMarket.class, value);
     }
@@ -4888,7 +4888,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "applyConsumerRule", scope = StandardizeAddressByRuleRequestType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "applyConsumerRule", scope = StandardizeAddressByRuleRequestType.class)
     public JAXBElement<String> createStandardizeAddressByRuleRequestTypeApplyConsumerRule(String value) {
         return new JAXBElement<String>(_StandardizeAddressByRuleRequestTypeApplyConsumerRule_QNAME, String.class, StandardizeAddressByRuleRequestType.class, value);
     }
@@ -4896,7 +4896,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyHomeSecurityRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "ModifyHomeSecurity", scope = ModifyHomeSecurity.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "ModifyHomeSecurity", scope = ModifyHomeSecurity.class)
     public JAXBElement<ModifyHomeSecurityRequestType> createModifyHomeSecurityModifyHomeSecurity(ModifyHomeSecurityRequestType value) {
         return new JAXBElement<ModifyHomeSecurityRequestType>(_ModifyHomeSecurityModifyHomeSecurity_QNAME, ModifyHomeSecurityRequestType.class, ModifyHomeSecurity.class, value);
     }
@@ -4904,7 +4904,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "BuildingCategory", scope = BuildingAttributesType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "BuildingCategory", scope = BuildingAttributesType.class)
     public JAXBElement<String> createBuildingAttributesTypeBuildingCategory(String value) {
         return new JAXBElement<String>(_BuildingAttributesTypeBuildingCategory_QNAME, String.class, BuildingAttributesType.class, value);
     }
@@ -4912,7 +4912,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationXfinityResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getLocationXfinityReturn", scope = GetLocationXfinityResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getLocationXfinityReturn", scope = GetLocationXfinityResponse.class)
     public JAXBElement<GetLocationXfinityResponseType> createGetLocationXfinityResponseGetLocationXfinityReturn(GetLocationXfinityResponseType value) {
         return new JAXBElement<GetLocationXfinityResponseType>(_GetLocationXfinityResponseGetLocationXfinityReturn_QNAME, GetLocationXfinityResponseType.class, GetLocationXfinityResponse.class, value);
     }
@@ -4920,7 +4920,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetMarketRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetMarket", scope = GetMarket.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetMarket", scope = GetMarket.class)
     public JAXBElement<GetMarketRequestType> createGetMarketGetMarket(GetMarketRequestType value) {
         return new JAXBElement<GetMarketRequestType>(_GetMarketGetMarket_QNAME, GetMarketRequestType.class, GetMarket.class, value);
     }
@@ -4928,7 +4928,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryNodeResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryNodeReturn", scope = QueryNodeResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryNodeReturn", scope = QueryNodeResponse.class)
     public JAXBElement<QueryNodeResponseType> createQueryNodeResponseQueryNodeReturn(QueryNodeResponseType value) {
         return new JAXBElement<QueryNodeResponseType>(_QueryNodeResponseQueryNodeReturn_QNAME, QueryNodeResponseType.class, QueryNodeResponse.class, value);
     }
@@ -4936,7 +4936,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteLocationRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "DeleteLocation", scope = DeleteLocation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "DeleteLocation", scope = DeleteLocation.class)
     public JAXBElement<DeleteLocationRequestType> createDeleteLocationDeleteLocation(DeleteLocationRequestType value) {
         return new JAXBElement<DeleteLocationRequestType>(_DeleteLocationDeleteLocation_QNAME, DeleteLocationRequestType.class, DeleteLocation.class, value);
     }
@@ -4944,7 +4944,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddressXfinityCriteriaType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "addressSearch", scope = QueryLocationXfinityRequestType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "addressSearch", scope = QueryLocationXfinityRequestType.class)
     public JAXBElement<AddressXfinityCriteriaType> createQueryLocationXfinityRequestTypeAddressSearch(AddressXfinityCriteriaType value) {
         return new JAXBElement<AddressXfinityCriteriaType>(_QueryLocationByRuleRequestTypeAddressSearch_QNAME, AddressXfinityCriteriaType.class, QueryLocationXfinityRequestType.class, value);
     }
@@ -4952,7 +4952,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyLocationQueueResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "modifyLocationQueueReturn", scope = ModifyLocationQueueResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "modifyLocationQueueReturn", scope = ModifyLocationQueueResponse.class)
     public JAXBElement<ModifyLocationQueueResponseType> createModifyLocationQueueResponseModifyLocationQueueReturn(ModifyLocationQueueResponseType value) {
         return new JAXBElement<ModifyLocationQueueResponseType>(_ModifyLocationQueueResponseModifyLocationQueueReturn_QNAME, ModifyLocationQueueResponseType.class, ModifyLocationQueueResponse.class, value);
     }
@@ -4960,7 +4960,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationReferenceDataResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryLocationReferenceDataReturn", scope = QueryLocationReferenceDataResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryLocationReferenceDataReturn", scope = QueryLocationReferenceDataResponse.class)
     public JAXBElement<QueryLocationReferenceDataResponseType> createQueryLocationReferenceDataResponseQueryLocationReferenceDataReturn(QueryLocationReferenceDataResponseType value) {
         return new JAXBElement<QueryLocationReferenceDataResponseType>(_QueryLocationReferenceDataResponseQueryLocationReferenceDataReturn_QNAME, QueryLocationReferenceDataResponseType.class, QueryLocationReferenceDataResponse.class, value);
     }
@@ -4968,7 +4968,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StandardizeAddressRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "StandardizeAddress", scope = StandardizeAddress.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "StandardizeAddress", scope = StandardizeAddress.class)
     public JAXBElement<StandardizeAddressRequestType> createStandardizeAddressStandardizeAddress(StandardizeAddressRequestType value) {
         return new JAXBElement<StandardizeAddressRequestType>(_StandardizeAddressStandardizeAddress_QNAME, StandardizeAddressRequestType.class, StandardizeAddress.class, value);
     }
@@ -4976,7 +4976,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfUnitTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitTypes", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitTypes", scope = QueryPostalAddressType.class)
     public JAXBElement<ArrayOfUnitTypesType> createQueryPostalAddressTypeUnitTypes(ArrayOfUnitTypesType value) {
         return new JAXBElement<ArrayOfUnitTypesType>(_LocationQueueAddressTypeUnitTypes_QNAME, ArrayOfUnitTypesType.class, QueryPostalAddressType.class, value);
     }
@@ -4984,7 +4984,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPreDirection", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPreDirection", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeStreetPreDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPreDirection_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -4992,7 +4992,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetName", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetName", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeStreetName(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeStreetName_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -5000,7 +5000,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetSuffix", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetSuffix", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeStreetSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetSuffix_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -5008,7 +5008,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "state", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "state", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeState(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeState_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -5016,7 +5016,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "city", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "city", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeCity(String value) {
         return new JAXBElement<String>(_PostalAddressUpdateTypeCity_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -5024,7 +5024,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dwellingCode", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dwellingCode", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeDwellingCode(String value) {
         return new JAXBElement<String>(_PostalAddressTypeDwellingCode_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -5032,7 +5032,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ZipCodeType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "zipCode", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "zipCode", scope = QueryPostalAddressType.class)
     public JAXBElement<ZipCodeType> createQueryPostalAddressTypeZipCode(ZipCodeType value) {
         return new JAXBElement<ZipCodeType>(_GeocodedAddressTypeZipCode_QNAME, ZipCodeType.class, QueryPostalAddressType.class, value);
     }
@@ -5040,7 +5040,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryCodeType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "country", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "country", scope = QueryPostalAddressType.class)
     public JAXBElement<CountryCodeType> createQueryPostalAddressTypeCountry(CountryCodeType value) {
         return new JAXBElement<CountryCodeType>(_LocationQueueAddressTypeCountry_QNAME, CountryCodeType.class, QueryPostalAddressType.class, value);
     }
@@ -5048,7 +5048,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberSuffix", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberSuffix", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeHouseNumberSuffix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberSuffix_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -5056,7 +5056,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumber", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumber", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeHouseNumber(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumber_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -5064,7 +5064,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "streetPostDirection", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "streetPostDirection", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeStreetPostDirection(String value) {
         return new JAXBElement<String>(_PostalAddressTypeStreetPostDirection_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -5072,7 +5072,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumberPrefix", scope = QueryPostalAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumberPrefix", scope = QueryPostalAddressType.class)
     public JAXBElement<String> createQueryPostalAddressTypeHouseNumberPrefix(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumberPrefix_QNAME, String.class, QueryPostalAddressType.class, value);
     }
@@ -5080,7 +5080,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "StructureType", scope = LocationDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "StructureType", scope = LocationDetailsType.class)
     public JAXBElement<String> createLocationDetailsTypeStructureType(String value) {
         return new JAXBElement<String>(_LocationDetailsTypeStructureType_QNAME, String.class, LocationDetailsType.class, value);
     }
@@ -5088,7 +5088,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "StructureUse", scope = LocationDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "StructureUse", scope = LocationDetailsType.class)
     public JAXBElement<String> createLocationDetailsTypeStructureUse(String value) {
         return new JAXBElement<String>(_LocationDetailsTypeStructureUse_QNAME, String.class, LocationDetailsType.class, value);
     }
@@ -5096,7 +5096,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "AddressGroupID", scope = LocationDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "AddressGroupID", scope = LocationDetailsType.class)
     public JAXBElement<String> createLocationDetailsTypeAddressGroupID(String value) {
         return new JAXBElement<String>(_LocationDetailsUpdateTypeAddressGroupID_QNAME, String.class, LocationDetailsType.class, value);
     }
@@ -5104,7 +5104,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddLocationRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "AddLocation", scope = AddLocation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "AddLocation", scope = AddLocation.class)
     public JAXBElement<AddLocationRequestType> createAddLocationAddLocation(AddLocationRequestType value) {
         return new JAXBElement<AddLocationRequestType>(_AddLocationAddLocation_QNAME, AddLocationRequestType.class, AddLocation.class, value);
     }
@@ -5112,7 +5112,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationFromBillerResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getLocationFromBillerReturn", scope = GetLocationFromBillerResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getLocationFromBillerReturn", scope = GetLocationFromBillerResponse.class)
     public JAXBElement<GetLocationFromBillerResponseType> createGetLocationFromBillerResponseGetLocationFromBillerReturn(GetLocationFromBillerResponseType value) {
         return new JAXBElement<GetLocationFromBillerResponseType>(_GetLocationFromBillerResponseGetLocationFromBillerReturn_QNAME, GetLocationFromBillerResponseType.class, GetLocationFromBillerResponse.class, value);
     }
@@ -5120,7 +5120,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateLocationInBillingResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "updateLocationInBillingReturn", scope = UpdateLocationInBillingResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "updateLocationInBillingReturn", scope = UpdateLocationInBillingResponse.class)
     public JAXBElement<UpdateLocationInBillingResponseType> createUpdateLocationInBillingResponseUpdateLocationInBillingReturn(UpdateLocationInBillingResponseType value) {
         return new JAXBElement<UpdateLocationInBillingResponseType>(_UpdateLocationInBillingResponseUpdateLocationInBillingReturn_QNAME, UpdateLocationInBillingResponseType.class, UpdateLocationInBillingResponse.class, value);
     }
@@ -5128,7 +5128,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationFromBillerRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetLocationFromBiller", scope = GetLocationFromBiller.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetLocationFromBiller", scope = GetLocationFromBiller.class)
     public JAXBElement<GetLocationFromBillerRequestType> createGetLocationFromBillerGetLocationFromBiller(GetLocationFromBillerRequestType value) {
         return new JAXBElement<GetLocationFromBillerRequestType>(_GetLocationFromBillerGetLocationFromBiller_QNAME, GetLocationFromBillerRequestType.class, GetLocationFromBiller.class, value);
     }
@@ -5136,7 +5136,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationByRuleRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryLocationByRule", scope = QueryLocationByRule.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryLocationByRule", scope = QueryLocationByRule.class)
     public JAXBElement<QueryLocationByRuleRequestType> createQueryLocationByRuleQueryLocationByRule(QueryLocationByRuleRequestType value) {
         return new JAXBElement<QueryLocationByRuleRequestType>(_QueryLocationByRuleQueryLocationByRule_QNAME, QueryLocationByRuleRequestType.class, QueryLocationByRule.class, value);
     }
@@ -5144,7 +5144,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ServiceabilityUpdateType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "updateAction", scope = LocationServiceabilityUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "updateAction", scope = LocationServiceabilityUpdateType.class)
     public JAXBElement<ServiceabilityUpdateType> createLocationServiceabilityUpdateTypeUpdateAction(ServiceabilityUpdateType value) {
         return new JAXBElement<ServiceabilityUpdateType>(_LocationServiceabilityUpdateTypeUpdateAction_QNAME, ServiceabilityUpdateType.class, LocationServiceabilityUpdateType.class, value);
     }
@@ -5152,7 +5152,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "serviceableFlag", scope = LocationServiceabilityUpdateType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "serviceableFlag", scope = LocationServiceabilityUpdateType.class)
     public JAXBElement<Boolean> createLocationServiceabilityUpdateTypeServiceableFlag(Boolean value) {
         return new JAXBElement<Boolean>(_LocationServiceabilityUpdateTypeServiceableFlag_QNAME, Boolean.class, LocationServiceabilityUpdateType.class, value);
     }
@@ -5160,7 +5160,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link VerifyLocationResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "verifyLocationReturn", scope = VerifyLocationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "verifyLocationReturn", scope = VerifyLocationResponse.class)
     public JAXBElement<VerifyLocationResponseType> createVerifyLocationResponseVerifyLocationReturn(VerifyLocationResponseType value) {
         return new JAXBElement<VerifyLocationResponseType>(_VerifyLocationResponseVerifyLocationReturn_QNAME, VerifyLocationResponseType.class, VerifyLocationResponse.class, value);
     }
@@ -5168,7 +5168,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationQueueResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getLocationQueueReturn", scope = GetLocationQueueResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getLocationQueueReturn", scope = GetLocationQueueResponse.class)
     public JAXBElement<GetLocationQueueResponseType> createGetLocationQueueResponseGetLocationQueueReturn(GetLocationQueueResponseType value) {
         return new JAXBElement<GetLocationQueueResponseType>(_GetLocationQueueResponseGetLocationQueueReturn_QNAME, GetLocationQueueResponseType.class, GetLocationQueueResponse.class, value);
     }
@@ -5176,7 +5176,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteMarketResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "deleteMarketReturn", scope = DeleteMarketResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "deleteMarketReturn", scope = DeleteMarketResponse.class)
     public JAXBElement<DeleteMarketResponseType> createDeleteMarketResponseDeleteMarketReturn(DeleteMarketResponseType value) {
         return new JAXBElement<DeleteMarketResponseType>(_DeleteMarketResponseDeleteMarketReturn_QNAME, DeleteMarketResponseType.class, DeleteMarketResponse.class, value);
     }
@@ -5184,7 +5184,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "Elevation", scope = GeographicCoordinateMeasurementType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "Elevation", scope = GeographicCoordinateMeasurementType.class)
     public JAXBElement<BigDecimal> createGeographicCoordinateMeasurementTypeElevation(BigDecimal value) {
         return new JAXBElement<BigDecimal>(_GeographicCoordinateMeasurementTypeElevation_QNAME, BigDecimal.class, GeographicCoordinateMeasurementType.class, value);
     }
@@ -5192,7 +5192,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfStandardizeAddressXfinityResponseItemType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "addresses", scope = StandardizeAddressXfinityResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "addresses", scope = StandardizeAddressXfinityResponseType.class)
     public JAXBElement<ArrayOfStandardizeAddressXfinityResponseItemType> createStandardizeAddressXfinityResponseTypeAddresses(ArrayOfStandardizeAddressXfinityResponseItemType value) {
         return new JAXBElement<ArrayOfStandardizeAddressXfinityResponseItemType>(_StandardizeAddressXfinityResponseTypeAddresses_QNAME, ArrayOfStandardizeAddressXfinityResponseItemType.class, StandardizeAddressXfinityResponseType.class, value);
     }
@@ -5200,7 +5200,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Long }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "MarketID", scope = ModifyLocationRequestDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "MarketID", scope = ModifyLocationRequestDetailsType.class)
     public JAXBElement<Long> createModifyLocationRequestDetailsTypeMarketID(Long value) {
         return new JAXBElement<Long>(_ModifyLocationRequestDetailsTypeMarketID_QNAME, Long.class, ModifyLocationRequestDetailsType.class, value);
     }
@@ -5208,7 +5208,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link PostalAddressUpdateType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "LocationPostalAddress", scope = ModifyLocationRequestDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "LocationPostalAddress", scope = ModifyLocationRequestDetailsType.class)
     public JAXBElement<PostalAddressUpdateType> createModifyLocationRequestDetailsTypeLocationPostalAddress(PostalAddressUpdateType value) {
         return new JAXBElement<PostalAddressUpdateType>(_ModifyLocationRequestDetailsTypeLocationPostalAddress_QNAME, PostalAddressUpdateType.class, ModifyLocationRequestDetailsType.class, value);
     }
@@ -5216,7 +5216,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryMsagDataRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryMsagData", scope = QueryMsagData.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryMsagData", scope = QueryMsagData.class)
     public JAXBElement<QueryMsagDataRequestType> createQueryMsagDataQueryMsagData(QueryMsagDataRequestType value) {
         return new JAXBElement<QueryMsagDataRequestType>(_QueryMsagDataQueryMsagData_QNAME, QueryMsagDataRequestType.class, QueryMsagData.class, value);
     }
@@ -5224,7 +5224,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyLocationRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "ModifyLocation", scope = ModifyLocation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "ModifyLocation", scope = ModifyLocation.class)
     public JAXBElement<ModifyLocationRequestType> createModifyLocationModifyLocation(ModifyLocationRequestType value) {
         return new JAXBElement<ModifyLocationRequestType>(_ModifyLocationModifyLocation_QNAME, ModifyLocationRequestType.class, ModifyLocation.class, value);
     }
@@ -5232,7 +5232,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "TNOrderPool", scope = LocationTelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "TNOrderPool", scope = LocationTelephonyType.class)
     public JAXBElement<String> createLocationTelephonyTypeTNOrderPool(String value) {
         return new JAXBElement<String>(_TelephonyTypeTNOrderPool_QNAME, String.class, LocationTelephonyType.class, value);
     }
@@ -5240,7 +5240,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "LATA", scope = LocationTelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "LATA", scope = LocationTelephonyType.class)
     public JAXBElement<String> createLocationTelephonyTypeLATA(String value) {
         return new JAXBElement<String>(_TelephonyTypeLATA_QNAME, String.class, LocationTelephonyType.class, value);
     }
@@ -5248,7 +5248,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "LATAName", scope = LocationTelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "LATAName", scope = LocationTelephonyType.class)
     public JAXBElement<String> createLocationTelephonyTypeLATAName(String value) {
         return new JAXBElement<String>(_TelephonyTypeLATAName_QNAME, String.class, LocationTelephonyType.class, value);
     }
@@ -5256,7 +5256,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "ILECName", scope = LocationTelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "ILECName", scope = LocationTelephonyType.class)
     public JAXBElement<String> createLocationTelephonyTypeILECName(String value) {
         return new JAXBElement<String>(_TelephonyTypeILECName_QNAME, String.class, LocationTelephonyType.class, value);
     }
@@ -5264,7 +5264,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "PSAPAgency", scope = LocationTelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "PSAPAgency", scope = LocationTelephonyType.class)
     public JAXBElement<String> createLocationTelephonyTypePSAPAgency(String value) {
         return new JAXBElement<String>(_TelephonyTypePSAPAgency_QNAME, String.class, LocationTelephonyType.class, value);
     }
@@ -5272,7 +5272,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "PSAPId", scope = LocationTelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "PSAPId", scope = LocationTelephonyType.class)
     public JAXBElement<String> createLocationTelephonyTypePSAPId(String value) {
         return new JAXBElement<String>(_TelephonyTypePSAPId_QNAME, String.class, LocationTelephonyType.class, value);
     }
@@ -5280,7 +5280,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "RateCenterName", scope = LocationTelephonyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "RateCenterName", scope = LocationTelephonyType.class)
     public JAXBElement<String> createLocationTelephonyTypeRateCenterName(String value) {
         return new JAXBElement<String>(_LocationTelephonyTypeRateCenterName_QNAME, String.class, LocationTelephonyType.class, value);
     }
@@ -5288,7 +5288,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "locationStatus", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "locationStatus", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeLocationStatus(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeLocationStatus_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5296,7 +5296,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "customerType", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "customerType", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeCustomerType(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeCustomerType_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5304,7 +5304,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unincorporatedFlag", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unincorporatedFlag", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeUnincorporatedFlag(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeUnincorporatedFlag_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5312,7 +5312,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dwellingCodeDescr", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dwellingCodeDescr", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeDwellingCodeDescr(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDwellingCodeDescr_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5320,7 +5320,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "poleOwner", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "poleOwner", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypePoleOwner(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypePoleOwner_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5328,7 +5328,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "addressLine2Override", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "addressLine2Override", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeAddressLine2Override(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeAddressLine2Override_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5336,7 +5336,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "salesArea", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "salesArea", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeSalesArea(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeSalesArea_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5344,7 +5344,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "hookupType", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "hookupType", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeHookupType(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeHookupType_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5352,7 +5352,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "pedestal", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "pedestal", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypePedestal(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypePedestal_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5360,7 +5360,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "lastCallDate", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "lastCallDate", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<XMLGregorianCalendar> createLocationLegacyDetailsCSGTypeLastCallDate(XMLGregorianCalendar value) {
         return new JAXBElement<XMLGregorianCalendar>(_LocationLegacyDetailsCSGTypeLastCallDate_QNAME, XMLGregorianCalendar.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5368,7 +5368,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationLegacyDetailsCSGHouseCommentsType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseComments", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseComments", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<LocationLegacyDetailsCSGHouseCommentsType> createLocationLegacyDetailsCSGTypeHouseComments(LocationLegacyDetailsCSGHouseCommentsType value) {
         return new JAXBElement<LocationLegacyDetailsCSGHouseCommentsType>(_LocationLegacyDetailsCSGTypeHouseComments_QNAME, LocationLegacyDetailsCSGHouseCommentsType.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5376,7 +5376,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "cell", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "cell", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeCell(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeCell_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5384,7 +5384,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dropLength", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dropLength", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeDropLength(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDropLength_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5392,7 +5392,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationLegacyDetailsCSGLineTagsType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "lineTag", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "lineTag", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<LocationLegacyDetailsCSGLineTagsType> createLocationLegacyDetailsCSGTypeLineTag(LocationLegacyDetailsCSGLineTagsType value) {
         return new JAXBElement<LocationLegacyDetailsCSGLineTagsType>(_LocationLegacyDetailsCSGTypeLineTag_QNAME, LocationLegacyDetailsCSGLineTagsType.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5400,7 +5400,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "powerSupply", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "powerSupply", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypePowerSupply(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypePowerSupply_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5408,7 +5408,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "locationType", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "locationType", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeLocationType(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeLocationType_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5416,7 +5416,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "demographicCode", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "demographicCode", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeDemographicCode(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDemographicCode_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5424,7 +5424,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "hub", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "hub", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeHub(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeHub_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5432,7 +5432,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseMisc", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseMisc", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeHouseMisc(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeHouseMisc_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5440,7 +5440,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "rightOfEntryPermission", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "rightOfEntryPermission", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeRightOfEntryPermission(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeRightOfEntryPermission_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5448,7 +5448,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dropType", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dropType", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeDropType(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDropType_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5456,7 +5456,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseUsageCode", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseUsageCode", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeHouseUsageCode(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeHouseUsageCode_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5464,7 +5464,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "technicianArea", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "technicianArea", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeTechnicianArea(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeTechnicianArea_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5472,7 +5472,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "mapCode", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "mapCode", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeMapCode(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeMapCode_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5480,7 +5480,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "poleNumber", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "poleNumber", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypePoleNumber(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypePoleNumber_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5488,7 +5488,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationLegacyDetailsCSGBridgerType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "bridgerAddress", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "bridgerAddress", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<LocationLegacyDetailsCSGBridgerType> createLocationLegacyDetailsCSGTypeBridgerAddress(LocationLegacyDetailsCSGBridgerType value) {
         return new JAXBElement<LocationLegacyDetailsCSGBridgerType>(_LocationLegacyDetailsCSGTypeBridgerAddress_QNAME, LocationLegacyDetailsCSGBridgerType.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5496,7 +5496,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "lastCallStatus", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "lastCallStatus", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeLastCallStatus(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeLastCallStatus_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5504,7 +5504,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "amplifier", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "amplifier", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeAmplifier(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeAmplifier_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5512,7 +5512,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "ground", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "ground", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeGround(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeGround_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5520,7 +5520,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "serviceArea", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "serviceArea", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeServiceArea(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeServiceArea_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5528,7 +5528,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dropSite", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dropSite", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeDropSite(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDropSite_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5536,7 +5536,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "timeZone", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "timeZone", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeTimeZone(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeTimeZone_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5544,7 +5544,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "locationCountyID", scope = LocationLegacyDetailsCSGType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "locationCountyID", scope = LocationLegacyDetailsCSGType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGTypeLocationCountyID(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeLocationCountyID_QNAME, String.class, LocationLegacyDetailsCSGType.class, value);
     }
@@ -5552,7 +5552,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationReferenceDataRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryLocationReferenceData", scope = QueryLocationReferenceData.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryLocationReferenceData", scope = QueryLocationReferenceData.class)
     public JAXBElement<QueryLocationReferenceDataRequestType> createQueryLocationReferenceDataQueryLocationReferenceData(QueryLocationReferenceDataRequestType value) {
         return new JAXBElement<QueryLocationReferenceDataRequestType>(_QueryLocationReferenceDataQueryLocationReferenceData_QNAME, QueryLocationReferenceDataRequestType.class, QueryLocationReferenceData.class, value);
     }
@@ -5560,7 +5560,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteNodeRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "DeleteNode", scope = DeleteNode.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "DeleteNode", scope = DeleteNode.class)
     public JAXBElement<DeleteNodeRequestType> createDeleteNodeDeleteNode(DeleteNodeRequestType value) {
         return new JAXBElement<DeleteNodeRequestType>(_DeleteNodeDeleteNode_QNAME, DeleteNodeRequestType.class, DeleteNode.class, value);
     }
@@ -5568,7 +5568,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "medicalNumber", scope = HomeSecurityContactNumbersType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "medicalNumber", scope = HomeSecurityContactNumbersType.class)
     public JAXBElement<String> createHomeSecurityContactNumbersTypeMedicalNumber(String value) {
         return new JAXBElement<String>(_HomeSecurityContactNumbersTypeMedicalNumber_QNAME, String.class, HomeSecurityContactNumbersType.class, value);
     }
@@ -5576,7 +5576,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "policeNumber", scope = HomeSecurityContactNumbersType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "policeNumber", scope = HomeSecurityContactNumbersType.class)
     public JAXBElement<String> createHomeSecurityContactNumbersTypePoliceNumber(String value) {
         return new JAXBElement<String>(_HomeSecurityContactNumbersTypePoliceNumber_QNAME, String.class, HomeSecurityContactNumbersType.class, value);
     }
@@ -5584,7 +5584,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "fireNumber", scope = HomeSecurityContactNumbersType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "fireNumber", scope = HomeSecurityContactNumbersType.class)
     public JAXBElement<String> createHomeSecurityContactNumbersTypeFireNumber(String value) {
         return new JAXBElement<String>(_HomeSecurityContactNumbersTypeFireNumber_QNAME, String.class, HomeSecurityContactNumbersType.class, value);
     }
@@ -5592,7 +5592,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfMarketReferenceType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "marketReference", scope = QueryMarketResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "marketReference", scope = QueryMarketResponseType.class)
     public JAXBElement<ArrayOfMarketReferenceType> createQueryMarketResponseTypeMarketReference(ArrayOfMarketReferenceType value) {
         return new JAXBElement<ArrayOfMarketReferenceType>(_QueryLocationResponseTypeMarketReference_QNAME, ArrayOfMarketReferenceType.class, QueryMarketResponseType.class, value);
     }
@@ -5600,7 +5600,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfVendorMarketReferenceType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "vendorMarketReference", scope = QueryMarketResponseType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "vendorMarketReference", scope = QueryMarketResponseType.class)
     public JAXBElement<ArrayOfVendorMarketReferenceType> createQueryMarketResponseTypeVendorMarketReference(ArrayOfVendorMarketReferenceType value) {
         return new JAXBElement<ArrayOfVendorMarketReferenceType>(_QueryMarketResponseTypeVendorMarketReference_QNAME, ArrayOfVendorMarketReferenceType.class, QueryMarketResponseType.class, value);
     }
@@ -5608,7 +5608,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationXfinityRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetLocationXfinity", scope = GetLocationXfinity.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetLocationXfinity", scope = GetLocationXfinity.class)
     public JAXBElement<GetLocationXfinityRequestType> createGetLocationXfinityGetLocationXfinity(GetLocationXfinityRequestType value) {
         return new JAXBElement<GetLocationXfinityRequestType>(_GetLocationXfinityGetLocationXfinity_QNAME, GetLocationXfinityRequestType.class, GetLocationXfinity.class, value);
     }
@@ -5616,7 +5616,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RefreshCacheResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "refreshCacheReturn", scope = RefreshCacheResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "refreshCacheReturn", scope = RefreshCacheResponse.class)
     public JAXBElement<RefreshCacheResponseType> createRefreshCacheResponseRefreshCacheReturn(RefreshCacheResponseType value) {
         return new JAXBElement<RefreshCacheResponseType>(_RefreshCacheResponseRefreshCacheReturn_QNAME, RefreshCacheResponseType.class, RefreshCacheResponse.class, value);
     }
@@ -5624,7 +5624,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationInformationRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetLocationInformation", scope = GetLocationInformation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetLocationInformation", scope = GetLocationInformation.class)
     public JAXBElement<GetLocationInformationRequestType> createGetLocationInformationGetLocationInformation(GetLocationInformationRequestType value) {
         return new JAXBElement<GetLocationInformationRequestType>(_GetLocationInformationGetLocationInformation_QNAME, GetLocationInformationRequestType.class, GetLocationInformation.class, value);
     }
@@ -5632,7 +5632,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddMarketRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "AddMarket", scope = AddMarket.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "AddMarket", scope = AddMarket.class)
     public JAXBElement<AddMarketRequestType> createAddMarketAddMarket(AddMarketRequestType value) {
         return new JAXBElement<AddMarketRequestType>(_AddMarketAddMarket_QNAME, AddMarketRequestType.class, AddMarket.class, value);
     }
@@ -5640,7 +5640,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "CensusBlock", scope = LocationGeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "CensusBlock", scope = LocationGeographyType.class)
     public JAXBElement<String> createLocationGeographyTypeCensusBlock(String value) {
         return new JAXBElement<String>(_GeocodedAddressTypeCensusBlock_QNAME, String.class, LocationGeographyType.class, value);
     }
@@ -5648,7 +5648,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "PlaceName", scope = LocationGeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "PlaceName", scope = LocationGeographyType.class)
     public JAXBElement<String> createLocationGeographyTypePlaceName(String value) {
         return new JAXBElement<String>(_LocationGeographyTypePlaceName_QNAME, String.class, LocationGeographyType.class, value);
     }
@@ -5656,7 +5656,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "CensusTract", scope = LocationGeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "CensusTract", scope = LocationGeographyType.class)
     public JAXBElement<String> createLocationGeographyTypeCensusTract(String value) {
         return new JAXBElement<String>(_GeocodedAddressTypeCensusTract_QNAME, String.class, LocationGeographyType.class, value);
     }
@@ -5664,7 +5664,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "MinorCivilDivision", scope = LocationGeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "MinorCivilDivision", scope = LocationGeographyType.class)
     public JAXBElement<String> createLocationGeographyTypeMinorCivilDivision(String value) {
         return new JAXBElement<String>(_LocationGeographyTypeMinorCivilDivision_QNAME, String.class, LocationGeographyType.class, value);
     }
@@ -5672,7 +5672,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "FIPSCode", scope = LocationGeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "FIPSCode", scope = LocationGeographyType.class)
     public JAXBElement<String> createLocationGeographyTypeFIPSCode(String value) {
         return new JAXBElement<String>(_LocationGeographyTypeFIPSCode_QNAME, String.class, LocationGeographyType.class, value);
     }
@@ -5680,7 +5680,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "CountyName", scope = LocationGeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "CountyName", scope = LocationGeographyType.class)
     public JAXBElement<String> createLocationGeographyTypeCountyName(String value) {
         return new JAXBElement<String>(_LocationGeographyTypeCountyName_QNAME, String.class, LocationGeographyType.class, value);
     }
@@ -5688,7 +5688,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "VertexCode", scope = LocationGeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "VertexCode", scope = LocationGeographyType.class)
     public JAXBElement<String> createLocationGeographyTypeVertexCode(String value) {
         return new JAXBElement<String>(_LocationGeographyTypeVertexCode_QNAME, String.class, LocationGeographyType.class, value);
     }
@@ -5696,7 +5696,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyNodeResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "modifyNodeReturn", scope = ModifyNodeResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "modifyNodeReturn", scope = ModifyNodeResponse.class)
     public JAXBElement<ModifyNodeResponseType> createModifyNodeResponseModifyNodeReturn(ModifyNodeResponseType value) {
         return new JAXBElement<ModifyNodeResponseType>(_ModifyNodeResponseModifyNodeReturn_QNAME, ModifyNodeResponseType.class, ModifyNodeResponse.class, value);
     }
@@ -5704,7 +5704,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateLocationFromBillingRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "UpdateLocationFromBilling", scope = UpdateLocationFromBilling.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "UpdateLocationFromBilling", scope = UpdateLocationFromBilling.class)
     public JAXBElement<UpdateLocationFromBillingRequestType> createUpdateLocationFromBillingUpdateLocationFromBilling(UpdateLocationFromBillingRequestType value) {
         return new JAXBElement<UpdateLocationFromBillingRequestType>(_UpdateLocationFromBillingUpdateLocationFromBilling_QNAME, UpdateLocationFromBillingRequestType.class, UpdateLocationFromBilling.class, value);
     }
@@ -5712,7 +5712,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfStandardizedAddressXfinityType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "standardizedAddresses", scope = StandardizeAddressXfinityResponseItemType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "standardizedAddresses", scope = StandardizeAddressXfinityResponseItemType.class)
     public JAXBElement<ArrayOfStandardizedAddressXfinityType> createStandardizeAddressXfinityResponseItemTypeStandardizedAddresses(ArrayOfStandardizedAddressXfinityType value) {
         return new JAXBElement<ArrayOfStandardizedAddressXfinityType>(_StandardizeAddressXfinityResponseItemTypeStandardizedAddresses_QNAME, ArrayOfStandardizedAddressXfinityType.class, StandardizeAddressXfinityResponseItemType.class, value);
     }
@@ -5720,7 +5720,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfModifyLocationQueueRequestItemType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "ModifyLocationQueueRequests", scope = ModifyLocationQueueRequestType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "ModifyLocationQueueRequests", scope = ModifyLocationQueueRequestType.class)
     public JAXBElement<ArrayOfModifyLocationQueueRequestItemType> createModifyLocationQueueRequestTypeModifyLocationQueueRequests(ArrayOfModifyLocationQueueRequestItemType value) {
         return new JAXBElement<ArrayOfModifyLocationQueueRequestItemType>(_ModifyLocationQueueRequestTypeModifyLocationQueueRequests_QNAME, ArrayOfModifyLocationQueueRequestItemType.class, ModifyLocationQueueRequestType.class, value);
     }
@@ -5728,7 +5728,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "location", scope = UpdateLocationFromBillingResponseItemType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "location", scope = UpdateLocationFromBillingResponseItemType.class)
     public JAXBElement<LocationType> createUpdateLocationFromBillingResponseItemTypeLocation(LocationType value) {
         return new JAXBElement<LocationType>(_QueryLocationResponseTypeLocation_QNAME, LocationType.class, UpdateLocationFromBillingResponseItemType.class, value);
     }
@@ -5736,7 +5736,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BuildingAttributesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "BuildingAttribute", scope = BusinessServiceabilityAttributesType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "BuildingAttribute", scope = BusinessServiceabilityAttributesType.class)
     public JAXBElement<BuildingAttributesType> createBusinessServiceabilityAttributesTypeBuildingAttribute(BuildingAttributesType value) {
         return new JAXBElement<BuildingAttributesType>(_BusinessServiceabilityAttributesTypeBuildingAttribute_QNAME, BuildingAttributesType.class, BusinessServiceabilityAttributesType.class, value);
     }
@@ -5744,7 +5744,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationQueueRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryLocationQueue", scope = QueryLocationQueue.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryLocationQueue", scope = QueryLocationQueue.class)
     public JAXBElement<QueryLocationQueueRequestType> createQueryLocationQueueQueryLocationQueue(QueryLocationQueueRequestType value) {
         return new JAXBElement<QueryLocationQueueRequestType>(_QueryLocationQueueQueryLocationQueue_QNAME, QueryLocationQueueRequestType.class, QueryLocationQueue.class, value);
     }
@@ -5752,7 +5752,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CopyDuplicateHouseToBillingResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "copyDuplicateHouseToBillingReturn", scope = CopyDuplicateHouseToBillingResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "copyDuplicateHouseToBillingReturn", scope = CopyDuplicateHouseToBillingResponse.class)
     public JAXBElement<CopyDuplicateHouseToBillingResponseType> createCopyDuplicateHouseToBillingResponseCopyDuplicateHouseToBillingReturn(CopyDuplicateHouseToBillingResponseType value) {
         return new JAXBElement<CopyDuplicateHouseToBillingResponseType>(_CopyDuplicateHouseToBillingResponseCopyDuplicateHouseToBillingReturn_QNAME, CopyDuplicateHouseToBillingResponseType.class, CopyDuplicateHouseToBillingResponse.class, value);
     }
@@ -5760,7 +5760,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "complex", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "complex", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeComplex(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeComplex_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5768,7 +5768,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "mkt", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "mkt", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeMkt(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeMkt_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5776,7 +5776,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "auxX1", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "auxX1", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeAuxX1(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeAuxX1_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5784,7 +5784,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "customerType", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "customerType", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeCustomerType(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeCustomerType_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5792,7 +5792,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "auxX3", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "auxX3", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeAuxX3(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeAuxX3_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5800,7 +5800,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dual", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dual", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeDual(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeDual_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5808,7 +5808,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dualHouse", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dualHouse", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeDualHouse(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeDualHouse_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5816,7 +5816,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "auxX2", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "auxX2", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeAuxX2(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeAuxX2_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5824,7 +5824,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "map", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "map", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeMap(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeMap_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5832,7 +5832,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "constructionArea", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "constructionArea", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeConstructionArea(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeConstructionArea_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5840,7 +5840,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "info", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "info", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeInfo(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeInfo_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5848,7 +5848,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dupHouse", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dupHouse", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeDupHouse(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeDupHouse_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5856,7 +5856,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dwellingCodeDescr", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dwellingCodeDescr", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeDwellingCodeDescr(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDwellingCodeDescr_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5864,7 +5864,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseComment", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseComment", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeHouseComment(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeHouseComment_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5872,7 +5872,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "drop", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "drop", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeDrop(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeDrop_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5880,7 +5880,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "auxY6", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "auxY6", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeAuxY6(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeAuxY6_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5888,7 +5888,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dwellingTypeCode", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dwellingTypeCode", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeDwellingTypeCode(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeDwellingTypeCode_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5896,7 +5896,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "auxY7", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "auxY7", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeAuxY7(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeAuxY7_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5904,7 +5904,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseNumber", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseNumber", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeHouseNumber(String value) {
         return new JAXBElement<String>(_PostalAddressTypeHouseNumber_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5912,7 +5912,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "controlArea", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "controlArea", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeControlArea(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeControlArea_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5920,7 +5920,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "auxY2", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "auxY2", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeAuxY2(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeAuxY2_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5928,7 +5928,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "auxY1", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "auxY1", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeAuxY1(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeAuxY1_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5936,7 +5936,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "networkInfo", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "networkInfo", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeNetworkInfo(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeNetworkInfo_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5944,7 +5944,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "auxY3", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "auxY3", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeAuxY3(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeAuxY3_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5952,7 +5952,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "networkID", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "networkID", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeNetworkID(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeNetworkID_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5960,7 +5960,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "customerNumber", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "customerNumber", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeCustomerNumber(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeCustomerNumber_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5968,7 +5968,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "salesRoute", scope = LocationLegacyDetailsDSTType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "salesRoute", scope = LocationLegacyDetailsDSTType.class)
     public JAXBElement<String> createLocationLegacyDetailsDSTTypeSalesRoute(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsDSTTypeSalesRoute_QNAME, String.class, LocationLegacyDetailsDSTType.class, value);
     }
@@ -5976,7 +5976,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddMsagDataResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "addMsagDataReturn", scope = AddMsagDataResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "addMsagDataReturn", scope = AddMsagDataResponse.class)
     public JAXBElement<AddMsagDataResponseType> createAddMsagDataResponseAddMsagDataReturn(AddMsagDataResponseType value) {
         return new JAXBElement<AddMsagDataResponseType>(_AddMsagDataResponseAddMsagDataReturn_QNAME, AddMsagDataResponseType.class, AddMsagDataResponse.class, value);
     }
@@ -5984,7 +5984,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GeocodingCustomMatchModeType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "customMatchModeSettings", scope = GeocodingConstraintsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "customMatchModeSettings", scope = GeocodingConstraintsType.class)
     public JAXBElement<GeocodingCustomMatchModeType> createGeocodingConstraintsTypeCustomMatchModeSettings(GeocodingCustomMatchModeType value) {
         return new JAXBElement<GeocodingCustomMatchModeType>(_GeocodingConstraintsTypeCustomMatchModeSettings_QNAME, GeocodingCustomMatchModeType.class, GeocodingConstraintsType.class, value);
     }
@@ -5992,7 +5992,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyLocationQueueRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "ModifyLocationQueue", scope = ModifyLocationQueue.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "ModifyLocationQueue", scope = ModifyLocationQueue.class)
     public JAXBElement<ModifyLocationQueueRequestType> createModifyLocationQueueModifyLocationQueue(ModifyLocationQueueRequestType value) {
         return new JAXBElement<ModifyLocationQueueRequestType>(_ModifyLocationQueueModifyLocationQueue_QNAME, ModifyLocationQueueRequestType.class, ModifyLocationQueue.class, value);
     }
@@ -6000,7 +6000,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyLocationResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "modifyLocationReturn", scope = ModifyLocationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "modifyLocationReturn", scope = ModifyLocationResponse.class)
     public JAXBElement<ModifyLocationResponseType> createModifyLocationResponseModifyLocationReturn(ModifyLocationResponseType value) {
         return new JAXBElement<ModifyLocationResponseType>(_ModifyLocationResponseModifyLocationReturn_QNAME, ModifyLocationResponseType.class, ModifyLocationResponse.class, value);
     }
@@ -6008,7 +6008,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ResponseStatusType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "deleteSingleViewAddressAssociationReturn", scope = DeleteSingleViewAddressAssociationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "deleteSingleViewAddressAssociationReturn", scope = DeleteSingleViewAddressAssociationResponse.class)
     public JAXBElement<ResponseStatusType> createDeleteSingleViewAddressAssociationResponseDeleteSingleViewAddressAssociationReturn(ResponseStatusType value) {
         return new JAXBElement<ResponseStatusType>(_DeleteSingleViewAddressAssociationResponseDeleteSingleViewAddressAssociationReturn_QNAME, ResponseStatusType.class, DeleteSingleViewAddressAssociationResponse.class, value);
     }
@@ -6016,7 +6016,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationQueueRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "GetLocationQueue", scope = GetLocationQueue.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "GetLocationQueue", scope = GetLocationQueue.class)
     public JAXBElement<GetLocationQueueRequestType> createGetLocationQueueGetLocationQueue(GetLocationQueueRequestType value) {
         return new JAXBElement<GetLocationQueueRequestType>(_GetLocationQueueGetLocationQueue_QNAME, GetLocationQueueRequestType.class, GetLocationQueue.class, value);
     }
@@ -6024,7 +6024,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteLocationResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "deleteLocationReturn", scope = DeleteLocationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "deleteLocationReturn", scope = DeleteLocationResponse.class)
     public JAXBElement<DeleteLocationResponseType> createDeleteLocationResponseDeleteLocationReturn(DeleteLocationResponseType value) {
         return new JAXBElement<DeleteLocationResponseType>(_DeleteLocationResponseDeleteLocationReturn_QNAME, DeleteLocationResponseType.class, DeleteLocationResponse.class, value);
     }
@@ -6032,7 +6032,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ResponseStatusType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "associateSingleViewAddressReturn", scope = AssociateSingleViewAddressResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "associateSingleViewAddressReturn", scope = AssociateSingleViewAddressResponse.class)
     public JAXBElement<ResponseStatusType> createAssociateSingleViewAddressResponseAssociateSingleViewAddressReturn(ResponseStatusType value) {
         return new JAXBElement<ResponseStatusType>(_AssociateSingleViewAddressResponseAssociateSingleViewAddressReturn_QNAME, ResponseStatusType.class, AssociateSingleViewAddressResponse.class, value);
     }
@@ -6040,7 +6040,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "NTID", scope = LocationQueueModifyContactInfoType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "NTID", scope = LocationQueueModifyContactInfoType.class)
     public JAXBElement<String> createLocationQueueModifyContactInfoTypeNTID(String value) {
         return new JAXBElement<String>(_LocationQueueModifyContactInfoTypeNTID_QNAME, String.class, LocationQueueModifyContactInfoType.class, value);
     }
@@ -6048,7 +6048,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "phone", scope = LocationQueueModifyContactInfoType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "phone", scope = LocationQueueModifyContactInfoType.class)
     public JAXBElement<String> createLocationQueueModifyContactInfoTypePhone(String value) {
         return new JAXBElement<String>(_LocationQueueModifyContactInfoTypePhone_QNAME, String.class, LocationQueueModifyContactInfoType.class, value);
     }
@@ -6056,7 +6056,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationQueueOrigType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "organization", scope = LocationQueueModifyContactInfoType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "organization", scope = LocationQueueModifyContactInfoType.class)
     public JAXBElement<LocationQueueOrigType> createLocationQueueModifyContactInfoTypeOrganization(LocationQueueOrigType value) {
         return new JAXBElement<LocationQueueOrigType>(_LocationQueueModifyContactInfoTypeOrganization_QNAME, LocationQueueOrigType.class, LocationQueueModifyContactInfoType.class, value);
     }
@@ -6064,7 +6064,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "email", scope = LocationQueueModifyContactInfoType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "email", scope = LocationQueueModifyContactInfoType.class)
     public JAXBElement<String> createLocationQueueModifyContactInfoTypeEmail(String value) {
         return new JAXBElement<String>(_LocationQueueModifyContactInfoTypeEmail_QNAME, String.class, LocationQueueModifyContactInfoType.class, value);
     }
@@ -6072,7 +6072,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "name", scope = LocationQueueModifyContactInfoType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "name", scope = LocationQueueModifyContactInfoType.class)
     public JAXBElement<String> createLocationQueueModifyContactInfoTypeName(String value) {
         return new JAXBElement<String>(_LocationQueueModifyContactInfoTypeName_QNAME, String.class, LocationQueueModifyContactInfoType.class, value);
     }
@@ -6080,7 +6080,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationDetailsRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryLocationDetails", scope = QueryLocationDetails.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryLocationDetails", scope = QueryLocationDetails.class)
     public JAXBElement<QueryLocationDetailsRequestType> createQueryLocationDetailsQueryLocationDetails(QueryLocationDetailsRequestType value) {
         return new JAXBElement<QueryLocationDetailsRequestType>(_QueryLocationDetailsQueryLocationDetails_QNAME, QueryLocationDetailsRequestType.class, QueryLocationDetails.class, value);
     }
@@ -6088,7 +6088,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationQueueResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryLocationQueueReturn", scope = QueryLocationQueueResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryLocationQueueReturn", scope = QueryLocationQueueResponse.class)
     public JAXBElement<QueryLocationQueueResponseType> createQueryLocationQueueResponseQueryLocationQueueReturn(QueryLocationQueueResponseType value) {
         return new JAXBElement<QueryLocationQueueResponseType>(_QueryLocationQueueResponseQueryLocationQueueReturn_QNAME, QueryLocationQueueResponseType.class, QueryLocationQueueResponse.class, value);
     }
@@ -6096,7 +6096,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfMarketHierarchyLevelResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "marketHierarchy", scope = MarketHierarchyLevelInfo.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "marketHierarchy", scope = MarketHierarchyLevelInfo.class)
     public JAXBElement<ArrayOfMarketHierarchyLevelResponseType> createMarketHierarchyLevelInfoMarketHierarchy(ArrayOfMarketHierarchyLevelResponseType value) {
         return new JAXBElement<ArrayOfMarketHierarchyLevelResponseType>(_MarketHierarchyLevelInfoMarketHierarchy_QNAME, ArrayOfMarketHierarchyLevelResponseType.class, MarketHierarchyLevelInfo.class, value);
     }
@@ -6104,7 +6104,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BillingSystemFormattedAddressesDDPType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "ddpFormattedAddress", scope = BillingSystemFormattedAddressesType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "ddpFormattedAddress", scope = BillingSystemFormattedAddressesType.class)
     public JAXBElement<BillingSystemFormattedAddressesDDPType> createBillingSystemFormattedAddressesTypeDdpFormattedAddress(BillingSystemFormattedAddressesDDPType value) {
         return new JAXBElement<BillingSystemFormattedAddressesDDPType>(_BillingSystemFormattedAddressesTypeDdpFormattedAddress_QNAME, BillingSystemFormattedAddressesDDPType.class, BillingSystemFormattedAddressesType.class, value);
     }
@@ -6112,7 +6112,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BillingSystemFormattedAddressesCSGType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "csgFormattedAddress", scope = BillingSystemFormattedAddressesType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "csgFormattedAddress", scope = BillingSystemFormattedAddressesType.class)
     public JAXBElement<BillingSystemFormattedAddressesCSGType> createBillingSystemFormattedAddressesTypeCsgFormattedAddress(BillingSystemFormattedAddressesCSGType value) {
         return new JAXBElement<BillingSystemFormattedAddressesCSGType>(_BillingSystemFormattedAddressesTypeCsgFormattedAddress_QNAME, BillingSystemFormattedAddressesCSGType.class, BillingSystemFormattedAddressesType.class, value);
     }
@@ -6120,7 +6120,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "bridgerPrivate", scope = LocationLegacyDetailsCSGBridgerType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "bridgerPrivate", scope = LocationLegacyDetailsCSGBridgerType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGBridgerTypeBridgerPrivate(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGBridgerTypeBridgerPrivate_QNAME, String.class, LocationLegacyDetailsCSGBridgerType.class, value);
     }
@@ -6128,7 +6128,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "bridgerBidirectional", scope = LocationLegacyDetailsCSGBridgerType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "bridgerBidirectional", scope = LocationLegacyDetailsCSGBridgerType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGBridgerTypeBridgerBidirectional(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGBridgerTypeBridgerBidirectional_QNAME, String.class, LocationLegacyDetailsCSGBridgerType.class, value);
     }
@@ -6136,7 +6136,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "bridgerGateControl", scope = LocationLegacyDetailsCSGBridgerType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "bridgerGateControl", scope = LocationLegacyDetailsCSGBridgerType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGBridgerTypeBridgerGateControl(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGBridgerTypeBridgerGateControl_QNAME, String.class, LocationLegacyDetailsCSGBridgerType.class, value);
     }
@@ -6144,7 +6144,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddModifyMarketResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "addMarketReturn", scope = AddMarketResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "addMarketReturn", scope = AddMarketResponse.class)
     public JAXBElement<AddModifyMarketResponseType> createAddMarketResponseAddMarketReturn(AddModifyMarketResponseType value) {
         return new JAXBElement<AddModifyMarketResponseType>(_AddMarketResponseAddMarketReturn_QNAME, AddModifyMarketResponseType.class, AddMarketResponse.class, value);
     }
@@ -6152,7 +6152,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryMarketByBoundaryRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryMarketByBoundary", scope = QueryMarketByBoundary.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryMarketByBoundary", scope = QueryMarketByBoundary.class)
     public JAXBElement<QueryMarketByBoundaryRequestType> createQueryMarketByBoundaryQueryMarketByBoundary(QueryMarketByBoundaryRequestType value) {
         return new JAXBElement<QueryMarketByBoundaryRequestType>(_QueryMarketByBoundaryQueryMarketByBoundary_QNAME, QueryMarketByBoundaryRequestType.class, QueryMarketByBoundary.class, value);
     }
@@ -6160,7 +6160,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "RequestedPriority", scope = LocationQueueReferenceType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "RequestedPriority", scope = LocationQueueReferenceType.class)
     public JAXBElement<Integer> createLocationQueueReferenceTypeRequestedPriority(Integer value) {
         return new JAXBElement<Integer>(_LocationQueueReferenceTypeRequestedPriority_QNAME, Integer.class, LocationQueueReferenceType.class, value);
     }
@@ -6168,7 +6168,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfUnitTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitTypes", scope = AddLocationQueueAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitTypes", scope = AddLocationQueueAddressType.class)
     public JAXBElement<ArrayOfUnitTypesType> createAddLocationQueueAddressTypeUnitTypes(ArrayOfUnitTypesType value) {
         return new JAXBElement<ArrayOfUnitTypesType>(_LocationQueueAddressTypeUnitTypes_QNAME, ArrayOfUnitTypesType.class, AddLocationQueueAddressType.class, value);
     }
@@ -6176,7 +6176,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CountryCodeType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "country", scope = AddLocationQueueAddressType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "country", scope = AddLocationQueueAddressType.class)
     public JAXBElement<CountryCodeType> createAddLocationQueueAddressTypeCountry(CountryCodeType value) {
         return new JAXBElement<CountryCodeType>(_LocationQueueAddressTypeCountry_QNAME, CountryCodeType.class, AddLocationQueueAddressType.class, value);
     }
@@ -6184,7 +6184,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "ManagementArea", scope = DSTLegacyMarketType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "ManagementArea", scope = DSTLegacyMarketType.class)
     public JAXBElement<String> createDSTLegacyMarketTypeManagementArea(String value) {
         return new JAXBElement<String>(_DSTLegacyMarketTypeManagementArea_QNAME, String.class, DSTLegacyMarketType.class, value);
     }
@@ -6192,7 +6192,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "FranchiseTaxArea", scope = DSTLegacyMarketType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "FranchiseTaxArea", scope = DSTLegacyMarketType.class)
     public JAXBElement<String> createDSTLegacyMarketTypeFranchiseTaxArea(String value) {
         return new JAXBElement<String>(_DSTLegacyMarketTypeFranchiseTaxArea_QNAME, String.class, DSTLegacyMarketType.class, value);
     }
@@ -6200,7 +6200,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CopyLocationToBillingRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "CopyLocationToBilling", scope = CopyLocationToBilling.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "CopyLocationToBilling", scope = CopyLocationToBilling.class)
     public JAXBElement<CopyLocationToBillingRequestType> createCopyLocationToBillingCopyLocationToBilling(CopyLocationToBillingRequestType value) {
         return new JAXBElement<CopyLocationToBillingRequestType>(_CopyLocationToBillingCopyLocationToBilling_QNAME, CopyLocationToBillingRequestType.class, CopyLocationToBilling.class, value);
     }
@@ -6208,7 +6208,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StandardizeAddressXfinityRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "StandardizeAddressXfinity", scope = StandardizeAddressXfinity.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "StandardizeAddressXfinity", scope = StandardizeAddressXfinity.class)
     public JAXBElement<StandardizeAddressXfinityRequestType> createStandardizeAddressXfinityStandardizeAddressXfinity(StandardizeAddressXfinityRequestType value) {
         return new JAXBElement<StandardizeAddressXfinityRequestType>(_StandardizeAddressXfinityStandardizeAddressXfinity_QNAME, StandardizeAddressXfinityRequestType.class, StandardizeAddressXfinity.class, value);
     }
@@ -6216,7 +6216,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StandardizeAddressXfinityResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "standardizeAddressXfinityReturn", scope = StandardizeAddressXfinityResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "standardizeAddressXfinityReturn", scope = StandardizeAddressXfinityResponse.class)
     public JAXBElement<StandardizeAddressXfinityResponseType> createStandardizeAddressXfinityResponseStandardizeAddressXfinityReturn(StandardizeAddressXfinityResponseType value) {
         return new JAXBElement<StandardizeAddressXfinityResponseType>(_StandardizeAddressXfinityResponseStandardizeAddressXfinityReturn_QNAME, StandardizeAddressXfinityResponseType.class, StandardizeAddressXfinityResponse.class, value);
     }
@@ -6224,7 +6224,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "enabled", scope = SeasonalSuspendType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "enabled", scope = SeasonalSuspendType.class)
     public JAXBElement<Boolean> createSeasonalSuspendTypeEnabled(Boolean value) {
         return new JAXBElement<Boolean>(_SeasonalSuspendTypeEnabled_QNAME, Boolean.class, SeasonalSuspendType.class, value);
     }
@@ -6232,7 +6232,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Long }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "preDateTotalDaysAllowed", scope = SeasonalSuspendType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "preDateTotalDaysAllowed", scope = SeasonalSuspendType.class)
     public JAXBElement<Long> createSeasonalSuspendTypePreDateTotalDaysAllowed(Long value) {
         return new JAXBElement<Long>(_SeasonalSuspendTypePreDateTotalDaysAllowed_QNAME, Long.class, SeasonalSuspendType.class, value);
     }
@@ -6240,7 +6240,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteMsagAddressAssociationRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "DeleteMsagAddressAssociation", scope = DeleteMsagAddressAssociation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "DeleteMsagAddressAssociation", scope = DeleteMsagAddressAssociation.class)
     public JAXBElement<DeleteMsagAddressAssociationRequestType> createDeleteMsagAddressAssociationDeleteMsagAddressAssociation(DeleteMsagAddressAssociationRequestType value) {
         return new JAXBElement<DeleteMsagAddressAssociationRequestType>(_DeleteMsagAddressAssociationDeleteMsagAddressAssociation_QNAME, DeleteMsagAddressAssociationRequestType.class, DeleteMsagAddressAssociation.class, value);
     }
@@ -6248,7 +6248,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryLocationGeospatialResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryLocationGeospatialReturn", scope = QueryLocationGeospatialResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryLocationGeospatialReturn", scope = QueryLocationGeospatialResponse.class)
     public JAXBElement<QueryLocationGeospatialResponseType> createQueryLocationGeospatialResponseQueryLocationGeospatialReturn(QueryLocationGeospatialResponseType value) {
         return new JAXBElement<QueryLocationGeospatialResponseType>(_QueryLocationGeospatialResponseQueryLocationGeospatialReturn_QNAME, QueryLocationGeospatialResponseType.class, QueryLocationGeospatialResponse.class, value);
     }
@@ -6256,7 +6256,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetMsagDataResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getMsagDataReturn", scope = GetMsagDataResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getMsagDataReturn", scope = GetMsagDataResponse.class)
     public JAXBElement<GetMsagDataResponseType> createGetMsagDataResponseGetMsagDataReturn(GetMsagDataResponseType value) {
         return new JAXBElement<GetMsagDataResponseType>(_GetMsagDataResponseGetMsagDataReturn_QNAME, GetMsagDataResponseType.class, GetMsagDataResponse.class, value);
     }
@@ -6264,7 +6264,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "singleViewID", scope = ModifySingleViewAddressAssociationType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "singleViewID", scope = ModifySingleViewAddressAssociationType.class)
     public JAXBElement<String> createModifySingleViewAddressAssociationTypeSingleViewID(String value) {
         return new JAXBElement<String>(_DeleteSingleViewAddressAssociationTypeSingleViewID_QNAME, String.class, ModifySingleViewAddressAssociationType.class, value);
     }
@@ -6272,7 +6272,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "addressID", scope = ModifySingleViewAddressAssociationType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "addressID", scope = ModifySingleViewAddressAssociationType.class)
     public JAXBElement<String> createModifySingleViewAddressAssociationTypeAddressID(String value) {
         return new JAXBElement<String>(_DeleteSingleViewAddressAssociationTypeAddressID_QNAME, String.class, ModifySingleViewAddressAssociationType.class, value);
     }
@@ -6280,7 +6280,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteE911AddressResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "deleteE911AddressReturn", scope = DeleteE911AddressResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "deleteE911AddressReturn", scope = DeleteE911AddressResponse.class)
     public JAXBElement<DeleteE911AddressResponseType> createDeleteE911AddressResponseDeleteE911AddressReturn(DeleteE911AddressResponseType value) {
         return new JAXBElement<DeleteE911AddressResponseType>(_DeleteE911AddressResponseDeleteE911AddressReturn_QNAME, DeleteE911AddressResponseType.class, DeleteE911AddressResponse.class, value);
     }
@@ -6288,7 +6288,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateLocationInBillingRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "UpdateLocationInBilling", scope = UpdateLocationInBilling.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "UpdateLocationInBilling", scope = UpdateLocationInBilling.class)
     public JAXBElement<UpdateLocationInBillingRequestType> createUpdateLocationInBillingUpdateLocationInBilling(UpdateLocationInBillingRequestType value) {
         return new JAXBElement<UpdateLocationInBillingRequestType>(_UpdateLocationInBillingUpdateLocationInBilling_QNAME, UpdateLocationInBillingRequestType.class, UpdateLocationInBilling.class, value);
     }
@@ -6296,7 +6296,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryMarketResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryMarketReturn", scope = QueryMarketResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryMarketReturn", scope = QueryMarketResponse.class)
     public JAXBElement<QueryMarketResponseType> createQueryMarketResponseQueryMarketReturn(QueryMarketResponseType value) {
         return new JAXBElement<QueryMarketResponseType>(_QueryMarketResponseQueryMarketReturn_QNAME, QueryMarketResponseType.class, QueryMarketResponse.class, value);
     }
@@ -6304,7 +6304,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteMarketRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "DeleteMarket", scope = DeleteMarket.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "DeleteMarket", scope = DeleteMarket.class)
     public JAXBElement<DeleteMarketRequestType> createDeleteMarketDeleteMarket(DeleteMarketRequestType value) {
         return new JAXBElement<DeleteMarketRequestType>(_DeleteMarketDeleteMarket_QNAME, DeleteMarketRequestType.class, DeleteMarket.class, value);
     }
@@ -6312,7 +6312,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "PlaceName", scope = GeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "PlaceName", scope = GeographyType.class)
     public JAXBElement<String> createGeographyTypePlaceName(String value) {
         return new JAXBElement<String>(_LocationGeographyTypePlaceName_QNAME, String.class, GeographyType.class, value);
     }
@@ -6320,7 +6320,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "MinorCivilDivision", scope = GeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "MinorCivilDivision", scope = GeographyType.class)
     public JAXBElement<String> createGeographyTypeMinorCivilDivision(String value) {
         return new JAXBElement<String>(_LocationGeographyTypeMinorCivilDivision_QNAME, String.class, GeographyType.class, value);
     }
@@ -6328,7 +6328,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "FIPSCode", scope = GeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "FIPSCode", scope = GeographyType.class)
     public JAXBElement<String> createGeographyTypeFIPSCode(String value) {
         return new JAXBElement<String>(_LocationGeographyTypeFIPSCode_QNAME, String.class, GeographyType.class, value);
     }
@@ -6336,7 +6336,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "CountyName", scope = GeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "CountyName", scope = GeographyType.class)
     public JAXBElement<String> createGeographyTypeCountyName(String value) {
         return new JAXBElement<String>(_LocationGeographyTypeCountyName_QNAME, String.class, GeographyType.class, value);
     }
@@ -6344,7 +6344,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "VertexCode", scope = GeographyType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "VertexCode", scope = GeographyType.class)
     public JAXBElement<String> createGeographyTypeVertexCode(String value) {
         return new JAXBElement<String>(_LocationGeographyTypeVertexCode_QNAME, String.class, GeographyType.class, value);
     }
@@ -6352,7 +6352,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteLocationFromBillingRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "DeleteLocationFromBilling", scope = DeleteLocationFromBilling.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "DeleteLocationFromBilling", scope = DeleteLocationFromBilling.class)
     public JAXBElement<DeleteLocationFromBillingRequestType> createDeleteLocationFromBillingDeleteLocationFromBilling(DeleteLocationFromBillingRequestType value) {
         return new JAXBElement<DeleteLocationFromBillingRequestType>(_DeleteLocationFromBillingDeleteLocationFromBilling_QNAME, DeleteLocationFromBillingRequestType.class, DeleteLocationFromBilling.class, value);
     }
@@ -6360,7 +6360,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "NeedByDate", scope = ModifyLocationQueueRequestItemType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "NeedByDate", scope = ModifyLocationQueueRequestItemType.class)
     public JAXBElement<XMLGregorianCalendar> createModifyLocationQueueRequestItemTypeNeedByDate(XMLGregorianCalendar value) {
         return new JAXBElement<XMLGregorianCalendar>(_ModifyLocationQueueRequestItemTypeNeedByDate_QNAME, XMLGregorianCalendar.class, ModifyLocationQueueRequestItemType.class, value);
     }
@@ -6368,7 +6368,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "Comments", scope = ModifyLocationQueueRequestItemType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "Comments", scope = ModifyLocationQueueRequestItemType.class)
     public JAXBElement<String> createModifyLocationQueueRequestItemTypeComments(String value) {
         return new JAXBElement<String>(_ModifyLocationQueueRequestItemTypeComments_QNAME, String.class, ModifyLocationQueueRequestItemType.class, value);
     }
@@ -6376,7 +6376,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyLocationQueueAddressType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "LocationQueueAddress", scope = ModifyLocationQueueRequestItemType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "LocationQueueAddress", scope = ModifyLocationQueueRequestItemType.class)
     public JAXBElement<ModifyLocationQueueAddressType> createModifyLocationQueueRequestItemTypeLocationQueueAddress(ModifyLocationQueueAddressType value) {
         return new JAXBElement<ModifyLocationQueueAddressType>(_ModifyLocationQueueRequestItemTypeLocationQueueAddress_QNAME, ModifyLocationQueueAddressType.class, ModifyLocationQueueRequestItemType.class, value);
     }
@@ -6384,7 +6384,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Long }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "marketID", scope = ModifyLocationQueueRequestItemType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "marketID", scope = ModifyLocationQueueRequestItemType.class)
     public JAXBElement<Long> createModifyLocationQueueRequestItemTypeMarketID(Long value) {
         return new JAXBElement<Long>(_NodeReferenceTypeMarketID_QNAME, Long.class, ModifyLocationQueueRequestItemType.class, value);
     }
@@ -6392,7 +6392,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "LeadID", scope = ModifyLocationQueueRequestItemType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "LeadID", scope = ModifyLocationQueueRequestItemType.class)
     public JAXBElement<String> createModifyLocationQueueRequestItemTypeLeadID(String value) {
         return new JAXBElement<String>(_ModifyLocationQueueRequestItemTypeLeadID_QNAME, String.class, ModifyLocationQueueRequestItemType.class, value);
     }
@@ -6400,7 +6400,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetBusinessServiceabilityResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getBusinessServiceabilityReturn", scope = GetBusinessServiceabilityResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getBusinessServiceabilityReturn", scope = GetBusinessServiceabilityResponse.class)
     public JAXBElement<GetBusinessServiceabilityResponseType> createGetBusinessServiceabilityResponseGetBusinessServiceabilityReturn(GetBusinessServiceabilityResponseType value) {
         return new JAXBElement<GetBusinessServiceabilityResponseType>(_GetBusinessServiceabilityResponseGetBusinessServiceabilityReturn_QNAME, GetBusinessServiceabilityResponseType.class, GetBusinessServiceabilityResponse.class, value);
     }
@@ -6408,7 +6408,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifyNodeRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "ModifyNode", scope = ModifyNode.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "ModifyNode", scope = ModifyNode.class)
     public JAXBElement<ModifyNodeRequestType> createModifyNodeModifyNode(ModifyNodeRequestType value) {
         return new JAXBElement<ModifyNodeRequestType>(_ModifyNodeModifyNode_QNAME, ModifyNodeRequestType.class, ModifyNode.class, value);
     }
@@ -6416,7 +6416,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfString }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "singleViewID", scope = SingleViewAddressDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "singleViewID", scope = SingleViewAddressDetailsType.class)
     public JAXBElement<ArrayOfString> createSingleViewAddressDetailsTypeSingleViewID(ArrayOfString value) {
         return new JAXBElement<ArrayOfString>(_DeleteSingleViewAddressAssociationTypeSingleViewID_QNAME, ArrayOfString.class, SingleViewAddressDetailsType.class, value);
     }
@@ -6424,7 +6424,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteSingleViewAddressAssociationType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "DeleteSingleViewAddressAssociation", scope = DeleteSingleViewAddressAssociation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "DeleteSingleViewAddressAssociation", scope = DeleteSingleViewAddressAssociation.class)
     public JAXBElement<DeleteSingleViewAddressAssociationType> createDeleteSingleViewAddressAssociationDeleteSingleViewAddressAssociation(DeleteSingleViewAddressAssociationType value) {
         return new JAXBElement<DeleteSingleViewAddressAssociationType>(_DeleteSingleViewAddressAssociationDeleteSingleViewAddressAssociation_QNAME, DeleteSingleViewAddressAssociationType.class, DeleteSingleViewAddressAssociation.class, value);
     }
@@ -6432,7 +6432,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdateMsagPriorityRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "UpdateMsagPriority", scope = UpdateMsagPriority.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "UpdateMsagPriority", scope = UpdateMsagPriority.class)
     public JAXBElement<UpdateMsagPriorityRequestType> createUpdateMsagPriorityUpdateMsagPriority(UpdateMsagPriorityRequestType value) {
         return new JAXBElement<UpdateMsagPriorityRequestType>(_UpdateMsagPriorityUpdateMsagPriority_QNAME, UpdateMsagPriorityRequestType.class, UpdateMsagPriority.class, value);
     }
@@ -6440,7 +6440,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfStandardizeAddressXfinityAddressType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "addresses", scope = StandardizeAddressXfinityRequestType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "addresses", scope = StandardizeAddressXfinityRequestType.class)
     public JAXBElement<ArrayOfStandardizeAddressXfinityAddressType> createStandardizeAddressXfinityRequestTypeAddresses(ArrayOfStandardizeAddressXfinityAddressType value) {
         return new JAXBElement<ArrayOfStandardizeAddressXfinityAddressType>(_StandardizeAddressXfinityResponseTypeAddresses_QNAME, ArrayOfStandardizeAddressXfinityAddressType.class, StandardizeAddressXfinityRequestType.class, value);
     }
@@ -6448,7 +6448,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfUnitTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitTypes", scope = LocationQueueAddressCriteriaType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitTypes", scope = LocationQueueAddressCriteriaType.class)
     public JAXBElement<ArrayOfUnitTypesType> createLocationQueueAddressCriteriaTypeUnitTypes(ArrayOfUnitTypesType value) {
         return new JAXBElement<ArrayOfUnitTypesType>(_LocationQueueAddressTypeUnitTypes_QNAME, ArrayOfUnitTypesType.class, LocationQueueAddressCriteriaType.class, value);
     }
@@ -6456,7 +6456,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "latitude", scope = GeographyInfoType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "latitude", scope = GeographyInfoType.class)
     public JAXBElement<BigDecimal> createGeographyInfoTypeLatitude(BigDecimal value) {
         return new JAXBElement<BigDecimal>(_GeocodingResultsTypeLatitude_QNAME, BigDecimal.class, GeographyInfoType.class, value);
     }
@@ -6464,7 +6464,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "longitude", scope = GeographyInfoType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "longitude", scope = GeographyInfoType.class)
     public JAXBElement<BigDecimal> createGeographyInfoTypeLongitude(BigDecimal value) {
         return new JAXBElement<BigDecimal>(_GeocodingResultsTypeLongitude_QNAME, BigDecimal.class, GeographyInfoType.class, value);
     }
@@ -6472,7 +6472,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryMarketHierarchyRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryMarketHierarchy", scope = QueryMarketHierarchy.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryMarketHierarchy", scope = QueryMarketHierarchy.class)
     public JAXBElement<QueryMarketHierarchyRequestType> createQueryMarketHierarchyQueryMarketHierarchy(QueryMarketHierarchyRequestType value) {
         return new JAXBElement<QueryMarketHierarchyRequestType>(_QueryMarketHierarchyQueryMarketHierarchy_QNAME, QueryMarketHierarchyRequestType.class, QueryMarketHierarchy.class, value);
     }
@@ -6480,7 +6480,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetLocationInformationResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "getLocationInformationReturn", scope = GetLocationInformationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "getLocationInformationReturn", scope = GetLocationInformationResponse.class)
     public JAXBElement<GetLocationInformationResponseType> createGetLocationInformationResponseGetLocationInformationReturn(GetLocationInformationResponseType value) {
         return new JAXBElement<GetLocationInformationResponseType>(_GetLocationInformationResponseGetLocationInformationReturn_QNAME, GetLocationInformationResponseType.class, GetLocationInformationResponse.class, value);
     }
@@ -6488,7 +6488,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "geography", scope = StandardizeAddressXfinityRequestedResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "geography", scope = StandardizeAddressXfinityRequestedResultsType.class)
     public JAXBElement<Boolean> createStandardizeAddressXfinityRequestedResultsTypeGeography(Boolean value) {
         return new JAXBElement<Boolean>(_StandardizedAddressXfinityTypeGeography_QNAME, Boolean.class, StandardizeAddressXfinityRequestedResultsType.class, value);
     }
@@ -6496,7 +6496,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "telephony", scope = StandardizeAddressXfinityRequestedResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "telephony", scope = StandardizeAddressXfinityRequestedResultsType.class)
     public JAXBElement<Boolean> createStandardizeAddressXfinityRequestedResultsTypeTelephony(Boolean value) {
         return new JAXBElement<Boolean>(_StandardizedAddressXfinityTypeTelephony_QNAME, Boolean.class, StandardizeAddressXfinityRequestedResultsType.class, value);
     }
@@ -6504,7 +6504,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "msag", scope = StandardizeAddressXfinityRequestedResultsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "msag", scope = StandardizeAddressXfinityRequestedResultsType.class)
     public JAXBElement<Boolean> createStandardizeAddressXfinityRequestedResultsTypeMsag(Boolean value) {
         return new JAXBElement<Boolean>(_StandardizedAddressXfinityTypeMsag_QNAME, Boolean.class, StandardizeAddressXfinityRequestedResultsType.class, value);
     }
@@ -6512,7 +6512,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddLocationQueueResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "addLocationQueueReturn", scope = AddLocationQueueResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "addLocationQueueReturn", scope = AddLocationQueueResponse.class)
     public JAXBElement<AddLocationQueueResponseType> createAddLocationQueueResponseAddLocationQueueReturn(AddLocationQueueResponseType value) {
         return new JAXBElement<AddLocationQueueResponseType>(_AddLocationQueueResponseAddLocationQueueReturn_QNAME, AddLocationQueueResponseType.class, AddLocationQueueResponse.class, value);
     }
@@ -6520,7 +6520,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteMsagAddressAssociationResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "deleteMsagAddressAssociationReturn", scope = DeleteMsagAddressAssociationResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "deleteMsagAddressAssociationReturn", scope = DeleteMsagAddressAssociationResponse.class)
     public JAXBElement<DeleteMsagAddressAssociationResponseType> createDeleteMsagAddressAssociationResponseDeleteMsagAddressAssociationReturn(DeleteMsagAddressAssociationResponseType value) {
         return new JAXBElement<DeleteMsagAddressAssociationResponseType>(_DeleteMsagAddressAssociationResponseDeleteMsagAddressAssociationReturn_QNAME, DeleteMsagAddressAssociationResponseType.class, DeleteMsagAddressAssociationResponse.class, value);
     }
@@ -6528,7 +6528,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitType", scope = UnitTypesType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitType", scope = UnitTypesType.class)
     public JAXBElement<String> createUnitTypesTypeUnitType(String value) {
         return new JAXBElement<String>(_UnitTypesTypeUnitType_QNAME, String.class, UnitTypesType.class, value);
     }
@@ -6536,7 +6536,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unitValue", scope = UnitTypesType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unitValue", scope = UnitTypesType.class)
     public JAXBElement<String> createUnitTypesTypeUnitValue(String value) {
         return new JAXBElement<String>(_UnitTypesTypeUnitValue_QNAME, String.class, UnitTypesType.class, value);
     }
@@ -6544,7 +6544,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "alternateNodeNameValue", scope = AlternateNodeName.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "alternateNodeNameValue", scope = AlternateNodeName.class)
     public JAXBElement<String> createAlternateNodeNameAlternateNodeNameValue(String value) {
         return new JAXBElement<String>(_AlternateNodeNameAlternateNodeNameValue_QNAME, String.class, AlternateNodeName.class, value);
     }
@@ -6552,7 +6552,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "alternateNodeNameSequence", scope = AlternateNodeName.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "alternateNodeNameSequence", scope = AlternateNodeName.class)
     public JAXBElement<Integer> createAlternateNodeNameAlternateNodeNameSequence(Integer value) {
         return new JAXBElement<Integer>(_AlternateNodeNameAlternateNodeNameSequence_QNAME, Integer.class, AlternateNodeName.class, value);
     }
@@ -6560,7 +6560,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "locationStatus", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "locationStatus", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeLocationStatus(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeLocationStatus_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6568,7 +6568,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "customerType", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "customerType", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeCustomerType(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeCustomerType_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6576,7 +6576,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "unincorporatedFlag", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "unincorporatedFlag", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeUnincorporatedFlag(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeUnincorporatedFlag_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6584,7 +6584,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dwellingCodeDescr", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dwellingCodeDescr", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeDwellingCodeDescr(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDwellingCodeDescr_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6592,7 +6592,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "poleOwner", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "poleOwner", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypePoleOwner(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypePoleOwner_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6600,7 +6600,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "addressLine2Override", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "addressLine2Override", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeAddressLine2Override(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeAddressLine2Override_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6608,7 +6608,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "salesArea", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "salesArea", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeSalesArea(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeSalesArea_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6616,7 +6616,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "lastCallDate", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "lastCallDate", scope = CSGDetailsType.class)
     public JAXBElement<XMLGregorianCalendar> createCSGDetailsTypeLastCallDate(XMLGregorianCalendar value) {
         return new JAXBElement<XMLGregorianCalendar>(_LocationLegacyDetailsCSGTypeLastCallDate_QNAME, XMLGregorianCalendar.class, CSGDetailsType.class, value);
     }
@@ -6624,7 +6624,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "hookupType", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "hookupType", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeHookupType(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeHookupType_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6632,7 +6632,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "pedestal", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "pedestal", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypePedestal(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypePedestal_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6640,7 +6640,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationLegacyDetailsCSGHouseCommentsType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseComments", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseComments", scope = CSGDetailsType.class)
     public JAXBElement<LocationLegacyDetailsCSGHouseCommentsType> createCSGDetailsTypeHouseComments(LocationLegacyDetailsCSGHouseCommentsType value) {
         return new JAXBElement<LocationLegacyDetailsCSGHouseCommentsType>(_LocationLegacyDetailsCSGTypeHouseComments_QNAME, LocationLegacyDetailsCSGHouseCommentsType.class, CSGDetailsType.class, value);
     }
@@ -6648,7 +6648,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "cell", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "cell", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeCell(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeCell_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6656,7 +6656,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dropLength", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dropLength", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeDropLength(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDropLength_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6664,7 +6664,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationLegacyDetailsCSGLineTagsType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "lineTag", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "lineTag", scope = CSGDetailsType.class)
     public JAXBElement<LocationLegacyDetailsCSGLineTagsType> createCSGDetailsTypeLineTag(LocationLegacyDetailsCSGLineTagsType value) {
         return new JAXBElement<LocationLegacyDetailsCSGLineTagsType>(_LocationLegacyDetailsCSGTypeLineTag_QNAME, LocationLegacyDetailsCSGLineTagsType.class, CSGDetailsType.class, value);
     }
@@ -6672,7 +6672,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "powerSupply", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "powerSupply", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypePowerSupply(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypePowerSupply_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6680,7 +6680,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "locationType", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "locationType", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeLocationType(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeLocationType_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6688,7 +6688,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "demographicCode", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "demographicCode", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeDemographicCode(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDemographicCode_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6696,7 +6696,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "hub", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "hub", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeHub(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeHub_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6704,7 +6704,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseMisc", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseMisc", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeHouseMisc(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeHouseMisc_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6712,7 +6712,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "rightOfEntryPermission", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "rightOfEntryPermission", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeRightOfEntryPermission(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeRightOfEntryPermission_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6720,7 +6720,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "houseUsageCode", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "houseUsageCode", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeHouseUsageCode(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeHouseUsageCode_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6728,7 +6728,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dropType", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dropType", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeDropType(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDropType_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6736,7 +6736,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "technicianArea", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "technicianArea", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeTechnicianArea(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeTechnicianArea_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6744,7 +6744,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "mapCode", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "mapCode", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeMapCode(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeMapCode_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6752,7 +6752,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LocationLegacyDetailsCSGBridgerType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "bridgerAddress", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "bridgerAddress", scope = CSGDetailsType.class)
     public JAXBElement<LocationLegacyDetailsCSGBridgerType> createCSGDetailsTypeBridgerAddress(LocationLegacyDetailsCSGBridgerType value) {
         return new JAXBElement<LocationLegacyDetailsCSGBridgerType>(_LocationLegacyDetailsCSGTypeBridgerAddress_QNAME, LocationLegacyDetailsCSGBridgerType.class, CSGDetailsType.class, value);
     }
@@ -6760,7 +6760,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "poleNumber", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "poleNumber", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypePoleNumber(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypePoleNumber_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6768,7 +6768,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "lastCallStatus", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "lastCallStatus", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeLastCallStatus(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeLastCallStatus_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6776,7 +6776,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "amplifier", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "amplifier", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeAmplifier(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeAmplifier_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6784,7 +6784,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "ground", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "ground", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeGround(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeGround_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6792,7 +6792,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "serviceArea", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "serviceArea", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeServiceArea(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeServiceArea_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6800,7 +6800,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dropSite", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dropSite", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeDropSite(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeDropSite_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6808,7 +6808,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "timeZone", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "timeZone", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeTimeZone(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeTimeZone_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6816,7 +6816,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "locationCountyID", scope = CSGDetailsType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "locationCountyID", scope = CSGDetailsType.class)
     public JAXBElement<String> createCSGDetailsTypeLocationCountyID(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGTypeLocationCountyID_QNAME, String.class, CSGDetailsType.class, value);
     }
@@ -6824,7 +6824,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddNodeResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "addNodeReturn", scope = AddNodeResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "addNodeReturn", scope = AddNodeResponse.class)
     public JAXBElement<AddNodeResponseType> createAddNodeResponseAddNodeReturn(AddNodeResponseType value) {
         return new JAXBElement<AddNodeResponseType>(_AddNodeResponseAddNodeReturn_QNAME, AddNodeResponseType.class, AddNodeResponse.class, value);
     }
@@ -6832,7 +6832,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "tapStatus", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "tapStatus", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGLineOfBusinessTypeTapStatus(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGLineOfBusinessTypeTapStatus_QNAME, String.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6840,7 +6840,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "projectServiceDate", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "projectServiceDate", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<XMLGregorianCalendar> createLocationLegacyDetailsCSGLineOfBusinessTypeProjectServiceDate(XMLGregorianCalendar value) {
         return new JAXBElement<XMLGregorianCalendar>(_LocationLegacyDetailsCSGLineOfBusinessTypeProjectServiceDate_QNAME, XMLGregorianCalendar.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6848,7 +6848,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "lobSwitch", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "lobSwitch", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGLineOfBusinessTypeLobSwitch(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGLineOfBusinessTypeLobSwitch_QNAME, String.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6856,7 +6856,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "node", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "node", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGLineOfBusinessTypeNode(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGLineOfBusinessTypeNode_QNAME, String.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6864,7 +6864,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "router", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "router", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGLineOfBusinessTypeRouter(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGLineOfBusinessTypeRouter_QNAME, String.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6872,7 +6872,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "networkInterfaceUnit", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "networkInterfaceUnit", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGLineOfBusinessTypeNetworkInterfaceUnit(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGLineOfBusinessTypeNetworkInterfaceUnit_QNAME, String.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6880,7 +6880,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "lobServiceStatus", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "lobServiceStatus", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGLineOfBusinessTypeLobServiceStatus(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGLineOfBusinessTypeLobServiceStatus_QNAME, String.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6888,7 +6888,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "installedOutlets", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "installedOutlets", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGLineOfBusinessTypeInstalledOutlets(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGLineOfBusinessTypeInstalledOutlets_QNAME, String.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6896,7 +6896,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "headend", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "headend", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<String> createLocationLegacyDetailsCSGLineOfBusinessTypeHeadend(String value) {
         return new JAXBElement<String>(_LocationLegacyDetailsCSGLineOfBusinessTypeHeadend_QNAME, String.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6904,7 +6904,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "disableLOBServiceability", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "disableLOBServiceability", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<Boolean> createLocationLegacyDetailsCSGLineOfBusinessTypeDisableLOBServiceability(Boolean value) {
         return new JAXBElement<Boolean>(_LocationLegacyDetailsCSGLineOfBusinessTypeDisableLOBServiceability_QNAME, Boolean.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6912,7 +6912,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link LOBTypesType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "lobType", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "lobType", scope = LocationLegacyDetailsCSGLineOfBusinessType.class)
     public JAXBElement<LOBTypesType> createLocationLegacyDetailsCSGLineOfBusinessTypeLobType(LOBTypesType value) {
         return new JAXBElement<LOBTypesType>(_LocationLegacyDetailsCSGLineOfBusinessTypeLobType_QNAME, LOBTypesType.class, LocationLegacyDetailsCSGLineOfBusinessType.class, value);
     }
@@ -6920,7 +6920,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StandardizeAddressResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "standardizeAddressReturn", scope = StandardizeAddressResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "standardizeAddressReturn", scope = StandardizeAddressResponse.class)
     public JAXBElement<StandardizeAddressResponseType> createStandardizeAddressResponseStandardizeAddressReturn(StandardizeAddressResponseType value) {
         return new JAXBElement<StandardizeAddressResponseType>(_StandardizeAddressResponseStandardizeAddressReturn_QNAME, StandardizeAddressResponseType.class, StandardizeAddressResponse.class, value);
     }
@@ -6928,7 +6928,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link StandardizeAddressResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "standardizeAddressByRuleReturn", scope = StandardizeAddressByRuleResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "standardizeAddressByRuleReturn", scope = StandardizeAddressByRuleResponse.class)
     public JAXBElement<StandardizeAddressResponseType> createStandardizeAddressByRuleResponseStandardizeAddressByRuleReturn(StandardizeAddressResponseType value) {
         return new JAXBElement<StandardizeAddressResponseType>(_StandardizeAddressByRuleResponseStandardizeAddressByRuleReturn_QNAME, StandardizeAddressResponseType.class, StandardizeAddressByRuleResponse.class, value);
     }
@@ -6936,7 +6936,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "StructureType", scope = AddressInfoType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "StructureType", scope = AddressInfoType.class)
     public JAXBElement<String> createAddressInfoTypeStructureType(String value) {
         return new JAXBElement<String>(_LocationDetailsTypeStructureType_QNAME, String.class, AddressInfoType.class, value);
     }
@@ -6944,7 +6944,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "StructureUse", scope = AddressInfoType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "StructureUse", scope = AddressInfoType.class)
     public JAXBElement<String> createAddressInfoTypeStructureUse(String value) {
         return new JAXBElement<String>(_LocationDetailsTypeStructureUse_QNAME, String.class, AddressInfoType.class, value);
     }
@@ -6952,7 +6952,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryNodeRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "QueryNode", scope = QueryNode.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "QueryNode", scope = QueryNode.class)
     public JAXBElement<QueryNodeRequestType> createQueryNodeQueryNode(QueryNodeRequestType value) {
         return new JAXBElement<QueryNodeRequestType>(_QueryNodeQueryNode_QNAME, QueryNodeRequestType.class, QueryNode.class, value);
     }
@@ -6960,7 +6960,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link QueryMarketHierarchyResponseType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "queryMarketHierarchyReturn", scope = QueryMarketHierarchyResponse.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "queryMarketHierarchyReturn", scope = QueryMarketHierarchyResponse.class)
     public JAXBElement<QueryMarketHierarchyResponseType> createQueryMarketHierarchyResponseQueryMarketHierarchyReturn(QueryMarketHierarchyResponseType value) {
         return new JAXBElement<QueryMarketHierarchyResponseType>(_QueryMarketHierarchyResponseQueryMarketHierarchyReturn_QNAME, QueryMarketHierarchyResponseType.class, QueryMarketHierarchyResponse.class, value);
     }
@@ -6968,7 +6968,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AddMsagDataRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "AddMsagData", scope = AddMsagData.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "AddMsagData", scope = AddMsagData.class)
     public JAXBElement<AddMsagDataRequestType> createAddMsagDataAddMsagData(AddMsagDataRequestType value) {
         return new JAXBElement<AddMsagDataRequestType>(_AddMsagDataAddMsagData_QNAME, AddMsagDataRequestType.class, AddMsagData.class, value);
     }
@@ -6976,7 +6976,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ModifySingleViewAddressAssociationType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "ModifySingleViewAddressAssociation", scope = ModifySingleViewAddressAssociation.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "ModifySingleViewAddressAssociation", scope = ModifySingleViewAddressAssociation.class)
     public JAXBElement<ModifySingleViewAddressAssociationType> createModifySingleViewAddressAssociationModifySingleViewAddressAssociation(ModifySingleViewAddressAssociationType value) {
         return new JAXBElement<ModifySingleViewAddressAssociationType>(_ModifySingleViewAddressAssociationModifySingleViewAddressAssociation_QNAME, ModifySingleViewAddressAssociationType.class, ModifySingleViewAddressAssociation.class, value);
     }
@@ -6984,7 +6984,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "fiberNodeName", scope = LocationNetworkConnectivityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "fiberNodeName", scope = LocationNetworkConnectivityType.class)
     public JAXBElement<String> createLocationNetworkConnectivityTypeFiberNodeName(String value) {
         return new JAXBElement<String>(_GetLocationInformationResponseTypeFiberNodeName_QNAME, String.class, LocationNetworkConnectivityType.class, value);
     }
@@ -6992,7 +6992,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "headendID", scope = LocationNetworkConnectivityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "headendID", scope = LocationNetworkConnectivityType.class)
     public JAXBElement<String> createLocationNetworkConnectivityTypeHeadendID(String value) {
         return new JAXBElement<String>(_LocationNetworkConnectivityTypeHeadendID_QNAME, String.class, LocationNetworkConnectivityType.class, value);
     }
@@ -7000,7 +7000,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "headendNetworkAddress", scope = LocationNetworkConnectivityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "headendNetworkAddress", scope = LocationNetworkConnectivityType.class)
     public JAXBElement<String> createLocationNetworkConnectivityTypeHeadendNetworkAddress(String value) {
         return new JAXBElement<String>(_LocationNetworkConnectivityTypeHeadendNetworkAddress_QNAME, String.class, LocationNetworkConnectivityType.class, value);
     }
@@ -7008,7 +7008,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DropLocationType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "dropLocation", scope = LocationNetworkConnectivityType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "dropLocation", scope = LocationNetworkConnectivityType.class)
     public JAXBElement<DropLocationType> createLocationNetworkConnectivityTypeDropLocation(DropLocationType value) {
         return new JAXBElement<DropLocationType>(_LocationNetworkConnectivityTypeDropLocation_QNAME, DropLocationType.class, LocationNetworkConnectivityType.class, value);
     }
@@ -7016,7 +7016,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteE911AddressRequestType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/services", name = "DeleteE911Address", scope = DeleteE911Address.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/services", name = "DeleteE911Address", scope = DeleteE911Address.class)
     public JAXBElement<DeleteE911AddressRequestType> createDeleteE911AddressDeleteE911Address(DeleteE911AddressRequestType value) {
         return new JAXBElement<DeleteE911AddressRequestType>(_DeleteE911AddressDeleteE911Address_QNAME, DeleteE911AddressRequestType.class, DeleteE911Address.class, value);
     }
@@ -7024,7 +7024,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "zip4", scope = ZipCodeType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "zip4", scope = ZipCodeType.class)
     public JAXBElement<String> createZipCodeTypeZip4(String value) {
         return new JAXBElement<String>(_ZipCodeTypeZip4_QNAME, String.class, ZipCodeType.class, value);
     }
@@ -7032,7 +7032,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CSGBillerInformationType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "CSGLocationInformation", scope = BillerInformationType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "CSGLocationInformation", scope = BillerInformationType.class)
     public JAXBElement<CSGBillerInformationType> createBillerInformationTypeCSGLocationInformation(CSGBillerInformationType value) {
         return new JAXBElement<CSGBillerInformationType>(_BillerInformationTypeCSGLocationInformation_QNAME, CSGBillerInformationType.class, BillerInformationType.class, value);
     }
@@ -7040,7 +7040,7 @@ public class ObjectFactory {
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DDPBillerInformationType }{@code >}}
      */
-    @XmlElementDecl(namespace = "http://xml.comcast.com/location/types", name = "DDPLocationInformation", scope = BillerInformationType.class)
+    @XmlElementDecl(namespace = "http://xml.blackbean.com/location/types", name = "DDPLocationInformation", scope = BillerInformationType.class)
     public JAXBElement<DDPBillerInformationType> createBillerInformationTypeDDPLocationInformation(DDPBillerInformationType value) {
         return new JAXBElement<DDPBillerInformationType>(_BillerInformationTypeDDPLocationInformation_QNAME, DDPBillerInformationType.class, BillerInformationType.class, value);
     }

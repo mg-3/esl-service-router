@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="matchMode" type="{http://xml.comcast.com/location/types}GeocodingMatchType" minOccurs="0"/>
+ *         &lt;element name="matchMode" type="{http://xml.blackbean.com/location/types}GeocodingMatchType" minOccurs="0"/>
  *         &lt;element name="returnCloseMatchesOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="customMatchModeSettings" type="{http://xml.comcast.com/location/types}GeocodingCustomMatchModeType" minOccurs="0"/>
+ *         &lt;element name="customMatchModeSettings" type="{http://xml.blackbean.com/location/types}GeocodingCustomMatchModeType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,7 +35,7 @@ public class GeocodingConstraintsType {
     @XmlSchemaType(name = "string")
     protected GeocodingMatchType matchMode;
     protected Boolean returnCloseMatchesOnly;
-    @XmlElementRef(name = "customMatchModeSettings", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "customMatchModeSettings", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<GeocodingCustomMatchModeType> customMatchModeSettings;
 
     /**

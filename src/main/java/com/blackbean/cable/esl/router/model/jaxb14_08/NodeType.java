@@ -21,17 +21,17 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *       &lt;sequence>
  *         &lt;element name="elocMarketID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *         &lt;element name="elocNodeID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="nodeStatus" type="{http://xml.comcast.com/location/types}NodeStatusSimpleType" minOccurs="0"/>
+ *         &lt;element name="nodeStatus" type="{http://xml.blackbean.com/location/types}NodeStatusSimpleType" minOccurs="0"/>
  *         &lt;element name="plannedAvailabilityDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="nodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="nodeDescription" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="alternateNodeNames" type="{http://xml.comcast.com/location/types}ArrayOfAlternateNodeName" minOccurs="0"/>
+ *         &lt;element name="alternateNodeNames" type="{http://xml.blackbean.com/location/types}ArrayOfAlternateNodeName" minOccurs="0"/>
  *         &lt;element name="hubID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="nodeHubLocation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="nodeBoundary" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="nodeBoundaryType" type="{http://xml.comcast.com/location/types}NodeBoundaryTypeSimpleType" minOccurs="0"/>
+ *         &lt;element name="nodeBoundaryType" type="{http://xml.blackbean.com/location/types}NodeBoundaryTypeSimpleType" minOccurs="0"/>
  *         &lt;element name="nodePaths" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="nodeCapabilities" type="{http://xml.comcast.com/location/types}CapabilitiesType" minOccurs="0"/>
+ *         &lt;element name="nodeCapabilities" type="{http://xml.blackbean.com/location/types}CapabilitiesType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -56,31 +56,31 @@ import javax.xml.datatype.XMLGregorianCalendar;
 })
 public class NodeType {
 
-    @XmlElementRef(name = "elocMarketID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "elocMarketID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Long> elocMarketID;
-    @XmlElementRef(name = "elocNodeID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "elocNodeID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Long> elocNodeID;
-    @XmlElementRef(name = "nodeStatus", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "nodeStatus", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<NodeStatusSimpleType> nodeStatus;
-    @XmlElementRef(name = "plannedAvailabilityDate", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "plannedAvailabilityDate", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<XMLGregorianCalendar> plannedAvailabilityDate;
-    @XmlElementRef(name = "nodeName", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "nodeName", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> nodeName;
-    @XmlElementRef(name = "nodeDescription", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "nodeDescription", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> nodeDescription;
-    @XmlElementRef(name = "alternateNodeNames", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "alternateNodeNames", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfAlternateNodeName> alternateNodeNames;
-    @XmlElementRef(name = "hubID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "hubID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> hubID;
-    @XmlElementRef(name = "nodeHubLocation", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "nodeHubLocation", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> nodeHubLocation;
-    @XmlElementRef(name = "nodeBoundary", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "nodeBoundary", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> nodeBoundary;
-    @XmlElementRef(name = "nodeBoundaryType", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "nodeBoundaryType", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<NodeBoundaryTypeSimpleType> nodeBoundaryType;
-    @XmlElementRef(name = "nodePaths", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "nodePaths", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> nodePaths;
-    @XmlElementRef(name = "nodeCapabilities", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "nodeCapabilities", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<CapabilitiesType> nodeCapabilities;
 
     /**

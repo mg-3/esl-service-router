@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="AddLocationQueue" type="{http://xml.comcast.com/location/types}AddLocationQueueRequestType" minOccurs="0"/>
+ *         &lt;element name="AddLocationQueue" type="{http://xml.blackbean.com/location/types}AddLocationQueueRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "addLocationQueue"
 })
-@XmlRootElement(name = "addLocationQueue", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "addLocationQueue", namespace = "http://xml.blackbean.com/location/services")
 public class AddLocationQueue {
 
-    @XmlElementRef(name = "AddLocationQueue", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "AddLocationQueue", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<AddLocationQueueRequestType> addLocationQueue;
 
     /**

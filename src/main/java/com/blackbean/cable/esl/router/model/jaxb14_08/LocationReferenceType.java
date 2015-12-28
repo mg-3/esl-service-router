@@ -17,7 +17,7 @@ import java.math.BigDecimal;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="locationID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="locationStatus" type="{http://xml.comcast.com/location/types}LocationStatusType"/>
+ *         &lt;element name="locationStatus" type="{http://xml.blackbean.com/location/types}LocationStatusType"/>
  *         &lt;element name="streetAddress1" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="streetAddress2" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string"/>
@@ -29,14 +29,14 @@ import java.math.BigDecimal;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="zipCode" type="{http://xml.comcast.com/location/types}ZipCodeType"/>
+ *         &lt;element name="zipCode" type="{http://xml.blackbean.com/location/types}ZipCodeType"/>
  *         &lt;element name="latitude" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
  *         &lt;element name="longitude" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
  *         &lt;element name="exactMatch" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="marketID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *         &lt;element name="marketName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="legacyMarketId" type="{http://xml.comcast.com/location/types}LegacyMarketIDType" minOccurs="0"/>
- *         &lt;element name="legacyLocationIDs" type="{http://xml.comcast.com/location/types}ArrayOfLegacyLocationIDType" minOccurs="0"/>
+ *         &lt;element name="legacyMarketId" type="{http://xml.blackbean.com/location/types}LegacyMarketIDType" minOccurs="0"/>
+ *         &lt;element name="legacyLocationIDs" type="{http://xml.blackbean.com/location/types}ArrayOfLegacyLocationIDType" minOccurs="0"/>
  *         &lt;element name="distance" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
  *         &lt;element name="fraudIndicator" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="channelMapGroup" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
@@ -78,7 +78,7 @@ public class LocationReferenceType {
     protected String streetAddress2;
     @XmlElement(required = true)
     protected String city;
-    @XmlElementRef(name = "state", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "state", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> state;
     @XmlElement(required = true)
     protected ZipCodeType zipCode;

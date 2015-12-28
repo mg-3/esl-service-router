@@ -198,11 +198,11 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="lineOfBusiness" type="{http://xml.comcast.com/location/types}ArrayOfLocationLegacyDetailsCSGLineOfBusinessType" minOccurs="0"/>
- *         &lt;element name="bridgerAddress" type="{http://xml.comcast.com/location/types}LocationLegacyDetailsCSGBridgerType" minOccurs="0"/>
- *         &lt;element name="houseComments" type="{http://xml.comcast.com/location/types}LocationLegacyDetailsCSGHouseCommentsType" minOccurs="0"/>
- *         &lt;element name="lineTag" type="{http://xml.comcast.com/location/types}LocationLegacyDetailsCSGLineTagsType" minOccurs="0"/>
- *         &lt;element name="customFields" type="{http://xml.comcast.com/location/types}LocationLegacyDetailsCSGCustomFieldsType" minOccurs="0"/>
+ *         &lt;element name="lineOfBusiness" type="{http://xml.blackbean.com/location/types}ArrayOfLocationLegacyDetailsCSGLineOfBusinessType" minOccurs="0"/>
+ *         &lt;element name="bridgerAddress" type="{http://xml.blackbean.com/location/types}LocationLegacyDetailsCSGBridgerType" minOccurs="0"/>
+ *         &lt;element name="houseComments" type="{http://xml.blackbean.com/location/types}LocationLegacyDetailsCSGHouseCommentsType" minOccurs="0"/>
+ *         &lt;element name="lineTag" type="{http://xml.blackbean.com/location/types}LocationLegacyDetailsCSGLineTagsType" minOccurs="0"/>
+ *         &lt;element name="customFields" type="{http://xml.blackbean.com/location/types}LocationLegacyDetailsCSGCustomFieldsType" minOccurs="0"/>
  *         &lt;element name="addressLine2Override" minOccurs="0">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -263,73 +263,73 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class LocationLegacyDetailsCSGType {
 
     protected String houseKey;
-    @XmlElementRef(name = "locationType", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "locationType", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> locationType;
-    @XmlElementRef(name = "dwellingCodeDescr", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "dwellingCodeDescr", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> dwellingCodeDescr;
-    @XmlElementRef(name = "customerType", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "customerType", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> customerType;
-    @XmlElementRef(name = "locationStatus", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "locationStatus", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> locationStatus;
-    @XmlElementRef(name = "houseMisc", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "houseMisc", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> houseMisc;
-    @XmlElementRef(name = "locationCountyID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "locationCountyID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> locationCountyID;
-    @XmlElementRef(name = "salesArea", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "salesArea", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> salesArea;
-    @XmlElementRef(name = "serviceArea", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "serviceArea", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> serviceArea;
-    @XmlElementRef(name = "technicianArea", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "technicianArea", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> technicianArea;
-    @XmlElementRef(name = "mapCode", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "mapCode", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> mapCode;
-    @XmlElementRef(name = "demographicCode", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "demographicCode", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> demographicCode;
-    @XmlElementRef(name = "timeZone", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "timeZone", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> timeZone;
-    @XmlElementRef(name = "unincorporatedFlag", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "unincorporatedFlag", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> unincorporatedFlag;
-    @XmlElementRef(name = "dropType", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "dropType", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> dropType;
-    @XmlElementRef(name = "dropSite", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "dropSite", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> dropSite;
-    @XmlElementRef(name = "hookupType", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "hookupType", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> hookupType;
-    @XmlElementRef(name = "rightOfEntryPermission", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "rightOfEntryPermission", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> rightOfEntryPermission;
-    @XmlElementRef(name = "poleOwner", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "poleOwner", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> poleOwner;
-    @XmlElementRef(name = "poleNumber", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "poleNumber", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> poleNumber;
-    @XmlElementRef(name = "amplifier", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "amplifier", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> amplifier;
-    @XmlElementRef(name = "powerSupply", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "powerSupply", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> powerSupply;
-    @XmlElementRef(name = "pedestal", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "pedestal", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> pedestal;
-    @XmlElementRef(name = "ground", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "ground", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> ground;
-    @XmlElementRef(name = "hub", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "hub", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> hub;
-    @XmlElementRef(name = "cell", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "cell", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> cell;
-    @XmlElementRef(name = "dropLength", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "dropLength", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> dropLength;
     protected ArrayOfLocationLegacyDetailsCSGLineOfBusinessType lineOfBusiness;
-    @XmlElementRef(name = "bridgerAddress", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "bridgerAddress", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<LocationLegacyDetailsCSGBridgerType> bridgerAddress;
-    @XmlElementRef(name = "houseComments", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "houseComments", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<LocationLegacyDetailsCSGHouseCommentsType> houseComments;
-    @XmlElementRef(name = "lineTag", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "lineTag", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<LocationLegacyDetailsCSGLineTagsType> lineTag;
     protected LocationLegacyDetailsCSGCustomFieldsType customFields;
-    @XmlElementRef(name = "addressLine2Override", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "addressLine2Override", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> addressLine2Override;
-    @XmlElementRef(name = "houseUsageCode", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "houseUsageCode", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> houseUsageCode;
-    @XmlElementRef(name = "lastCallDate", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "lastCallDate", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<XMLGregorianCalendar> lastCallDate;
-    @XmlElementRef(name = "lastCallStatus", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "lastCallStatus", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> lastCallStatus;
     protected Boolean suppressCSGAddrStandardization;
 

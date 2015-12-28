@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="DeleteE911Address" type="{http://xml.comcast.com/location/types}DeleteE911AddressRequestType" minOccurs="0"/>
+ *         &lt;element name="DeleteE911Address" type="{http://xml.blackbean.com/location/types}DeleteE911AddressRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "deleteE911Address"
 })
-@XmlRootElement(name = "deleteE911Address", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "deleteE911Address", namespace = "http://xml.blackbean.com/location/services")
 public class DeleteE911Address {
 
-    @XmlElementRef(name = "DeleteE911Address", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "DeleteE911Address", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<DeleteE911AddressRequestType> deleteE911Address;
 
     /**

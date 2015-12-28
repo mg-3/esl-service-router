@@ -16,8 +16,8 @@ import javax.xml.bind.annotation.*;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="ResponseStatus" type="{http://xml.comcast.com/location/types}ResponseStatusType"/>
- *         &lt;element name="location" type="{http://xml.comcast.com/location/types}LocationType" minOccurs="0"/>
+ *         &lt;element name="ResponseStatus" type="{http://xml.blackbean.com/location/types}ResponseStatusType"/>
+ *         &lt;element name="location" type="{http://xml.blackbean.com/location/types}LocationType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,7 +36,7 @@ public class UpdateLocationFromBillingResponseItemType {
     protected int requestRefNum;
     @XmlElement(name = "ResponseStatus", required = true)
     protected ResponseStatusType responseStatus;
-    @XmlElementRef(name = "location", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "location", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<LocationType> location;
 
     /**

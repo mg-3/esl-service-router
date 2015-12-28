@@ -16,8 +16,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="locationReference" type="{http://xml.comcast.com/location/types}LocationReferenceType" minOccurs="0"/>
- *         &lt;element name="e911AddressInfo" type="{http://xml.comcast.com/location/types}E911AddressType" minOccurs="0"/>
+ *         &lt;element name="locationReference" type="{http://xml.blackbean.com/location/types}LocationReferenceType" minOccurs="0"/>
+ *         &lt;element name="e911AddressInfo" type="{http://xml.blackbean.com/location/types}E911AddressType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

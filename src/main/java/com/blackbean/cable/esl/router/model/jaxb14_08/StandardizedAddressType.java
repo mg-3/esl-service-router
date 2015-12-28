@@ -19,11 +19,11 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="resultSequence" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="closeMatch" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="postalAddress" type="{http://xml.comcast.com/location/types}PostalAddressType"/>
- *         &lt;element name="geocodingResults" type="{http://xml.comcast.com/location/types}GeocodingResultsType" minOccurs="0"/>
- *         &lt;element name="e911Availability" type="{http://xml.comcast.com/location/types}E911AvailabilityType" minOccurs="0"/>
- *         &lt;element name="LocationGeography" type="{http://xml.comcast.com/location/types}LocationGeographyType" minOccurs="0"/>
- *         &lt;element name="LocationTelephony" type="{http://xml.comcast.com/location/types}LocationTelephonyType" minOccurs="0"/>
+ *         &lt;element name="postalAddress" type="{http://xml.blackbean.com/location/types}PostalAddressType"/>
+ *         &lt;element name="geocodingResults" type="{http://xml.blackbean.com/location/types}GeocodingResultsType" minOccurs="0"/>
+ *         &lt;element name="e911Availability" type="{http://xml.blackbean.com/location/types}E911AvailabilityType" minOccurs="0"/>
+ *         &lt;element name="LocationGeography" type="{http://xml.blackbean.com/location/types}LocationGeographyType" minOccurs="0"/>
+ *         &lt;element name="LocationTelephony" type="{http://xml.blackbean.com/location/types}LocationTelephonyType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="LocationID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="AddressVerificationDetails" type="{http://xml.comcast.com/location/types}AddressVerificationDetailsType"/>
+ *         &lt;element name="AddressVerificationDetails" type="{http://xml.blackbean.com/location/types}AddressVerificationDetailsType"/>
  *         &lt;element name="CopyLocationToBillingWhenComplete" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

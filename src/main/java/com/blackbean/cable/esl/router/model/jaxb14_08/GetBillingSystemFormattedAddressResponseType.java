@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="billingSystemFormattedAddresses" type="{http://xml.comcast.com/location/types}ArrayOfBillingSystemFormattedAddressesType" minOccurs="0"/>
- *         &lt;element name="responseStatus" type="{http://xml.comcast.com/location/types}ResponseStatusType"/>
+ *         &lt;element name="billingSystemFormattedAddresses" type="{http://xml.blackbean.com/location/types}ArrayOfBillingSystemFormattedAddressesType" minOccurs="0"/>
+ *         &lt;element name="responseStatus" type="{http://xml.blackbean.com/location/types}ResponseStatusType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -1,1 +1,1 @@
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://xml.comcast.com/location/types", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED) package com.blackbean.cable.esl.router.model.jaxb14_08;
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://xml.blackbean.com/location/types", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED) package com.blackbean.cable.esl.router.model.jaxb14_08;

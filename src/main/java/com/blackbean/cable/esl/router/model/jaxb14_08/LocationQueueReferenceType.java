@@ -25,9 +25,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="QueueStatus" type="{http://xml.comcast.com/location/types}LocationQueueStatusType"/>
- *         &lt;element name="SubmitterInfo" type="{http://xml.comcast.com/location/types}LocationQueueContactInfoType"/>
- *         &lt;element name="LocationQueueAddress" type="{http://xml.comcast.com/location/types}LocationQueueAddressType"/>
+ *         &lt;element name="QueueStatus" type="{http://xml.blackbean.com/location/types}LocationQueueStatusType"/>
+ *         &lt;element name="SubmitterInfo" type="{http://xml.blackbean.com/location/types}LocationQueueContactInfoType"/>
+ *         &lt;element name="LocationQueueAddress" type="{http://xml.blackbean.com/location/types}LocationQueueAddressType"/>
  *         &lt;element name="LeadID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="NeedByDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="CreatedDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
@@ -56,7 +56,7 @@ public class LocationQueueReferenceType {
 
     @XmlElement(name = "LocationQueueID")
     protected long locationQueueID;
-    @XmlElementRef(name = "RequestedPriority", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "RequestedPriority", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> requestedPriority;
     @XmlElement(name = "QueueStatus", required = true)
     @XmlSchemaType(name = "string")

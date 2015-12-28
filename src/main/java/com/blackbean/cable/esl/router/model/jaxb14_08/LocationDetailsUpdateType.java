@@ -15,14 +15,14 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="LocationGeography" type="{http://xml.comcast.com/location/types}LocationGeographyType" minOccurs="0"/>
- *         &lt;element name="LocationTelephony" type="{http://xml.comcast.com/location/types}LocationTelephonyType" minOccurs="0"/>
- *         &lt;element name="LocationNetworkConnectivity" type="{http://xml.comcast.com/location/types}LocationNetworkConnectivityType" minOccurs="0"/>
+ *         &lt;element name="LocationGeography" type="{http://xml.blackbean.com/location/types}LocationGeographyType" minOccurs="0"/>
+ *         &lt;element name="LocationTelephony" type="{http://xml.blackbean.com/location/types}LocationTelephonyType" minOccurs="0"/>
+ *         &lt;element name="LocationNetworkConnectivity" type="{http://xml.blackbean.com/location/types}LocationNetworkConnectivityType" minOccurs="0"/>
  *         &lt;element name="AddressGroupID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="LegacyLocationIDs" type="{http://xml.comcast.com/location/types}ArrayOfLegacyLocationIDType" minOccurs="0"/>
- *         &lt;element name="LocationLegacyDetails" type="{http://xml.comcast.com/location/types}LocationLegacyDetailsType" minOccurs="0"/>
- *         &lt;element name="LocationCustomFields" type="{http://xml.comcast.com/location/types}ArrayOfLocationCustomFieldsType" minOccurs="0"/>
- *         &lt;element name="LocationComments" type="{http://xml.comcast.com/location/types}ArrayOfLocationCommentsType" minOccurs="0"/>
+ *         &lt;element name="LegacyLocationIDs" type="{http://xml.blackbean.com/location/types}ArrayOfLegacyLocationIDType" minOccurs="0"/>
+ *         &lt;element name="LocationLegacyDetails" type="{http://xml.blackbean.com/location/types}LocationLegacyDetailsType" minOccurs="0"/>
+ *         &lt;element name="LocationCustomFields" type="{http://xml.blackbean.com/location/types}ArrayOfLocationCustomFieldsType" minOccurs="0"/>
+ *         &lt;element name="LocationComments" type="{http://xml.blackbean.com/location/types}ArrayOfLocationCommentsType" minOccurs="0"/>
  *         &lt;element name="UpdateLocationFromBillingBeforeModify" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -50,7 +50,7 @@ public class LocationDetailsUpdateType {
     protected LocationTelephonyType locationTelephony;
     @XmlElement(name = "LocationNetworkConnectivity")
     protected LocationNetworkConnectivityType locationNetworkConnectivity;
-    @XmlElementRef(name = "AddressGroupID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "AddressGroupID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> addressGroupID;
     @XmlElement(name = "LegacyLocationIDs")
     protected ArrayOfLegacyLocationIDType legacyLocationIDs;
@@ -58,7 +58,7 @@ public class LocationDetailsUpdateType {
     protected LocationLegacyDetailsType locationLegacyDetails;
     @XmlElement(name = "LocationCustomFields")
     protected ArrayOfLocationCustomFieldsType locationCustomFields;
-    @XmlElementRef(name = "LocationComments", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "LocationComments", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfLocationCommentsType> locationComments;
     @XmlElement(name = "UpdateLocationFromBillingBeforeModify")
     protected Boolean updateLocationFromBillingBeforeModify;

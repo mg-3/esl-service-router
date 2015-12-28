@@ -35,11 +35,11 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class StandardizeAddressXfinityRequestedResultsType {
 
-    @XmlElementRef(name = "geography", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "geography", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> geography;
-    @XmlElementRef(name = "telephony", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "telephony", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> telephony;
-    @XmlElementRef(name = "msag", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "msag", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> msag;
 
     /**

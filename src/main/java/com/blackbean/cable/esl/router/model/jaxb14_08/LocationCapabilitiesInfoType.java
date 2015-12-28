@@ -16,8 +16,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="locationCapabilityExceptions" type="{http://xml.comcast.com/location/types}CapabilitiesType" minOccurs="0"/>
- *         &lt;element name="locationCapabilities" type="{http://xml.comcast.com/location/types}CapabilitiesType" minOccurs="0"/>
+ *         &lt;element name="locationCapabilityExceptions" type="{http://xml.blackbean.com/location/types}CapabilitiesType" minOccurs="0"/>
+ *         &lt;element name="locationCapabilities" type="{http://xml.blackbean.com/location/types}CapabilitiesType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="locationReference" type="{http://xml.comcast.com/location/types}ArrayOfLocationReferenceType" minOccurs="0"/>
+ *         &lt;element name="locationReference" type="{http://xml.blackbean.com/location/types}ArrayOfLocationReferenceType" minOccurs="0"/>
  *         &lt;element name="fiberNodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -33,9 +33,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class GetLocationInformationResponseType {
 
-    @XmlElementRef(name = "locationReference", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "locationReference", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfLocationReferenceType> locationReference;
-    @XmlElementRef(name = "fiberNodeName", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "fiberNodeName", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> fiberNodeName;
 
     /**

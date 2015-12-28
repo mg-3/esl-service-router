@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="ModifyMarket" type="{http://xml.comcast.com/location/types}ModifyMarketRequestType" minOccurs="0"/>
+ *         &lt;element name="ModifyMarket" type="{http://xml.blackbean.com/location/types}ModifyMarketRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "modifyMarket"
 })
-@XmlRootElement(name = "modifyMarket", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "modifyMarket", namespace = "http://xml.blackbean.com/location/services")
 public class ModifyMarket {
 
-    @XmlElementRef(name = "ModifyMarket", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "ModifyMarket", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<ModifyMarketRequestType> modifyMarket;
 
     /**

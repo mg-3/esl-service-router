@@ -11,7 +11,7 @@
         <appender-ref ref="STDOUT"/>
     </logger>
 
-    <logger name="com.comcast.cable.esl" level="DEBUG" additivity="false">
+    <logger name="com.blackbean.cable.esl" level="DEBUG" additivity="false">
         <appender-ref ref="STDOUT"/>
     </logger>
 

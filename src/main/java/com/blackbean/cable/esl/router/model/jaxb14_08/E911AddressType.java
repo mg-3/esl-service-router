@@ -22,7 +22,7 @@ import javax.xml.bind.annotation.*;
  *         &lt;element name="streetName" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="streetSuffix" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="streetPostDirection" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="unitTypes" type="{http://xml.comcast.com/location/types}ArrayOfUnitTypesType" minOccurs="0"/>
+ *         &lt;element name="unitTypes" type="{http://xml.blackbean.com/location/types}ArrayOfUnitTypesType" minOccurs="0"/>
  *         &lt;element name="city" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="state">
  *           &lt;simpleType>
@@ -32,7 +32,7 @@ import javax.xml.bind.annotation.*;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="zipCode" type="{http://xml.comcast.com/location/types}OptionalZipCodeType" minOccurs="0"/>
+ *         &lt;element name="zipCode" type="{http://xml.blackbean.com/location/types}OptionalZipCodeType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -55,21 +55,21 @@ import javax.xml.bind.annotation.*;
 })
 public class E911AddressType {
 
-    @XmlElementRef(name = "houseNumberPrefix", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "houseNumberPrefix", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> houseNumberPrefix;
-    @XmlElementRef(name = "houseNumber", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "houseNumber", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> houseNumber;
-    @XmlElementRef(name = "houseNumberSuffix", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "houseNumberSuffix", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> houseNumberSuffix;
-    @XmlElementRef(name = "streetPreDirection", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "streetPreDirection", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> streetPreDirection;
     @XmlElement(required = true)
     protected String streetName;
-    @XmlElementRef(name = "streetSuffix", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "streetSuffix", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> streetSuffix;
-    @XmlElementRef(name = "streetPostDirection", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "streetPostDirection", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> streetPostDirection;
-    @XmlElementRef(name = "unitTypes", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "unitTypes", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfUnitTypesType> unitTypes;
     @XmlElement(required = true)
     protected String city;

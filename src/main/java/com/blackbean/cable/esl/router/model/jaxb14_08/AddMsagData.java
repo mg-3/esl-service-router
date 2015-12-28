@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="AddMsagData" type="{http://xml.comcast.com/location/types}AddMsagDataRequestType" minOccurs="0"/>
+ *         &lt;element name="AddMsagData" type="{http://xml.blackbean.com/location/types}AddMsagDataRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "addMsagData"
 })
-@XmlRootElement(name = "addMsagData", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "addMsagData", namespace = "http://xml.blackbean.com/location/services")
 public class AddMsagData {
 
-    @XmlElementRef(name = "AddMsagData", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "AddMsagData", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<AddMsagDataRequestType> addMsagData;
 
     /**

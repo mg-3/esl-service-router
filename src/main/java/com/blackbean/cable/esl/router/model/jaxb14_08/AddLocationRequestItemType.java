@@ -19,17 +19,17 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="MarketID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="LocationPostalAddress" type="{http://xml.comcast.com/location/types}PostalAddressType"/>
- *         &lt;element name="MultiDwellingUnitDetails" type="{http://xml.comcast.com/location/types}MultiDwellingUnitDetailsType" minOccurs="0"/>
- *         &lt;element name="LocationNetworkConnectivity" type="{http://xml.comcast.com/location/types}LocationNetworkConnectivityType" minOccurs="0"/>
- *         &lt;element name="LocationLegacyDetails" type="{http://xml.comcast.com/location/types}LocationLegacyDetailsType" minOccurs="0"/>
- *         &lt;element name="LocationCapabilityExceptions" type="{http://xml.comcast.com/location/types}CapabilitiesType" minOccurs="0"/>
- *         &lt;element name="LocationCustomFields" type="{http://xml.comcast.com/location/types}ArrayOfLocationCustomFieldsType" minOccurs="0"/>
- *         &lt;element name="LocationTelephony" type="{http://xml.comcast.com/location/types}LocationTelephonyType" minOccurs="0"/>
- *         &lt;element name="LocationGeographicCoordinates" type="{http://xml.comcast.com/location/types}GeographicCoordinateMeasurementType" minOccurs="0"/>
- *         &lt;element name="LocationGeography" type="{http://xml.comcast.com/location/types}LocationGeographyType" minOccurs="0"/>
+ *         &lt;element name="LocationPostalAddress" type="{http://xml.blackbean.com/location/types}PostalAddressType"/>
+ *         &lt;element name="MultiDwellingUnitDetails" type="{http://xml.blackbean.com/location/types}MultiDwellingUnitDetailsType" minOccurs="0"/>
+ *         &lt;element name="LocationNetworkConnectivity" type="{http://xml.blackbean.com/location/types}LocationNetworkConnectivityType" minOccurs="0"/>
+ *         &lt;element name="LocationLegacyDetails" type="{http://xml.blackbean.com/location/types}LocationLegacyDetailsType" minOccurs="0"/>
+ *         &lt;element name="LocationCapabilityExceptions" type="{http://xml.blackbean.com/location/types}CapabilitiesType" minOccurs="0"/>
+ *         &lt;element name="LocationCustomFields" type="{http://xml.blackbean.com/location/types}ArrayOfLocationCustomFieldsType" minOccurs="0"/>
+ *         &lt;element name="LocationTelephony" type="{http://xml.blackbean.com/location/types}LocationTelephonyType" minOccurs="0"/>
+ *         &lt;element name="LocationGeographicCoordinates" type="{http://xml.blackbean.com/location/types}GeographicCoordinateMeasurementType" minOccurs="0"/>
+ *         &lt;element name="LocationGeography" type="{http://xml.blackbean.com/location/types}LocationGeographyType" minOccurs="0"/>
  *         &lt;element name="CopyLocationToBillingWhenComplete" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="AddressVerificationDetails" type="{http://xml.comcast.com/location/types}AddressVerificationDetailsType" minOccurs="0"/>
+ *         &lt;element name="AddressVerificationDetails" type="{http://xml.blackbean.com/location/types}AddressVerificationDetailsType" minOccurs="0"/>
  *         &lt;element name="fraudIndicator" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

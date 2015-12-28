@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="NearestNeighborCriteria" type="{http://xml.comcast.com/location/types}NearestNeighborCriteriaType" minOccurs="0"/>
- *         &lt;element name="BoundaryCriteria" type="{http://xml.comcast.com/location/types}BoundaryCriteriaType" minOccurs="0"/>
+ *         &lt;element name="NearestNeighborCriteria" type="{http://xml.blackbean.com/location/types}NearestNeighborCriteriaType" minOccurs="0"/>
+ *         &lt;element name="BoundaryCriteria" type="{http://xml.blackbean.com/location/types}BoundaryCriteriaType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,9 +33,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class GeospatialSearchCriteriaType {
 
-    @XmlElementRef(name = "NearestNeighborCriteria", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "NearestNeighborCriteria", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<NearestNeighborCriteriaType> nearestNeighborCriteria;
-    @XmlElementRef(name = "BoundaryCriteria", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "BoundaryCriteria", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<BoundaryCriteriaType> boundaryCriteria;
 
     /**

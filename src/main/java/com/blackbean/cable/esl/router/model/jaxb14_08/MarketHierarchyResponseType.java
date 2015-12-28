@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.*;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="hierarchyID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="hierarchyLevel" type="{http://xml.comcast.com/location/types}ArrayOfMarketHierarchyLevelResponseType"/>
+ *         &lt;element name="hierarchyLevel" type="{http://xml.blackbean.com/location/types}ArrayOfMarketHierarchyLevelResponseType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -30,7 +30,7 @@ import javax.xml.bind.annotation.*;
 })
 public class MarketHierarchyResponseType {
 
-    @XmlElementRef(name = "hierarchyID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "hierarchyID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> hierarchyID;
     @XmlElement(required = true)
     protected ArrayOfMarketHierarchyLevelResponseType hierarchyLevel;

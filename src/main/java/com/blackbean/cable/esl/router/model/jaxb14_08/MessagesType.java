@@ -19,7 +19,7 @@ import java.util.List;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="message" type="{http://xml.comcast.com/types}MessageType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="message" type="{http://xml.blackbean.com/types}MessageType" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -27,7 +27,7 @@ import java.util.List;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "MessagesType", namespace = "http://xml.comcast.com/types", propOrder = {
+@XmlType(name = "MessagesType", namespace = "http://xml.blackbean.com/types", propOrder = {
         "message"
 })
 public class MessagesType {

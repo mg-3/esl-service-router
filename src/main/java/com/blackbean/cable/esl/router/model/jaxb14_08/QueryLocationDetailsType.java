@@ -16,18 +16,18 @@ import java.math.BigDecimal;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="locationID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="LegacyLocationIDs" type="{http://xml.comcast.com/location/types}ArrayOfLegacyLocationIDType" minOccurs="0"/>
- *         &lt;element name="locationStatus" type="{http://xml.comcast.com/location/types}LocationStatusType"/>
+ *         &lt;element name="LegacyLocationIDs" type="{http://xml.blackbean.com/location/types}ArrayOfLegacyLocationIDType" minOccurs="0"/>
+ *         &lt;element name="locationStatus" type="{http://xml.blackbean.com/location/types}LocationStatusType"/>
  *         &lt;element name="longitude" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
  *         &lt;element name="latitude" type="{http://www.w3.org/2001/XMLSchema}decimal"/>
- *         &lt;element name="locationPostalAddress" type="{http://xml.comcast.com/location/types}PostalAddressType"/>
- *         &lt;element name="locationAlternateAddress" type="{http://xml.comcast.com/location/types}ArrayOfAlternatePostalAddressType" minOccurs="0"/>
- *         &lt;element name="LocationGeography" type="{http://xml.comcast.com/location/types}LocationGeographyType" minOccurs="0"/>
- *         &lt;element name="LocationTelephony" type="{http://xml.comcast.com/location/types}LocationTelephonyType" minOccurs="0"/>
- *         &lt;element name="E911Availability" type="{http://xml.comcast.com/location/types}E911AvailabilityType" minOccurs="0"/>
+ *         &lt;element name="locationPostalAddress" type="{http://xml.blackbean.com/location/types}PostalAddressType"/>
+ *         &lt;element name="locationAlternateAddress" type="{http://xml.blackbean.com/location/types}ArrayOfAlternatePostalAddressType" minOccurs="0"/>
+ *         &lt;element name="LocationGeography" type="{http://xml.blackbean.com/location/types}LocationGeographyType" minOccurs="0"/>
+ *         &lt;element name="LocationTelephony" type="{http://xml.blackbean.com/location/types}LocationTelephonyType" minOccurs="0"/>
+ *         &lt;element name="E911Availability" type="{http://xml.blackbean.com/location/types}E911AvailabilityType" minOccurs="0"/>
  *         &lt;element name="marketID" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="marketName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="legacyMarketId" type="{http://xml.comcast.com/location/types}LegacyMarketIDType" minOccurs="0"/>
+ *         &lt;element name="legacyMarketId" type="{http://xml.blackbean.com/location/types}LegacyMarketIDType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

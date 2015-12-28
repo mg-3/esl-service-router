@@ -33,9 +33,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ModifySingleViewAddressAssociationType {
 
-    @XmlElementRef(name = "singleViewID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "singleViewID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> singleViewID;
-    @XmlElementRef(name = "addressID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "addressID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> addressID;
 
     /**

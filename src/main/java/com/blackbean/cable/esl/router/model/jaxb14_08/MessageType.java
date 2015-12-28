@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "MessageType", namespace = "http://xml.comcast.com/types", propOrder = {
+@XmlType(name = "MessageType", namespace = "http://xml.blackbean.com/types", propOrder = {
         "code",
         "text"
 })

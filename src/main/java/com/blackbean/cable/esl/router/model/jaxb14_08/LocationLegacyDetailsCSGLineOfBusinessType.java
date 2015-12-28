@@ -19,7 +19,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="lobType" type="{http://xml.comcast.com/location/types}LOBTypesType" minOccurs="0"/>
+ *         &lt;element name="lobType" type="{http://xml.blackbean.com/location/types}LOBTypesType" minOccurs="0"/>
  *         &lt;element name="lobServiceStatus" minOccurs="0">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -101,27 +101,27 @@ import javax.xml.datatype.XMLGregorianCalendar;
 })
 public class LocationLegacyDetailsCSGLineOfBusinessType {
 
-    @XmlElementRef(name = "lobType", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "lobType", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<LOBTypesType> lobType;
-    @XmlElementRef(name = "lobServiceStatus", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "lobServiceStatus", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> lobServiceStatus;
-    @XmlElementRef(name = "projectServiceDate", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "projectServiceDate", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<XMLGregorianCalendar> projectServiceDate;
-    @XmlElementRef(name = "installedOutlets", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "installedOutlets", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> installedOutlets;
-    @XmlElementRef(name = "node", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "node", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> node;
-    @XmlElementRef(name = "headend", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "headend", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> headend;
-    @XmlElementRef(name = "router", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "router", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> router;
-    @XmlElementRef(name = "networkInterfaceUnit", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "networkInterfaceUnit", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> networkInterfaceUnit;
-    @XmlElementRef(name = "lobSwitch", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "lobSwitch", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> lobSwitch;
-    @XmlElementRef(name = "tapStatus", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "tapStatus", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> tapStatus;
-    @XmlElementRef(name = "disableLOBServiceability", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "disableLOBServiceability", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> disableLOBServiceability;
 
     /**

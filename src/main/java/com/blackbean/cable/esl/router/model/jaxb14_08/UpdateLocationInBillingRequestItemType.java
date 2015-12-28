@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="LocationID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="UpdateType" type="{http://xml.comcast.com/location/types}ArrayOfLocationUpdateTypeSimpleType" minOccurs="0"/>
+ *         &lt;element name="UpdateType" type="{http://xml.blackbean.com/location/types}ArrayOfLocationUpdateTypeSimpleType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

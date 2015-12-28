@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="location" type="{http://xml.comcast.com/location/types}ArrayOfQueryLocationDetailsType"/>
+ *         &lt;element name="location" type="{http://xml.blackbean.com/location/types}ArrayOfQueryLocationDetailsType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

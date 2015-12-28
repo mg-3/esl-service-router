@@ -52,7 +52,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="testFiberNode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="lineTag" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="hotTap" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Serviceability" type="{http://xml.comcast.com/location/types}LocationDSTServicabilityTypes" minOccurs="0"/>
+ *         &lt;element name="Serviceability" type="{http://xml.blackbean.com/location/types}LocationDSTServicabilityTypes" minOccurs="0"/>
  *         &lt;element name="serviceStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

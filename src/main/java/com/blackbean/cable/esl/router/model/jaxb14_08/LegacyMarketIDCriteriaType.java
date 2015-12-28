@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="billingSystem" type="{http://xml.comcast.com/location/types}BillingSystemType"/>
+ *         &lt;element name="billingSystem" type="{http://xml.blackbean.com/location/types}BillingSystemType"/>
  *         &lt;element name="billingSystemMarketID">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">

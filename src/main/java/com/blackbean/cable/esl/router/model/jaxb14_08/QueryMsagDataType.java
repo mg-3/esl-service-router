@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="msagDataID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="MsagData" type="{http://xml.comcast.com/location/types}ArrayOfMsagDataType" minOccurs="0"/>
+ *         &lt;element name="MsagData" type="{http://xml.blackbean.com/location/types}ArrayOfMsagDataType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

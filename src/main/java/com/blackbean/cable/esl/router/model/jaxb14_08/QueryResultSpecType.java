@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="maxRows" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="startRow" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="distance" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="orderBy" type="{http://xml.comcast.com/location/types}ArrayOfQueryOrderByType" minOccurs="0"/>
+ *         &lt;element name="orderBy" type="{http://xml.blackbean.com/location/types}ArrayOfQueryOrderByType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

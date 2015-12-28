@@ -51,15 +51,15 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class GeographyType {
 
-    @XmlElementRef(name = "MinorCivilDivision", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "MinorCivilDivision", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> minorCivilDivision;
-    @XmlElementRef(name = "PlaceName", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "PlaceName", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> placeName;
-    @XmlElementRef(name = "FIPSCode", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "FIPSCode", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> fipsCode;
-    @XmlElementRef(name = "VertexCode", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "VertexCode", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> vertexCode;
-    @XmlElementRef(name = "CountyName", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "CountyName", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> countyName;
 
     /**

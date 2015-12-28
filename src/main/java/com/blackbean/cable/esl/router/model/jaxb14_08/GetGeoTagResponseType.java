@@ -14,10 +14,10 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="LocationTelephony" type="{http://xml.comcast.com/location/types}LocationTelephonyType" minOccurs="0"/>
- *         &lt;element name="LocationGeography" type="{http://xml.comcast.com/location/types}LocationGeographyType" minOccurs="0"/>
- *         &lt;element name="RateCenterCertification" type="{http://xml.comcast.com/location/types}E911RateCenterCertificationType"/>
- *         &lt;element name="RateCenterServiceable" type="{http://xml.comcast.com/location/types}E911RateCenterServiceableType"/>
+ *         &lt;element name="LocationTelephony" type="{http://xml.blackbean.com/location/types}LocationTelephonyType" minOccurs="0"/>
+ *         &lt;element name="LocationGeography" type="{http://xml.blackbean.com/location/types}LocationGeographyType" minOccurs="0"/>
+ *         &lt;element name="RateCenterCertification" type="{http://xml.blackbean.com/location/types}E911RateCenterCertificationType"/>
+ *         &lt;element name="RateCenterServiceable" type="{http://xml.blackbean.com/location/types}E911RateCenterServiceableType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

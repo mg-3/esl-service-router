@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="marketReference" type="{http://xml.comcast.com/location/types}ArrayOfMarketReferenceType" minOccurs="0"/>
+ *         &lt;element name="marketReference" type="{http://xml.blackbean.com/location/types}ArrayOfMarketReferenceType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -18,10 +18,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="geocodedAddress" type="{http://xml.comcast.com/location/types}GeocodedAddressType" minOccurs="0"/>
- *         &lt;element name="geography" type="{http://xml.comcast.com/location/types}GeographyType" minOccurs="0"/>
- *         &lt;element name="telephony" type="{http://xml.comcast.com/location/types}TelephonyType" minOccurs="0"/>
- *         &lt;element name="msag" type="{http://xml.comcast.com/location/types}ArrayOfMsagDataType" minOccurs="0"/>
+ *         &lt;element name="geocodedAddress" type="{http://xml.blackbean.com/location/types}GeocodedAddressType" minOccurs="0"/>
+ *         &lt;element name="geography" type="{http://xml.blackbean.com/location/types}GeographyType" minOccurs="0"/>
+ *         &lt;element name="telephony" type="{http://xml.blackbean.com/location/types}TelephonyType" minOccurs="0"/>
+ *         &lt;element name="msag" type="{http://xml.blackbean.com/location/types}ArrayOfMsagDataType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,13 +37,13 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class StandardizedAddressXfinityType {
 
-    @XmlElementRef(name = "geocodedAddress", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "geocodedAddress", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<GeocodedAddressType> geocodedAddress;
-    @XmlElementRef(name = "geography", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "geography", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<GeographyType> geography;
-    @XmlElementRef(name = "telephony", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "telephony", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<TelephonyType> telephony;
-    @XmlElementRef(name = "msag", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "msag", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfMsagDataType> msag;
 
     /**

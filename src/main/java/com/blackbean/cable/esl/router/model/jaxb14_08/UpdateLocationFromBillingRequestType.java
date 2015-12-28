@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="UpdateLocationFromBillingRequests" type="{http://xml.comcast.com/location/types}ArrayOfUpdateLocationFromBillingRequestItemType"/>
+ *         &lt;element name="UpdateLocationFromBillingRequests" type="{http://xml.blackbean.com/location/types}ArrayOfUpdateLocationFromBillingRequestItemType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

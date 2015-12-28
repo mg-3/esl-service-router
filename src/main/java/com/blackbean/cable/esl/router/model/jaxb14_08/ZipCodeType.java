@@ -44,7 +44,7 @@ public class ZipCodeType {
 
     @XmlElement(required = true)
     protected String zip5;
-    @XmlElementRef(name = "zip4", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "zip4", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> zip4;
 
     /**

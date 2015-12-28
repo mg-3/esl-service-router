@@ -15,7 +15,7 @@ import javax.xml.ws.ResponseWrapper;
  * JAX-WS RI 2.2.9-b130926.1035
  * Generated source version: 2.2
  */
-@WebService(name = "LocationServicePort", targetNamespace = "http://xml.comcast.com/location/services")
+@WebService(name = "LocationServicePort", targetNamespace = "http://xml.blackbean.com/location/services")
 @XmlSeeAlso({
         ObjectFactory.class
 })
@@ -28,11 +28,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryMarketHierarchy")
-    @WebResult(name = "queryMarketHierarchyReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryMarketHierarchy", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketHierarchy")
-    @ResponseWrapper(localName = "queryMarketHierarchyResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketHierarchyResponse")
+    @WebResult(name = "queryMarketHierarchyReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryMarketHierarchy", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketHierarchy")
+    @ResponseWrapper(localName = "queryMarketHierarchyResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketHierarchyResponse")
     public QueryMarketHierarchyResponseType queryMarketHierarchy(
-            @WebParam(name = "QueryMarketHierarchy", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryMarketHierarchy", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryMarketHierarchyRequestType queryMarketHierarchy)
             throws LocationServiceFault
     ;
@@ -43,11 +43,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryMarket")
-    @WebResult(name = "queryMarketReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryMarket", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarket")
-    @ResponseWrapper(localName = "queryMarketResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketResponse")
+    @WebResult(name = "queryMarketReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryMarket", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarket")
+    @ResponseWrapper(localName = "queryMarketResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketResponse")
     public QueryMarketResponseType queryMarket(
-            @WebParam(name = "QueryMarket", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryMarket", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryMarketRequestType queryMarket)
             throws LocationServiceFault
     ;
@@ -58,11 +58,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getMarketDetailResult")
-    @WebResult(name = "getMarketReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getMarketDetailResult", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetMarket")
-    @ResponseWrapper(localName = "getMarketResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetMarketResponse")
+    @WebResult(name = "getMarketReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getMarketDetailResult", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetMarket")
+    @ResponseWrapper(localName = "getMarketResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetMarketResponse")
     public GetMarketResponseType getMarket(
-            @WebParam(name = "GetMarket", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetMarket", targetNamespace = "http://xml.blackbean.com/location/services")
             GetMarketRequestType getMarket)
             throws LocationServiceFault
     ;
@@ -73,11 +73,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "addMarket")
-    @WebResult(name = "addMarketReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "addMarket", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddMarket")
-    @ResponseWrapper(localName = "addMarketResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddMarketResponse")
+    @WebResult(name = "addMarketReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "addMarket", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddMarket")
+    @ResponseWrapper(localName = "addMarketResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddMarketResponse")
     public AddModifyMarketResponseType addMarket(
-            @WebParam(name = "AddMarket", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "AddMarket", targetNamespace = "http://xml.blackbean.com/location/services")
             AddMarketRequestType addMarket)
             throws LocationServiceFault
     ;
@@ -88,11 +88,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "modifyMarket")
-    @WebResult(name = "modifyMarketReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "modifyMarket", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyMarket")
-    @ResponseWrapper(localName = "modifyMarketResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyMarketResponse")
+    @WebResult(name = "modifyMarketReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "modifyMarket", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyMarket")
+    @ResponseWrapper(localName = "modifyMarketResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyMarketResponse")
     public AddModifyMarketResponseType modifyMarket(
-            @WebParam(name = "ModifyMarket", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "ModifyMarket", targetNamespace = "http://xml.blackbean.com/location/services")
             ModifyMarketRequestType modifyMarket)
             throws LocationServiceFault
     ;
@@ -103,11 +103,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "deleteMarket")
-    @WebResult(name = "deleteMarketReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "deleteMarket", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteMarket")
-    @ResponseWrapper(localName = "deleteMarketResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteMarketResponse")
+    @WebResult(name = "deleteMarketReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "deleteMarket", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteMarket")
+    @ResponseWrapper(localName = "deleteMarketResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteMarketResponse")
     public DeleteMarketResponseType deleteMarket(
-            @WebParam(name = "DeleteMarket", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "DeleteMarket", targetNamespace = "http://xml.blackbean.com/location/services")
             DeleteMarketRequestType deleteMarket)
             throws LocationServiceFault
     ;
@@ -118,11 +118,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryNode")
-    @WebResult(name = "queryNodeReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryNode", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryNode")
-    @ResponseWrapper(localName = "queryNodeResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryNodeResponse")
+    @WebResult(name = "queryNodeReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryNode", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryNode")
+    @ResponseWrapper(localName = "queryNodeResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryNodeResponse")
     public QueryNodeResponseType queryNode(
-            @WebParam(name = "QueryNode", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryNode", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryNodeRequestType queryNode)
             throws LocationServiceFault
     ;
@@ -133,11 +133,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getNode")
-    @WebResult(name = "getNodeReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getNode", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetNode")
-    @ResponseWrapper(localName = "getNodeResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetNodeResponse")
+    @WebResult(name = "getNodeReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getNode", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetNode")
+    @ResponseWrapper(localName = "getNodeResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetNodeResponse")
     public GetNodeResponseType getNode(
-            @WebParam(name = "GetNode", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetNode", targetNamespace = "http://xml.blackbean.com/location/services")
             GetNodeRequestType getNode)
             throws LocationServiceFault
     ;
@@ -148,11 +148,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "deleteNode")
-    @WebResult(name = "deleteNodeReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "deleteNode", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteNode")
-    @ResponseWrapper(localName = "deleteNodeResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteNodeResponse")
+    @WebResult(name = "deleteNodeReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "deleteNode", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteNode")
+    @ResponseWrapper(localName = "deleteNodeResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteNodeResponse")
     public DeleteNodeResponseType deleteNode(
-            @WebParam(name = "DeleteNode", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "DeleteNode", targetNamespace = "http://xml.blackbean.com/location/services")
             DeleteNodeRequestType deleteNode)
             throws LocationServiceFault
     ;
@@ -163,11 +163,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "addNode")
-    @WebResult(name = "addNodeReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "addNode", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddNode")
-    @ResponseWrapper(localName = "addNodeResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddNodeResponse")
+    @WebResult(name = "addNodeReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "addNode", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddNode")
+    @ResponseWrapper(localName = "addNodeResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddNodeResponse")
     public AddNodeResponseType addNode(
-            @WebParam(name = "AddNode", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "AddNode", targetNamespace = "http://xml.blackbean.com/location/services")
             AddNodeRequestType addNode)
             throws LocationServiceFault
     ;
@@ -178,11 +178,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "modifyNode")
-    @WebResult(name = "modifyNodeReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "modifyNode", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyNode")
-    @ResponseWrapper(localName = "modifyNodeResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyNodeResponse")
+    @WebResult(name = "modifyNodeReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "modifyNode", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyNode")
+    @ResponseWrapper(localName = "modifyNodeResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyNodeResponse")
     public ModifyNodeResponseType modifyNode(
-            @WebParam(name = "ModifyNode", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "ModifyNode", targetNamespace = "http://xml.blackbean.com/location/services")
             ModifyNodeRequestType modifyNode)
             throws LocationServiceFault
     ;
@@ -193,11 +193,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "modifyHomeSecurity")
-    @WebResult(name = "modifyHomeSecurityReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "modifyHomeSecurity", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyHomeSecurity")
-    @ResponseWrapper(localName = "modifyHomeSecurityResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyHomeSecurityResponse")
+    @WebResult(name = "modifyHomeSecurityReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "modifyHomeSecurity", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyHomeSecurity")
+    @ResponseWrapper(localName = "modifyHomeSecurityResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyHomeSecurityResponse")
     public ModifyHomeSecurityResponseType modifyHomeSecurity(
-            @WebParam(name = "ModifyHomeSecurity", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "ModifyHomeSecurity", targetNamespace = "http://xml.blackbean.com/location/services")
             ModifyHomeSecurityRequestType modifyHomeSecurity)
             throws LocationServiceFault
     ;
@@ -208,11 +208,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "standardizeAddress")
-    @WebResult(name = "standardizeAddressReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "standardizeAddress", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddress")
-    @ResponseWrapper(localName = "standardizeAddressResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressResponse")
+    @WebResult(name = "standardizeAddressReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "standardizeAddress", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddress")
+    @ResponseWrapper(localName = "standardizeAddressResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressResponse")
     public StandardizeAddressResponseType standardizeAddress(
-            @WebParam(name = "StandardizeAddress", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "StandardizeAddress", targetNamespace = "http://xml.blackbean.com/location/services")
             StandardizeAddressRequestType standardizeAddress)
             throws LocationServiceFault
     ;
@@ -223,11 +223,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryLocationQueue")
-    @WebResult(name = "queryLocationQueueReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryLocationQueue", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationQueue")
-    @ResponseWrapper(localName = "queryLocationQueueResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationQueueResponse")
+    @WebResult(name = "queryLocationQueueReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryLocationQueue", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationQueue")
+    @ResponseWrapper(localName = "queryLocationQueueResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationQueueResponse")
     public QueryLocationQueueResponseType queryLocationQueue(
-            @WebParam(name = "QueryLocationQueue", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryLocationQueue", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryLocationQueueRequestType queryLocationQueue)
             throws LocationServiceFault
     ;
@@ -238,11 +238,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getLocationQueue")
-    @WebResult(name = "getLocationQueueReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getLocationQueue", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationQueue")
-    @ResponseWrapper(localName = "getLocationQueueResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationQueueResponse")
+    @WebResult(name = "getLocationQueueReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getLocationQueue", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationQueue")
+    @ResponseWrapper(localName = "getLocationQueueResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationQueueResponse")
     public GetLocationQueueResponseType getLocationQueue(
-            @WebParam(name = "GetLocationQueue", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetLocationQueue", targetNamespace = "http://xml.blackbean.com/location/services")
             GetLocationQueueRequestType getLocationQueue)
             throws LocationServiceFault
     ;
@@ -253,11 +253,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "addLocationQueue")
-    @WebResult(name = "addLocationQueueReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "addLocationQueue", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddLocationQueue")
-    @ResponseWrapper(localName = "addLocationQueueResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddLocationQueueResponse")
+    @WebResult(name = "addLocationQueueReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "addLocationQueue", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddLocationQueue")
+    @ResponseWrapper(localName = "addLocationQueueResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddLocationQueueResponse")
     public AddLocationQueueResponseType addLocationQueue(
-            @WebParam(name = "AddLocationQueue", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "AddLocationQueue", targetNamespace = "http://xml.blackbean.com/location/services")
             AddLocationQueueRequestType addLocationQueue)
             throws LocationServiceFault
     ;
@@ -268,11 +268,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "modifyLocationQueue")
-    @WebResult(name = "modifyLocationQueueReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "modifyLocationQueue", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyLocationQueue")
-    @ResponseWrapper(localName = "modifyLocationQueueResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyLocationQueueResponse")
+    @WebResult(name = "modifyLocationQueueReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "modifyLocationQueue", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyLocationQueue")
+    @ResponseWrapper(localName = "modifyLocationQueueResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyLocationQueueResponse")
     public ModifyLocationQueueResponseType modifyLocationQueue(
-            @WebParam(name = "ModifyLocationQueue", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "ModifyLocationQueue", targetNamespace = "http://xml.blackbean.com/location/services")
             ModifyLocationQueueRequestType modifyLocationQueue)
             throws LocationServiceFault
     ;
@@ -283,11 +283,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getBillingSystemFormattedAddress")
-    @WebResult(name = "getBillingSystemFormattedAddressReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getBillingSystemFormattedAddress", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetBillingSystemFormattedAddress")
-    @ResponseWrapper(localName = "getBillingSystemFormattedAddressResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetBillingSystemFormattedAddressResponse")
+    @WebResult(name = "getBillingSystemFormattedAddressReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getBillingSystemFormattedAddress", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetBillingSystemFormattedAddress")
+    @ResponseWrapper(localName = "getBillingSystemFormattedAddressResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetBillingSystemFormattedAddressResponse")
     public GetBillingSystemFormattedAddressResponseType getBillingSystemFormattedAddress(
-            @WebParam(name = "GetBillingSystemFormattedAddress", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetBillingSystemFormattedAddress", targetNamespace = "http://xml.blackbean.com/location/services")
             GetBillingSystemFormattedAddressRequestType getBillingSystemFormattedAddress)
             throws LocationServiceFault
     ;
@@ -298,11 +298,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryLocationReferenceData")
-    @WebResult(name = "queryLocationReferenceDataReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryLocationReferenceData", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationReferenceData")
-    @ResponseWrapper(localName = "queryLocationReferenceDataResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationReferenceDataResponse")
+    @WebResult(name = "queryLocationReferenceDataReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryLocationReferenceData", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationReferenceData")
+    @ResponseWrapper(localName = "queryLocationReferenceDataResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationReferenceDataResponse")
     public QueryLocationReferenceDataResponseType queryLocationReferenceData(
-            @WebParam(name = "QueryLocationReferenceData", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryLocationReferenceData", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryLocationReferenceDataRequestType queryLocationReferenceData)
             throws LocationServiceFault
     ;
@@ -313,11 +313,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "copyLocationToBilling")
-    @WebResult(name = "copyLocationToBillingReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "copyLocationToBilling", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.CopyLocationToBilling")
-    @ResponseWrapper(localName = "copyLocationToBillingResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.CopyLocationToBillingResponse")
+    @WebResult(name = "copyLocationToBillingReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "copyLocationToBilling", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.CopyLocationToBilling")
+    @ResponseWrapper(localName = "copyLocationToBillingResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.CopyLocationToBillingResponse")
     public CopyLocationToBillingResponseType copyLocationToBilling(
-            @WebParam(name = "CopyLocationToBilling", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "CopyLocationToBilling", targetNamespace = "http://xml.blackbean.com/location/services")
             CopyLocationToBillingRequestType copyLocationToBilling)
             throws LocationServiceFault
     ;
@@ -328,11 +328,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "copyDuplicateHouseToBilling")
-    @WebResult(name = "copyDuplicateHouseToBillingReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "copyDuplicateHouseToBilling", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.CopyDuplicateHouseToBilling")
-    @ResponseWrapper(localName = "copyDuplicateHouseToBillingResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.CopyDuplicateHouseToBillingResponse")
+    @WebResult(name = "copyDuplicateHouseToBillingReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "copyDuplicateHouseToBilling", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.CopyDuplicateHouseToBilling")
+    @ResponseWrapper(localName = "copyDuplicateHouseToBillingResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.CopyDuplicateHouseToBillingResponse")
     public CopyDuplicateHouseToBillingResponseType copyDuplicateHouseToBilling(
-            @WebParam(name = "CopyDuplicateHouseToBilling", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "CopyDuplicateHouseToBilling", targetNamespace = "http://xml.blackbean.com/location/services")
             CopyDuplicateHouseToBillingRequestType copyDuplicateHouseToBilling)
             throws LocationServiceFault
     ;
@@ -343,11 +343,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "updateLocationInBilling")
-    @WebResult(name = "updateLocationInBillingReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "updateLocationInBilling", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateLocationInBilling")
-    @ResponseWrapper(localName = "updateLocationInBillingResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateLocationInBillingResponse")
+    @WebResult(name = "updateLocationInBillingReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "updateLocationInBilling", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateLocationInBilling")
+    @ResponseWrapper(localName = "updateLocationInBillingResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateLocationInBillingResponse")
     public UpdateLocationInBillingResponseType updateLocationInBilling(
-            @WebParam(name = "UpdateLocationInBilling", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "UpdateLocationInBilling", targetNamespace = "http://xml.blackbean.com/location/services")
             UpdateLocationInBillingRequestType updateLocationInBilling)
             throws LocationServiceFault
     ;
@@ -358,11 +358,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "deleteLocationFromBilling")
-    @WebResult(name = "deleteLocationFromBillingReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "deleteLocationFromBilling", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteLocationFromBilling")
-    @ResponseWrapper(localName = "deleteLocationFromBillingResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteLocationFromBillingResponse")
+    @WebResult(name = "deleteLocationFromBillingReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "deleteLocationFromBilling", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteLocationFromBilling")
+    @ResponseWrapper(localName = "deleteLocationFromBillingResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteLocationFromBillingResponse")
     public DeleteLocationFromBillingResponseType deleteLocationFromBilling(
-            @WebParam(name = "DeleteLocationFromBilling", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "DeleteLocationFromBilling", targetNamespace = "http://xml.blackbean.com/location/services")
             DeleteLocationFromBillingRequestType deleteLocationFromBilling)
             throws LocationServiceFault
     ;
@@ -373,11 +373,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "deleteLocation")
-    @WebResult(name = "deleteLocationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "deleteLocation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteLocation")
-    @ResponseWrapper(localName = "deleteLocationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteLocationResponse")
+    @WebResult(name = "deleteLocationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "deleteLocation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteLocation")
+    @ResponseWrapper(localName = "deleteLocationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteLocationResponse")
     public DeleteLocationResponseType deleteLocation(
-            @WebParam(name = "DeleteLocation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "DeleteLocation", targetNamespace = "http://xml.blackbean.com/location/services")
             DeleteLocationRequestType deleteLocation)
             throws LocationServiceFault
     ;
@@ -388,11 +388,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "verifyLocation")
-    @WebResult(name = "verifyLocationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "verifyLocation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.VerifyLocation")
-    @ResponseWrapper(localName = "verifyLocationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.VerifyLocationResponse")
+    @WebResult(name = "verifyLocationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "verifyLocation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.VerifyLocation")
+    @ResponseWrapper(localName = "verifyLocationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.VerifyLocationResponse")
     public VerifyLocationResponseType verifyLocation(
-            @WebParam(name = "VerifyLocation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "VerifyLocation", targetNamespace = "http://xml.blackbean.com/location/services")
             VerifyLocationRequestType verifyLocation)
             throws LocationServiceFault
     ;
@@ -403,11 +403,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "updateLocationFromBilling")
-    @WebResult(name = "updateLocationFromBillingReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "updateLocationFromBilling", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateLocationFromBilling")
-    @ResponseWrapper(localName = "updateLocationFromBillingResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateLocationFromBillingResponse")
+    @WebResult(name = "updateLocationFromBillingReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "updateLocationFromBilling", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateLocationFromBilling")
+    @ResponseWrapper(localName = "updateLocationFromBillingResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateLocationFromBillingResponse")
     public UpdateLocationFromBillingResponseType updateLocationFromBilling(
-            @WebParam(name = "UpdateLocationFromBilling", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "UpdateLocationFromBilling", targetNamespace = "http://xml.blackbean.com/location/services")
             UpdateLocationFromBillingRequestType updateLocationFromBilling)
             throws LocationServiceFault
     ;
@@ -418,11 +418,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "modifyLocation")
-    @WebResult(name = "modifyLocationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "modifyLocation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyLocation")
-    @ResponseWrapper(localName = "modifyLocationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyLocationResponse")
+    @WebResult(name = "modifyLocationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "modifyLocation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyLocation")
+    @ResponseWrapper(localName = "modifyLocationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifyLocationResponse")
     public ModifyLocationResponseType modifyLocation(
-            @WebParam(name = "ModifyLocation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "ModifyLocation", targetNamespace = "http://xml.blackbean.com/location/services")
             ModifyLocationRequestType modifyLocation)
             throws LocationServiceFault
     ;
@@ -433,11 +433,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getLocation")
-    @WebResult(name = "getLocationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getLocation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocation")
-    @ResponseWrapper(localName = "getLocationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationResponse")
+    @WebResult(name = "getLocationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getLocation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocation")
+    @ResponseWrapper(localName = "getLocationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationResponse")
     public GetLocationResponseType getLocation(
-            @WebParam(name = "GetLocation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetLocation", targetNamespace = "http://xml.blackbean.com/location/services")
             GetLocationRequestType getLocation)
             throws LocationServiceFault
     ;
@@ -448,11 +448,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryLocation")
-    @WebResult(name = "queryLocationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryLocation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocation")
-    @ResponseWrapper(localName = "queryLocationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationResponse")
+    @WebResult(name = "queryLocationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryLocation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocation")
+    @ResponseWrapper(localName = "queryLocationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationResponse")
     public QueryLocationResponseType queryLocation(
-            @WebParam(name = "QueryLocation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryLocation", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryLocationRequestType queryLocation)
             throws LocationServiceFault
     ;
@@ -463,11 +463,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "addLocation")
-    @WebResult(name = "addLocationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "addLocation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddLocation")
-    @ResponseWrapper(localName = "addLocationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddLocationResponse")
+    @WebResult(name = "addLocationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "addLocation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddLocation")
+    @ResponseWrapper(localName = "addLocationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddLocationResponse")
     public AddLocationResponseType addLocation(
-            @WebParam(name = "AddLocation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "AddLocation", targetNamespace = "http://xml.blackbean.com/location/services")
             AddLocationRequestType addLocation)
             throws LocationServiceFault
     ;
@@ -478,11 +478,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryLocationGeospatial")
-    @WebResult(name = "queryLocationGeospatialReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryLocationGeospatial", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationGeospatial")
-    @ResponseWrapper(localName = "queryLocationGeospatialResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationGeospatialResponse")
+    @WebResult(name = "queryLocationGeospatialReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryLocationGeospatial", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationGeospatial")
+    @ResponseWrapper(localName = "queryLocationGeospatialResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationGeospatialResponse")
     public QueryLocationGeospatialResponseType queryLocationGeospatial(
-            @WebParam(name = "QueryLocationGeospatial", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryLocationGeospatial", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryLocationGeospatialRequestType queryLocationGeospatial)
             throws LocationServiceFault
     ;
@@ -493,11 +493,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryMsagData")
-    @WebResult(name = "queryMsagDataReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryMsagData", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMsagData")
-    @ResponseWrapper(localName = "queryMsagDataResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMsagDataResponse")
+    @WebResult(name = "queryMsagDataReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryMsagData", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMsagData")
+    @ResponseWrapper(localName = "queryMsagDataResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMsagDataResponse")
     public QueryMsagDataResponseType queryMsagData(
-            @WebParam(name = "QueryMsagData", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryMsagData", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryMsagDataRequestType queryMsagData)
             throws LocationServiceFault
     ;
@@ -508,11 +508,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "addMsagData")
-    @WebResult(name = "addMsagDataReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "addMsagData", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddMsagData")
-    @ResponseWrapper(localName = "addMsagDataResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddMsagDataResponse")
+    @WebResult(name = "addMsagDataReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "addMsagData", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddMsagData")
+    @ResponseWrapper(localName = "addMsagDataResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddMsagDataResponse")
     public AddMsagDataResponseType addMsagData(
-            @WebParam(name = "AddMsagData", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "AddMsagData", targetNamespace = "http://xml.blackbean.com/location/services")
             AddMsagDataRequestType addMsagData)
             throws LocationServiceFault
     ;
@@ -523,11 +523,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getMsagData")
-    @WebResult(name = "getMsagDataReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getMsagData", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetMsagData")
-    @ResponseWrapper(localName = "getMsagDataResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetMsagDataResponse")
+    @WebResult(name = "getMsagDataReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getMsagData", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetMsagData")
+    @ResponseWrapper(localName = "getMsagDataResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetMsagDataResponse")
     public GetMsagDataResponseType getMsagData(
-            @WebParam(name = "GetMsagData", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetMsagData", targetNamespace = "http://xml.blackbean.com/location/services")
             GetMsagDataRequestType getMsagData)
             throws LocationServiceFault
     ;
@@ -538,11 +538,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "updateMsagPriority")
-    @WebResult(name = "updateMsagPriorityReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "updateMsagPriority", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateMsagPriority")
-    @ResponseWrapper(localName = "updateMsagPriorityResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateMsagPriorityResponse")
+    @WebResult(name = "updateMsagPriorityReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "updateMsagPriority", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateMsagPriority")
+    @ResponseWrapper(localName = "updateMsagPriorityResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.UpdateMsagPriorityResponse")
     public UpdateMsagPriorityResponseType updateMsagPriority(
-            @WebParam(name = "UpdateMsagPriority", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "UpdateMsagPriority", targetNamespace = "http://xml.blackbean.com/location/services")
             UpdateMsagPriorityRequestType updateMsagPriority)
             throws LocationServiceFault
     ;
@@ -553,11 +553,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryLocationDetails")
-    @WebResult(name = "queryLocationDetailsReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryLocationDetails", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationDetails")
-    @ResponseWrapper(localName = "queryLocationDetailsResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationDetailsResponse")
+    @WebResult(name = "queryLocationDetailsReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryLocationDetails", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationDetails")
+    @ResponseWrapper(localName = "queryLocationDetailsResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationDetailsResponse")
     public QueryLocationDetailsResponseType queryLocationDetails(
-            @WebParam(name = "QueryLocationDetails", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryLocationDetails", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryLocationDetailsRequestType queryLocationDetails)
             throws LocationServiceFault
     ;
@@ -568,11 +568,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getGeoTag")
-    @WebResult(name = "getGeoTagReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getGeoTag", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetGeoTag")
-    @ResponseWrapper(localName = "getGeoTagResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetGeoTagResponse")
+    @WebResult(name = "getGeoTagReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getGeoTag", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetGeoTag")
+    @ResponseWrapper(localName = "getGeoTagResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetGeoTagResponse")
     public GetGeoTagResponseType getGeoTag(
-            @WebParam(name = "GetGeoTag", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetGeoTag", targetNamespace = "http://xml.blackbean.com/location/services")
             GetGeoTagRequestType getGeoTag)
             throws LocationServiceFault
     ;
@@ -583,11 +583,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "refreshCache")
-    @WebResult(name = "refreshCacheReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "refreshCache", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.RefreshCache")
-    @ResponseWrapper(localName = "refreshCacheResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.RefreshCacheResponse")
+    @WebResult(name = "refreshCacheReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "refreshCache", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.RefreshCache")
+    @ResponseWrapper(localName = "refreshCacheResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.RefreshCacheResponse")
     public RefreshCacheResponseType refreshCache(
-            @WebParam(name = "RefreshCache", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "RefreshCache", targetNamespace = "http://xml.blackbean.com/location/services")
             RefreshCacheRequestType refreshCache)
             throws LocationServiceFault
     ;
@@ -598,11 +598,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "deleteMsagAddressAssociation")
-    @WebResult(name = "deleteMsagAddressAssociationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "deleteMsagAddressAssociation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteMsagAddressAssociation")
-    @ResponseWrapper(localName = "deleteMsagAddressAssociationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteMsagAddressAssociationResponse")
+    @WebResult(name = "deleteMsagAddressAssociationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "deleteMsagAddressAssociation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteMsagAddressAssociation")
+    @ResponseWrapper(localName = "deleteMsagAddressAssociationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteMsagAddressAssociationResponse")
     public DeleteMsagAddressAssociationResponseType deleteMsagAddressAssociation(
-            @WebParam(name = "DeleteMsagAddressAssociation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "DeleteMsagAddressAssociation", targetNamespace = "http://xml.blackbean.com/location/services")
             DeleteMsagAddressAssociationRequestType deleteMsagAddressAssociation)
             throws LocationServiceFault
     ;
@@ -613,11 +613,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryLocationByRule")
-    @WebResult(name = "queryLocationByRuleReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryLocationByRule", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationByRule")
-    @ResponseWrapper(localName = "queryLocationByRuleResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationByRuleResponse")
+    @WebResult(name = "queryLocationByRuleReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryLocationByRule", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationByRule")
+    @ResponseWrapper(localName = "queryLocationByRuleResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationByRuleResponse")
     public QueryLocationResponseType queryLocationByRule(
-            @WebParam(name = "QueryLocationByRule", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryLocationByRule", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryLocationByRuleRequestType queryLocationByRule)
             throws LocationServiceFault
     ;
@@ -628,11 +628,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "standardizeAddressByRule")
-    @WebResult(name = "standardizeAddressByRuleReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "standardizeAddressByRule", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressByRule")
-    @ResponseWrapper(localName = "standardizeAddressByRuleResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressByRuleResponse")
+    @WebResult(name = "standardizeAddressByRuleReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "standardizeAddressByRule", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressByRule")
+    @ResponseWrapper(localName = "standardizeAddressByRuleResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressByRuleResponse")
     public StandardizeAddressResponseType standardizeAddressByRule(
-            @WebParam(name = "StandardizeAddressByRule", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "StandardizeAddressByRule", targetNamespace = "http://xml.blackbean.com/location/services")
             StandardizeAddressByRuleRequestType standardizeAddressByRule)
             throws LocationServiceFault
     ;
@@ -643,11 +643,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getLocationFromBiller")
-    @WebResult(name = "getLocationFromBillerReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getLocationFromBiller", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationFromBiller")
-    @ResponseWrapper(localName = "getLocationFromBillerResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationFromBillerResponse")
+    @WebResult(name = "getLocationFromBillerReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getLocationFromBiller", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationFromBiller")
+    @ResponseWrapper(localName = "getLocationFromBillerResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationFromBillerResponse")
     public GetLocationFromBillerResponseType getLocationFromBiller(
-            @WebParam(name = "GetLocationFromBiller", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetLocationFromBiller", targetNamespace = "http://xml.blackbean.com/location/services")
             GetLocationFromBillerRequestType getLocationFromBiller)
             throws LocationServiceFault
     ;
@@ -658,11 +658,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getLocationInformation")
-    @WebResult(name = "getLocationInformationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getLocationInformation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationInformation")
-    @ResponseWrapper(localName = "getLocationInformationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationInformationResponse")
+    @WebResult(name = "getLocationInformationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getLocationInformation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationInformation")
+    @ResponseWrapper(localName = "getLocationInformationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationInformationResponse")
     public GetLocationInformationResponseType getLocationInformation(
-            @WebParam(name = "GetLocationInformation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetLocationInformation", targetNamespace = "http://xml.blackbean.com/location/services")
             GetLocationInformationRequestType getLocationInformation)
             throws LocationServiceFault
     ;
@@ -673,11 +673,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryMarketByBoundary")
-    @WebResult(name = "queryMarketByBoundaryReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryMarketByBoundary", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketByBoundary")
-    @ResponseWrapper(localName = "queryMarketByBoundaryResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketByBoundaryResponse")
+    @WebResult(name = "queryMarketByBoundaryReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryMarketByBoundary", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketByBoundary")
+    @ResponseWrapper(localName = "queryMarketByBoundaryResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryMarketByBoundaryResponse")
     public QueryMarketByBoundaryResponseType queryMarketByBoundary(
-            @WebParam(name = "QueryMarketByBoundary", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryMarketByBoundary", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryMarketByBoundaryRequestType queryMarketByBoundary)
             throws LocationServiceFault
     ;
@@ -688,11 +688,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "queryLocationXfinity")
-    @WebResult(name = "queryLocationXfinityReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "queryLocationXfinity", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationXfinity")
-    @ResponseWrapper(localName = "queryLocationXfinityResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationXfinityResponse")
+    @WebResult(name = "queryLocationXfinityReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "queryLocationXfinity", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationXfinity")
+    @ResponseWrapper(localName = "queryLocationXfinityResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.QueryLocationXfinityResponse")
     public QueryLocationXfinityResponseType queryLocationXfinity(
-            @WebParam(name = "QueryLocationXfinity", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "QueryLocationXfinity", targetNamespace = "http://xml.blackbean.com/location/services")
             QueryLocationXfinityRequestType queryLocationXfinity)
             throws LocationServiceFault
     ;
@@ -703,11 +703,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "standardizeAddressXfinity")
-    @WebResult(name = "standardizeAddressXfinityReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "standardizeAddressXfinity", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressXfinity")
-    @ResponseWrapper(localName = "standardizeAddressXfinityResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressXfinityResponse")
+    @WebResult(name = "standardizeAddressXfinityReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "standardizeAddressXfinity", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressXfinity")
+    @ResponseWrapper(localName = "standardizeAddressXfinityResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.StandardizeAddressXfinityResponse")
     public StandardizeAddressXfinityResponseType standardizeAddressXfinity(
-            @WebParam(name = "StandardizeAddressXfinity", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "StandardizeAddressXfinity", targetNamespace = "http://xml.blackbean.com/location/services")
             StandardizeAddressXfinityRequestType standardizeAddressXfinity)
             throws LocationServiceFault
     ;
@@ -718,11 +718,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getLocationXfinity")
-    @WebResult(name = "getLocationXfinityReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getLocationXfinity", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationXfinity")
-    @ResponseWrapper(localName = "getLocationXfinityResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationXfinityResponse")
+    @WebResult(name = "getLocationXfinityReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getLocationXfinity", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationXfinity")
+    @ResponseWrapper(localName = "getLocationXfinityResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetLocationXfinityResponse")
     public GetLocationXfinityResponseType getLocationXfinity(
-            @WebParam(name = "GetLocationXfinity", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetLocationXfinity", targetNamespace = "http://xml.blackbean.com/location/services")
             GetLocationXfinityRequestType getLocationXfinity)
             throws LocationServiceFault
     ;
@@ -733,11 +733,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "addE911Address")
-    @WebResult(name = "addE911AddressReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "addE911Address", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddE911Address")
-    @ResponseWrapper(localName = "addE911AddressResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddE911AddressResponse")
+    @WebResult(name = "addE911AddressReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "addE911Address", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddE911Address")
+    @ResponseWrapper(localName = "addE911AddressResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AddE911AddressResponse")
     public AddE911AddressResponseType addE911Address(
-            @WebParam(name = "AddE911Address", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "AddE911Address", targetNamespace = "http://xml.blackbean.com/location/services")
             AddE911AddressRequestType addE911Address)
             throws LocationServiceFault
     ;
@@ -748,11 +748,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "deleteE911Address")
-    @WebResult(name = "deleteE911AddressReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "deleteE911Address", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteE911Address")
-    @ResponseWrapper(localName = "deleteE911AddressResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteE911AddressResponse")
+    @WebResult(name = "deleteE911AddressReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "deleteE911Address", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteE911Address")
+    @ResponseWrapper(localName = "deleteE911AddressResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteE911AddressResponse")
     public DeleteE911AddressResponseType deleteE911Address(
-            @WebParam(name = "DeleteE911Address", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "DeleteE911Address", targetNamespace = "http://xml.blackbean.com/location/services")
             DeleteE911AddressRequestType deleteE911Address)
             throws LocationServiceFault
     ;
@@ -763,11 +763,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "getBusinessServiceability")
-    @WebResult(name = "getBusinessServiceabilityReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "getBusinessServiceability", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetBusinessServiceability")
-    @ResponseWrapper(localName = "getBusinessServiceabilityResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetBusinessServiceabilityResponse")
+    @WebResult(name = "getBusinessServiceabilityReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "getBusinessServiceability", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetBusinessServiceability")
+    @ResponseWrapper(localName = "getBusinessServiceabilityResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.GetBusinessServiceabilityResponse")
     public GetBusinessServiceabilityResponseType getBusinessServiceability(
-            @WebParam(name = "GetBusinessServiceabilityRequest", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "GetBusinessServiceabilityRequest", targetNamespace = "http://xml.blackbean.com/location/services")
             GetBusinessServiceabilityRequestType getBusinessServiceabilityRequest)
             throws LocationServiceFault
     ;
@@ -778,11 +778,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "associateSingleViewAddress")
-    @WebResult(name = "associateSingleViewAddressReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "associateSingleViewAddress", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AssociateSingleViewAddress")
-    @ResponseWrapper(localName = "associateSingleViewAddressResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AssociateSingleViewAddressResponse")
+    @WebResult(name = "associateSingleViewAddressReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "associateSingleViewAddress", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AssociateSingleViewAddress")
+    @ResponseWrapper(localName = "associateSingleViewAddressResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.AssociateSingleViewAddressResponse")
     public ResponseStatusType associateSingleViewAddress(
-            @WebParam(name = "AssociateSingleViewAddress", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "AssociateSingleViewAddress", targetNamespace = "http://xml.blackbean.com/location/services")
             AssociateSingleViewAddressType associateSingleViewAddress)
             throws LocationServiceFault
     ;
@@ -793,11 +793,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "modifySingleViewAddressAssociation")
-    @WebResult(name = "modifySingleViewAddressAssociationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "modifySingleViewAddressAssociation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifySingleViewAddressAssociation")
-    @ResponseWrapper(localName = "modifySingleViewAddressAssociationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifySingleViewAddressAssociationResponse")
+    @WebResult(name = "modifySingleViewAddressAssociationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "modifySingleViewAddressAssociation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifySingleViewAddressAssociation")
+    @ResponseWrapper(localName = "modifySingleViewAddressAssociationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.ModifySingleViewAddressAssociationResponse")
     public ResponseStatusType modifySingleViewAddressAssociation(
-            @WebParam(name = "ModifySingleViewAddressAssociation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "ModifySingleViewAddressAssociation", targetNamespace = "http://xml.blackbean.com/location/services")
             ModifySingleViewAddressAssociationType modifySingleViewAddressAssociation)
             throws LocationServiceFault
     ;
@@ -808,11 +808,11 @@ public interface LocationServicePort {
      * @throws LocationServiceFault
      */
     @WebMethod(action = "deleteSingleViewAddressAssociation")
-    @WebResult(name = "deleteSingleViewAddressAssociationReturn", targetNamespace = "http://xml.comcast.com/location/services")
-    @RequestWrapper(localName = "deleteSingleViewAddressAssociation", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteSingleViewAddressAssociation")
-    @ResponseWrapper(localName = "deleteSingleViewAddressAssociationResponse", targetNamespace = "http://xml.comcast.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteSingleViewAddressAssociationResponse")
+    @WebResult(name = "deleteSingleViewAddressAssociationReturn", targetNamespace = "http://xml.blackbean.com/location/services")
+    @RequestWrapper(localName = "deleteSingleViewAddressAssociation", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteSingleViewAddressAssociation")
+    @ResponseWrapper(localName = "deleteSingleViewAddressAssociationResponse", targetNamespace = "http://xml.blackbean.com/location/services", className = "com.blackbean.cable.esl.router.model.jaxb14_08.DeleteSingleViewAddressAssociationResponse")
     public ResponseStatusType deleteSingleViewAddressAssociation(
-            @WebParam(name = "DeleteSingleViewAddressAssociation", targetNamespace = "http://xml.comcast.com/location/services")
+            @WebParam(name = "DeleteSingleViewAddressAssociation", targetNamespace = "http://xml.blackbean.com/location/services")
             DeleteSingleViewAddressAssociationType deleteSingleViewAddressAssociation)
             throws LocationServiceFault
     ;

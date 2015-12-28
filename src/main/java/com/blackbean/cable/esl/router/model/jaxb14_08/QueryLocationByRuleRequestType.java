@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="addressSearch" type="{http://xml.comcast.com/location/types}AddressCriteriaByRulesType" minOccurs="0"/>
+ *         &lt;element name="addressSearch" type="{http://xml.blackbean.com/location/types}AddressCriteriaByRulesType" minOccurs="0"/>
  *         &lt;element name="applyConsumerRule" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -33,7 +33,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class QueryLocationByRuleRequestType {
 
-    @XmlElementRef(name = "addressSearch", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "addressSearch", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<AddressCriteriaByRulesType> addressSearch;
     protected String applyConsumerRule;
 

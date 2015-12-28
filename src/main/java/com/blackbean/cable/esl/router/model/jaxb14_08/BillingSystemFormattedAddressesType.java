@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="csgFormattedAddress" type="{http://xml.comcast.com/location/types}BillingSystemFormattedAddressesCSGType" minOccurs="0"/>
- *         &lt;element name="ddpFormattedAddress" type="{http://xml.comcast.com/location/types}BillingSystemFormattedAddressesDDPType" minOccurs="0"/>
+ *         &lt;element name="csgFormattedAddress" type="{http://xml.blackbean.com/location/types}BillingSystemFormattedAddressesCSGType" minOccurs="0"/>
+ *         &lt;element name="ddpFormattedAddress" type="{http://xml.blackbean.com/location/types}BillingSystemFormattedAddressesDDPType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,9 +33,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class BillingSystemFormattedAddressesType {
 
-    @XmlElementRef(name = "csgFormattedAddress", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "csgFormattedAddress", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<BillingSystemFormattedAddressesCSGType> csgFormattedAddress;
-    @XmlElementRef(name = "ddpFormattedAddress", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "ddpFormattedAddress", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<BillingSystemFormattedAddressesDDPType> ddpFormattedAddress;
 
     /**

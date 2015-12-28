@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="modifySingleViewAddressAssociationReturn" type="{http://xml.comcast.com/location/types}ResponseStatusType" minOccurs="0"/>
+ *         &lt;element name="modifySingleViewAddressAssociationReturn" type="{http://xml.blackbean.com/location/types}ResponseStatusType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "modifySingleViewAddressAssociationReturn"
 })
-@XmlRootElement(name = "modifySingleViewAddressAssociationResponse", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "modifySingleViewAddressAssociationResponse", namespace = "http://xml.blackbean.com/location/services")
 public class ModifySingleViewAddressAssociationResponse {
 
-    @XmlElementRef(name = "modifySingleViewAddressAssociationReturn", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "modifySingleViewAddressAssociationReturn", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<ResponseStatusType> modifySingleViewAddressAssociationReturn;
 
     /**

@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="UpdateMsagPriority" type="{http://xml.comcast.com/location/types}UpdateMsagPriorityRequestType" minOccurs="0"/>
+ *         &lt;element name="UpdateMsagPriority" type="{http://xml.blackbean.com/location/types}UpdateMsagPriorityRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "updateMsagPriority"
 })
-@XmlRootElement(name = "updateMsagPriority", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "updateMsagPriority", namespace = "http://xml.blackbean.com/location/services")
 public class UpdateMsagPriority {
 
-    @XmlElementRef(name = "UpdateMsagPriority", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "UpdateMsagPriority", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<UpdateMsagPriorityRequestType> updateMsagPriority;
 
     /**

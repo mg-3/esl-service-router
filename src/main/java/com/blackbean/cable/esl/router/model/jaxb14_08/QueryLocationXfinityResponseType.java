@@ -17,9 +17,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="searchResultFound" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="locationSummary" type="{http://xml.comcast.com/location/types}ArrayOfQueryAddressResponseType" minOccurs="0"/>
- *         &lt;element name="locationDetail" type="{http://xml.comcast.com/location/types}GetLocationXfinityResponseType" minOccurs="0"/>
- *         &lt;element name="singleViewAddressDetail" type="{http://xml.comcast.com/location/types}SingleViewAddressDetailsType" minOccurs="0"/>
+ *         &lt;element name="locationSummary" type="{http://xml.blackbean.com/location/types}ArrayOfQueryAddressResponseType" minOccurs="0"/>
+ *         &lt;element name="locationDetail" type="{http://xml.blackbean.com/location/types}GetLocationXfinityResponseType" minOccurs="0"/>
+ *         &lt;element name="singleViewAddressDetail" type="{http://xml.blackbean.com/location/types}SingleViewAddressDetailsType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

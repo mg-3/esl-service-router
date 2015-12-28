@@ -14,7 +14,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Severity" type="{http://xml.comcast.com/location/types}MessageSeverity"/>
+ *         &lt;element name="Severity" type="{http://xml.blackbean.com/location/types}MessageSeverity"/>
  *         &lt;element name="Code" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>

@@ -20,9 +20,9 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="marketID" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="marketName" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="glCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="marketCapabilities" type="{http://xml.comcast.com/location/types}MarketCapabilitiesType"/>
- *         &lt;element name="marketHierarchy" type="{http://xml.comcast.com/location/types}MarketHierarchyResponseType"/>
- *         &lt;element name="legacyMarketID" type="{http://xml.comcast.com/location/types}LegacyMarketIDType" minOccurs="0"/>
+ *         &lt;element name="marketCapabilities" type="{http://xml.blackbean.com/location/types}MarketCapabilitiesType"/>
+ *         &lt;element name="marketHierarchy" type="{http://xml.blackbean.com/location/types}MarketHierarchyResponseType"/>
+ *         &lt;element name="legacyMarketID" type="{http://xml.blackbean.com/location/types}LegacyMarketIDType" minOccurs="0"/>
  *         &lt;element name="legacyMarketType" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

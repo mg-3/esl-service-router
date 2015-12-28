@@ -24,8 +24,8 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="ilecName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="tnOrderPool" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="rateCenterName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="rateCenterCertification" type="{http://xml.comcast.com/location/types}E911RateCenterCertificationType" minOccurs="0"/>
- *         &lt;element name="rateCenterServiceable" type="{http://xml.comcast.com/location/types}E911RateCenterServiceableType" minOccurs="0"/>
+ *         &lt;element name="rateCenterCertification" type="{http://xml.blackbean.com/location/types}E911RateCenterCertificationType" minOccurs="0"/>
+ *         &lt;element name="rateCenterServiceable" type="{http://xml.blackbean.com/location/types}E911RateCenterServiceableType" minOccurs="0"/>
  *         &lt;element name="wireCenter" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

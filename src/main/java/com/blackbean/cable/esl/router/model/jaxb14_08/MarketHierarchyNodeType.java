@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="marketID" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="marketName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="legacyMarketID" type="{http://xml.comcast.com/location/types}LegacyMarketIDType" minOccurs="0"/>
+ *         &lt;element name="legacyMarketID" type="{http://xml.blackbean.com/location/types}LegacyMarketIDType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

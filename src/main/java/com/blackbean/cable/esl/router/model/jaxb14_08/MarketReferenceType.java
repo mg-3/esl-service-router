@@ -17,12 +17,12 @@ import javax.xml.bind.annotation.*;
  *       &lt;sequence>
  *         &lt;element name="marketID" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="marketName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="marketCapabilities" type="{http://xml.comcast.com/location/types}MarketCapabilitiesType"/>
- *         &lt;element name="legacyMarketID" type="{http://xml.comcast.com/location/types}LegacyMarketIDType" minOccurs="0"/>
+ *         &lt;element name="marketCapabilities" type="{http://xml.blackbean.com/location/types}MarketCapabilitiesType"/>
+ *         &lt;element name="legacyMarketID" type="{http://xml.blackbean.com/location/types}LegacyMarketIDType" minOccurs="0"/>
  *         &lt;element name="parentMarketID" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="glCode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="legacyMarketType" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="seasonalSuspend" type="{http://xml.comcast.com/location/types}SeasonalSuspendType" minOccurs="0"/>
+ *         &lt;element name="seasonalSuspend" type="{http://xml.blackbean.com/location/types}SeasonalSuspendType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -47,7 +47,7 @@ public class MarketReferenceType {
     protected String marketName;
     @XmlElement(required = true)
     protected MarketCapabilitiesType marketCapabilities;
-    @XmlElementRef(name = "legacyMarketID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "legacyMarketID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<LegacyMarketIDType> legacyMarketID;
     protected long parentMarketID;
     protected String glCode;

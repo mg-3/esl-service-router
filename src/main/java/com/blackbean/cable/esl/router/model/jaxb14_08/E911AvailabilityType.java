@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.*;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="MSAGMatched" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="RateCenterCertification" type="{http://xml.comcast.com/location/types}E911RateCenterCertificationType"/>
- *         &lt;element name="RateCenterServiceable" type="{http://xml.comcast.com/location/types}E911RateCenterServiceableType"/>
- *         &lt;element name="MsagData" type="{http://xml.comcast.com/location/types}ArrayOfMsagDataType" minOccurs="0"/>
+ *         &lt;element name="RateCenterCertification" type="{http://xml.blackbean.com/location/types}E911RateCenterCertificationType"/>
+ *         &lt;element name="RateCenterServiceable" type="{http://xml.blackbean.com/location/types}E911RateCenterServiceableType"/>
+ *         &lt;element name="MsagData" type="{http://xml.blackbean.com/location/types}ArrayOfMsagDataType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

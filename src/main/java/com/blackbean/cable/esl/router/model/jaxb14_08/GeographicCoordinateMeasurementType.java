@@ -17,9 +17,9 @@ import java.math.BigDecimal;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="GeographicCoordinate" type="{http://xml.comcast.com/location/types}GeographicCoordinatePointType"/>
+ *         &lt;element name="GeographicCoordinate" type="{http://xml.blackbean.com/location/types}GeographicCoordinatePointType"/>
  *         &lt;element name="Elevation" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="MeasurementMethod" type="{http://xml.comcast.com/location/types}GeographicMeasurementMethodType"/>
+ *         &lt;element name="MeasurementMethod" type="{http://xml.blackbean.com/location/types}GeographicMeasurementMethodType"/>
  *         &lt;element name="MeasurementDate" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -38,7 +38,7 @@ public class GeographicCoordinateMeasurementType {
 
     @XmlElement(name = "GeographicCoordinate", required = true)
     protected GeographicCoordinatePointType geographicCoordinate;
-    @XmlElementRef(name = "Elevation", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "Elevation", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<BigDecimal> elevation;
     @XmlElement(name = "MeasurementMethod", required = true)
     @XmlSchemaType(name = "string")

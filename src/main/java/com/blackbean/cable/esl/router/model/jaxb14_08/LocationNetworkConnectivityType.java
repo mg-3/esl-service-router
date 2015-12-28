@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.*;
  *       &lt;sequence>
  *         &lt;element name="fiberNodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="headendID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="dropLocation" type="{http://xml.comcast.com/location/types}DropLocationType" minOccurs="0"/>
- *         &lt;element name="headendType" type="{http://xml.comcast.com/location/types}HeadendVideoControllerSimpleType" minOccurs="0"/>
+ *         &lt;element name="dropLocation" type="{http://xml.blackbean.com/location/types}DropLocationType" minOccurs="0"/>
+ *         &lt;element name="headendType" type="{http://xml.blackbean.com/location/types}HeadendVideoControllerSimpleType" minOccurs="0"/>
  *         &lt;element name="headendNetworkAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -36,15 +36,15 @@ import javax.xml.bind.annotation.*;
 })
 public class LocationNetworkConnectivityType {
 
-    @XmlElementRef(name = "fiberNodeName", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "fiberNodeName", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> fiberNodeName;
-    @XmlElementRef(name = "headendID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "headendID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> headendID;
-    @XmlElementRef(name = "dropLocation", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "dropLocation", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<DropLocationType> dropLocation;
     @XmlSchemaType(name = "string")
     protected HeadendVideoControllerSimpleType headendType;
-    @XmlElementRef(name = "headendNetworkAddress", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "headendNetworkAddress", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> headendNetworkAddress;
 
     /**

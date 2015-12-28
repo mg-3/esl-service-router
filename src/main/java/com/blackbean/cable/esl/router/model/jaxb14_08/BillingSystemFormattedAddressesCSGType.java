@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;/simpleType>
  *         &lt;/element>
  *         &lt;element name="AddressLine2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="LegacyLocationID" type="{http://xml.comcast.com/location/types}LegacyLocationIDType" minOccurs="0"/>
+ *         &lt;element name="LegacyLocationID" type="{http://xml.blackbean.com/location/types}LegacyLocationIDType" minOccurs="0"/>
  *         &lt;element name="PostalCode" minOccurs="0">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">

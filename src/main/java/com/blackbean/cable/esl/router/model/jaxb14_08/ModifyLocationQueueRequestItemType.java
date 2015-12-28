@@ -18,7 +18,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *       &lt;sequence>
  *         &lt;element name="LocationQueueID" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="QueueStatus" type="{http://xml.comcast.com/location/types}LocationQueueStatusType" minOccurs="0"/>
+ *         &lt;element name="QueueStatus" type="{http://xml.blackbean.com/location/types}LocationQueueStatusType" minOccurs="0"/>
  *         &lt;element name="RequestedPriority" minOccurs="0">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
@@ -37,9 +37,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="SubmitterInfo" type="{http://xml.comcast.com/location/types}LocationQueueModifyContactInfoType" minOccurs="0"/>
- *         &lt;element name="MarketContact" type="{http://xml.comcast.com/location/types}LocationQueueModifyContactInfoType" minOccurs="0"/>
- *         &lt;element name="LocationQueueAddress" type="{http://xml.comcast.com/location/types}ModifyLocationQueueAddressType" minOccurs="0"/>
+ *         &lt;element name="SubmitterInfo" type="{http://xml.blackbean.com/location/types}LocationQueueModifyContactInfoType" minOccurs="0"/>
+ *         &lt;element name="MarketContact" type="{http://xml.blackbean.com/location/types}LocationQueueModifyContactInfoType" minOccurs="0"/>
+ *         &lt;element name="LocationQueueAddress" type="{http://xml.blackbean.com/location/types}ModifyLocationQueueAddressType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -71,19 +71,19 @@ public class ModifyLocationQueueRequestItemType {
     protected LocationQueueStatusType queueStatus;
     @XmlElement(name = "RequestedPriority")
     protected Integer requestedPriority;
-    @XmlElementRef(name = "LeadID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "LeadID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> leadID;
-    @XmlElementRef(name = "marketID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "marketID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Long> marketID;
-    @XmlElementRef(name = "NeedByDate", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "NeedByDate", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<XMLGregorianCalendar> needByDate;
-    @XmlElementRef(name = "Comments", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "Comments", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> comments;
     @XmlElement(name = "SubmitterInfo")
     protected LocationQueueModifyContactInfoType submitterInfo;
     @XmlElement(name = "MarketContact")
     protected LocationQueueModifyContactInfoType marketContact;
-    @XmlElementRef(name = "LocationQueueAddress", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "LocationQueueAddress", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ModifyLocationQueueAddressType> locationQueueAddress;
 
     /**

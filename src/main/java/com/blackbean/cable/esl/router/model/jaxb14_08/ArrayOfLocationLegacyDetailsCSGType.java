@@ -18,7 +18,7 @@ import java.util.List;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="locationLegacyDetailsCSGType" type="{http://xml.comcast.com/location/types}LocationLegacyDetailsCSGType" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="locationLegacyDetailsCSGType" type="{http://xml.blackbean.com/location/types}LocationLegacyDetailsCSGType" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

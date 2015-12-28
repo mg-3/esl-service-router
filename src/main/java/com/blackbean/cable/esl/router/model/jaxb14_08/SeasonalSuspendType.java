@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.*;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="permissionToDefineDate" type="{http://xml.comcast.com/location/types}SeasonalSuspendStartDatePermission" minOccurs="0"/>
+ *         &lt;element name="permissionToDefineDate" type="{http://xml.blackbean.com/location/types}SeasonalSuspendStartDatePermission" minOccurs="0"/>
  *         &lt;element name="maxTotalDays" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *         &lt;element name="preDateTotalDaysAllowed" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *         &lt;element name="minTotalDays" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
@@ -40,12 +40,12 @@ import javax.xml.bind.annotation.*;
 })
 public class SeasonalSuspendType {
 
-    @XmlElementRef(name = "enabled", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "enabled", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> enabled;
     @XmlSchemaType(name = "string")
     protected SeasonalSuspendStartDatePermission permissionToDefineDate;
     protected Long maxTotalDays;
-    @XmlElementRef(name = "preDateTotalDaysAllowed", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "preDateTotalDaysAllowed", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Long> preDateTotalDaysAllowed;
     protected Long minTotalDays;
     protected String earliestStartDate;

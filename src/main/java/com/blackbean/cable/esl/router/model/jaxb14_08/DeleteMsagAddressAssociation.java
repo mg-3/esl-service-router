@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="DeleteMsagAddressAssociation" type="{http://xml.comcast.com/location/types}DeleteMsagAddressAssociationRequestType" minOccurs="0"/>
+ *         &lt;element name="DeleteMsagAddressAssociation" type="{http://xml.blackbean.com/location/types}DeleteMsagAddressAssociationRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "deleteMsagAddressAssociation"
 })
-@XmlRootElement(name = "deleteMsagAddressAssociation", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "deleteMsagAddressAssociation", namespace = "http://xml.blackbean.com/location/services")
 public class DeleteMsagAddressAssociation {
 
-    @XmlElementRef(name = "DeleteMsagAddressAssociation", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "DeleteMsagAddressAssociation", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<DeleteMsagAddressAssociationRequestType> deleteMsagAddressAssociation;
 
     /**

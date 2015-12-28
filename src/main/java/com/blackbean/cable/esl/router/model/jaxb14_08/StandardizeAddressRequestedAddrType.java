@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="addressCriteria" type="{http://xml.comcast.com/location/types}AddressStandardizationCriteriaType"/>
- *         &lt;element name="constraintCriteria" type="{http://xml.comcast.com/location/types}AddressStandardizationConstraintCriteriaType" minOccurs="0"/>
+ *         &lt;element name="addressCriteria" type="{http://xml.blackbean.com/location/types}AddressStandardizationCriteriaType"/>
+ *         &lt;element name="constraintCriteria" type="{http://xml.blackbean.com/location/types}AddressStandardizationConstraintCriteriaType" minOccurs="0"/>
  *         &lt;element name="marketID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

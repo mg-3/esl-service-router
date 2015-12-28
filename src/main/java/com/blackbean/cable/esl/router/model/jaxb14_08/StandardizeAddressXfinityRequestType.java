@@ -18,9 +18,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="addresses" type="{http://xml.comcast.com/location/types}ArrayOfStandardizeAddressXfinityAddressType" minOccurs="0"/>
- *         &lt;element name="requestedResults" type="{http://xml.comcast.com/location/types}StandardizeAddressXfinityRequestedResultsType" minOccurs="0"/>
- *         &lt;element name="geocodingConstraints" type="{http://xml.comcast.com/location/types}GeocodingConstraintsType" minOccurs="0"/>
+ *         &lt;element name="addresses" type="{http://xml.blackbean.com/location/types}ArrayOfStandardizeAddressXfinityAddressType" minOccurs="0"/>
+ *         &lt;element name="requestedResults" type="{http://xml.blackbean.com/location/types}StandardizeAddressXfinityRequestedResultsType" minOccurs="0"/>
+ *         &lt;element name="geocodingConstraints" type="{http://xml.blackbean.com/location/types}GeocodingConstraintsType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class StandardizeAddressXfinityRequestType {
 
-    @XmlElementRef(name = "addresses", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "addresses", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfStandardizeAddressXfinityAddressType> addresses;
     protected StandardizeAddressXfinityRequestedResultsType requestedResults;
     protected GeocodingConstraintsType geocodingConstraints;

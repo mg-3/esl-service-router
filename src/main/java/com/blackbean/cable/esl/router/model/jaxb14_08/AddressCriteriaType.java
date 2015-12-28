@@ -36,11 +36,11 @@ import javax.xml.bind.annotation.*;
  *           &lt;/simpleType>
  *         &lt;/element>
  *         &lt;element name="standardizeStreetAddress" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="wildcardStreetAddressMatch" type="{http://xml.comcast.com/location/types}QueryLocationWildcardAddressMatchType" minOccurs="0"/>
- *         &lt;element name="wildcardUnitNumberMatch" type="{http://xml.comcast.com/location/types}QueryLocationWildcardUnitNumberMatchType" minOccurs="0"/>
+ *         &lt;element name="wildcardStreetAddressMatch" type="{http://xml.blackbean.com/location/types}QueryLocationWildcardAddressMatchType" minOccurs="0"/>
+ *         &lt;element name="wildcardUnitNumberMatch" type="{http://xml.blackbean.com/location/types}QueryLocationWildcardUnitNumberMatchType" minOccurs="0"/>
  *         &lt;element name="queryMarketOnAddressNotFound" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="getLocationOnSingleAddressFound" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="locationStatus" type="{http://xml.comcast.com/location/types}LocationStatusType" minOccurs="0"/>
+ *         &lt;element name="locationStatus" type="{http://xml.blackbean.com/location/types}LocationStatusType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -65,7 +65,7 @@ import javax.xml.bind.annotation.*;
 })
 public class AddressCriteriaType {
 
-    @XmlElementRef(name = "streetName", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "streetName", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> streetName;
     protected String streetAddress;
     protected String houseNumber;

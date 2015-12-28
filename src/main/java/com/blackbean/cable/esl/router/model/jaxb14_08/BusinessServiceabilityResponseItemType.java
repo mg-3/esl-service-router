@@ -15,9 +15,9 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="StandardizeAddress" type="{http://xml.comcast.com/location/types}GeocodedAddressType" minOccurs="0"/>
- *         &lt;element name="Serviceability" type="{http://xml.comcast.com/location/types}ArrayOfBusinessServiceabilityType" minOccurs="0"/>
- *         &lt;element name="ResponseStatus" type="{http://xml.comcast.com/location/types}ResponseStatusType"/>
+ *         &lt;element name="StandardizeAddress" type="{http://xml.blackbean.com/location/types}GeocodedAddressType" minOccurs="0"/>
+ *         &lt;element name="Serviceability" type="{http://xml.blackbean.com/location/types}ArrayOfBusinessServiceabilityType" minOccurs="0"/>
+ *         &lt;element name="ResponseStatus" type="{http://xml.blackbean.com/location/types}ResponseStatusType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -32,7 +32,7 @@ import javax.xml.bind.annotation.*;
 })
 public class BusinessServiceabilityResponseItemType {
 
-    @XmlElementRef(name = "StandardizeAddress", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "StandardizeAddress", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<GeocodedAddressType> standardizeAddress;
     @XmlElement(name = "Serviceability")
     protected ArrayOfBusinessServiceabilityType serviceability;

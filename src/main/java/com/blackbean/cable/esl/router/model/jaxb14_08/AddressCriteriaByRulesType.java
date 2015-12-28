@@ -19,10 +19,10 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence>
  *         &lt;element name="getLocationOnSingleAddressFound" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
  *         &lt;element name="standardizeStreetAddress" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="wildcardStreetAddressMatch" type="{http://xml.comcast.com/location/types}QueryLocationWildcardAddressMatchType" minOccurs="0"/>
- *         &lt;element name="wildcardUnitNumberMatch" type="{http://xml.comcast.com/location/types}QueryLocationWildcardUnitNumberMatchType" minOccurs="0"/>
- *         &lt;element name="postalAddressCriteria" type="{http://xml.comcast.com/location/types}QueryPostalAddressType" minOccurs="0"/>
- *         &lt;element name="addressSummaryCriteria" type="{http://xml.comcast.com/location/types}AddressSummaryCriteria" minOccurs="0"/>
+ *         &lt;element name="wildcardStreetAddressMatch" type="{http://xml.blackbean.com/location/types}QueryLocationWildcardAddressMatchType" minOccurs="0"/>
+ *         &lt;element name="wildcardUnitNumberMatch" type="{http://xml.blackbean.com/location/types}QueryLocationWildcardUnitNumberMatchType" minOccurs="0"/>
+ *         &lt;element name="postalAddressCriteria" type="{http://xml.blackbean.com/location/types}QueryPostalAddressType" minOccurs="0"/>
+ *         &lt;element name="addressSummaryCriteria" type="{http://xml.blackbean.com/location/types}AddressSummaryCriteria" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -55,7 +55,7 @@ public class GetLocationXfinityRequestedResultsType {
 
     protected Boolean addressInfo;
     protected Boolean marketInfo;
-    @XmlElementRef(name = "marketHierarchyInfo", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "marketHierarchyInfo", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> marketHierarchyInfo;
     protected Boolean capabilityInfo;
     protected Boolean homeSecurityInfo;

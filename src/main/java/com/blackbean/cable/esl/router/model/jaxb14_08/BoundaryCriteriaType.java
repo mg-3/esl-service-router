@@ -14,8 +14,8 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="BoundaryType" type="{http://xml.comcast.com/location/types}BoundaryTypeSimpleType" minOccurs="0"/>
- *         &lt;element name="Polygon" type="{http://xml.comcast.com/location/types}GeospatialShapePolygonType" minOccurs="0"/>
+ *         &lt;element name="BoundaryType" type="{http://xml.blackbean.com/location/types}BoundaryTypeSimpleType" minOccurs="0"/>
+ *         &lt;element name="Polygon" type="{http://xml.blackbean.com/location/types}GeospatialShapePolygonType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="GetLocationXfinity" type="{http://xml.comcast.com/location/types}GetLocationXfinityRequestType" minOccurs="0"/>
+ *         &lt;element name="GetLocationXfinity" type="{http://xml.blackbean.com/location/types}GetLocationXfinityRequestType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "getLocationXfinity"
 })
-@XmlRootElement(name = "getLocationXfinity", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "getLocationXfinity", namespace = "http://xml.blackbean.com/location/services")
 public class GetLocationXfinity {
 
-    @XmlElementRef(name = "GetLocationXfinity", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "GetLocationXfinity", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<GetLocationXfinityRequestType> getLocationXfinity;
 
     /**

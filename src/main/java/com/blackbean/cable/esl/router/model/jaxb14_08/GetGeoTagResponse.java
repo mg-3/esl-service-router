@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="getGeoTagReturn" type="{http://xml.comcast.com/location/types}GetGeoTagResponseType" minOccurs="0"/>
+ *         &lt;element name="getGeoTagReturn" type="{http://xml.blackbean.com/location/types}GetGeoTagResponseType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.*;
 @XmlType(name = "", propOrder = {
         "getGeoTagReturn"
 })
-@XmlRootElement(name = "getGeoTagResponse", namespace = "http://xml.comcast.com/location/services")
+@XmlRootElement(name = "getGeoTagResponse", namespace = "http://xml.blackbean.com/location/services")
 public class GetGeoTagResponse {
 
-    @XmlElementRef(name = "getGeoTagReturn", namespace = "http://xml.comcast.com/location/services", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "getGeoTagReturn", namespace = "http://xml.blackbean.com/location/services", type = JAXBElement.class, required = false)
     protected JAXBElement<GetGeoTagResponseType> getGeoTagReturn;
 
     /**

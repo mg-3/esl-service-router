@@ -15,15 +15,15 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="addressCriteria" type="{http://xml.comcast.com/location/types}LocationQueueAddressCriteriaType" minOccurs="0"/>
- *         &lt;element name="marketCriteria" type="{http://xml.comcast.com/location/types}ArrayOfMarketCriteriaType" minOccurs="0"/>
- *         &lt;element name="QueueStatus" type="{http://xml.comcast.com/location/types}LocationQueueStatusType" minOccurs="0"/>
- *         &lt;element name="organization" type="{http://xml.comcast.com/location/types}LocationQueueOrigType" minOccurs="0"/>
+ *         &lt;element name="addressCriteria" type="{http://xml.blackbean.com/location/types}LocationQueueAddressCriteriaType" minOccurs="0"/>
+ *         &lt;element name="marketCriteria" type="{http://xml.blackbean.com/location/types}ArrayOfMarketCriteriaType" minOccurs="0"/>
+ *         &lt;element name="QueueStatus" type="{http://xml.blackbean.com/location/types}LocationQueueStatusType" minOccurs="0"/>
+ *         &lt;element name="organization" type="{http://xml.blackbean.com/location/types}LocationQueueOrigType" minOccurs="0"/>
  *         &lt;element name="CreateDateFrom" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="CreateDateTo" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="NeedByDateFrom" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="NeedByDateTo" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="resultsSpec" type="{http://xml.comcast.com/location/types}QueryResultSpecType" minOccurs="0"/>
+ *         &lt;element name="resultsSpec" type="{http://xml.blackbean.com/location/types}QueryResultSpecType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -15,16 +15,16 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="ModificationRequestType" type="{http://xml.comcast.com/location/types}ModificationRequestType"/>
- *         &lt;element name="LocationPostalAddress" type="{http://xml.comcast.com/location/types}PostalAddressUpdateType" minOccurs="0"/>
- *         &lt;element name="AlternatePostalAddress" type="{http://xml.comcast.com/location/types}PostalAddressUpdateType" minOccurs="0"/>
+ *         &lt;element name="ModificationRequestType" type="{http://xml.blackbean.com/location/types}ModificationRequestType"/>
+ *         &lt;element name="LocationPostalAddress" type="{http://xml.blackbean.com/location/types}PostalAddressUpdateType" minOccurs="0"/>
+ *         &lt;element name="AlternatePostalAddress" type="{http://xml.blackbean.com/location/types}PostalAddressUpdateType" minOccurs="0"/>
  *         &lt;element name="MarketID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="LocationCapabilityExceptions" type="{http://xml.comcast.com/location/types}CapabilitiesType" minOccurs="0"/>
- *         &lt;element name="LocationDetails" type="{http://xml.comcast.com/location/types}LocationDetailsUpdateType" minOccurs="0"/>
- *         &lt;element name="GeographicCoordinates" type="{http://xml.comcast.com/location/types}GeographicCoordinateMeasurementType" minOccurs="0"/>
- *         &lt;element name="LocationHouseAssociation" type="{http://xml.comcast.com/location/types}ModifyLocationHouseAssociationType" minOccurs="0"/>
+ *         &lt;element name="LocationCapabilityExceptions" type="{http://xml.blackbean.com/location/types}CapabilitiesType" minOccurs="0"/>
+ *         &lt;element name="LocationDetails" type="{http://xml.blackbean.com/location/types}LocationDetailsUpdateType" minOccurs="0"/>
+ *         &lt;element name="GeographicCoordinates" type="{http://xml.blackbean.com/location/types}GeographicCoordinateMeasurementType" minOccurs="0"/>
+ *         &lt;element name="LocationHouseAssociation" type="{http://xml.blackbean.com/location/types}ModifyLocationHouseAssociationType" minOccurs="0"/>
  *         &lt;element name="fraudIndicator" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="LocationServiceability" type="{http://xml.comcast.com/location/types}LocationServiceabilityUpdateType" minOccurs="0"/>
+ *         &lt;element name="LocationServiceability" type="{http://xml.blackbean.com/location/types}LocationServiceabilityUpdateType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -49,11 +49,11 @@ public class ModifyLocationRequestDetailsType {
     @XmlElement(name = "ModificationRequestType", required = true)
     @XmlSchemaType(name = "string")
     protected ModificationRequestType modificationRequestType;
-    @XmlElementRef(name = "LocationPostalAddress", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "LocationPostalAddress", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<PostalAddressUpdateType> locationPostalAddress;
     @XmlElement(name = "AlternatePostalAddress")
     protected PostalAddressUpdateType alternatePostalAddress;
-    @XmlElementRef(name = "MarketID", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "MarketID", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Long> marketID;
     @XmlElement(name = "LocationCapabilityExceptions")
     protected CapabilitiesType locationCapabilityExceptions;

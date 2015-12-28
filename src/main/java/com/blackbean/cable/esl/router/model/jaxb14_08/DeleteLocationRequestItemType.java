@@ -16,8 +16,8 @@ import javax.xml.bind.annotation.*;
  *       &lt;sequence>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="LocationID" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="DeletionReason" type="{http://xml.comcast.com/location/types}ReasonType" minOccurs="0"/>
- *         &lt;element name="DeletionOptions" type="{http://xml.comcast.com/location/types}DeleteLocationOptionsSimpleType" minOccurs="0"/>
+ *         &lt;element name="DeletionReason" type="{http://xml.blackbean.com/location/types}ReasonType" minOccurs="0"/>
+ *         &lt;element name="DeletionOptions" type="{http://xml.blackbean.com/location/types}DeleteLocationOptionsSimpleType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="marketReference" type="{http://xml.comcast.com/location/types}ArrayOfMarketReferenceType" minOccurs="0"/>
- *         &lt;element name="vendorMarketReference" type="{http://xml.comcast.com/location/types}ArrayOfVendorMarketReferenceType" minOccurs="0"/>
+ *         &lt;element name="marketReference" type="{http://xml.blackbean.com/location/types}ArrayOfMarketReferenceType" minOccurs="0"/>
+ *         &lt;element name="vendorMarketReference" type="{http://xml.blackbean.com/location/types}ArrayOfVendorMarketReferenceType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,9 +33,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class QueryMarketResponseType {
 
-    @XmlElementRef(name = "marketReference", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "marketReference", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfMarketReferenceType> marketReference;
-    @XmlElementRef(name = "vendorMarketReference", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "vendorMarketReference", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfVendorMarketReferenceType> vendorMarketReference;
 
     /**

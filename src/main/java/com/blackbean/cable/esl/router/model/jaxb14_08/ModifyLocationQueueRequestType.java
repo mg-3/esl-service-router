@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="ModifyLocationQueueRequests" type="{http://xml.comcast.com/location/types}ArrayOfModifyLocationQueueRequestItemType" minOccurs="0"/>
+ *         &lt;element name="ModifyLocationQueueRequests" type="{http://xml.blackbean.com/location/types}ArrayOfModifyLocationQueueRequestItemType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class ModifyLocationQueueRequestType {
 
-    @XmlElementRef(name = "ModifyLocationQueueRequests", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "ModifyLocationQueueRequests", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfModifyLocationQueueRequestItemType> modifyLocationQueueRequests;
 
     /**

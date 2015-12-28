@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="addresses" type="{http://xml.comcast.com/location/types}ArrayOfStandardizeAddressXfinityResponseItemType" minOccurs="0"/>
+ *         &lt;element name="addresses" type="{http://xml.blackbean.com/location/types}ArrayOfStandardizeAddressXfinityResponseItemType" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class StandardizeAddressXfinityResponseType {
 
-    @XmlElementRef(name = "addresses", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "addresses", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<ArrayOfStandardizeAddressXfinityResponseItemType> addresses;
 
     /**

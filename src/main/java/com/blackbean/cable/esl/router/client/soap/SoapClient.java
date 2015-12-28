@@ -41,7 +41,7 @@ public abstract class SoapClient<R> {
     }
 
     protected static final String OASIS_XSD = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd";
-    protected static final String HTTP_XML_COMCAST_COM_TYPES = "http://xml.comcast.com/types";
+    protected static final String HTTP_XML_DOMAIN_TYPES = "http://xml.blackbean.com/types";
     protected static final String REQUEST_HEADER = "requestHeader";
     protected static final String TIMESTAMP = "timestamp";
     protected static final String SOURCE_SYSTEM_ID = "sourceSystemId";
@@ -80,14 +80,14 @@ public abstract class SoapClient<R> {
     protected Header soapRequestHeader() throws SOAPException {
         LocalDateTime dateTime = LocalDateTime.now();
         SOAPFactory soapFactory = SOAPFactory.newInstance();
-        SOAPElement reqHdr = soapFactory.createElement(new QName(HTTP_XML_COMCAST_COM_TYPES, REQUEST_HEADER, NS_1));
-        SOAPElement timestamp = soapFactory.createElement(new QName(HTTP_XML_COMCAST_COM_TYPES, TIMESTAMP, NS_1));
+        SOAPElement reqHdr = soapFactory.createElement(new QName(HTTP_XML_DOMAIN_TYPES, REQUEST_HEADER, NS_1));
+        SOAPElement timestamp = soapFactory.createElement(new QName(HTTP_XML_DOMAIN_TYPES, TIMESTAMP, NS_1));
         timestamp.addTextNode(dateTime.toString());
-        SOAPElement sourceSystemId = soapFactory.createElement(new QName(HTTP_XML_COMCAST_COM_TYPES, SOURCE_SYSTEM_ID, NS_1));
+        SOAPElement sourceSystemId = soapFactory.createElement(new QName(HTTP_XML_DOMAIN_TYPES, SOURCE_SYSTEM_ID, NS_1));
         sourceSystemId.addTextNode("asdcfv");
-        SOAPElement sourceServerId = soapFactory.createElement(new QName(HTTP_XML_COMCAST_COM_TYPES, SOURCE_SERVER_ID, NS_1));
+        SOAPElement sourceServerId = soapFactory.createElement(new QName(HTTP_XML_DOMAIN_TYPES, SOURCE_SERVER_ID, NS_1));
         sourceServerId.addTextNode("sdf");
-        SOAPElement trackingId = soapFactory.createElement(new QName(HTTP_XML_COMCAST_COM_TYPES, TRACKING_ID, NS_1));
+        SOAPElement trackingId = soapFactory.createElement(new QName(HTTP_XML_DOMAIN_TYPES, TRACKING_ID, NS_1));
         trackingId.addTextNode("QLX_TC1");
 
         reqHdr.addChildElement(sourceServerId);

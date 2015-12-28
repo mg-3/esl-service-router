@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="messages" type="{http://xml.comcast.com/types}MessagesType"/>
+ *         &lt;element name="messages" type="{http://xml.blackbean.com/types}MessagesType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ExceptionType", namespace = "http://xml.comcast.com/types", propOrder = {
+@XmlType(name = "ExceptionType", namespace = "http://xml.blackbean.com/types", propOrder = {
         "messages"
 })
 public class ExceptionType {

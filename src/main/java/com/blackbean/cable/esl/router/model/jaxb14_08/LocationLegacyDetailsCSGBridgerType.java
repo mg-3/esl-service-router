@@ -53,11 +53,11 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class LocationLegacyDetailsCSGBridgerType {
 
-    @XmlElementRef(name = "bridgerBidirectional", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "bridgerBidirectional", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> bridgerBidirectional;
-    @XmlElementRef(name = "bridgerGateControl", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "bridgerGateControl", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> bridgerGateControl;
-    @XmlElementRef(name = "bridgerPrivate", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "bridgerPrivate", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> bridgerPrivate;
 
     /**

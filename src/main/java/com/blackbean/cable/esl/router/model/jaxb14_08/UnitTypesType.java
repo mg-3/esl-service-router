@@ -41,9 +41,9 @@ public class UnitTypesType {
 
     @XmlElement(required = true, type = Integer.class, nillable = true)
     protected Integer unitSequence;
-    @XmlElementRef(name = "unitType", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "unitType", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> unitType;
-    @XmlElementRef(name = "unitValue", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "unitValue", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> unitValue;
 
     /**

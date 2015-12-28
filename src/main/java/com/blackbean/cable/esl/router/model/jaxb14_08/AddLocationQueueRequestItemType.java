@@ -16,7 +16,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="RequestRefNum" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="LocationQueueAddress" type="{http://xml.comcast.com/location/types}AddLocationQueueAddressType"/>
+ *         &lt;element name="LocationQueueAddress" type="{http://xml.blackbean.com/location/types}AddLocationQueueAddressType"/>
  *         &lt;element name="RequestedPriority">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
@@ -25,7 +25,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
- *         &lt;element name="SubmitterInfo" type="{http://xml.comcast.com/location/types}LocationQueueContactInfoType"/>
+ *         &lt;element name="SubmitterInfo" type="{http://xml.blackbean.com/location/types}LocationQueueContactInfoType"/>
  *         &lt;element name="marketID" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *         &lt;element name="LeadID" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="NeedByDate" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>

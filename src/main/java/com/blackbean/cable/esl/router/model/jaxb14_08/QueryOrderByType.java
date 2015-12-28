@@ -14,8 +14,8 @@ import javax.xml.bind.annotation.*;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="orderField" type="{http://xml.comcast.com/location/types}QuerySortFieldsType"/>
- *         &lt;element name="ordering" type="{http://xml.comcast.com/location/types}SortOrderType"/>
+ *         &lt;element name="orderField" type="{http://xml.blackbean.com/location/types}QuerySortFieldsType"/>
+ *         &lt;element name="ordering" type="{http://xml.blackbean.com/location/types}SortOrderType"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>

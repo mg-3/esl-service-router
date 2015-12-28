@@ -39,9 +39,9 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class AlternateNodeName {
 
-    @XmlElementRef(name = "alternateNodeNameSequence", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "alternateNodeNameSequence", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> alternateNodeNameSequence;
-    @XmlElementRef(name = "alternateNodeNameValue", namespace = "http://xml.comcast.com/location/types", type = JAXBElement.class, required = false)
+    @XmlElementRef(name = "alternateNodeNameValue", namespace = "http://xml.blackbean.com/location/types", type = JAXBElement.class, required = false)
     protected JAXBElement<String> alternateNodeNameValue;
 
     /**
