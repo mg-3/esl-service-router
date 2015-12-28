@@ -1,7 +1,9 @@
-#Esl Service Router
-This project creates a web service entry point that acts as a facade to Esl AC/TH applications.  The initial goal is to allow fallback to existing, legacy Location Services (Eloc) whenever an error occurs.  
+#Service Router
+This project creates a web service entry point for REST services to fallback to a legacy SOAP request
+on failure.  The SOAP response is mapped to a REST response to maintain compatibility.
 
-The application will be deployed as a Spring Boot jar file that when started will accept inbound Esl REST service requests and route (on normal execution) to Esl AC/TH.  If the normal execution path fails then fallback to legacy Location Service will take place.  
+The application is deployed as a Spring Boot jar file and forward all inbound requests to
+ a new REST service environment.  On failures the router will fallback to legacy SOAP requests.
 
 To start the router
 ---
@@ -11,6 +13,5 @@ java -jar target/esl-service-router-<version>.jar <args>
 
 #Configuration
 TODO - add configuration notes
-1. AC/TH hosts/vip
-2. Location Services hosts/vip
-3. ???
+1. Hosts/vips
+2. ???
