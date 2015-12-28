@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.comcast.cable.esl</groupId>
+	<groupId>com.blackbean.cable.esl</groupId>
 	<artifactId>esl-service-router</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -11,7 +11,7 @@
     <contributors>
         <contributor>
             <name>Michael Garcia</name>
-            <email>michael_garcia9@cable.comcast.com</email>
+            <email>mgarcia@b1ackbean.com</email>
             <roles>
                 <role>Software Consultant</role>
             </roles>
